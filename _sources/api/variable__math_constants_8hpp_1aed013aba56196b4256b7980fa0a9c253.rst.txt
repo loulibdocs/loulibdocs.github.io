@@ -1,0 +1,14 @@
+.. _exhale_variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253:
+
+Variable LouLib::Math::PI
+=========================
+
+- Defined in :ref:`file_src_LouLib_Math_MathConstants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Math::PI
+   :project: My Project

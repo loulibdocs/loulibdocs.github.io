@@ -1,0 +1,14 @@
+.. _exhale_define__luminosity_8hpp_1a2f3b5ca2fec0a90534b71d5ba1313e92:
+
+Define CREATE_LUMINOSITY_STRING_LITERAL
+=======================================
+
+- Defined in :ref:`file_src_LouLib_Units_Luminosity.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_LUMINOSITY_STRING_LITERAL
+   :project: My Project

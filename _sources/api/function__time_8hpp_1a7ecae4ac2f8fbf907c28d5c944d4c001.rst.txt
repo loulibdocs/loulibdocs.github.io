@@ -1,0 +1,14 @@
+.. _exhale_function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001:
+
+Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)
+====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)
+   :project: My Project

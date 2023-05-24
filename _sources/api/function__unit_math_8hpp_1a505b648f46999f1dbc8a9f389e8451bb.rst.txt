@@ -1,0 +1,14 @@
+.. _exhale_function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb:
+
+Template Function LouLib::Units::square
+=======================================
+
+- Defined in :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::square(BaseUnit<L, M, t, Q, T, N, J, A>&)
+   :project: My Project

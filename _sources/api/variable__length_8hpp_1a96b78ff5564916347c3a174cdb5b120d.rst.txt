@@ -1,0 +1,14 @@
+.. _exhale_variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d:
+
+Variable LouLib::Units::DECIMETER
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECIMETER
+   :project: My Project

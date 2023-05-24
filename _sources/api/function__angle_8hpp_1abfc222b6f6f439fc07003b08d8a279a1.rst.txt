@@ -1,0 +1,14 @@
+.. _exhale_function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1:
+
+Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_ddeg, DECIDEGREE)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_ddeg, DECIDEGREE)
+   :project: My Project

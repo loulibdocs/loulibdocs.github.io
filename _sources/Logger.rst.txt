@@ -1,0 +1,44 @@
+======
+Logger
+======
+
+The :code:`Logger` class is used to log data to the SD card in the VEX brain.
+
+Creating a Logger
+-----------------
+
+There are three different ways to create a new logger:
+
+1. Create a logger with no parameters (will write to log.txt):
+
+.. code-block:: cpp
+	
+	//Create a new logger that writes to log.txt
+	LouLib::Utility::Logger logger;
+
+2. Create a logger with a file name:
+
+.. code-block:: cpp
+
+	//Create a new logger that writes to file.txt
+	std::string fileName = "file";
+	LouLib::Utility::Logger logger(fileName);
+	
+3. Create a logger with a file name and file extension:
+
+.. code-block:: cpp
+
+	//Create a new logger that writes to file.csv
+	std::string fileName = "file";
+	std::string fileExtension = "csv";
+	LouLib::Utility::Logger logger(fileName, fileExtension);
+
+.. admonition:: Note on file names
+
+	If there already exists a file with the same name as what the logger is set
+	to write to, the logger will write to a new file with a number added to the
+	file name.
+	
+	For example, if `log.txt` already exists, a new logger would write to
+	`log(1).txt`, and creating another logger after that would result in a logger
+	that writes to `log(2).txt`.

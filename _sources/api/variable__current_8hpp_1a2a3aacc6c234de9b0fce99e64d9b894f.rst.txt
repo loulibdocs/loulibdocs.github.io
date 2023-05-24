@@ -1,0 +1,14 @@
+.. _exhale_variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f:
+
+Variable LouLib::Units::DECIAMPERE
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECIAMPERE
+   :project: My Project

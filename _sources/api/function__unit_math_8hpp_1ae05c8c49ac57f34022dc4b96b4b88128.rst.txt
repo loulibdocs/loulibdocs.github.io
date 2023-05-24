@@ -1,0 +1,14 @@
+.. _exhale_function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128:
+
+Template Function LouLib::Units::sqrt
+=====================================
+
+- Defined in :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::sqrt(BaseUnit<L, M, t, Q, T, N, J, A>&)
+   :project: My Project

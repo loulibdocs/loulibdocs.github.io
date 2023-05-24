@@ -1,0 +1,14 @@
+.. _exhale_define__current_8hpp_1a2009e15641a6b4e82c395d91e59dae66:
+
+Define CREATE_CURRENT_STRING_LITERAL
+====================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_CURRENT_STRING_LITERAL
+   :project: My Project

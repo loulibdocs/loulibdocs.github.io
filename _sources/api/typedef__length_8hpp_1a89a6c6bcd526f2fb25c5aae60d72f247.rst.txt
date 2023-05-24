@@ -1,0 +1,14 @@
+.. _exhale_typedef__length_8hpp_1a89a6c6bcd526f2fb25c5aae60d72f247:
+
+Typedef LouLib::Units::Length
+=============================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: LouLib::Units::Length
+   :project: My Project

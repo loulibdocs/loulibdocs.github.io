@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_units_1_1_base_unit:
+
+Template Class BaseUnit
+=======================
+
+- Defined in :ref:`file_src_LouLib_Units_BaseUnit.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Units::BaseUnit
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

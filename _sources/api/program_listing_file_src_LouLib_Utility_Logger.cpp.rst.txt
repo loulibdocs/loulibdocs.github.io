@@ -1,0 +1,45 @@
+
+.. _program_listing_file_src_LouLib_Utility_Logger.cpp:
+
+Program Listing for File Logger.cpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Utility_Logger.cpp>` (``src/LouLib/Utility/Logger.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "Logger.hpp"
+   #include <iostream>
+   
+   LouLib::Utility::Logger::Logger() : Logger("log", "txt"){}
+   
+   LouLib::Utility::Logger::Logger(std::string logFile, std::string fileType) {
+       std::ifstream check("/usd/" + logFile + "." + fileType);
+       if(!check.good()){
+           fout.open("/usd/" + logFile + "." + fileType);
+       }else{
+           int i = 0;
+           do{
+               i++;
+               check.close();
+               check.open("/usd/" + logFile + "(" + std::to_string(i) + ")." + fileType);
+           }while(check.good());
+           fout.open("/usd/" + logFile + "(" + std::to_string(i) + ")." + fileType);
+       }
+       fout.flush();
+   }
+   
+   void LouLib::Utility::Logger::log(std::string message, bool endl) {
+       fout << message;
+       if(endl) fout << std::endl;
+       fout.flush();
+   }
+   
+   void LouLib::Utility::Logger::close() {
+       fout.close();
+   }
+   
+   

@@ -1,0 +1,14 @@
+.. _exhale_function__current_8hpp_1a42074e57dfd9837d4100c40de7d586c0:
+
+Function LouLib::Units::AMPERE
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::AMPERE(1.)
+   :project: My Project

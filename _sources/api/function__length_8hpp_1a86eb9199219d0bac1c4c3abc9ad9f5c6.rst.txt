@@ -1,0 +1,14 @@
+.. _exhale_function__length_8hpp_1a86eb9199219d0bac1c4c3abc9ad9f5c6:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, 0, 0, 0, 0, 0, 0, Length)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(1, 0, 0, 0, 0, 0, 0, 0, Length)
+   :project: My Project

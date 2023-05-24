@@ -1,0 +1,14 @@
+.. _exhale_variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a:
+
+Variable LouLib::Units::MINUTE
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::MINUTE
+   :project: My Project

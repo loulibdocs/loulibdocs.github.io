@@ -1,0 +1,142 @@
+==============
+PID Controller
+==============
+
+The :code:`PIDController` class is used to create a Proportional-Integral-Derivative controller:
+
+.. math::
+	
+	u(t) = k_p e(t) + k_i \int\limits_0^t e(t) dt + k_d \frac{d}{dt} e(t)
+
+This class handles all of the feedback loop calculation. 
+
+Creating a PID Controller
+=========================
+
+The constructor for :code:`PIDController` requires the three controller gains: :code:`kp`, :code:`ki`,
+and :code:`kd`.
+
+.. code-block:: cpp
+	
+	//Create a new PID Controller with gains kp = 1.0, ki = 0.05, and kd = 0.1
+	LouLib::Controllers::PIDController controller(1.0, 0.05, 0.1);
+	
+The above code will create a working PID controller, but the :code:`PIDController` class also contains
+multiple methods to configure the controller to provide more functionality.
+
+**Set Delta Time**
+
+	The :code:`setDeltaTime` method takes a :code:`LouLib::Units::Time` that represents
+	how much time is between each controller loop. If this value is not set, this value
+	defaults to 10 milliseconds.
+
+**Set Setpoint**
+
+	The :code:`setSetpoint` method is used to set the setpoint, or target value, for
+	the controller. If this value is not set, the value defaults to zero.
+
+**Set Tolerance**
+	
+	The :code:`setTolerance` method takes two parameters: :code:`errorTolerance` and :code:`derivativeTolerance`.
+	
+	:code:`errorTolerance` is the maximum error the system can have while being considered at the setpoint. If
+	:code:`setTolerance` is not called, this value defaults to zero, meaning the system will never be
+	considered to be at the setpoint.
+	
+	:code:`derivativeTolerance` is the maximum derivative of the error the system can have while being
+	considered at the setpoint. This parameter is optional when calling the :code:`setTolerance` method. If
+	this value is not set, this value will default to infinity, meaning the derivative will not be taken into
+	account when deciding whether or not the system is at the setpoint.
+	
+**Set Integrator Range**
+
+	One issue with some PID controllers is integral windup, where a large initial
+	error causes the integral value to be unusably high. To fix this, :code:`PIDController`
+	contains the :code:`setIntegratorRange` which allows the user to set the range that
+	the integral can accumulate in. If the integrator range is not set, it will default
+	to negative infinity to infinity, meaning the integral will accumulate at all times.
+
+**Set Output Range**
+
+	The :code:`setOutputRange` method is used to set the minimum and maximum controller
+	outputs. If the output range is not set, it will default to negative infinity to
+	infinity, meaning the controller can output any value.
+	
+
+Below is an example of creating a PID controller using the configuration methods:
+
+.. code-block:: cpp
+	
+	//Create a new PID Controller with gains kp = 1.0, ki = 0.05, and kd = 0.1
+	LouLib::Controllers::PIDController controller(1.0, 0.05, 0.1);
+	
+	//Set Delta Time to 20 milliseconds
+	controller.setDeltaTime(20_ms);
+	
+	//Set the controller setpoint
+	controller.setSetpoint(100);
+	
+	//Set error tolerance, with default derivative tolerance
+	controller.setTolerance(0.5);
+	
+	//Set integrator range
+	controller.setIntegratorRange(-5, 5);
+	
+	//Set output range to VEX motor voltage range in milliVolts
+	controller.setOutputRange(-12000, 12000);
+	
+Using the PID Controller
+=======================
+
+The PID Controller can be used by calling the :code:`update` and :code:`getOutput` methods.
+The :code:`atSetpoint` method can also be used to check if the system has reached
+the setpoint.
+
+.. warning::
+	The :code:`PIDController` assumes the :code:`update` method is being called
+	at an interval consistent with the configured period. Failure to do this will
+	result in unintended behavior.
+
+.. code-block:: cpp
+
+	//create a new PID controller
+	LouLib::Controllers::PIDController controller(1.0, 0.05, 0.1);
+	
+	//set error tolerance
+	controller.setTolerance(0.5);
+	
+	//set delta time
+	double deltaTimeMilliseconds = 10;
+	controller.setDeltaTime(deltaTimeMilliseconds * LouLib::Units::MILLISECOND);
+	
+	//create PID loop
+	while(!controller.atSetpoint){
+	
+		//get sensor value
+		double sensorData = sensor.getReading();
+		
+		//Update PID Controller
+		controller.update(sensorData);
+		
+		//Get controller output
+		motor.moveVelocity(controller.getOutput());
+		
+		//delay
+		pros::delay(deltaTimeMilliseconds);
+	
+	}
+	
+Tuning the PID Controller
+=========================
+
+In order to get a well-performing PID controller, the three controller gains need to
+be tuned. The easiest way to do this is manual tuning, which is done by trying
+different gains until the controller performance is satisfactory:
+
+#. Set :code:`kp`, :code:`ki`, and :code:`kd` to zero.
+#. Increase :code:`kp` until the system starts to oscillate.
+#. Increase :code:`kd` until the system stops oscillating.
+#. Increase :code:`ki` to eliminate any steady state error.
+
+You may have to go through this process multiple times before the controller
+is properly tuned.

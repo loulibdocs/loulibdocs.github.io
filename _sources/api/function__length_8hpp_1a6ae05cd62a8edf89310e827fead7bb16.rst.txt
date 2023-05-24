@@ -1,0 +1,14 @@
+.. _exhale_function__length_8hpp_1a6ae05cd62a8edf89310e827fead7bb16:
+
+Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_tl, TILE)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_tl, TILE)
+   :project: My Project

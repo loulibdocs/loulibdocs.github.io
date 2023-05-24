@@ -1,0 +1,42 @@
+==================
+Point2D and Pose2D
+==================
+
+Point2D
+=======
+
+The :code:`Point2D` class is used to store a two dimensional point. It
+contains two pieces of data:
+
+* :code:`LouLib::Units::Length x`
+	The x-position of the point
+
+* :code:`LouLib::Units::Length y`
+	The y-position of the point
+
+The :code:`Point2D` class contains a single contructor that requires both
+:code:`x` and :code:`y`.
+
+The :code:`Point2D` class also contains standard getters and setters for
+:code:`x` and :code:`y`.
+
+Pose2D
+======
+
+The :code:`Pose2D` class is used to store a two dimensional pose. It contains
+three pieces of data:
+
+* :code:`LouLib::Units::Length x`
+	The x-position of the pose
+
+* :code:`LouLib::Units::Length y`
+	The y-position of the pose
+
+* :code:`LouLib::Units::Angle theta`
+	The heading of the pose
+
+The :code:`Pose2D` class contains a single constructor that requires
+:code:`x`, :code:`y`, and :code:`theta`.
+
+The :code:`Pose2D` class also contains standard getters and setters for
+:code:`x`, :code:`y`, and :code:`theta`.

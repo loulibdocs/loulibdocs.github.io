@@ -1,0 +1,14 @@
+.. _exhale_variable__mass_8hpp_1a4094511273e312bec78796916f75b0af:
+
+Variable LouLib::Units::OUNCE
+=============================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::OUNCE
+   :project: My Project

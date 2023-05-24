@@ -1,0 +1,14 @@
+.. _exhale_function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c:
+
+Function LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL
+========================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Luminosity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL(_cd, CANDELA)
+   :project: My Project

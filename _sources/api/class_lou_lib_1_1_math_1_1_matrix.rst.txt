@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_math_1_1_matrix:
+
+Class Matrix
+============
+
+- Defined in :ref:`file_src_LouLib_Math_Matrix.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Math::Matrix
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

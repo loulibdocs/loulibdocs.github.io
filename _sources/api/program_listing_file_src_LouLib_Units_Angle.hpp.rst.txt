@@ -1,0 +1,49 @@
+
+.. _program_listing_file_src_LouLib_Units_Angle.hpp:
+
+Program Listing for File Angle.hpp
+==================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Angle.hpp>` (``src/LouLib/Units/Angle.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ANGLE_HPP
+   #define LOULIB_ANGLE_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib {
+       namespace Units {
+           DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 1, Angle);
+   
+           //base unit
+           constexpr Angle RADIAN(1.0);
+   
+           //degree units
+           constexpr Angle DEGREE = RADIAN * static_cast<double>(M_PI/180.0);
+           constexpr Angle DECIDEGREE = DEGREE * 0.1;
+           constexpr Angle CENTIDEGREE = DEGREE * 0.01;
+   
+           inline namespace literals{
+               #define CREATE_ANGLE_STRING_LITERAL(literal, unit)               \
+               constexpr Angle operator"" literal(long double x){               \
+                   return static_cast<double>(x)*unit;                          \
+               }                                                                \
+               constexpr Angle operator"" literal(unsigned long long int x){    \
+                   return static_cast<double>(x)*unit;                          \
+               }
+   
+               CREATE_ANGLE_STRING_LITERAL(_rad, RADIAN);
+               CREATE_ANGLE_STRING_LITERAL(_deg, DEGREE);
+               CREATE_ANGLE_STRING_LITERAL(_ddeg, DECIDEGREE);
+               CREATE_ANGLE_STRING_LITERAL(_cdeg, CENTIDEGREE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_ANGLE_HPP

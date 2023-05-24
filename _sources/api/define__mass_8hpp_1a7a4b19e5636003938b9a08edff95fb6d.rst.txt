@@ -1,0 +1,14 @@
+.. _exhale_define__mass_8hpp_1a7a4b19e5636003938b9a08edff95fb6d:
+
+Define CREATE_MASS_STRING_LITERAL
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_MASS_STRING_LITERAL
+   :project: My Project

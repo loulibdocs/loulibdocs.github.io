@@ -1,0 +1,14 @@
+.. _exhale_function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_lb, POUND)
+==============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_lb, POUND)
+   :project: My Project

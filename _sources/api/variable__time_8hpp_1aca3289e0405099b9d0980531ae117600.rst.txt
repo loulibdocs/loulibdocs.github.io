@@ -1,0 +1,14 @@
+.. _exhale_variable__time_8hpp_1aca3289e0405099b9d0980531ae117600:
+
+Variable LouLib::Units::DECISECOND
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECISECOND
+   :project: My Project

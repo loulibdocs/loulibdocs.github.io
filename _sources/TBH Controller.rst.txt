@@ -1,0 +1,103 @@
+==============
+TBH Controller
+==============
+
+The :code:`TBHController` class is used to create a Take-Back-Half controller,
+a purely integral-based controller, good for velocity control applications.
+
+This class handles all of the feedback loop calculation.
+
+Creating a TBHController
+========================
+
+The constructor for :code:`TBHController` requires the TBH gain: :code:`k`.
+
+.. code-block:: cpp
+	
+	//Create a new TBH Controller with gain k = 0.001;
+	LouLib::Controllers::TBHController controller(0.001);
+	
+The above code will create a working TBH controller, but the :code:`TBHController`
+class also contains multiple methods to configure the controller to provide more
+functionality.
+
+**Set Delta Time**
+
+	The :code:`setDeltaTime` method takes a :code:`LouLib::Units::Time` that represents
+	how much time is between each controller loop. If this value is not set, this value
+	defaults to 10 milliseconds.
+
+**Set Setpoint**
+
+	The :code:`setSetpoint` method is used to set the setpoint, or target value, for
+	the controller. If this value is not set, the value defaults to zero.
+	
+**Set Output Range**
+
+	The :code:`setOutputRange` method is used to set the minimum and maximum controller
+	outputs. If the output range is not set, it will default to negative infinity to
+	infinity, meaning the controller can output any value.
+	
+Below is an example of creating a TBH controller using the configuration methods:
+
+.. code-block:: cpp
+
+	//Create a new TBH Controller with gain k = 0.001;
+	LouLib::Controllers::TBHController controller(0.001);
+	
+	//Set Delta Time to 20 milliseconds
+	controller.setDeltaTime(20_ms);
+
+	//Set the controller setpoint
+	controller.setSetpoint(100);
+	
+	//Set output range to VEX motor voltage range in milliVolts
+	controller.setOutputRange(-12000, 12000);
+	
+Using the TBH Controller
+========================
+
+The TBH Controller can be used by calling the :code:`update` and :code:`getOutput`
+methods.
+
+.. warning::
+	The :code:`TBHController` assumes the :code:`update` method is being called
+	at an interval consistent with the configured period. Failure to do this will
+	result in unintented behavior.
+	
+.. code-block:: cpp
+
+	//create a new TBH controller
+	LouLib::Controllers::TBHController controller(0.001);
+	
+	//set delta time
+	double deltaTimeMilliseconds = 10;
+	controller.setDeltaTime(deltaTimeMilliseconds * LouLib::Units::MILLISECOND);
+	
+	//create TBH loop
+	while(true){
+		
+		//get sensor value
+		double sensorData = sensor.getReading();
+
+		//Update TBH Controller
+		controller.update(sensorData);
+		
+		//Get controller output
+		motor.moveVelocity(controller.getOutput());
+
+		//delay
+		pros::delay(deltaTimeMilliseconds);
+		
+	}
+	
+Tuning the TBH Controller
+=========================
+
+The TBH controller only contains a single gain value that needs to be tuned.
+The easiest way to do this is manual tuning, which is done by trying different
+gain values until the controller performance is satisfactory.
+
+The TBH gain, :code:`k`, acts similarly to the :code:`kp` gain of a PID controller,
+so the goal is to find the highest value of :code:`k` such that the system does
+not oscillate.

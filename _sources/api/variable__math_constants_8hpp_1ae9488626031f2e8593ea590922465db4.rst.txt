@@ -1,0 +1,14 @@
+.. _exhale_variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4:
+
+Variable LouLib::Math::EPS
+==========================
+
+- Defined in :ref:`file_src_LouLib_Math_MathConstants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Math::EPS
+   :project: My Project

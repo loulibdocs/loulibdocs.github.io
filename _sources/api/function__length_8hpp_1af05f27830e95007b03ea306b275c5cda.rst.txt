@@ -1,0 +1,14 @@
+.. _exhale_function__length_8hpp_1af05f27830e95007b03ea306b275c5cda:
+
+Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_yd, YARD)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_yd, YARD)
+   :project: My Project

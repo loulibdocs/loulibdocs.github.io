@@ -1,0 +1,14 @@
+.. _exhale_function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_mA, MILLIAMPERE)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_mA, MILLIAMPERE)
+   :project: My Project

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LQR Controller &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Odometry Sensors" href="Odometry%20Sensors.html" />
+    <link rel="prev" title="TBH Controller" href="TBH%20Controller.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LQR Controller</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-state-space-control">Overview of State-space control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-an-lqr-controller">Creating an LQR Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-lqr-controller">Using the LQR Controller</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">LQR Controller</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/LQR Controller.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lqr-controller">
+<h1>LQR Controller<a class="headerlink" href="#lqr-controller" title="Permalink to this headline"></a></h1>
+<p>The <code class="code docutils literal notranslate"><span class="pre">LQRController</span></code> class is used to create a Linear Quadratic Regulator
+controller, a state-space controller that can be applied to any system.</p>
+<section id="overview-of-state-space-control">
+<h2>Overview of State-space control<a class="headerlink" href="#overview-of-state-space-control" title="Permalink to this headline"></a></h2>
+<section id="state-space-notation">
+<h3>State-space notation<a class="headerlink" href="#state-space-notation" title="Permalink to this headline"></a></h3>
+<p>A dynamical system is any system whose motion can be described as a set of
+differential equations. Almost all systems in VEX can be classified as linear systems
+because the differential equations describing their motion can be written using only
+linear operators. Even for systems that aren’t exactly linear, a reasonably accurate
+linear model of the system can often be constructed.</p>
+<p>State-space notation is the way that these models are written. In state-space, the
+state, inputs, and outputs of a system can all be written as vectors. Since these
+vectors are related to each other by a set of linear differential equations, the
+mappings between the state, inputs, and ouputs can be put into matrix form. This
+allows for systems to be written as follows:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\dot{\mathbf{x}} = A \mathbf{x} + B \mathbf{u}\\\mathbf{y} = C \mathbf{x} + D \mathbf{u}\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> is the state vector, <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is the input vector,
+<span class="math notranslate nohighlight">\(\mathbf{y}\)</span> is the output vector, and <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>,
+and <span class="math notranslate nohighlight">\(D\)</span> are matrices that are specific to the system.</p>
+</section>
+<section id="controllability">
+<h3>Controllability<a class="headerlink" href="#controllability" title="Permalink to this headline"></a></h3>
+<p>A system is controllable if it can be driven from any state to any other state by
+a finite sequence of admissable inputs. A model is controllable if and only if:</p>
+<div class="math notranslate nohighlight">
+\[\text{rank}(\begin{bmatrix}B &amp; AB &amp; A^2B &amp; \dots &amp; A^{n-1}B\end{bmatrix}) = n\]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> is the number of state variables.</p>
+<p>If the matrix above is not full-rank, that means that the inputs cannot apply
+tranforms along the entirety of the state-space, making the system not controllable.
+All systems used in VEX are controllable with the correct state-space model.</p>
+</section>
+<section id="linear-quadratic-regulator">
+<h3>Linear Quadratic Regulator<a class="headerlink" href="#linear-quadratic-regulator" title="Permalink to this headline"></a></h3>
+<p>If a system is controllable, then the control law
+<span class="math notranslate nohighlight">\(\mathbf{u}=K(\mathbf{r}-\mathbf{x})\)</span>, where <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> is the
+reference, can be used to drive the system to the reference.</p>
+<p>A linear quadratic regulator is used to find the most optimal gain
+matrix(<span class="math notranslate nohighlight">\(K\)</span>) by solving the following cost function which weights the sum of
+error and control effort over time:</p>
+<div class="math notranslate nohighlight">
+\[J = \int\limits_{0}^{\infty}({\mathbf{x}^T Q \mathbf{x} + \mathbf{u}^T R \mathbf{u}})dt\]</div>
+<p>The value of <span class="math notranslate nohighlight">\(K\)</span> that minimizes this cost function is:</p>
+<div class="math notranslate nohighlight">
+\[K = R^{-1}(B^TP(t)+N^T)\]</div>
+<p>where <span class="math notranslate nohighlight">\(P\)</span> is found by solving the discrete time algebraic Ricatti
+equation:</p>
+<div class="math notranslate nohighlight">
+\[P = A^TPA-(A^TPB)(R+B^TPB)^{-1}(B^TPA)+Q\]</div>
+</section>
+</section>
+<section id="creating-an-lqr-controller">
+<h2>Creating an LQR Controller<a class="headerlink" href="#creating-an-lqr-controller" title="Permalink to this headline"></a></h2>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">LQRController</span></code> requires four different
+matrices: <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(Q\)</span>, and <cite>R</cite>, where <span class="math notranslate nohighlight">\(A\)</span> and
+<span class="math notranslate nohighlight">\(B\)</span> are from the state-space representation of the system and <span class="math notranslate nohighlight">\(Q\)</span>
+and <span class="math notranslate nohighlight">\(R\)</span> are weighting matrices in the LQR cost function.</p>
+<p>The constructor will automatically use these four matrices to calculate the
+optimal gain matrix for the controller.</p>
+</section>
+<section id="using-the-lqr-controller">
+<h2>Using the LQR Controller<a class="headerlink" href="#using-the-lqr-controller" title="Permalink to this headline"></a></h2>
+<p>The LQR Controller can be used by calling the <code class="code docutils literal notranslate"><span class="pre">setReference</span></code> and
+<code class="code docutils literal notranslate"><span class="pre">computeControl</span></code> method.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">setReference</span></code> is used to set the target state of the controller.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">computeControl</span></code> is used to calculate the optimal control inputs for
+the given state.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">setReference</span></code> method must be called at least once before using
+the <code class="code docutils literal notranslate"><span class="pre">computeControl</span></code> method, otherwise there will be no target state
+for the controller.</p>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">LQRController</span></code> class also contains the <code class="code docutils literal notranslate"><span class="pre">getK</span></code> method
+that can be used to access the calculated gain matrix.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="TBH%20Controller.html" class="btn btn-neutral float-left" title="TBH Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Odometry%20Sensors.html" class="btn btn-neutral float-right" title="Odometry Sensors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

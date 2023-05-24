@@ -1,0 +1,14 @@
+.. _exhale_define__base_unit_8hpp_1aa0ccea87e71c0e3deb314da4251a3f85:
+
+Define DEFINE_NEW_UNIT
+======================
+
+- Defined in :ref:`file_src_LouLib_Units_BaseUnit.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DEFINE_NEW_UNIT
+   :project: My Project

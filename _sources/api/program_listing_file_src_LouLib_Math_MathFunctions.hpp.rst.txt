@@ -1,0 +1,23 @@
+
+.. _program_listing_file_src_LouLib_Math_MathFunctions.hpp:
+
+Program Listing for File MathFunctions.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_MathFunctions.hpp>` (``src/LouLib/Math/MathFunctions.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_MATHFUNCTIONS_HPP
+   #define LOULIB_MATHFUNCTIONS_HPP
+   
+   namespace LouLib{
+       namespace Math{
+            int signum(double a);
+       }
+   }
+   
+   #endif //LOULIB_MATHFUNCTIONS_HPP

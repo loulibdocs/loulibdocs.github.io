@@ -1,0 +1,14 @@
+.. _exhale_variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee:
+
+Variable LouLib::Units::DECIDEGREE
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECIDEGREE
+   :project: My Project

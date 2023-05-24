@@ -1,0 +1,55 @@
+
+.. _program_listing_file_src_LouLib_Units_Mass.hpp:
+
+Program Listing for File Mass.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Mass.hpp>` (``src/LouLib/Units/Mass.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_MASS_HPP
+   #define LOULIB_MASS_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 1, 0 , 0, 0, 0, 0, 0, Mass);
+   
+           //base unit
+           constexpr Mass KILOGRAM(1.0);
+   
+           //metric units
+           constexpr Mass HECTOGRAM = KILOGRAM * 0.1;
+           constexpr Mass DECAGRAM = KILOGRAM * 0.01;
+           constexpr Mass GRAM = KILOGRAM * 0.001;
+   
+           //imperial units
+           constexpr Mass OUNCE = KILOGRAM * 0.02834952;
+           constexpr Mass POUND = OUNCE * 16.0;
+   
+           inline namespace literals{
+               #define CREATE_MASS_STRING_LITERAL(literal, unit)               \
+               constexpr Mass operator"" literal(long double x){               \
+                   return static_cast<double>(x) * unit;                       \
+               }                                                               \
+               constexpr Mass operator"" literal(unsigned long long int x){    \
+                   return static_cast<double>(x) * unit;                       \
+               }
+   
+               CREATE_MASS_STRING_LITERAL(_kg, KILOGRAM);
+               CREATE_MASS_STRING_LITERAL(_hg, HECTOGRAM);
+               CREATE_MASS_STRING_LITERAL(_dag, DECAGRAM);
+               CREATE_MASS_STRING_LITERAL(_g, GRAM);
+               CREATE_MASS_STRING_LITERAL(_oz, OUNCE);
+               CREATE_MASS_STRING_LITERAL(_lb, POUND);
+           }
+       }
+   }
+   
+   #endif //LOULIB_MASS_HPP

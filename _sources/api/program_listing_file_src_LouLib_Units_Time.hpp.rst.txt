@@ -1,0 +1,55 @@
+
+.. _program_listing_file_src_LouLib_Units_Time.hpp:
+
+Program Listing for File Time.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Time.hpp>` (``src/LouLib/Units/Time.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_TIME_HPP
+   #define LOULIB_TIME_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time);
+   
+           //base unit
+           constexpr Time SECOND(1.0);
+   
+           //metrix units
+           constexpr Time DECISECOND = SECOND * 0.1;
+           constexpr Time CENTISECOND = SECOND * 0.01;
+           constexpr Time MILLISECOND = SECOND * 0.001;
+   
+           //other units
+           constexpr Time MINUTE = SECOND * 60;
+           constexpr Time HOUR = MINUTE * 60;
+   
+           inline namespace literals{
+               #define CREATE_TIME_STRING_LITERAL(literal, unit)             \
+               constexpr Time operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Time operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_TIME_STRING_LITERAL(_s, SECOND);
+               CREATE_TIME_STRING_LITERAL(_ds, DECISECOND);
+               CREATE_TIME_STRING_LITERAL(_cs, CENTISECOND);
+               CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND);
+               CREATE_TIME_STRING_LITERAL(_min, MINUTE);
+               CREATE_TIME_STRING_LITERAL(_hr, HOUR);
+           }
+       }
+   }
+   
+   #endif //LOULIB_TIME_HPP

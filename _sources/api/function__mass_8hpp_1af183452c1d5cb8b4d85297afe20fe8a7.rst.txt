@@ -1,0 +1,14 @@
+.. _exhale_function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_g, GRAM)
+============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_g, GRAM)
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_function__substance_8hpp_1a9b0a0579777eaad03b5c6d56dd960666:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 1, 0, 0, Substance)
+==========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Substance.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 1, 0, 0, Substance)
+   :project: My Project

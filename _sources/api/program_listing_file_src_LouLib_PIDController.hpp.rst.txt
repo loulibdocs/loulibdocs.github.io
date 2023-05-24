@@ -1,0 +1,179 @@
+
+.. _program_listing_file_src_LouLib_PIDController.hpp:
+
+Program Listing for File PIDController.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_PIDController.hpp>` (``src/LouLib/PIDController.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_PIDCONTROLLER_HPP
+   #define LOULIB_PIDCONTROLLER_HPP
+   
+   #include "../../include/okapi/api.hpp"
+   #include "Math/MathFunctions.hpp"
+   
+   namespace LouLib {
+       class PIDController {
+   
+       private:
+   
+           double kp;
+   
+           double ki;
+   
+           double kd;
+   
+           double threshold;
+   
+           double integralBound;
+   
+           double max;
+   
+           double deltaTime;
+   
+           double error;
+   
+           double derivative;
+   
+           double integral;
+   
+       public:
+   
+           PIDController(double kp, double ki, double kd, double threshold, double integralBound, double max,
+                         double deltaTime)
+                   : kp(kp), ki(ki), kd(kd), threshold(threshold), integralBound(integralBound), max(max),
+                     deltaTime(deltaTime) {
+               error = 0;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           PIDController(double kp, double ki, double kd, double threshold, double deltaTime) : kp(kp), ki(ki), kd(kd),
+                                                                                                threshold(threshold),
+                                                                                                deltaTime(deltaTime) {
+   
+               integralBound = 1 << 30;
+               max = 1.0;
+   
+               error = 0;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           PIDController(double kp, double ki, double kd, double threshold) : kp(kp), ki(ki), kd(kd),
+                                                                              threshold(threshold) {
+               integralBound = 1 << 30;
+               max = 1.0;
+               deltaTime = 10;
+   
+               error = 0;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           PIDController(double kp, double ki, double kd) : kp(kp), ki(ki), kd(kd) {
+               threshold = 0;
+               integralBound = 1 << 30;
+               max = 1.0;
+               deltaTime = 10;
+   
+               error = 0;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           PIDController() {
+               kp = 0;
+               ki = 0;
+               kd = 0;
+               threshold = 0;
+               integralBound = 1 << 30;
+               max = 1.0;
+               deltaTime = 10;
+   
+               error = 0;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           double getKp() const {
+               return kp;
+           }
+   
+           void setKp(double kp) {
+               PIDController::kp = kp;
+           }
+   
+           double getKi() const {
+               return ki;
+           }
+   
+           void setKi(double ki) {
+               PIDController::ki = ki;
+           }
+   
+           double getKd() const {
+               return kd;
+           }
+   
+           void setKd(double kd) {
+               PIDController::kd = kd;
+           }
+   
+           double getThreshold() const {
+               return threshold;
+           }
+   
+           void setThreshold(double threshold) {
+               PIDController::threshold = threshold;
+           }
+   
+           double getIntegralBound() const {
+               return integralBound;
+           }
+   
+           void setIntegralBound(double integralBound) {
+               PIDController::integralBound = integralBound;
+           }
+   
+           double getMax() const {
+               return max;
+           }
+   
+           void setMax(double max) {
+               PIDController::max = max;
+           }
+   
+           double getDeltaTime() const {
+               return deltaTime;
+           }
+   
+           void setDeltaTime(double deltaTime) {
+               PIDController::deltaTime = deltaTime;
+           }
+   
+           void resetIntegral() {
+               integral = 0;
+           }
+   
+           void setStartingError(double startingError) {
+               error = startingError;
+               derivative = 0;
+               integral = 0;
+           }
+   
+           void updateError(double error) {
+               derivative = (error - this->error) / (deltaTime * 0.001);
+               integral += error * (deltaTime * 0.001);
+               if (Math::signum(error) != Math::signum(this->error) || error > integralBound) integral = 0;
+               this->error = error;
+           }
+       };
+   }
+   
+   #endif //LOULIB_PIDCONTROLLER_HPP

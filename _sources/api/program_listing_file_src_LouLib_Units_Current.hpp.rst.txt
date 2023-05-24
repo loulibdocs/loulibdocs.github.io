@@ -1,0 +1,55 @@
+
+.. _program_listing_file_src_LouLib_Units_Current.hpp:
+
+Program Listing for File Current.hpp
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Current.hpp>` (``src/LouLib/Units/Current.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_CURRENT_HPP
+   #define LOULIB_CURRENT_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 0, 0, 1, 0, 0, 0, 0, Current);
+   
+           //base unit
+           constexpr Current AMPERE(1.0);
+   
+           //metric units
+           constexpr Current KILOAMPERE = AMPERE * 1000;
+           constexpr Current HECTOAMPERE = AMPERE * 100;
+           constexpr Current DECAAMPERE = AMPERE * 10;
+           constexpr Current DECIAMPERE = AMPERE * 0.1;
+           constexpr Current CENTIAMPERE = AMPERE * 0.01;
+           constexpr Current MILLIAMPERE = AMPERE * 0.001;
+   
+           inline namespace literals{
+               #define CREATE_CURRENT_STRING_LITERAL(literal, unit)             \
+               constexpr Current operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Current operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_CURRENT_STRING_LITERAL(_A, AMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_kA, KILOAMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_hA, HECTOAMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_daA, DECAAMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_dA, DECIAMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_cA, CENTIAMPERE);
+               CREATE_CURRENT_STRING_LITERAL(_mA, MILLIAMPERE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_CURRENT_HPP

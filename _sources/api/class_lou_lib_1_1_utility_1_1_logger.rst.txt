@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_utility_1_1_logger:
+
+Class Logger
+============
+
+- Defined in :ref:`file_src_LouLib_Utility_Logger.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Utility::Logger
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

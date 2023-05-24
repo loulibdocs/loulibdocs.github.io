@@ -1,0 +1,33 @@
+
+.. _namespace_LouLib__Math:
+
+Namespace LouLib::Math
+======================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9`
+
+- :ref:`exhale_variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4`
+
+- :ref:`exhale_variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253`
+
+- :ref:`exhale_variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01`

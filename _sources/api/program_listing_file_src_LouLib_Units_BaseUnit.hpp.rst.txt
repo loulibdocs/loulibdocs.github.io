@@ -1,0 +1,101 @@
+
+.. _program_listing_file_src_LouLib_Units_BaseUnit.hpp:
+
+Program Listing for File BaseUnit.hpp
+=====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_BaseUnit.hpp>` (``src/LouLib/Units/BaseUnit.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_BASEUNIT_HPP
+   #define LOULIB_BASEUNIT_HPP
+   
+   #include <ratio>
+   #include <stdexcept>
+   
+   namespace LouLib {
+       namespace Units {
+   
+           template<typename lengthDim, typename massDim, typename timeDim, typename currentDim,
+                    typename temperatureDim, typename substanceDim, typename luminosityDim,
+                    typename angleDim>
+           class BaseUnit {
+           private:
+               double value;
+   
+               template <typename L, typename M, typename t, typename Q,
+                       typename T, typename N, typename J, typename A>
+               constexpr bool sameDim(const BaseUnit<L, M, t, Q, T, N, J, A>& a) const{
+                   if(!std::ratio_equal<lengthDim, L>::value) return false;
+                   if(!std::ratio_equal<massDim, M>::value) return false;
+                   if(!std::ratio_equal<timeDim, t>::value) return false;
+                   if(!std::ratio_equal<currentDim, Q>::value) return false;
+                   if(!std::ratio_equal<temperatureDim, T>::value) return false;
+                   if(!std::ratio_equal<substanceDim, N>::value) return false;
+                   if(!std::ratio_equal<luminosityDim, J>::value) return false;
+                   if(!std::ratio_equal<angleDim, A>::value) return false;
+                   return true;
+               }
+   
+           public:
+               constexpr explicit BaseUnit(double val) : value(val){}
+   
+               constexpr BaseUnit const& operator+=(const BaseUnit& a){
+                   if(!sameDim(a)){
+                       throw std::invalid_argument("Dimensions do not match");
+                   }
+                   value += a.val();
+                   return *this;
+               }
+   
+               constexpr BaseUnit const& operator-=(const BaseUnit& a){
+                   if(!sameDim(a)){
+                       throw std::invalid_argument("Dimensions do not match");
+                   }
+                   value -= a.val();
+                   return *this;
+               }
+   
+                constexpr BaseUnit const& operator*=(const double& a){
+                    value *= a;
+                    return *this;
+                }
+   
+               constexpr BaseUnit const& operator/=(const double& a){
+                   value /= a;
+                   return *this;
+               }
+   
+                constexpr BaseUnit operator-(){
+                    return BaseUnit(-value);
+                }
+   
+               constexpr double to(const BaseUnit& a) const{
+                   if(!sameDim(a)){
+                       throw std::invalid_argument("Dimensions do not match");
+                   }
+                   return value / a.val();
+               }
+   
+               constexpr double val() const{
+                   return value;
+               }
+           };
+   
+           //Defining unit types
+           #define DEFINE_NEW_UNIT(_Ldim, _Mdim, _tdim, _Qdim, _Tdim, _Ndim, _Jdim, _Adim, name) \
+               typedef BaseUnit<std::ratio<_Ldim>, std::ratio<_Mdim>, std::ratio<_tdim>, std::ratio<_Qdim>, \
+                   std::ratio<_Tdim>, std::ratio<_Ndim>, std::ratio<_Jdim>, std::ratio<_Adim>> name;
+   
+           //Unitless type
+           DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 0, Number)
+           constexpr Number number(1.0);
+   
+       } // Units
+   } // LouLib
+   
+   #endif //LOULIB_BASEUNIT_HPP

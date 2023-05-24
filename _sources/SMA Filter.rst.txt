@@ -1,0 +1,45 @@
+==================================
+Simple Moving Average (SMA) Filter
+==================================
+
+The :code:`SMAFilter` class is used to create a simple moving average filter
+in order to remove noise from sensor data. The SMA filter is better for volatile and
+high-frequency data sets.
+
+Creating an SMA Filter
+----------------------
+
+The constructor for :code:`SMAFilter` contains one parameter: :code:`readingCount`. This parameter
+determines how many data readings are saved for calculating the average. A higher value of :code:`readingCount`
+will result in smoother data, and a lower value of :code:`readingCount` will result in more responsive data.
+
+.. code-block:: cpp
+	
+	//Create a SMA filter for data where smoothness is more important
+	LouLib::Filters::SMAFilter smoothFilter(20);
+	
+	//Create a SMA filter for data where responsiveness is more important
+	LouLib::Filters::SMAFilter responsiveFilter(5);
+	
+Using the SMA Filter
+--------------------
+
+The :code:`SMAFilter` can be used by calling the :code:`addReading` and :code:`getOutput` methods:
+
+.. code-block:: cpp
+	
+	//Create a new SMA Filter
+	LouLib::Filters::SMAFilter filter(10);
+	
+	while(true){
+		
+		//Get raw data from sensor
+		double rawData = sensor.getReading();
+		
+		//Filter the data
+		filter.addReading(rawData);
+		double filteredData = filter.getOutput();
+	
+	}
+	
+After running the above code, :code:`filteredData` should contain the data after being filtered by the SMA Filter.

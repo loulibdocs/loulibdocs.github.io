@@ -1,0 +1,103 @@
+==============
+LQR Controller
+==============
+
+The :code:`LQRController` class is used to create a Linear Quadratic Regulator
+controller, a state-space controller that can be applied to any system.
+
+Overview of State-space control
+===============================
+
+State-space notation
+--------------------
+
+A dynamical system is any system whose motion can be described as a set of
+differential equations. Almost all systems in VEX can be classified as linear systems
+because the differential equations describing their motion can be written using only
+linear operators. Even for systems that aren't exactly linear, a reasonably accurate
+linear model of the system can often be constructed.
+
+State-space notation is the way that these models are written. In state-space, the
+state, inputs, and outputs of a system can all be written as vectors. Since these
+vectors are related to each other by a set of linear differential equations, the
+mappings between the state, inputs, and ouputs can be put into matrix form. This
+allows for systems to be written as follows:
+
+.. math::
+	\dot{\mathbf{x}} = A \mathbf{x} + B \mathbf{u}
+	
+	\mathbf{y} = C \mathbf{x} + D \mathbf{u}
+	
+where :math:`\mathbf{x}` is the state vector, :math:`\mathbf{u}` is the input vector,
+:math:`\mathbf{y}` is the output vector, and :math:`A`, :math:`B`, :math:`C`,
+and :math:`D` are matrices that are specific to the system.
+
+Controllability
+---------------
+
+A system is controllable if it can be driven from any state to any other state by
+a finite sequence of admissable inputs. A model is controllable if and only if:
+
+.. math::
+	\text{rank}(\begin{bmatrix}B & AB & A^2B & \dots & A^{n-1}B\end{bmatrix}) = n
+ 
+where :math:`n` is the number of state variables.
+
+If the matrix above is not full-rank, that means that the inputs cannot apply
+tranforms along the entirety of the state-space, making the system not controllable.
+All systems used in VEX are controllable with the correct state-space model.
+
+Linear Quadratic Regulator
+--------------------------
+
+If a system is controllable, then the control law
+:math:`\mathbf{u}=K(\mathbf{r}-\mathbf{x})`, where :math:`\mathbf{r}` is the
+reference, can be used to drive the system to the reference.
+
+A linear quadratic regulator is used to find the most optimal gain
+matrix(:math:`K`) by solving the following cost function which weights the sum of
+error and control effort over time:
+
+.. math::
+	J = \int\limits_{0}^{\infty}({\mathbf{x}^T Q \mathbf{x} + \mathbf{u}^T R \mathbf{u}})dt
+	
+The value of :math:`K` that minimizes this cost function is:
+
+.. math::
+	K = R^{-1}(B^TP(t)+N^T)
+	
+where :math:`P` is found by solving the discrete time algebraic Ricatti
+equation:
+
+.. math::
+	P = A^TPA-(A^TPB)(R+B^TPB)^{-1}(B^TPA)+Q
+
+Creating an LQR Controller
+=========================
+
+The constructor for :code:`LQRController` requires four different
+matrices: :math:`A`, :math:`B`, :math:`Q`, and `R`, where :math:`A` and
+:math:`B` are from the state-space representation of the system and :math:`Q`
+and :math:`R` are weighting matrices in the LQR cost function.
+
+The constructor will automatically use these four matrices to calculate the
+optimal gain matrix for the controller.
+
+Using the LQR Controller
+========================
+
+The LQR Controller can be used by calling the :code:`setReference` and
+:code:`computeControl` method.
+
+:code:`setReference` is used to set the target state of the controller.
+
+:code:`computeControl` is used to calculate the optimal control inputs for
+the given state.
+
+.. note::
+	The :code:`setReference` method must be called at least once before using
+	the :code:`computeControl` method, otherwise there will be no target state
+	for the controller.
+	
+The :code:`LQRController` class also contains the :code:`getK` method
+that can be used to access the calculated gain matrix.

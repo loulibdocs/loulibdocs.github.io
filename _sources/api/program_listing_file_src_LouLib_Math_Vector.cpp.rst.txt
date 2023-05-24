@@ -1,0 +1,103 @@
+
+.. _program_listing_file_src_LouLib_Math_Vector.cpp:
+
+Program Listing for File Vector.cpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_Vector.cpp>` (``src/LouLib/Math/Vector.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "Vector.hpp"
+   
+   namespace LouLib {
+       namespace Math {
+   
+           Vector::Vector(int n) : data(n) {}
+   
+           Vector::Vector(const Vector& other) : data(other.data) {}
+   
+           double& Vector::operator[](int i) {
+               return data[i];
+           }
+   
+           const double& Vector::operator[](int i) const {
+               return data[i];
+           }
+   
+           int Vector::size() const {
+               return (int) data.size();
+           }
+   
+           double Vector::magnitude() {
+               double sol = 0;
+               for(int i = 0; i < size(); i++){
+                   sol += data[i] * data[i];
+               }
+               return std::sqrt(sol);
+           }
+   
+           Vector Vector::normalize() {
+               Vector result(size());
+               double mag = magnitude();
+               for(int i = 0; i < size(); i++){
+                   result[i] = data[i] / mag;
+               }
+               return result;
+           }
+   
+   
+           Vector operator+(const Vector &a, const Vector &b) {
+               if(a.size() != b.size()){
+                   throw std::invalid_argument("Vectors must have the same size.");
+               }
+               Vector result(a.size());
+               for (int i = 0; i < a.size(); i++) {
+                   result[i] = a[i] + b[i];
+               }
+               return result;
+           }
+   
+           Vector operator-(const Vector &a, const Vector &b) {
+               if(a.size() != b.size()){
+                   throw std::invalid_argument("Vectors must have the same size.");
+               }
+               Vector result(a.size());
+               for (int i = 0; i < a.size(); i++) {
+                   result[i] = a[i] - b[i];
+               }
+               return result;
+           }
+   
+           double operator*(const Vector &a, const Vector &b) {
+               if(a.size() != b.size()){
+                   throw std::invalid_argument("Vectors must have the same size.");
+               }
+               double result = 0;
+               for(int i = 0; i < a.size(); i++){
+                   result += a[i] * b[i];
+               }
+               return result;
+           }
+   
+           Vector operator*(const double &a, const Vector &b) {
+               Vector result(b.size());
+               for(int i = 0; i < b.size(); i++){
+                   result[i] = b[i] * a;
+               }
+               return result;
+           }
+   
+           Vector operator*(const Vector &a, const double &b) {
+               Vector result(a.size());
+               for(int i = 0; i < a.size(); i++){
+                   result[i] = a[i] * b;
+               }
+               return result;
+           }
+   
+       } // Math
+   } // LouLib

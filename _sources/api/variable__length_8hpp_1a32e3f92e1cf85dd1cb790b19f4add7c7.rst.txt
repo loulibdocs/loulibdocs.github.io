@@ -1,0 +1,14 @@
+.. _exhale_variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7:
+
+Variable LouLib::Units::FOOT
+============================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::FOOT
+   :project: My Project

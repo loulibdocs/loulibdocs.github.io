@@ -1,0 +1,92 @@
+
+.. _file_src_LouLib_Units_BaseUnit.hpp:
+
+File BaseUnit.hpp
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/BaseUnit.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_BaseUnit.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ratio``
+
+- ``stdexcept``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_Angle.hpp`
+
+- :ref:`file_src_LouLib_Units_Current.hpp`
+
+- :ref:`file_src_LouLib_Units_Length.hpp`
+
+- :ref:`file_src_LouLib_Units_Luminosity.hpp`
+
+- :ref:`file_src_LouLib_Units_Mass.hpp`
+
+- :ref:`file_src_LouLib_Units_Substance.hpp`
+
+- :ref:`file_src_LouLib_Units_Temperature.hpp`
+
+- :ref:`file_src_LouLib_Units_Time.hpp`
+
+- :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_lou_lib_1_1_units_1_1_base_unit`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__base_unit_8hpp_1aaf21571bab124bad758cccbb36a81d60`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__base_unit_8hpp_1aa0ccea87e71c0e3deb314da4251a3f85`
+

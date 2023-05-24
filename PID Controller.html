@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PID Controller &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="TBH Controller" href="TBH%20Controller.html" />
+    <link rel="prev" title="Welcome to LouLib!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PID Controller</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-pid-controller">Creating a PID Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-pid-controller">Using the PID Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-the-pid-controller">Tuning the PID Controller</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LQR%20Controller.html">LQR Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PID Controller</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PID Controller.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pid-controller">
+<h1>PID Controller<a class="headerlink" href="#pid-controller" title="Permalink to this headline"></a></h1>
+<p>The <code class="code docutils literal notranslate"><span class="pre">PIDController</span></code> class is used to create a Proportional-Integral-Derivative controller:</p>
+<div class="math notranslate nohighlight">
+\[u(t) = k_p e(t) + k_i \int\limits_0^t e(t) dt + k_d \frac{d}{dt} e(t)\]</div>
+<p>This class handles all of the feedback loop calculation.</p>
+<section id="creating-a-pid-controller">
+<h2>Creating a PID Controller<a class="headerlink" href="#creating-a-pid-controller" title="Permalink to this headline"></a></h2>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">PIDController</span></code> requires the three controller gains: <code class="code docutils literal notranslate"><span class="pre">kp</span></code>, <code class="code docutils literal notranslate"><span class="pre">ki</span></code>,
+and <code class="code docutils literal notranslate"><span class="pre">kd</span></code>.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//Create a new PID Controller with gains kp = 1.0, ki = 0.05, and kd = 0.1</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Controllers</span><span class="o">::</span><span class="n">PIDController</span><span class="w"> </span><span class="nf">controller</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The above code will create a working PID controller, but the <code class="code docutils literal notranslate"><span class="pre">PIDController</span></code> class also contains
+multiple methods to configure the controller to provide more functionality.</p>
+<p><strong>Set Delta Time</strong></p>
+<blockquote>
+<div><p>The <code class="code docutils literal notranslate"><span class="pre">setDeltaTime</span></code> method takes a <code class="code docutils literal notranslate"><span class="pre">LouLib::Units::Time</span></code> that represents
+how much time is between each controller loop. If this value is not set, this value
+defaults to 10 milliseconds.</p>
+</div></blockquote>
+<p><strong>Set Setpoint</strong></p>
+<blockquote>
+<div><p>The <code class="code docutils literal notranslate"><span class="pre">setSetpoint</span></code> method is used to set the setpoint, or target value, for
+the controller. If this value is not set, the value defaults to zero.</p>
+</div></blockquote>
+<p><strong>Set Tolerance</strong></p>
+<blockquote>
+<div><p>The <code class="code docutils literal notranslate"><span class="pre">setTolerance</span></code> method takes two parameters: <code class="code docutils literal notranslate"><span class="pre">errorTolerance</span></code> and <code class="code docutils literal notranslate"><span class="pre">derivativeTolerance</span></code>.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">errorTolerance</span></code> is the maximum error the system can have while being considered at the setpoint. If
+<code class="code docutils literal notranslate"><span class="pre">setTolerance</span></code> is not called, this value defaults to zero, meaning the system will never be
+considered to be at the setpoint.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">derivativeTolerance</span></code> is the maximum derivative of the error the system can have while being
+considered at the setpoint. This parameter is optional when calling the <code class="code docutils literal notranslate"><span class="pre">setTolerance</span></code> method. If
+this value is not set, this value will default to infinity, meaning the derivative will not be taken into
+account when deciding whether or not the system is at the setpoint.</p>
+</div></blockquote>
+<p><strong>Set Integrator Range</strong></p>
+<blockquote>
+<div><p>One issue with some PID controllers is integral windup, where a large initial
+error causes the integral value to be unusably high. To fix this, <code class="code docutils literal notranslate"><span class="pre">PIDController</span></code>
+contains the <code class="code docutils literal notranslate"><span class="pre">setIntegratorRange</span></code> which allows the user to set the range that
+the integral can accumulate in. If the integrator range is not set, it will default
+to negative infinity to infinity, meaning the integral will accumulate at all times.</p>
+</div></blockquote>
+<p><strong>Set Output Range</strong></p>
+<blockquote>
+<div><p>The <code class="code docutils literal notranslate"><span class="pre">setOutputRange</span></code> method is used to set the minimum and maximum controller
+outputs. If the output range is not set, it will default to negative infinity to
+infinity, meaning the controller can output any value.</p>
+</div></blockquote>
+<p>Below is an example of creating a PID controller using the configuration methods:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//Create a new PID Controller with gains kp = 1.0, ki = 0.05, and kd = 0.1</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Controllers</span><span class="o">::</span><span class="n">PIDController</span><span class="w"> </span><span class="nf">controller</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+
+<span class="c1">//Set Delta Time to 20 milliseconds</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setDeltaTime</span><span class="p">(</span><span class="mi">20</span><span class="n">_ms</span><span class="p">);</span>
+
+<span class="c1">//Set the controller setpoint</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setSetpoint</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="c1">//Set error tolerance, with default derivative tolerance</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setTolerance</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+
+<span class="c1">//Set integrator range</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setIntegratorRange</span><span class="p">(</span><span class="mi">-5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+
+<span class="c1">//Set output range to VEX motor voltage range in milliVolts</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setOutputRange</span><span class="p">(</span><span class="mi">-12000</span><span class="p">,</span><span class="w"> </span><span class="mi">12000</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="using-the-pid-controller">
+<h2>Using the PID Controller<a class="headerlink" href="#using-the-pid-controller" title="Permalink to this headline"></a></h2>
+<p>The PID Controller can be used by calling the <code class="code docutils literal notranslate"><span class="pre">update</span></code> and <code class="code docutils literal notranslate"><span class="pre">getOutput</span></code> methods.
+The <code class="code docutils literal notranslate"><span class="pre">atSetpoint</span></code> method can also be used to check if the system has reached
+the setpoint.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">PIDController</span></code> assumes the <code class="code docutils literal notranslate"><span class="pre">update</span></code> method is being called
+at an interval consistent with the configured period. Failure to do this will
+result in unintended behavior.</p>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//create a new PID controller</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Controllers</span><span class="o">::</span><span class="n">PIDController</span><span class="w"> </span><span class="nf">controller</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+
+<span class="c1">//set error tolerance</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setTolerance</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+
+<span class="c1">//set delta time</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">deltaTimeMilliseconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="n">controller</span><span class="p">.</span><span class="n">setDeltaTime</span><span class="p">(</span><span class="n">deltaTimeMilliseconds</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LouLib</span><span class="o">::</span><span class="n">Units</span><span class="o">::</span><span class="n">MILLISECOND</span><span class="p">);</span>
+
+<span class="c1">//create PID loop</span>
+<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">controller</span><span class="p">.</span><span class="n">atSetpoint</span><span class="p">){</span>
+
+<span class="w">        </span><span class="c1">//get sensor value</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">sensorData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">getReading</span><span class="p">();</span>
+
+<span class="w">        </span><span class="c1">//Update PID Controller</span>
+<span class="w">        </span><span class="n">controller</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">sensorData</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">//Get controller output</span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">moveVelocity</span><span class="p">(</span><span class="n">controller</span><span class="p">.</span><span class="n">getOutput</span><span class="p">());</span>
+
+<span class="w">        </span><span class="c1">//delay</span>
+<span class="w">        </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="n">deltaTimeMilliseconds</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="tuning-the-pid-controller">
+<h2>Tuning the PID Controller<a class="headerlink" href="#tuning-the-pid-controller" title="Permalink to this headline"></a></h2>
+<p>In order to get a well-performing PID controller, the three controller gains need to
+be tuned. The easiest way to do this is manual tuning, which is done by trying
+different gains until the controller performance is satisfactory:</p>
+<ol class="arabic simple">
+<li><p>Set <code class="code docutils literal notranslate"><span class="pre">kp</span></code>, <code class="code docutils literal notranslate"><span class="pre">ki</span></code>, and <code class="code docutils literal notranslate"><span class="pre">kd</span></code> to zero.</p></li>
+<li><p>Increase <code class="code docutils literal notranslate"><span class="pre">kp</span></code> until the system starts to oscillate.</p></li>
+<li><p>Increase <code class="code docutils literal notranslate"><span class="pre">kd</span></code> until the system stops oscillating.</p></li>
+<li><p>Increase <code class="code docutils literal notranslate"><span class="pre">ki</span></code> to eliminate any steady state error.</p></li>
+</ol>
+<p>You may have to go through this process multiple times before the controller
+is properly tuned.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to LouLib!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="TBH%20Controller.html" class="btn btn-neutral float-right" title="TBH Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

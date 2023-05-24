@@ -1,0 +1,14 @@
+.. _exhale_define__angle_8hpp_1adb0d307827847e6ac8684ff071ce42f0:
+
+Define CREATE_ANGLE_STRING_LITERAL
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_ANGLE_STRING_LITERAL
+   :project: My Project

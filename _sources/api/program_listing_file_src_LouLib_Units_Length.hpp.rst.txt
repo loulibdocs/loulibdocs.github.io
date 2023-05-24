@@ -1,0 +1,61 @@
+
+.. _program_listing_file_src_LouLib_Units_Length.hpp:
+
+Program Listing for File Length.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Length.hpp>` (``src/LouLib/Units/Length.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_LENGTH_HPP
+   #define LOULIB_LENGTH_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(1, 0, 0, 0, 0, 0, 0, 0, Length);
+   
+           //base unit
+           constexpr Length METER(1.0);
+   
+           //metric units
+           constexpr Length DECIMETER = METER * 0.1;
+           constexpr Length CENTIMETER = METER * 0.01;
+           constexpr Length MILLIMETER = METER * 0.001;
+   
+           //imperial units
+           constexpr Length INCH = METER * 0.0254;
+           constexpr Length FOOT = INCH * 12.0;
+           constexpr Length YARD = FOOT * 3;
+   
+           //VEX Units
+           constexpr Length TILE = FOOT * 2;
+   
+           inline namespace literals{
+               #define CREATE_LENGTH_STRING_LITERAL(literal, unit)             \
+               constexpr Length operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Length operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_LENGTH_STRING_LITERAL(_m, METER);
+               CREATE_LENGTH_STRING_LITERAL(_dm, DECIMETER);
+               CREATE_LENGTH_STRING_LITERAL(_cm, CENTIMETER);
+               CREATE_LENGTH_STRING_LITERAL(_mm, MILLIMETER);
+               CREATE_LENGTH_STRING_LITERAL(_in, INCH);
+               CREATE_LENGTH_STRING_LITERAL(_ft, FOOT);
+               CREATE_LENGTH_STRING_LITERAL(_yd, YARD);
+               CREATE_LENGTH_STRING_LITERAL(_tl, TILE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_LENGTH_HPP

@@ -1,0 +1,14 @@
+.. _exhale_function__length_8hpp_1a1dae178430732291aa7d94dda87e57d6:
+
+Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_in, INCH)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_in, INCH)
+   :project: My Project

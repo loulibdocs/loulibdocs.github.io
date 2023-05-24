@@ -1,0 +1,44 @@
+=================================
+Simple Moving Median (SMM) Filter
+=================================
+
+The :code:`SMMFilter` class is used to create a simple moving median filter in order to remove noise
+from sensor data. The SMM Filter is better for removing outliers from the data set.
+
+Creating an SMM Filter
+----------------------
+
+The constructor for :code:`SMMFilter` contains one parameter: :code:`readingCount`. This parameter determines how many data readings
+are saved for calculating the median. A higher value of :code:`readingCount` will allow the filter to remove longer outliers, and a lower
+value of :code:`readingCount` will result in a more responsive filter.
+
+.. code-block:: cpp
+	
+	//Create a SMM filter for data with longer outliers
+	LouLib::Filters::SMMFilter smoothFilter(20);
+	
+	//Create a SMM filter for data where responsiveness is more important
+	LouLib::Filters::SMMFilter responsiveFilter(5);
+	
+Using the SMM Filter
+--------------------
+
+The :code:`SMMFilter` can be used by calling the :code:`addReading` and :code:`getOutput` methods:
+
+.. code-block:: cpp
+
+	//Create a new SMA Filter
+	LouLib::Filters::SMMFilter filter(10);
+
+	while(true){
+
+		//Get raw data from sensor
+		double rawData = sensor.getReading();
+
+		//Filter the data
+		filter.addReading(rawData);
+		double filteredData = filter.getOutput();
+
+	}
+
+After running the above code, :code:`filteredData` should contain the data after being filtered by the SMM Filter.

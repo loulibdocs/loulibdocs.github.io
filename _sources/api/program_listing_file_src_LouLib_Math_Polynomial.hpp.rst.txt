@@ -1,0 +1,48 @@
+
+.. _program_listing_file_src_LouLib_Math_Polynomial.hpp:
+
+Program Listing for File Polynomial.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_Polynomial.hpp>` (``src/LouLib/Math/Polynomial.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef LOULIB_POLYNOMIAL_HPP
+   #define LOULIB_POLYNOMIAL_HPP
+   
+   #include <vector>
+   #include <cmath>
+   
+   namespace LouLib{
+       namespace Math{
+   
+           class Polynomial{
+           private:
+               int degree;
+   
+               std::vector<double> coefficients;
+   
+           public:
+               Polynomial(std::initializer_list<double> coefficients) : coefficients(coefficients) {
+                   degree = coefficients.size()-1;
+               }
+   
+               Polynomial(int degree) : degree(degree) {
+                   coefficients.resize(degree+1, 0);
+               }
+   
+               double evaluate(double x){
+                   double sol = 0;
+                   for(int i = 0; i <= degree; i++){
+                       sol += std::pow(x, i) * coefficients[i];
+                   }
+                   return sol;
+               }
+           };
+       }
+   }
+   
+   #endif //LOULIB_POLYNOMIAL_HPP

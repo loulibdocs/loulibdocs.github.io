@@ -1,0 +1,14 @@
+.. _exhale_define__time_8hpp_1a242babdb3be67dbf41f8d62355f049fd:
+
+Define CREATE_TIME_STRING_LITERAL
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_TIME_STRING_LITERAL
+   :project: My Project

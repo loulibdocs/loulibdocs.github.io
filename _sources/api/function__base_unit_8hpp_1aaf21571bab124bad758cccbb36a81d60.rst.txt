@@ -1,0 +1,14 @@
+.. _exhale_function__base_unit_8hpp_1aaf21571bab124bad758cccbb36a81d60:
+
+Function LouLib::Units::number
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_BaseUnit.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::number(1.)
+   :project: My Project

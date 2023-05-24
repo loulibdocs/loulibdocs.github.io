@@ -1,0 +1,14 @@
+.. _exhale_function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9:
+
+Template Function LouLib::Units::operator!=
+===========================================
+
+- Defined in :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::operator!=(const BaseUnit<L, M, t, Q, T, N, J, A>&, const BaseUnit<L, M, t, Q, T, N, J, A>&)
+   :project: My Project

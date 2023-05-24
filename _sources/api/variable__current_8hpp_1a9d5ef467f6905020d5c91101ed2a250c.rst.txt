@@ -1,0 +1,14 @@
+.. _exhale_variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c:
+
+Variable LouLib::Units::CENTIAMPERE
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CENTIAMPERE
+   :project: My Project

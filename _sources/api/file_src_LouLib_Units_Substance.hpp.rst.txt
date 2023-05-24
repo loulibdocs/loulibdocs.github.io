@@ -1,0 +1,69 @@
+
+.. _file_src_LouLib_Units_Substance.hpp:
+
+File Substance.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/Substance.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_Substance.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__substance_8hpp_1aeb395243204aa77665787b631780cd19`
+
+- :ref:`exhale_function__substance_8hpp_1a9b0a0579777eaad03b5c6d56dd960666`
+
+- :ref:`exhale_function__substance_8hpp_1a76ae0f1ed48f1cf25867c7496e5561b5`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__substance_8hpp_1a8299716eb2df95b49ace976aad77cb25`
+

@@ -1,0 +1,101 @@
+======
+Vector
+======
+
+The :code:`Vector` class is used to store a mathematical vector. Each instance of :code:`Vector` represents an :math:`n`-dimensional
+vector that can be written as:
+
+.. math::
+	\textbf{v} = \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_{n-1} \end{bmatrix}
+
+Creating a vector
+-----------------
+The :code:`Vector` class provides four different constructors for creating a new :code:`Vector`:
+
+1. Create a new vector and fill in the values:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v1(3);
+	v1[0] = 1;
+	v1[1] = 2;
+	v1[2] = 3;
+
+2. Create a vector from :code:`std::initializer_list<double>`:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v2({1, 2, 3});
+
+3. Create a vector from :code:`std::vector<double>`:
+
+.. code-block:: cpp
+
+	std::vector<double> vectorData;
+	list.push_back(1);
+	list.push_back(2);
+	list.push_back(3);
+	LouLib::Math::Vector v3(vectorData);
+
+4. Create a copy of an already existing vector:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v4(v1);
+
+All four of the examples above create the same vector:
+
+.. math::
+	\textbf{v}_1 = \textbf{v}_2 = \textbf{v}_3 = \textbf{v}_4 = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+
+Accessing elements in a vector
+------------------------------
+
+The elements of a vector can be accessed using the :code:`[]` operator, which returns a
+reference to the element at the given index:
+
+.. code-block:: cpp
+
+	//Create new vector
+	LouLib::Math::Vector v({1, 2, 3});
+
+	//Get elements
+	double firstElement = v[0];
+	double secondElement = v[1];
+	double thirdElement = v[2];
+
+After running the example above, the value of :code:`firstElement` will be 1, the value of :code:`secondElement`
+will be 2, and the value of :code:`thirdElement` will be 3.
+
+The :code:`[]` operator also can be used to edit the elements in a vector:
+
+.. code-block:: cpp
+
+	//Create new vector
+	LouLib::Math::Vector v({1, 2, 3});
+
+	//Edit element
+	v[0] = 5;
+
+The example above will edit the elements of the vector as follows:
+
+.. math::
+	\textbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \quad\enspace \boldsymbol{\Longrightarrow} \quad\enspace \textbf{v} = \begin{bmatrix} 5 \\ 2 \\ 3 \end{bmatrix}
+
+Vector Methods
+--------------
+
+The :code:`Vector` class contains the following methods:
+
+* :code:`.size()` - Returns the dimension/size of the vector
+* :code:`.norm()` - Returns the norm/magnitude of the vector: :math:`\sqrt{x_0^2 + x_1^2 + \dots + x_{n-1}^2}`
+* :code:`.normalize()` - Returns a vector with same direction but with magnitude 1: :math:`\frac{1}{\|\textbf{v}\|} \textbf{v}`
+
+Vector Operators
+----------------
+
+The :code:`Vector` class contains the following operators:
+
+* :code:`+` - Used to add two vectors
+* :code:`-` - Used to subtract two vectors
+* :code:`*` - Used to find the dot product of two vectors, multiply a vector by a scalar, or multiply a vector by a matrix

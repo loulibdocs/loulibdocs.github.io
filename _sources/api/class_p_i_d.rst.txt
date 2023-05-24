@@ -1,0 +1,17 @@
+.. _exhale_class_class_p_i_d:
+
+Class PID
+=========
+
+- Defined in :ref:`file_src_LouLib_PIDController.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: PID
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

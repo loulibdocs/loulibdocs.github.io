@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odometry Sensors &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using Odometry" href="Using%20Odometry.html" />
+    <link rel="prev" title="LQR Controller" href="LQR%20Controller.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LQR%20Controller.html">LQR Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Odometry Sensors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rotation-sensor">Rotation Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motor-sensor">Motor Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imu-sensor">IMU Sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Odometry Sensors</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Odometry Sensors.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="odometry-sensors">
+<h1>Odometry Sensors<a class="headerlink" href="#odometry-sensors" title="Permalink to this headline"></a></h1>
+<p>LouLib contains three different classes that represent sensors that can be
+used for odometry</p>
+<section id="rotation-sensor">
+<h2>Rotation Sensor<a class="headerlink" href="#rotation-sensor" title="Permalink to this headline"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">OdomRotationSensor</span></code> class is used to represent a odometry dead-wheel
+with a VEX V5 rotation sensor.</p>
+<section id="creating-a-rotation-sensor">
+<h3>Creating a rotation sensor<a class="headerlink" href="#creating-a-rotation-sensor" title="Permalink to this headline"></a></h3>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">OdomRotationSensor</span></code> takes three arguments:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">port</span></code></dt><dd><p>The port that the sensor is plugged into</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">bool</span> <span class="pre">reversed</span></code></dt><dd><p>Whether or not the direction of the sensor needs to be reversed</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">LouLib::Units::Length</span> <span class="pre">wheelDiam</span></code></dt><dd><p>The diameter of the tracking wheel</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="adding-a-gear-ratio">
+<h3>Adding a gear ratio<a class="headerlink" href="#adding-a-gear-ratio" title="Permalink to this headline"></a></h3>
+<p>If the odometry dead-wheel contains gears between the sensor shaft and the
+wheel shaft, the <code class="code docutils literal notranslate"><span class="pre">setGearRatio</span></code> method is used to ensure the
+<code class="code docutils literal notranslate"><span class="pre">OdomRotationSensor</span></code> returns accurate values. This method takes two
+arguments:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">wheelSide</span></code></dt><dd><p>The number of teeth on the gear attatched to the same
+shaft as the tracking wheel</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">sensorSide</span></code></dt><dd><p>The number of teeth on the gear attatched to the same
+shaft as the rotation sensor.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+<section id="motor-sensor">
+<h2>Motor Sensor<a class="headerlink" href="#motor-sensor" title="Permalink to this headline"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">OdomMotorSensor</span></code> class is used to represent a drive wheel being
+used as an odometry tracking wheel.</p>
+<section id="creating-a-motor-sensor">
+<h3>Creating a motor sensor<a class="headerlink" href="#creating-a-motor-sensor" title="Permalink to this headline"></a></h3>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">OdomMotorSensor</span></code> takes four arguments:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">motorPort</span></code></dt><dd><p>The port the motor is plugged into</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">pros::motor_gearset_e_t</span> <span class="pre">gearset</span></code></dt><dd><p>The pros gearset of the motor</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">bool</span> <span class="pre">motorReversed</span></code></dt><dd><p>Whether or not the direction of the motor needs to be reversed</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">LouLib::Units::Length</span> <span class="pre">wheelDiam</span></code></dt><dd><p>The diameter of the tracking wheel</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="id1">
+<h3>Adding a gear ratio<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
+<p>If the drive contains gears between the motor shaft and the wheel shaft, the
+<code class="code docutils literal notranslate"><span class="pre">setGearRatio</span></code> method is used to ensure the <code class="code docutils literal notranslate"><span class="pre">OdomMotorSensor</span></code>
+returns accurate values. This method takes two arguments:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">wheelSide</span></code></dt><dd><p>The number of teeth on the gear attatched to the same
+shaft as the wheel</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">sensorSide</span></code></dt><dd><p>The number of teeth on the gear attatched to the same
+shaft as the motor.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+<section id="imu-sensor">
+<h2>IMU Sensor<a class="headerlink" href="#imu-sensor" title="Permalink to this headline"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">OdomIMUSensor</span></code> class is used to represent a VEX V5 rotation sensor
+being used as a gyroscope for odometry heading.</p>
+<section id="creating-an-imu-sensor">
+<h3>Creating an IMU sensor<a class="headerlink" href="#creating-an-imu-sensor" title="Permalink to this headline"></a></h3>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">OdomIMUSensor</span></code> takes two arguments:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">int</span> <span class="pre">port</span></code></dt><dd><p>The port the sensor is plugged into</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">double</span> <span class="pre">scale</span></code> (optional)</dt><dd><p>Sometimes VEX IMU sensors will
+return heading values that aren’t accurate, but can be made accurate by
+multiplying the output of the sensor by a scalar. This <code class="code docutils literal notranslate"><span class="pre">scale</span></code>
+argument is used to provide the scalar for the IMU sensor being used. If
+no <code class="code docutils literal notranslate"><span class="pre">scale</span></code> is provided, it will default to 1 (the default IMU readings).</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="LQR%20Controller.html" class="btn btn-neutral float-left" title="LQR Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Using%20Odometry.html" class="btn btn-neutral float-right" title="Using Odometry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

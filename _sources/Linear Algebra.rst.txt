@@ -1,0 +1,241 @@
+==============
+Linear Algebra
+==============
+
+LouLib provides basic linear algebra classes and methods for doing various matrix and vector calculations.
+
+Vector
+======
+
+The :code:`Vector` class is used to store a mathematical vector. Each instance of :code:`Vector` represents an :math:`n`-dimensional
+vector that can be written as:
+
+.. math::
+	\textbf{v} = \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_{n-1} \end{bmatrix}
+
+Creating a vector
+-----------------
+The :code:`Vector` class provides four different constructors for creating a new :code:`Vector`:
+
+1. Create a new vector and fill in the values:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v1(3);
+	v1[0] = 1;
+	v1[1] = 2;
+	v1[2] = 3;
+
+2. Create a vector from :code:`std::initializer_list<double>`:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v2({1, 2, 3});
+
+3. Create a vector from :code:`std::vector<double>`:
+
+.. code-block:: cpp
+
+	std::vector<double> vectorData();
+	list.push_back(1);
+	list.push_back(2);
+	list.push_back(3);
+	LouLib::Math::Vector v3(vectorData);
+
+4. Create a copy of an already existing vector:
+
+.. code-block:: cpp
+
+	LouLib::Math::Vector v4(v1);
+
+All four of the examples above create the same vector:
+
+.. math::
+	\textbf{v}_1 = \textbf{v}_2 = \textbf{v}_3 = \textbf{v}_4 = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+
+Accessing elements in a vector
+------------------------------
+
+The elements of a vector can be accessed using the :code:`[]` operator, which returns a
+reference to the element at the given index:
+
+.. code-block:: cpp
+
+	//Create new vector
+	LouLib::Math::Vector v({1, 2, 3});
+
+	//Get elements
+	double firstElement = v[0];
+	double secondElement = v[1];
+	double thirdElement = v[2];
+
+After running the example above, the value of :code:`firstElement` will be 1, the value of :code:`secondElement`
+will be 2, and the value of :code:`thirdElement` will be 3.
+
+The :code:`[]` operator also can be used to edit the elements in a vector:
+
+.. code-block:: cpp
+
+	//Create new vector
+	LouLib::Math::Vector v({1, 2, 3});
+
+	//Edit element
+	v[0] = 5;
+
+The example above will edit the elements of the vector as follows:
+
+.. math::
+	\textbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \quad\enspace \boldsymbol{\Longrightarrow} \quad\enspace \textbf{v} = \begin{bmatrix} 5 \\ 2 \\ 3 \end{bmatrix}
+
+Vector Methods
+--------------
+
+The :code:`Vector` class contains the following methods:
+
+* :code:`.size()` - Returns the dimension/size of the vector
+* :code:`.norm()` - Returns the norm/magnitude of the vector: :math:`\sqrt{x_0^2 + x_1^2 + \dots + x_{n-1}^2}`
+* :code:`.normalize()` - Returns a vector with same direction but with magnitude 1: :math:`\frac{1}{\|\textbf{v}\|} \textbf{v}`
+
+Vector Operators
+----------------
+
+The :code:`Vector` class contains the following operators:
+
+* :code:`+` - Used to add two vectors
+* :code:`-` - Used to subtract two vectors
+* :code:`*` - Used to find the dot product of two vectors, multiply a vector by a scalar, or multiply a vector by a matrix
+
+Matrix
+======
+
+The :code:`Matrix` class is used to store a mathematical matrix. Each instance of :code:`Matrix` represents an :math:`n \times m`
+matrix that can be written as:
+
+.. math::
+	A = \begin{bmatrix} a_{0,0} & \dots & a_{0,n-1} \\
+						\vdots & \ddots & \vdots \\
+						a_{m-1,0} & \dots & a_{m-1,n-1} \end{bmatrix}
+
+Creating a matrix
+-----------------
+The :code:`Matrix` class provides four different constructors for creating a new :code:`Matrix`:
+
+1. Create a new matrix and fill in the values:
+
+.. code-block:: cpp
+
+	LouLib::Matrix A1(2, 3);
+	A[0][0] = 1;
+	A[0][1] = 2;
+	A[0][2] = 3;
+	A[1][0] = 4;
+	A[1][1] = 5;
+	A[1][2] = 6;
+
+2. Create a matrix from :code:`std::initializer_list<std::initializer_list<double>>`:
+
+.. code-block:: cpp
+
+	LouLib::Matrix A2({{1, 2, 3}, {4, 5, 6}});
+
+3. Create a matrix from :code:`std::vector<std::vector<double>>`:
+
+.. code-block:: cpp
+
+	std::vector<double> row1();
+	row1.push_back(1);
+	row1.push_back(2);
+	row1.push_back(3);
+
+	std::vector<double> row2();
+	row2.push_back(4);
+	row2.push_back(5);
+	row2.push_back(6);
+
+	std::vector<std::vector<double>> matrixData();
+	matrixData.push_back(row1);
+	matrixData.push_back(row2);
+	LouLib::Matrix A3(matrixData);
+
+4. Create a copy of an already existing matrix:
+
+.. code-block:: cpp
+
+	LouLib::Matrix A4(A1);
+
+All four of the examples above create the same matrix:
+
+.. math::
+	A_1 = A_2 = A_3 = A_4 = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}
+	
+Accessing elements in a matrix
+------------------------------
+
+The elements of a matrix can be accessed using the :code:`[][]` operator, which returns a reference
+to the element at the given row and column:
+
+.. code-block:: cpp
+
+	//Create new matrix
+	LouLib::Math::Matrix A({{1,2},{3,4}});
+	
+	//Get elements
+	double firstElement = A[0][0];
+	double secondElement = A[0][1];
+	double thirdElement = A[1][0];
+	double fourthElement = A[1][1];
+	
+After running the example above, the value of :code:`firstElement` will be 1, the value of :code:`secondElement` will be 2,
+the value of :code:`thirdElement` will be 3, and the value of :code:`fourthElement` will be 4.
+
+The :code:`[][]` operator can also be used to edit the elements in a matrix:
+
+.. code-block:: cpp
+
+	//Create new matrix
+	LouLib::Math::Matrix A({{1, 2, 3},{4,5,6}});
+
+	//Edit element
+	v[0][0] = 10;
+
+The example above will edit the elements of the matrix as follows:
+
+.. math::
+	A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} \quad\enspace \boldsymbol{\Longrightarrow} \quad\enspace A = \begin{bmatrix} 10 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}
+	
+The Matrix class also contains :code:`getRow` and :code:`getCol` methods that the return the row/column vector at the given index:
+
+.. code-block:: cpp
+
+	//Create new matrix
+	LouLib::Math::Matrix A({{1, 2, 3},{4,5,6}});
+	
+	//Get first column
+	LouLib::Math::Vector v1 = A.getCol(0);
+	
+	//Get first row
+	LouLib::Math::Vector v2 = A.getRow(0);
+	
+The example above will result in the following two vectors:
+
+.. math::
+	\mathbf{v}_1 = \begin{bmatrix} 1 \\ 4 \end{bmatrix} \quad\quad\quad \mathbf{v}_2 = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+	
+Matrix methods
+--------------
+The :code:`Matrix` class contains the following methods:
+
+* :code:`.rows()` - Returns the number of rows in the matrix
+* :code:`.cols()` - Returns the number of columns in the matrix
+* :code:`.transpose()` - Returns the transpose of the matrix
+* :code:`.norm()` - Returns the frobenius norm of the matrix: :math:`\sqrt{\sum\limits_{i=0}^{m-1} \sum\limits_{j=0}^{n-1} (a_{i,j})^2}`
+* :code:`.det()` - Returns the determinant of the matrix (only works for square matrices)
+* :code:`.inverse()` - Returns the inverse of the matrix (only works if the matrix is invertible)
+
+Matrix operators
+----------------
+The :code:`Matrix` class contains the following operators:
+
+* :code:`+` - Used to add two matrices
+* :code:`-` - Used to subtract two matrices
+* :code:`*` - Used to multipy two matrices, multiply a matrix by a scalar, or multiply a vector by a matrix

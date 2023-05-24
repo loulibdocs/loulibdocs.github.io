@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit System &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Simple Moving Average (SMA) Filter" href="SMA%20Filter.html" />
+    <link rel="prev" title="Constants and Functions" href="Constants%20and%20Functions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LQR%20Controller.html">LQR Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Unit System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-units">Using Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#list-of-units">List of Units</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Unit System</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Unit System.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="unit-system">
+<h1>Unit System<a class="headerlink" href="#unit-system" title="Permalink to this headline"></a></h1>
+<p>LouLib provides unit classes and methods for doing unit conversions and dimensional analysis</p>
+<section id="using-units">
+<h2>Using Units<a class="headerlink" href="#using-units" title="Permalink to this headline"></a></h2>
+<section id="creating-a-new-quantity">
+<h3>Creating a new quantity<a class="headerlink" href="#creating-a-new-quantity" title="Permalink to this headline"></a></h3>
+<p>A quantity can be created by multiplying the desired amount by the desired unit:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//create a length of 5 meters</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LouLib</span><span class="o">::</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>When declaring a new quantity, string literals can also be used to declare the desired unit.
+However, string literals can only be used when the desired amount is not a variable.
+The following code does the same thing as the above code:</p>
+<p>A full list of units and their corresponding string literals can be found near the bottom of this page.</p>
+</section>
+<section id="performing-unit-conversions">
+<h3>Performing unit conversions<a class="headerlink" href="#performing-unit-conversions" title="Permalink to this headline"></a></h3>
+<p>Unit conversions can be performed using the <code class="code docutils literal notranslate"><span class="pre">to</span></code> method:</p>
+<p>After running the example above, the value of <code class="code docutils literal notranslate"><span class="pre">lengthInInches</span></code> should be 12, and the
+value of <code class="code docutils literal notranslate"><span class="pre">lengthInCentimeters</span></code> should be 0.3048.</p>
+</section>
+<section id="dimensional-analysis">
+<h3>Dimensional analysis<a class="headerlink" href="#dimensional-analysis" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="list-of-units">
+<h2>List of Units<a class="headerlink" href="#list-of-units" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Quantity Type</p></th>
+<th class="head"><p>Unit Name</p></th>
+<th class="head"><p>String Literal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td rowspan="8"><p><strong>Length</strong></p></td>
+<td><p>METER</p></td>
+<td><p>_m</p></td>
+</tr>
+<tr class="row-odd"><td><p>DECIMETER</p></td>
+<td><p>_dm</p></td>
+</tr>
+<tr class="row-even"><td><p>CENTIMETER</p></td>
+<td><p>_cm</p></td>
+</tr>
+<tr class="row-odd"><td><p>MILLIMETER</p></td>
+<td><p>_mm</p></td>
+</tr>
+<tr class="row-even"><td><p>INCH</p></td>
+<td><p>_in</p></td>
+</tr>
+<tr class="row-odd"><td><p>FOOT</p></td>
+<td><p>_ft</p></td>
+</tr>
+<tr class="row-even"><td><p>YARD</p></td>
+<td><p>_yd</p></td>
+</tr>
+<tr class="row-odd"><td><p>TILE</p></td>
+<td><p>_tl</p></td>
+</tr>
+<tr class="row-even"><td rowspan="6"><p><strong>Mass</strong></p></td>
+<td><p>KILOGRAM</p></td>
+<td><p>_kg</p></td>
+</tr>
+<tr class="row-odd"><td><p>HECTOGRAM</p></td>
+<td><p>_hg</p></td>
+</tr>
+<tr class="row-even"><td><p>DECAGRAM</p></td>
+<td><p>_dag</p></td>
+</tr>
+<tr class="row-odd"><td><p>GRAM</p></td>
+<td><p>_g</p></td>
+</tr>
+<tr class="row-even"><td><p>OUNCE</p></td>
+<td><p>_oz</p></td>
+</tr>
+<tr class="row-odd"><td><p>POUND</p></td>
+<td><p>_lb</p></td>
+</tr>
+<tr class="row-even"><td rowspan="6"><p><strong>Time</strong></p></td>
+<td><p>SECOND</p></td>
+<td><p>_s</p></td>
+</tr>
+<tr class="row-odd"><td><p>DECISECOND</p></td>
+<td><p>_ds</p></td>
+</tr>
+<tr class="row-even"><td><p>CENTISECOND</p></td>
+<td><p>_cs</p></td>
+</tr>
+<tr class="row-odd"><td><p>MILLISECOND</p></td>
+<td><p>_ms</p></td>
+</tr>
+<tr class="row-even"><td><p>MINUTE</p></td>
+<td><p>_min</p></td>
+</tr>
+<tr class="row-odd"><td><p>HOUR</p></td>
+<td><p>_hr</p></td>
+</tr>
+<tr class="row-even"><td rowspan="7"><p><strong>Current</strong></p></td>
+<td><p>AMPERE</p></td>
+<td><p>_A</p></td>
+</tr>
+<tr class="row-odd"><td><p>KILOAMPERE</p></td>
+<td><p>_kA</p></td>
+</tr>
+<tr class="row-even"><td><p>HECTOAMPERE</p></td>
+<td><p>_hA</p></td>
+</tr>
+<tr class="row-odd"><td><p>DECAAMPERE</p></td>
+<td><p>_daA</p></td>
+</tr>
+<tr class="row-even"><td><p>DECIAMPERE</p></td>
+<td><p>_dA</p></td>
+</tr>
+<tr class="row-odd"><td><p>CENTIAMPERE</p></td>
+<td><p>_cA</p></td>
+</tr>
+<tr class="row-even"><td><p>MILLIAMPERE</p></td>
+<td><p>_mA</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Temperature</strong></p></td>
+<td><p>KELVIN</p></td>
+<td><p>_K</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Substance</strong></p></td>
+<td><p>MOLE</p></td>
+<td><p>_mol</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Luminosity</strong></p></td>
+<td><p>CANDELA</p></td>
+<td><p>_cd</p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><p><strong>Angle</strong></p></td>
+<td><p>RADIAN</p></td>
+<td><p>_rad</p></td>
+</tr>
+<tr class="row-odd"><td><p>DEGREE</p></td>
+<td><p>_deg</p></td>
+</tr>
+<tr class="row-even"><td><p>DECIDEGREE</p></td>
+<td><p>_ddeg</p></td>
+</tr>
+<tr class="row-odd"><td><p>CENTIDEGREE</p></td>
+<td><p>_cdeg</p></td>
+</tr>
+<tr class="row-even"><td rowspan="8"><p><strong>Area</strong></p></td>
+<td><p>SQUARE_METER</p></td>
+<td><p>_m2</p></td>
+</tr>
+<tr class="row-odd"><td><p>SQUARE_DECIMETER</p></td>
+<td><p>_dm2</p></td>
+</tr>
+<tr class="row-even"><td><p>SQUARE_CENTIMETER</p></td>
+<td><p>_cm2</p></td>
+</tr>
+<tr class="row-odd"><td><p>SQUARE_MILLIMETER</p></td>
+<td><p>_mm2</p></td>
+</tr>
+<tr class="row-even"><td><p>SQUARE_INCH</p></td>
+<td><p>_in2</p></td>
+</tr>
+<tr class="row-odd"><td><p>SQUARE_FOOT</p></td>
+<td><p>_ft2</p></td>
+</tr>
+<tr class="row-even"><td><p>SQUARE_YARD</p></td>
+<td><p>_yd2</p></td>
+</tr>
+<tr class="row-odd"><td><p>SQUARE_TILE</p></td>
+<td><p>_tl2</p></td>
+</tr>
+<tr class="row-even"><td rowspan="8"><p><strong>Volume</strong></p></td>
+<td><p>CUBIC_METER</p></td>
+<td><p>_m3</p></td>
+</tr>
+<tr class="row-odd"><td><p>CUBIC_DECIMETER</p></td>
+<td><p>_dm3</p></td>
+</tr>
+<tr class="row-even"><td><p>CUBIC_CENTIMETER</p></td>
+<td><p>_cm3</p></td>
+</tr>
+<tr class="row-odd"><td><p>CUBIC_MILLIMETER</p></td>
+<td><p>_mm3</p></td>
+</tr>
+<tr class="row-even"><td><p>CUBIC_INCH</p></td>
+<td><p>_in3</p></td>
+</tr>
+<tr class="row-odd"><td><p>CUBIC_FOOT</p></td>
+<td><p>_ft3</p></td>
+</tr>
+<tr class="row-even"><td><p>CUBIC_YARD</p></td>
+<td><p>_yd3</p></td>
+</tr>
+<tr class="row-odd"><td><p>CUBIC_TILE</p></td>
+<td><p>_tl3</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p><strong>Velocity</strong></p></td>
+<td><p>METER_PER_SECOND</p></td>
+<td><p>_mps</p></td>
+</tr>
+<tr class="row-odd"><td><p>FOOT_PER_SECOND</p></td>
+<td><p>_fps</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Acceleration</strong></p></td>
+<td><p>METER_PER_SECOND_SQUARED</p></td>
+<td><p>_mps2</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Jerk</strong></p></td>
+<td><p>METER_PER_SECOND_CUBED</p></td>
+<td><p>_mps3</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p><strong>Angular Velocity</strong></p></td>
+<td><p>RADIAN_PER_SECOND</p></td>
+<td><p>_radps</p></td>
+</tr>
+<tr class="row-odd"><td><p>DEGREE_PER_SECOND</p></td>
+<td><p>_degps</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p><strong>Angular Acceleration</strong></p></td>
+<td><p>RADIAN_PER_SECOND_SQUARED</p></td>
+<td><p>_radps2</p></td>
+</tr>
+<tr class="row-odd"><td><p>DEGREE_PER_SECOND_SQUARED</p></td>
+<td><p>_degps2</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p><strong>Angular Jerk</strong></p></td>
+<td><p>RADIAN_PER_SECOND_CUBED</p></td>
+<td><p>_radps3</p></td>
+</tr>
+<tr class="row-odd"><td><p>DEGREE_PER_SECOND_CUBED</p></td>
+<td><p>_degps3</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Force</strong></p></td>
+<td><p>NEWTON</p></td>
+<td><p>_newton</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Torque</strong></p></td>
+<td><p>NEWTON_METER</p></td>
+<td><p>_Nm</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Constants%20and%20Functions.html" class="btn btn-neutral float-left" title="Constants and Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SMA%20Filter.html" class="btn btn-neutral float-right" title="Simple Moving Average (SMA) Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

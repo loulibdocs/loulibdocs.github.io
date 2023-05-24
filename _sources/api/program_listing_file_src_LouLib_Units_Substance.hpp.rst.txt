@@ -1,0 +1,41 @@
+
+.. _program_listing_file_src_LouLib_Units_Substance.hpp:
+
+Program Listing for File Substance.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Substance.hpp>` (``src/LouLib/Units/Substance.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_SUBSTANCE_HPP
+   #define LOULIB_SUBSTANCE_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   
+   namespace LouLib {
+       namespace Units {
+           DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 1, 0, 0, Substance);
+   
+           //base unit
+           constexpr Substance MOLE(1.0);
+   
+           inline namespace literals{
+               #define CREATE_SUBSTANCE_STRING_LITERAL(literal, unit)             \
+               constexpr Substance operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Substance operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_SUBSTANCE_STRING_LITERAL(_mol, MOLE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_SUBSTANCE_HPP

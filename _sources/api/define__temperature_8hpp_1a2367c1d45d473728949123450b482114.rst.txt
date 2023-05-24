@@ -1,0 +1,14 @@
+.. _exhale_define__temperature_8hpp_1a2367c1d45d473728949123450b482114:
+
+Define CREATE_TEMPERATURE_STRING_LITERAL
+========================================
+
+- Defined in :ref:`file_src_LouLib_Units_Temperature.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_TEMPERATURE_STRING_LITERAL
+   :project: My Project

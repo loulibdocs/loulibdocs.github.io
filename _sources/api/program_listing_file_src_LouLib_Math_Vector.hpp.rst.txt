@@ -1,0 +1,57 @@
+
+.. _program_listing_file_src_LouLib_Math_Vector.hpp:
+
+Program Listing for File Vector.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_Vector.hpp>` (``src/LouLib/Math/Vector.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_VECTOR_HPP
+   #define LOULIB_VECTOR_HPP
+   
+   #include <vector>
+   #include <stdexcept>
+   #include <cmath>
+   
+   namespace LouLib {
+       namespace Math {
+   
+           class Vector {
+           private:
+               std::vector<double> data;
+   
+           public:
+               Vector(int n);
+   
+               Vector(const Vector& other);
+   
+               double& operator[](int i);
+   
+               const double& operator[](int i) const;
+   
+               int size() const;
+   
+               double magnitude();
+   
+               Vector normalize();
+           };
+   
+           Vector operator+(const Vector& a, const Vector& b);
+   
+           Vector operator-(const Vector& a, const Vector& b);
+   
+           double operator*(const Vector& a, const Vector& b);
+   
+           Vector operator*(const double& a, const Vector& b);
+   
+           Vector operator*(const Vector& a, const double& b);
+   
+       } // Math
+   } // LouLib
+   
+   #endif //LOULIB_VECTOR_HPP

@@ -1,0 +1,86 @@
+
+.. _file_src_LouLib_Units_Angle.hpp:
+
+File Angle.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/Angle.hpp``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_Angle.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__angle_8hpp_1abaff73571beed2ab39369f6837151a28`
+
+- :ref:`exhale_function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5`
+
+- :ref:`exhale_function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1`
+
+- :ref:`exhale_function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b`
+
+- :ref:`exhale_function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7`
+
+- :ref:`exhale_function__angle_8hpp_1ad3149df2f6e7ca040c555b5b2db7ac70`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__angle_8hpp_1adb0d307827847e6ac8684ff071ce42f0`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2`
+
+- :ref:`exhale_variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee`
+
+- :ref:`exhale_variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858`
+

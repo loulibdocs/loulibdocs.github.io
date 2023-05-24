@@ -1,0 +1,35 @@
+=======================
+Constants and Functions
+=======================
+
+Constants
+---------
+
+LouLib contains the following math constants:
+
+* EPS = :math:`10^{-9}`
+* PI = :math:`\pi \approx 3.14159265358979323846`
+* E = :math:`e \approx 2.7182818284590452354`
+* SQRT2 = :math:`\sqrt{2} \approx 1.4142135623730950488`
+
+Functions
+---------
+
+LouLib contians the following math functions:
+
+* :code:`int signum(double a)`
+	Returns 1 times the sign of :code:`a`.
+	
+* :code:`double clamp(double val, double min, double max)`
+	Returns :code:`val` limited between :code:`min` and :code:`max`
+	
+* :code:`double constrainAngle(double x)`
+	Returns the equivalent angle in the bounds [-180,180)
+	
+* :code:`angleDifference(double final, double initial)`
+	Returns the smallest difference between the final and initial angles
+	
+.. note::
+	The :code:`constrainAngle` and :code:`angleDifference` only works when the
+	angles are in degrees. Using angle measures in radians will result in
+	unexpected results.

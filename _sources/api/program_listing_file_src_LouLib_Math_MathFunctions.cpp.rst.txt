@@ -1,0 +1,25 @@
+
+.. _program_listing_file_src_LouLib_Math_MathFunctions.cpp:
+
+Program Listing for File MathFunctions.cpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_MathFunctions.cpp>` (``src/LouLib/Math/MathFunctions.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "MathFunctions.hpp"
+   
+   namespace LouLib{
+       namespace Math{
+   
+           int signum(double a){
+               if(a == 0) return 0;
+               return a > 0 ? 1 : -1;
+           }
+   
+       }
+   }

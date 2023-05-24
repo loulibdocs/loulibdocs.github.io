@@ -1,0 +1,14 @@
+.. _exhale_function__length_8hpp_1a21846e0c9ed95f6e492ec45ad9e5ddf0:
+
+Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_dm, DECIMETER)
+====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_dm, DECIMETER)
+   :project: My Project

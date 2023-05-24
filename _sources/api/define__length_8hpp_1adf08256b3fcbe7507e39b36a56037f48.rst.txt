@@ -1,0 +1,14 @@
+.. _exhale_define__length_8hpp_1adf08256b3fcbe7507e39b36a56037f48:
+
+Define CREATE_LENGTH_STRING_LITERAL
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_LENGTH_STRING_LITERAL
+   :project: My Project

@@ -1,0 +1,117 @@
+
+.. _program_listing_file_src_LouLib_Math_Matrix.hpp:
+
+Program Listing for File Matrix.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_Matrix.hpp>` (``src/LouLib/Math/Matrix.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_MATRIX_HPP
+   #define LOULIB_MATRIX_HPP
+   
+   #include <algorithm>
+   #include <vector>
+   #include <stdexcept>
+   
+   namespace LouLib{
+       namespace Math{
+           class Matrix{
+           private:
+               int rows;
+   
+               int cols;
+   
+               std::vector<std::vector<double>> _matrix;
+   
+           public:
+   
+               Matrix(int rows, int cols) : rows(rows), cols(cols) {
+                   _matrix.resize(rows);
+                   for(int i = 0; i < rows; i++){
+                       _matrix[i].resize(cols);
+                       for(int j = 0; j < cols; j++){
+                           _matrix[i][j] = 0;
+                       }
+                   }
+               }
+   
+               Matrix(int rows, int cols, double value) : rows(rows), cols(cols) {
+                   _matrix.resize(rows);
+                   for(int i = 0; i < rows; i++){
+                       _matrix[i].resize(cols);
+                       for(int j = 0; j < cols; j++){
+                           _matrix[i][j] = value;
+                       }
+                   }
+               }
+   
+               Matrix(const Matrix &m){
+                   this->rows = m.getRows();
+                   this->cols = m.getCols();
+                   this->_matrix = m._matrix;
+               }
+   
+               int getRows() const {
+                   return rows;
+               }
+   
+               int getCols() const {
+                   return cols;
+               }
+   
+               double& operator()(int row, int col){
+                   if(row < 0 || row >= rows || col < 0 || col >= cols){
+                       throw std::invalid_argument("Index out of bounds");
+                   }else{
+                       return _matrix[row][col];
+                   }
+               }
+   
+                Matrix operator+(Matrix &m) {
+                    if(m.rows != this->rows || m.cols != this->cols) {
+                        throw std::invalid_argument("Matrix dimensions do not match");
+                    }else{
+                        Matrix sol(m.rows, m.cols, 0);
+                        for(int i = 0; i < m.rows; i++){
+                            for(int j = 0; j < m.cols; j++){
+                                sol(i,j) = this->_matrix[i][j] + m._matrix[i][j];
+                            }
+                        }
+                        return sol;
+                    }
+                }
+   
+                 Matrix operator-(Matrix &m){
+                     if(m.rows != this->rows || m.cols != this->cols){
+                         throw std::invalid_argument("Matrix dimensions do not match");
+                     }else{
+                         Matrix sol(m.rows, m.cols, 0);
+                         for(int i = 0; i < m.rows; i++){
+                             for(int j = 0; j < m.cols; j++){
+                                 sol(i,j) = this->_matrix[i][j] - m._matrix[i][j];
+                             }
+                         }
+                         return sol;
+                     }
+                 }
+   
+                  Matrix transpose(){
+                      Matrix sol(cols, rows);
+                      for(int i = 0; i < rows; i++){
+                          for(int j = 0; j < cols; j++){
+                              sol(j,i) = _matrix[i][j];
+                          }
+                      }
+                      return sol;
+                  }
+           };
+       }
+   }
+   
+   
+   #endif //LOULIB_MATRIX_HPP

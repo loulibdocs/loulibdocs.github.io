@@ -1,0 +1,154 @@
+==============
+Using Odometry
+==============
+
+The :code:`Odometry` namespace contains four different classes that can be
+used for Odometry, depending on what sensors are on the robot. All four classes
+use pose exponentials, which allows for very accurate tracking, but using the
+classes that rely on more sensors will allow for the most accurate tracking.
+
+Creating an odometry tracker
+============================
+
+Two sensor odometry
+-------------------
+
+The :code:`TwoSensorOdom` class can only provide odometry tracking for
+differential drive robots. The constructor for :code:`TwoSensorOdom` takes
+the following three arguments:
+
+* :code:`AbstractOdomSensor &leftSensor`
+	The left side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+	
+* :code:`AbstractOdomSensor &leftSensor`
+	The right side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+	
+* :code:`LouLib::Units::Length trackWidth`
+	The distance between the
+	left and right wheels that are used for tracking. This distance needs to
+	be tuned to provide the most accurate tracking results.
+	
+Two sensor odometry with IMU
+----------------------------
+
+The :code:`TwoSensorIMUOdom` class can only provide odometry tracking for
+differential drive robots. The extra IMU sensor will increase the accuracy of
+heading readings. The constructor for :code:`TwoSensorIMUOdom` takes
+the following four arguments:
+
+* :code:`AbstractOdomSensor &leftSensor`
+	The left side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`AbstractOdomSensor &leftSensor`
+	The right side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`LouLib::Units::Length trackWidth`
+	The distance between the
+	left and right wheels that are used for tracking. This distance needs to
+	be tuned to provide the most accurate tracking results.
+	
+* 	:code:`OdomIMUSensor &imuSensor` - The IMU sensor used for heading.
+
+Three sensor odometry
+---------------------
+
+The :code:`ThreeSensorOdom` class can provide odometry tracking for both
+differential drive and holonomic drive robots. For differential drive robots,
+the third sensor will account for any sideways drift. The constructor for
+:code:`ThreeSensorOdom` takes the following five arguments:
+
+* :code:`AbstractOdomSensor &leftSensor` - The left side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`AbstractOdomSensor &leftSensor` - The right side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`LouLib::Units::Length trackWidth` - The distance between the
+	left and right wheels that are used for tracking. This distance needs to
+	be tuned to provide the most accurate tracking results.
+	
+* :code:`AbstractOdomSensor &backSensor` - The odometry sensor placed
+	perpendicular to the other two sensors. This is usually a
+	:code:`OdomRotationSensor`.
+	
+* :code:`LouLib::Units::Length backDist` - The distance between the
+	center of rotation of the robot and the back tracking wheel. This distance
+	needs to be tuned to provide the most accurate tracking results.
+	
+Three sensor odometry with IMU
+------------------------------
+
+The :code:`ThreeSensorIMUOdom` class can provide odometry tracking for both
+differential drive and holonomic drive robots. The extra IMU sensor will
+increase the accuracy of heading readings. For differential drive robots,
+the thrid sensor will account for any sideways drift. The constructor for
+:code:`ThreeSensorIMUOdom` takes the following six arguments:
+
+* :code:`AbstractOdomSensor &leftSensor`
+	The left side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`AbstractOdomSensor &leftSensor`
+	The right side odometry sensor.
+	This can be either a :code:`OdomRotationSensor` or a
+	:code:`OdomMotorSensor` depending on whether or not the robot has
+	dead-wheels
+
+* :code:`LouLib::Units::Length trackWidth`
+	The distance between the
+	left and right wheels that are used for tracking. This distance needs to
+	be tuned to provide the most accurate tracking results.
+
+* :code:`AbstractOdomSensor &backSensor`
+	The odometry sensor placed
+	perpendicular to the other two sensors. This is usually a
+	:code:`OdomRotationSensor`.
+
+* :code:`LouLib::Units::Length backDist`
+	The distance between the
+	center of rotation of the robot and the back tracking wheel. This distance
+	needs to be tuned to provide the most accurate tracking results.
+	
+* :code:`OdomIMUSensor &imuSensor`
+	The IMU sensor used for heading.
+
+Using the odometry tracker
+==========================
+
+All four of the odometry classes contain the same methods that can be used
+for odometry tracking:
+
+* :code:`void setPose(LouLib::Math::Pose2D newPose)`
+	This method is used to
+	set the current pose of the robot. Calling this method will erase any
+	previous odometry tracking
+	
+* :code:`void update()`
+	This method is used to compute the updated pose
+	of the robot.
+	
+* :code:`LouLib::Math::Pose2D getPose()`
+	This method is used to get the
+	current pose of the robot.
+	
+.. note::
+	The :code:`update` method should be called frequently into order to ensure
+	accurate tracking. 

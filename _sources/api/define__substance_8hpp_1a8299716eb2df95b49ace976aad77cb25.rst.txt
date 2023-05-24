@@ -1,0 +1,14 @@
+.. _exhale_define__substance_8hpp_1a8299716eb2df95b49ace976aad77cb25:
+
+Define CREATE_SUBSTANCE_STRING_LITERAL
+======================================
+
+- Defined in :ref:`file_src_LouLib_Units_Substance.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_SUBSTANCE_STRING_LITERAL
+   :project: My Project

@@ -1,0 +1,55 @@
+===================================================
+Exponentially-Weighted Moving Average (EWMA) Filter
+===================================================
+
+The :code:`EWMAFilter` class is used to create an exponentially-weighted moving
+average filter in order to remove noise from sensor data. The EWMA Filter is better for
+data that needs to respond to rapid changes.
+
+Creating an EWMA Filter
+-----------------------
+
+The constructor for :code:`EWMAFilter` contains two parameters: :code:`k` and :code:`startVal`.
+
+The :code:`k` parameter is the weighting average and is used to determine how much weight is given to
+each new reading. The value of :code:`k` should be between 0 and 1. A higher value of :code:`k` will
+result in more responsive data, and a lower value of :code:`k` will result in smoother data.
+
+The :code:`startVal` parameter is an optional parameter for the initial sensor reading. Providing
+the initial sensor reading can make the filter a bit more accurate at the beginning. If a
+:code:`startVal` is not provided, it will automatically be set to zero.
+
+.. code-block:: cpp
+	
+	//create an EWMA filter for data where smoothness is more important
+	LouLib::Filters::EWMAFilter smoothFilter(0.1);
+	
+	//create an EWMA filter for data where responsiveness is more important
+	LouLib::Filters::EWMAFilter responsiveFilter(0.25);
+	
+	//create an EWMA filter with an initial sensor reading
+	double initialSensorData = sensor.getReading();
+	LouLib::Filters::EWMAFilter filter(0.1, initialSensorData);
+	
+Using the EWMA Filter
+---------------------
+
+The :code:`EWMAFilter` can be used by calling the :code:`addReading` and :code:`getOutput` methods:
+
+.. code-block:: cpp
+
+	//Create a new EWMA Filter
+	LouLib::Filters::EWMAFilter filter(10);
+
+	while(true){
+
+		//Get raw data from sensor
+		double rawData = sensor.getReading();
+
+		//Filter the data
+		filter.addReading(rawData);
+		double filteredData = filter.getOutput();
+
+	}
+
+After running the above code, :code:`filteredData` should contain the data after being filtered by the EWMA Filter.

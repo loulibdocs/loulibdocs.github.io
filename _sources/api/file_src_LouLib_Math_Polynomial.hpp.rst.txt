@@ -1,0 +1,56 @@
+
+.. _file_src_LouLib_Math_Polynomial.hpp:
+
+File Polynomial.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Math>` (``src/LouLib/Math``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Math/Polynomial.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Math_Polynomial.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Math`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_lou_lib_1_1_math_1_1_polynomial`
+

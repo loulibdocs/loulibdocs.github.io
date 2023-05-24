@@ -1,0 +1,14 @@
+.. _exhale_function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_cA, CENTIAMPERE)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_cA, CENTIAMPERE)
+   :project: My Project

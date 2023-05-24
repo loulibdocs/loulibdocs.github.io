@@ -1,0 +1,106 @@
+.. LouLib documentation master file, created by
+   sphinx-quickstart on Tue Mar  7 11:47:16 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to LouLib!
+==================================
+
+LouLib is a library for autonomous programming of VEX robots.
+
+The library contains classes for different controllers and systems that make
+autonomous programming easier. The library also contains math, unit analysis, and
+utility classes to make programming your own controllers easier.
+
+Getting Started
+---------------
+
+**1. Download the library**
+
+The library can be downloaded from the `releases page of the Github repo <https://github.com/klou23/LouLib/releases>`_.
+You can download either the `.zip` or the `tar.gz`.
+
+**2. Add the library to the project**
+
+Rename the unzipped directory, to :code:`LouLib` (delete the version number from the
+directory name). This :code:`LouLib` directory
+should then be added to :code:`src` directory of your PROS project.
+
+**3. Include LouLib**
+
+Use the :code:`#include` directive to include the :code:`LouLib/LouLib.hpp` file in any source
+files that you wish to used LouLib in.
+
+**4. Use namespace (optional)**
+
+If you wish to use LouLib without needing to type out the namespace names, you can add
+:code:`#define USE_LOULIB_NAMESPACES` before you include :code:`LouLib/LouLib.hpp`.
+If you decide to use the LouLib namespace, it is recommended that you don't use the
+pros or okapi namespaces to prevent overlapping names.
+
+LouLib Documentation
+====================
+
+.. toctree::
+   :caption: Controllers
+   :maxdepth: 1
+   
+   PID Controller
+   TBH Controller
+   LQR Controller
+
+.. toctree::
+   :caption: Odometry
+   :maxdepth: 1
+   
+   Odometry Sensors
+   Using Odometry
+   
+.. toctree::
+   :caption: Paths
+   :maxdepth: 1
+   
+   Trajectory
+
+.. toctree::
+   :caption: Math
+   :maxdepth: 1
+   
+   Point2D and Pose2D
+
+   Vector
+   Matrix
+   Constants and Functions
+
+.. toctree::
+   :caption: Units
+   :maxdepth: 1
+
+   Unit System
+
+.. toctree::
+   :caption: Filters
+   :maxdepth: 1
+   
+   SMA Filter
+   SMM Filter
+   EWMA Filter
+
+.. toctree::
+   :caption: Utility
+   :maxdepth: 1
+   
+   Logger
+
+.. toctree::
+   :caption: API Reference
+   :maxdepth: 1
+
+   api/library_root
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

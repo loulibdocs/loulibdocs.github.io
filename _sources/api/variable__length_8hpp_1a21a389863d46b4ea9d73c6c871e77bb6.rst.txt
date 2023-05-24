@@ -1,0 +1,14 @@
+.. _exhale_variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6:
+
+Variable LouLib::Units::INCH
+============================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::INCH
+   :project: My Project

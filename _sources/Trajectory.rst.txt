@@ -1,0 +1,63 @@
+==========
+Trajectory
+==========
+
+The :code:`Trajectory` class is used to create a trajectory for a differential
+drive robot that can be used by a path/trajectory following algorithm.
+
+Creating a Trajectory
+---------------------
+
+The constructor for :code:`Trajectory` will automatically compute the
+trajectory. The constructor takes the following arguments:
+
+* :code:`std::vector<LouLib::Math::Pose2D> waypoints`
+	List of poses that the robot should drive through.
+
+* :code:`LouLib::Units::Velocity maxVel`
+	Maximum velocity the robot should reach while driving on the path.
+
+* :code:`LouLib::Units::Acceleration maxAccel`
+	Maximum acceleration the robot should reach while driving on the path.
+
+* :code:`LouLib::Units::Length maxFullSpeedTurnRadius`
+	Smallest radius circle that the robot can travel around while driving
+	at maxVel. A smaller value will result in the robot slowing down more
+	while turning.
+
+* :code:`LouLib::Units::Velocity finalVel` (optional)
+	The velocity the robot should be traveling at the end of the path.
+	If this value of not provided, it will default to zero (the robot will
+	stop at the end of the path)
+	
+Using the Trajectory
+--------------------
+
+The final computed trajectory will contain a set of x-positions, y-positions,
+headings, velocities, and angular velocities, with 10 milliseconds between
+each.
+
+The following methods can be used to access the calculated trajectory:
+
+* :code:`int size()`
+	Returns the number of samples in the calculated trajectory
+	
+* :code:`LouLib::Units::Length getX(int i)`
+	Returns the i-th x-position
+	
+* :code:`LouLib::Units::Length getY(int i)`
+	Returns the i-th y-position
+
+* :code:`LouLib::Units::Angle getTheta(int i)`
+	Returns the i-th heading
+
+* :code:`LouLib::Units::Velocity getVelocity(int i)`
+	Returns the i-th velocity
+
+* :code:`LouLib::Units::AngularVelocity getAngularVelocity(int i)`
+	Returns the i-th angular velocity
+
+* :code:`LouLib::Units::Length getDistFromStart(int i)`
+	Returns the distance from the start of the trajectory to the i-th sample.
+	This returns the arc length of the trajectory, and not the point-to-point
+	distance.

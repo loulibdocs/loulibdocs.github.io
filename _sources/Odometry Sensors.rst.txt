@@ -1,0 +1,101 @@
+================
+Odometry Sensors
+================
+
+LouLib contains three different classes that represent sensors that can be
+used for odometry
+
+Rotation Sensor
+===============
+
+The :code:`OdomRotationSensor` class is used to represent a odometry dead-wheel
+with a VEX V5 rotation sensor.
+
+Creating a rotation sensor
+--------------------------
+
+The constructor for :code:`OdomRotationSensor` takes three arguments:
+
+* :code:`int port`
+	The port that the sensor is plugged into
+
+* :code:`bool reversed`
+	Whether or not the direction of the sensor needs to be reversed
+
+* :code:`LouLib::Units::Length wheelDiam`
+	The diameter of the tracking wheel
+
+Adding a gear ratio
+-------------------
+
+If the odometry dead-wheel contains gears between the sensor shaft and the
+wheel shaft, the :code:`setGearRatio` method is used to ensure the
+:code:`OdomRotationSensor` returns accurate values. This method takes two
+arguments:
+
+* :code:`int wheelSide`
+	The number of teeth on the gear attatched to the same
+  	shaft as the tracking wheel
+	
+* :code:`int sensorSide`
+	The number of teeth on the gear attatched to the same
+  	shaft as the rotation sensor.
+	
+Motor Sensor
+============
+
+The :code:`OdomMotorSensor` class is used to represent a drive wheel being
+used as an odometry tracking wheel.
+
+Creating a motor sensor
+-----------------------
+
+The constructor for :code:`OdomMotorSensor` takes four arguments:
+
+* :code:`int motorPort`
+	The port the motor is plugged into
+
+* :code:`pros::motor_gearset_e_t gearset`
+	The pros gearset of the motor
+
+* :code:`bool motorReversed`
+	Whether or not the direction of the motor needs to be reversed
+
+* :code:`LouLib::Units::Length wheelDiam`
+	The diameter of the tracking wheel
+
+Adding a gear ratio
+-------------------
+
+If the drive contains gears between the motor shaft and the wheel shaft, the
+:code:`setGearRatio` method is used to ensure the :code:`OdomMotorSensor`
+returns accurate values. This method takes two arguments:
+
+* :code:`int wheelSide`
+	The number of teeth on the gear attatched to the same
+	shaft as the wheel
+
+* :code:`int sensorSide`
+	The number of teeth on the gear attatched to the same
+	shaft as the motor.
+
+IMU Sensor
+==========
+
+The :code:`OdomIMUSensor` class is used to represent a VEX V5 rotation sensor
+being used as a gyroscope for odometry heading.
+
+Creating an IMU sensor
+----------------------
+
+The constructor for :code:`OdomIMUSensor` takes two arguments:
+
+* :code:`int port`
+	The port the sensor is plugged into
+
+* :code:`double scale` (optional)
+	Sometimes VEX IMU sensors will
+	return heading values that aren't accurate, but can be made accurate by
+	multiplying the output of the sensor by a scalar. This :code:`scale`
+	argument is used to provide the scalar for the IMU sensor being used. If
+	no :code:`scale` is provided, it will default to 1 (the default IMU readings).

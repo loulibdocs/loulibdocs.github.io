@@ -1,0 +1,98 @@
+
+.. _file_src_LouLib_Units_Current.hpp:
+
+File Current.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/Current.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_Current.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__current_8hpp_1a42074e57dfd9837d4100c40de7d586c0`
+
+- :ref:`exhale_function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34`
+
+- :ref:`exhale_function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd`
+
+- :ref:`exhale_function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae`
+
+- :ref:`exhale_function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c`
+
+- :ref:`exhale_function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d`
+
+- :ref:`exhale_function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b`
+
+- :ref:`exhale_function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215`
+
+- :ref:`exhale_function__current_8hpp_1a69f2e5415febb805d53c2311f65cf458`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__current_8hpp_1a2009e15641a6b4e82c395d91e59dae66`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c`
+
+- :ref:`exhale_variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585`
+
+- :ref:`exhale_variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f`
+
+- :ref:`exhale_variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55`
+
+- :ref:`exhale_variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd`
+
+- :ref:`exhale_variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2`
+

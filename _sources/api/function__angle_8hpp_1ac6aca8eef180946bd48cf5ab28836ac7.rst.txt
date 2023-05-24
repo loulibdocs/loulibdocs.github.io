@@ -1,0 +1,14 @@
+.. _exhale_function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 1, Angle)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 1, Angle)
+   :project: My Project

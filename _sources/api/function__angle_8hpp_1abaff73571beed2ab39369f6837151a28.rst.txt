@@ -1,0 +1,14 @@
+.. _exhale_function__angle_8hpp_1abaff73571beed2ab39369f6837151a28:
+
+Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_rad, RADIAN)
+=================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_rad, RADIAN)
+   :project: My Project

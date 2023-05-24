@@ -1,0 +1,14 @@
+.. _exhale_function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_hg, HECTOGRAM)
+==================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_hg, HECTOGRAM)
+   :project: My Project

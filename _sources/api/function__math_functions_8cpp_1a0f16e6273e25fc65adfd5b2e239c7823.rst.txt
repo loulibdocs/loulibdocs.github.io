@@ -1,0 +1,14 @@
+.. _exhale_function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823:
+
+Function LouLib::Math::signum
+=============================
+
+- Defined in :ref:`file_src_LouLib_Math_MathFunctions.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Math::signum(double)
+   :project: My Project

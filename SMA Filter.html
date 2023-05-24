@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Moving Average (SMA) Filter &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Simple Moving Median (SMM) Filter" href="SMM%20Filter.html" />
+    <link rel="prev" title="Unit System" href="Unit%20System.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LQR%20Controller.html">LQR Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simple Moving Average (SMA) Filter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-an-sma-filter">Creating an SMA Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-sma-filter">Using the SMA Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Simple Moving Average (SMA) Filter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SMA Filter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="simple-moving-average-sma-filter">
+<h1>Simple Moving Average (SMA) Filter<a class="headerlink" href="#simple-moving-average-sma-filter" title="Permalink to this headline"></a></h1>
+<p>The <code class="code docutils literal notranslate"><span class="pre">SMAFilter</span></code> class is used to create a simple moving average filter
+in order to remove noise from sensor data. The SMA filter is better for volatile and
+high-frequency data sets.</p>
+<section id="creating-an-sma-filter">
+<h2>Creating an SMA Filter<a class="headerlink" href="#creating-an-sma-filter" title="Permalink to this headline"></a></h2>
+<p>The constructor for <code class="code docutils literal notranslate"><span class="pre">SMAFilter</span></code> contains one parameter: <code class="code docutils literal notranslate"><span class="pre">readingCount</span></code>. This parameter
+determines how many data readings are saved for calculating the average. A higher value of <code class="code docutils literal notranslate"><span class="pre">readingCount</span></code>
+will result in smoother data, and a lower value of <code class="code docutils literal notranslate"><span class="pre">readingCount</span></code> will result in more responsive data.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//Create a SMA filter for data where smoothness is more important</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Filters</span><span class="o">::</span><span class="n">SMAFilter</span><span class="w"> </span><span class="nf">smoothFilter</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+
+<span class="c1">//Create a SMA filter for data where responsiveness is more important</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Filters</span><span class="o">::</span><span class="n">SMAFilter</span><span class="w"> </span><span class="nf">responsiveFilter</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="using-the-sma-filter">
+<h2>Using the SMA Filter<a class="headerlink" href="#using-the-sma-filter" title="Permalink to this headline"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">SMAFilter</span></code> can be used by calling the <code class="code docutils literal notranslate"><span class="pre">addReading</span></code> and <code class="code docutils literal notranslate"><span class="pre">getOutput</span></code> methods:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//Create a new SMA Filter</span>
+<span class="n">LouLib</span><span class="o">::</span><span class="n">Filters</span><span class="o">::</span><span class="n">SMAFilter</span><span class="w"> </span><span class="nf">filter</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+
+<span class="w">        </span><span class="c1">//Get raw data from sensor</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">rawData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">getReading</span><span class="p">();</span>
+
+<span class="w">        </span><span class="c1">//Filter the data</span>
+<span class="w">        </span><span class="n">filter</span><span class="p">.</span><span class="n">addReading</span><span class="p">(</span><span class="n">rawData</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">filteredData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filter</span><span class="p">.</span><span class="n">getOutput</span><span class="p">();</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>After running the above code, <code class="code docutils literal notranslate"><span class="pre">filteredData</span></code> should contain the data after being filtered by the SMA Filter.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Unit%20System.html" class="btn btn-neutral float-left" title="Unit System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SMM%20Filter.html" class="btn btn-neutral float-right" title="Simple Moving Median (SMM) Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

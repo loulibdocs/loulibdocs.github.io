@@ -1,0 +1,14 @@
+.. _exhale_function__vector_8cpp_1ab22d26a04c10c48106242982f320c3b1:
+
+Function LouLib::Math::operator\*(const Vector&, const double&)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Math_Vector.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Math::operator*(const Vector&, const double&)
+   :project: My Project
