@@ -1,0 +1,62 @@
+
+.. _program_listing_file_src_LouLib_Controllers_LQRController.cpp:
+
+Program Listing for File LQRController.cpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_LQRController.cpp>` (``src/LouLib/Controllers/LQRController.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "LQRController.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+           LQRController::LQRController(const Math::Matrix &a, const Math::Matrix &b,
+                   const Math::Matrix &q, const Math::Matrix &r) : A(a), B(b), Q(q), R(r) {}
+   
+           void LQRController::setReference(const Math::Vector &_reference) {
+               reference = _reference;
+           }
+   
+           void LQRController::solveDARE() {
+               double tolerance = 1E-5;
+               double iter_max = 1000;
+   
+               P = Q;
+   
+               Math::Matrix P_next(0,0);
+   
+               Math::Matrix At = A.transpose();
+               Math::Matrix Bt = B.transpose();
+               Math::Matrix Rinv = R.inverse();
+   
+               double diff;
+   
+               for(int i = 0; i < iter_max; i++){
+                   P_next = At * P * A -
+                            At * P * B * (R + Bt * P * B).inverse() * Bt * P * A + Q;
+   
+                   diff = fabs((P_next - P).norm());
+                   P = P_next;
+   
+                   if(diff < tolerance) break;
+               }
+   
+               K = (R + Bt * P * B).inverse() * (Bt * P * A);
+           }
+   
+           Math::Matrix LQRController::getK() {
+               return K;
+           }
+   
+           Math::Vector LQRController::computeControl(Math::Vector x) {
+               return -1*K * (reference - x);
+           }
+   
+   
+       } // LouLib
+   } // Controllers

@@ -1,0 +1,14 @@
+.. _exhale_variable__acceleration_8hpp_1a60075e815046e3e0d6e79e8d8ecadf71:
+
+Variable LouLib::Units::METER_PER_SECOND_SQUARED
+================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Acceleration.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::METER_PER_SECOND_SQUARED
+   :project: My Project

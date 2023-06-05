@@ -1,0 +1,43 @@
+
+.. _program_listing_file_src_LouLib_Odometry_AbstractOdometry.hpp:
+
+Program Listing for File AbstractOdometry.hpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Odometry_AbstractOdometry.hpp>` (``src/LouLib/Odometry/AbstractOdometry.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ABSTRACTODOMETRY_HPP
+   #define LOULIB_ABSTRACTODOMETRY_HPP
+   
+   #include "../Units/Units.hpp"
+   #include "../../../include/api.h"
+   #include "../Math/Math.hpp"
+   
+   namespace LouLib {
+       namespace Odometry {
+   
+           class AbstractOdometry {
+           protected:
+   
+               Math::Pose2D robotPose;
+   
+           public:
+   
+               AbstractOdometry();
+   
+               virtual void setPose(Math::Pose2D newPose) = 0;
+   
+               virtual void update() = 0;
+   
+               Math::Pose2D getPose();
+           };
+   
+       } // LouLib
+   } // Odometry
+   
+   #endif //LOULIB_ABSTRACTODOMETRY_HPP

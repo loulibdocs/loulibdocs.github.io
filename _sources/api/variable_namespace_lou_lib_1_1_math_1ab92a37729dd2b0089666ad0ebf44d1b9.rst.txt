@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_math_1ab92a37729dd2b0089666ad0ebf44d1b9:
+
+Variable LouLib::Math::E
+========================
+
+- Defined in :ref:`file_src_LouLib_Math_MathConstants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Math::E
+   :project: My Project

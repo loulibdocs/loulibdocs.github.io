@@ -1,0 +1,43 @@
+
+.. _program_listing_file_src_LouLib_Paths_BezierCurve.hpp:
+
+Program Listing for File BezierCurve.hpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Paths_BezierCurve.hpp>` (``src/LouLib/Paths/BezierCurve.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_BEZIERCURVE_HPP
+   #define LOULIB_BEZIERCURVE_HPP
+   
+   #include "../Math/Math.hpp"
+   
+   namespace LouLib {
+       namespace Paths {
+   
+           class BezierCurve {
+           private:
+               Math::Point2D P0;
+               Math::Point2D P1;
+               Math::Point2D P2;
+               Math::Point2D P3;
+   
+           public:
+   
+               BezierCurve(const Math::Point2D &p0, const Math::Point2D &p1, const Math::Point2D &p2,
+                           const Math::Point2D &p3);
+   
+               Math::Point2D evaluate(double t);
+   
+               std::vector<Math::Point2D> decompose(int n);
+   
+           };
+   
+       } // LouLib
+   } // Paths
+   
+   #endif //LOULIB_BEZIERCURVE_HPP

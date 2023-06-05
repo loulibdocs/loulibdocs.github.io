@@ -1,0 +1,14 @@
+.. _exhale_variable__area_8hpp_1aea32e37c4d7ae311ecd1616436434e85:
+
+Variable LouLib::Units::SQUARE_FOOT
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::SQUARE_FOOT
+   :project: My Project

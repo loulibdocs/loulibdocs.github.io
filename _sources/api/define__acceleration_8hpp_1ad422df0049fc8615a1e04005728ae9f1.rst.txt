@@ -1,0 +1,14 @@
+.. _exhale_define__acceleration_8hpp_1ad422df0049fc8615a1e04005728ae9f1:
+
+Define CREATE_ACCELERATION_STRING_LITERAL
+=========================================
+
+- Defined in :ref:`file_src_LouLib_Units_Acceleration.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_ACCELERATION_STRING_LITERAL
+   :project: My Project

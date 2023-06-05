@@ -1,0 +1,14 @@
+.. _exhale_function__acceleration_8hpp_1a2e68d6acb0d342f6fde88c15590db92d:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Acceleration)
+=============================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Acceleration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Acceleration)
+   :project: My Project

@@ -1,0 +1,65 @@
+
+.. _program_listing_file_src_LouLib_Controllers_PIDController.hpp:
+
+Program Listing for File PIDController.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_PIDController.hpp>` (``src/LouLib/Controllers/PIDController.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_PIDCONTROLLER_HPP
+   #define LOULIB_PIDCONTROLLER_HPP
+   
+   #include "../Units/Time.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+   
+           class PIDController {
+           private:
+               double kp;
+               double ki;
+               double kd;
+               double errorTolerance;
+               double derivativeTolerance;
+               double integratorMin;
+               double integratorMax;
+               double maxOutput;
+               double minOutput;
+               double deltaTime;
+               double setpoint;
+   
+               double error;
+               double derivative;
+               double integral;
+   
+           public:
+   
+               PIDController(double _kp, double _ki, double _kd);
+   
+               void setTolerance(double _errorTolerance, double _derivativeTolerance = (1<<30));
+   
+               void setIntegratorRange(double _integratorRangeMin, double _integratorRangeMax);
+   
+               void setOutputRange(double _minOutput, double _maxOutput);
+   
+               void setDeltaTime(Units::Time _deltaTime);
+   
+               void setSetpoint(double _setpoint);
+   
+               bool atSetpoint();
+   
+               double getOutput();
+   
+               void update(double measurement);
+   
+           };
+   
+       } // LouLib
+   } // Controllers
+   
+   #endif //LOULIB_PIDCONTROLLER_HPP

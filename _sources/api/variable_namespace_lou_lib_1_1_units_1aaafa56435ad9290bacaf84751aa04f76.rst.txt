@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1aaafa56435ad9290bacaf84751aa04f76:
+
+Variable LouLib::Units::YARD
+============================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::YARD
+   :project: My Project

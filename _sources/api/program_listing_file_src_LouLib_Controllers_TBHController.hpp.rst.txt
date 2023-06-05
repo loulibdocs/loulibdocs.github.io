@@ -1,0 +1,51 @@
+
+.. _program_listing_file_src_LouLib_Controllers_TBHController.hpp:
+
+Program Listing for File TBHController.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_TBHController.hpp>` (``src/LouLib/Controllers/TBHController.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_TBHCONTROLLER_HPP
+   #define LOULIB_TBHCONTROLLER_HPP
+   
+   #include "../Units/Time.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+   
+           class TBHController {
+           private:
+               double k;
+               double setpoint;
+               double maxOutput;
+               double minOutput;
+               double deltaTime;
+               double output;
+               double tbh;
+               double prevError;
+   
+           public:
+               explicit TBHController(double _k);
+   
+               void setSetpoint(double _setpoint);
+   
+               void setOutputRange(double _minOutput, double _maxOutput);
+   
+               void setDeltaTime(Units::Time _deltaTime);
+   
+               double getOutput();
+   
+               void update(double measurement);
+   
+           };
+   
+       } // LouLib
+   } // Controllers
+   
+   #endif //LOULIB_TBHCONTROLLER_HPP

@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858:
+
+Variable LouLib::Units::DEGREE
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DEGREE
+   :project: My Project

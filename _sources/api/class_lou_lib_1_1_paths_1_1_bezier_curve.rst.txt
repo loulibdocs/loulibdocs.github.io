@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_paths_1_1_bezier_curve:
+
+Class BezierCurve
+=================
+
+- Defined in :ref:`file_src_LouLib_Paths_BezierCurve.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Paths::BezierCurve
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d:
+
+Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_ft, FOOT)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_ft, FOOT)
+   :project: My Project

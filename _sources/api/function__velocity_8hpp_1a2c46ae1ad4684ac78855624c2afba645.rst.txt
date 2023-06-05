@@ -1,0 +1,14 @@
+.. _exhale_function__velocity_8hpp_1a2c46ae1ad4684ac78855624c2afba645:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Velocity)
+=========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Velocity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Velocity)
+   :project: My Project

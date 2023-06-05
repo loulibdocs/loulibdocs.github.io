@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File AbstractFilter.hpp &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File AbstractFilter.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file_src_LouLib_Filters_AbstractFilter.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-abstractfilter-hpp">
+<span id="file-src-loulib-filters-abstractfilter-hpp"></span><h1>File AbstractFilter.hpp<a class="headerlink" href="#file-abstractfilter-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="dir_src_LouLib_Filters.html#dir-src-loulib-filters"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Filters</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-src-loulib-filters-abstractfilter-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Filters/AbstractFilter.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#detailed-description" id="id2">Detailed Description</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+</ul>
+</div>
+<section id="definition-src-loulib-filters-abstractfilter-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Filters/AbstractFilter.hpp</span></code>)<a class="headerlink" href="#definition-src-loulib-filters-abstractfilter-hpp" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_src_LouLib_Filters_AbstractFilter.hpp.html">Program Listing for File AbstractFilter.hpp</a></li>
+</ul>
+</div>
+</section>
+<section id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<p>Header file for the AbstractFilter class</p>
+<p>Copyright (c) 2023 Kevin Lou</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_LouLib_Filters_EWMAFilter.hpp.html#file-src-loulib-filters-ewmafilter-hpp"><span class="std std-ref">File EWMAFilter.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Filters_Filters.hpp.html#file-src-loulib-filters-filters-hpp"><span class="std std-ref">File Filters.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Filters_SMAFilter.hpp.html#file-src-loulib-filters-smafilter-hpp"><span class="std std-ref">File SMAFilter.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Filters_SMMFilter.hpp.html#file-src-loulib-filters-smmfilter-hpp"><span class="std std-ref">File SMMFilter.hpp</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_LouLib.html#namespace-loulib"><span class="std std-ref">Namespace LouLib</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_LouLib__Filters.html#namespace-loulib-filters"><span class="std std-ref">Namespace LouLib::Filters</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_abstract_filter.html#exhale-class-class-lou-lib-1-1-filters-1-1-abstract-filter"><span class="std std-ref">Class AbstractFilter</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

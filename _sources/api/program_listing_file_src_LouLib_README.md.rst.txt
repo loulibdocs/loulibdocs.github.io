@@ -11,4 +11,4 @@ Program Listing for File README.md
 .. code-block:: markdown
 
    # LouLib
-    A library for programming VEX robots
+   [LouLib Documentation](https://loulibdocs.github.io)

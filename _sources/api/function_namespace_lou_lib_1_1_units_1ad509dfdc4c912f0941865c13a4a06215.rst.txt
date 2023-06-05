@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ad509dfdc4c912f0941865c13a4a06215:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_dA, DECIAMPERE)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_dA, DECIAMPERE)
+   :project: My Project

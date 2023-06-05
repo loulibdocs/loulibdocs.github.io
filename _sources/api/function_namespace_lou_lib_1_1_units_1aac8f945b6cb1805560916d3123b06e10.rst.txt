@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_oz, OUNCE)
+==============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_oz, OUNCE)
+   :project: My Project

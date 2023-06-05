@@ -1,0 +1,21 @@
+
+.. _program_listing_file_src_LouLib_Utility_Utility.hpp:
+
+Program Listing for File Utility.hpp
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Utility_Utility.hpp>` (``src/LouLib/Utility/Utility.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_UTILITY_HPP
+   #define LOULIB_UTILITY_HPP
+   
+   namespace LouLib::Utility{}
+   
+   #include "Logger.hpp"
+   
+   #endif //LOULIB_UTILITY_HPP

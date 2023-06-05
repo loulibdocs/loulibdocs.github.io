@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981:
+
+Variable LouLib::Units::DEGREE_PER_SECOND_CUBED
+===============================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DEGREE_PER_SECOND_CUBED
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a90e02d4759be86076852abda347aee14:
+
+Function LouLib::Units::CANDELA
+===============================
+
+- Defined in :ref:`file_src_LouLib_Units_Luminosity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CANDELA(1.)
+   :project: My Project

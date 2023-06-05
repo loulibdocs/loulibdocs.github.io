@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f:
+
+Variable LouLib::Units::HECTOGRAM
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::HECTOGRAM
+   :project: My Project

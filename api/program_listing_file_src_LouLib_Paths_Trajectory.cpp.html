@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File Trajectory.cpp &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File Trajectory.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_src_LouLib_Paths_Trajectory.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-trajectory-cpp">
+<span id="program-listing-file-src-loulib-paths-trajectory-cpp"></span><h1>Program Listing for File Trajectory.cpp<a class="headerlink" href="#program-listing-for-file-trajectory-cpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_src_LouLib_Paths_Trajectory.cpp.html#file-src-loulib-paths-trajectory-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Paths/Trajectory.cpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Trajectory.hpp&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">LouLib</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Paths</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">Trajectory</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Math</span><span class="o">::</span><span class="n">Pose2D</span><span class="o">&gt;</span><span class="w"> </span><span class="n">waypoints</span><span class="p">,</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">Velocity</span><span class="w"> </span><span class="n">maxVel</span><span class="p">,</span>
+<span class="w">                               </span><span class="n">Units</span><span class="o">::</span><span class="n">Acceleration</span><span class="w"> </span><span class="n">maxAccel</span><span class="p">,</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">maxFullSpeedTurnRadius</span><span class="p">,</span>
+<span class="w">                               </span><span class="n">Units</span><span class="o">::</span><span class="n">Velocity</span><span class="w"> </span><span class="n">finalVel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">            </span><span class="c1">//generate points</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">BezierCurve</span><span class="o">&gt;</span><span class="w"> </span><span class="n">bezierCurves</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">waypoints</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">halfDist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">x3</span><span class="o">-</span><span class="n">x0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">x3</span><span class="o">-</span><span class="n">x0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="mf">0.5</span><span class="p">;</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getTheta</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">RADIAN</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">halfDist</span><span class="p">;</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getTheta</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">RADIAN</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">halfDist</span><span class="p">;</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">getTheta</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">RADIAN</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">halfDist</span><span class="p">;</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">waypoints</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">getTheta</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">RADIAN</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">halfDist</span><span class="p">;</span>
+
+<span class="w">                </span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="w"> </span><span class="nf">P0</span><span class="p">(</span><span class="n">x0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">,</span><span class="w"> </span><span class="n">y0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="w"> </span><span class="nf">P1</span><span class="p">(</span><span class="n">x1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">,</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="w"> </span><span class="nf">P2</span><span class="p">(</span><span class="n">x2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">,</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="w"> </span><span class="nf">P3</span><span class="p">(</span><span class="n">x3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">,</span><span class="w"> </span><span class="n">y3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P0</span><span class="p">.</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P0</span><span class="p">.</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P1</span><span class="p">.</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P1</span><span class="p">.</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P2</span><span class="p">.</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P2</span><span class="p">.</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P3</span><span class="p">.</span><span class="n">getX</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">P3</span><span class="p">.</span><span class="n">getY</span><span class="p">().</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">INCH</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;------&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">                </span><span class="n">bezierCurves</span><span class="p">.</span><span class="n">emplace_back</span><span class="p">(</span><span class="n">P0</span><span class="p">,</span><span class="w"> </span><span class="n">P1</span><span class="p">,</span><span class="w"> </span><span class="n">P2</span><span class="p">,</span><span class="w"> </span><span class="n">P3</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="o">&gt;</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bezierCurves</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">decompose</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">bezierCurves</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Math</span><span class="o">::</span><span class="n">Point2D</span><span class="o">&gt;</span><span class="w"> </span><span class="n">currPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bezierCurves</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">decompose</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">                </span><span class="n">points</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">points</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">currPoints</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">currPoints</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//calculate distances</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="o">&gt;</span><span class="w"> </span><span class="n">distance</span><span class="p">(</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="n">_m</span><span class="p">);</span>
+<span class="w">            </span><span class="n">distance</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="n">_m</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">].</span><span class="n">distTo</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//calculate curvatures</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">curvature</span><span class="p">(</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="n">curvature</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">findCurvature</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">],</span><span class="w"> </span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Units</span><span class="o">::</span><span class="n">Velocity</span><span class="o">&gt;</span><span class="w"> </span><span class="n">velocities</span><span class="p">(</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="n">_mps</span><span class="p">);</span>
+
+<span class="w">            </span><span class="c1">//limit velocities using curvature</span>
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">turnSpeedConstant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="o">/</span><span class="n">maxFullSpeedTurnRadius</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">curvature</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">EPS</span><span class="p">)</span><span class="w"> </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxVel</span><span class="p">;</span>
+<span class="w">                </span><span class="k">else</span><span class="w"> </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">maxVel</span><span class="p">,</span><span class="w"> </span><span class="n">maxVel</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">turnSpeedConstant</span><span class="o">/</span><span class="n">curvature</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//limit velocity based on acceleration</span>
+<span class="w">            </span><span class="n">velocities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="n">_mps</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">dist_m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">]).</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">v0_mps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">a_mps2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxAccel</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND_SQUARED</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">possibleVel_mps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v0_mps</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">v0_mps</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">a_mps2</span><span class="o">*</span><span class="n">dist_m</span><span class="p">);</span>
+<span class="w">                </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">possibleVel_mps</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//limit velocity based on braking</span>
+<span class="w">            </span><span class="n">velocities</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">finalVel</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">){</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">dist_m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="p">]).</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">v0_mps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">a_mps2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxAccel</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND_SQUARED</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">possibleVel_mps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v0_mps</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">v0_mps</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">a_mps2</span><span class="o">*</span><span class="n">dist_m</span><span class="p">);</span>
+<span class="w">                </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">possibleVel_mps</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">METER_PER_SECOND</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//select points</span>
+<span class="w">            </span><span class="n">_x</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">getX</span><span class="p">());</span>
+<span class="w">            </span><span class="n">_y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">getY</span><span class="p">());</span>
+<span class="w">            </span><span class="n">_v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">            </span><span class="n">_distFromStart</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">            </span><span class="n">_curvature</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">curvature</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+
+<span class="w">            </span><span class="n">Units</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">timeElapsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="n">_s</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">];</span>
+<span class="w">                </span><span class="n">Units</span><span class="o">::</span><span class="n">Velocity</span><span class="w"> </span><span class="n">avgVel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="mf">2.0</span><span class="p">;</span>
+<span class="w">                </span><span class="n">Units</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist</span><span class="o">/</span><span class="n">avgVel</span><span class="p">;</span>
+<span class="w">                </span><span class="n">timeElapsed</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dt</span><span class="p">;</span>
+<span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">timeElapsed</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">10</span><span class="n">_ms</span><span class="p">){</span>
+<span class="w">                    </span><span class="n">_x</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getX</span><span class="p">());</span>
+<span class="w">                    </span><span class="n">_y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getY</span><span class="p">());</span>
+<span class="w">                    </span><span class="n">_v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">                    </span><span class="n">_distFromStart</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">                    </span><span class="n">_curvature</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">curvature</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">                    </span><span class="n">timeElapsed</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">10</span><span class="n">_ms</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">].</span><span class="n">getX</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">_x</span><span class="p">[</span><span class="n">_x</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">||</span>
+<span class="w">               </span><span class="n">points</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">].</span><span class="n">getY</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">_y</span><span class="p">[</span><span class="n">_y</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]){</span>
+<span class="w">                </span><span class="n">_x</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">].</span><span class="n">getX</span><span class="p">());</span>
+<span class="w">                </span><span class="n">_y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">].</span><span class="n">getY</span><span class="p">());</span>
+<span class="w">                </span><span class="n">_v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">velocities</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]);</span>
+<span class="w">                </span><span class="n">_distFromStart</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]);</span>
+<span class="w">                </span><span class="n">_curvature</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">curvature</span><span class="p">[</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">//calculate theta values</span>
+<span class="w">            </span><span class="n">_theta</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">_x</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="n">_rad</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_x</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="c1">//TODO: Use smarter angle calculation</span>
+<span class="c1">//                double x0 = _x[i-1].to(Units::METER);</span>
+<span class="c1">//                double y0 = _y[i-1].to(Units::METER);</span>
+<span class="c1">//                double x1 = _x[i].to(Units::METER);</span>
+<span class="c1">//                double y1 = _y[i].to(Units::METER);</span>
+<span class="c1">//                double x2 = _x[i+1].to(Units::METER);</span>
+<span class="c1">//                double y2 = _y[i+1].to(Units::METER);</span>
+<span class="c1">//                Units::Angle t0 = std::atan2(y1-y0, x1-x0) * Units::RADIAN;</span>
+<span class="c1">//                double theta0 = (Math::constrainAngle(t0.to(Units::DEGREE)) * Units::DEGREE).to(Units::RADIAN);</span>
+<span class="c1">//                Units::Angle t1 = std::atan2(y2-y1, x2-x1) * Units::RADIAN;</span>
+<span class="c1">//                double theta1 = (Math::constrainAngle(t1.to(Units::DEGREE)) * Units::DEGREE).to(Units::RADIAN);</span>
+<span class="c1">//                Units::Angle avgAngle = 0.5 * (theta0 + theta1) * Units::RADIAN;</span>
+<span class="c1">//                Units::Angle perp = Math::constrainAngle((avgAngle + 90_deg).to(Units::DEGREE)) * Units::DEGREE;</span>
+<span class="c1">//                _theta[i] = perp;</span>
+
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_x</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_y</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_y</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">METER</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Units</span><span class="o">::</span><span class="n">Angle</span><span class="w"> </span><span class="n">theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">atan2</span><span class="p">(</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">RADIAN</span><span class="p">;</span>
+<span class="w">                </span><span class="n">_theta</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">theta</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">_theta</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">getTheta</span><span class="p">();</span>
+<span class="w">            </span><span class="n">_theta</span><span class="p">[</span><span class="n">_theta</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waypoints</span><span class="p">[</span><span class="n">waypoints</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">].</span><span class="n">getTheta</span><span class="p">();</span>
+
+<span class="w">            </span><span class="c1">//calculate angular velocities</span>
+<span class="w">            </span><span class="n">_omega</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">_theta</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="n">_radps</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_theta</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">theta0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_theta</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">DEGREE</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_theta</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">to</span><span class="p">(</span><span class="n">Units</span><span class="o">::</span><span class="n">DEGREE</span><span class="p">);</span>
+<span class="w">                </span><span class="n">_omega</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Math</span><span class="o">::</span><span class="n">angleDifference</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">theta0</span><span class="p">)</span><span class="o">/</span><span class="mf">0.02</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Units</span><span class="o">::</span><span class="n">DEGREE_PER_SECOND</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">_omega</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="n">_radps</span><span class="p">;</span>
+<span class="w">            </span><span class="n">_omega</span><span class="p">[</span><span class="n">_omega</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="n">_radps</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">_x</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getX</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getY</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_y</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">Angle</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getTheta</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_theta</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">Velocity</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getVelocity</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_v</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">AngularVelocity</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getAngularVelocity</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_omega</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">Units</span><span class="o">::</span><span class="n">Length</span><span class="w"> </span><span class="n">Trajectory</span><span class="o">::</span><span class="n">getDistFromStart</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">_distFromStart</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">// LouLib</span>
+<span class="p">}</span><span class="w"> </span><span class="c1">// Paths</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.. _exhale_function__angular_acceleration_8hpp_1ae9552a018915ad60bd6111469e2c22ce:
+
+Function LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_degps2, DEGREE_PER_SECOND_SQUARED)
+=====================================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_degps2, DEGREE_PER_SECOND_SQUARED)
+   :project: My Project

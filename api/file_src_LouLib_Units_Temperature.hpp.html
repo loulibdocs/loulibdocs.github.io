@@ -47,6 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +60,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -114,10 +115,12 @@
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#definition-src-loulib-units-temperature-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Units/Temperature.hpp</span></code>)</a></p></li>
-<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
-<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
-<li><p><a class="reference internal" href="#functions" id="id4">Functions</a></p></li>
-<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
+<li><p><a class="reference internal" href="#detailed-description" id="id2">Detailed Description</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id3">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id4">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id5">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id7">Defines</a></p></li>
 </ul>
 </div>
 <section id="definition-src-loulib-units-temperature-hpp">
@@ -128,11 +131,25 @@
 </ul>
 </div>
 </section>
+<section id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<p>Definition of Temperature units</p>
+<p>Copyright (c) 2023 Kevin Lou</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</section>
 <section id="includes">
 <h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">BaseUnit.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_BaseUnit.hpp.html#file-src-loulib-units-baseunit-hpp"><span class="std std-ref">File BaseUnit.hpp</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">UnitMath.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_UnitMath.hpp.html#file-src-loulib-units-unitmath-hpp"><span class="std std-ref">File UnitMath.hpp</span></a>)</p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Units.hpp.html#file-src-loulib-units-units-hpp"><span class="std std-ref">File Units.hpp</span></a></p></li>
 </ul>
 </section>
 <section id="namespaces">
@@ -146,9 +163,9 @@
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0.html#exhale-function-temperature-8hpp-1a56fe27e123af476cd4327f30ee1796c0"><span class="std std-ref">Function LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL</span></a></p></li>
-<li><p><a class="reference internal" href="function__temperature_8hpp_1aa71e328c38055e3f59793cf8f8c30acc.html#exhale-function-temperature-8hpp-1aa71e328c38055e3f59793cf8f8c30acc"><span class="std std-ref">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)</span></a></p></li>
-<li><p><a class="reference internal" href="function__temperature_8hpp_1a20bc1815c13dc3aa37baa0f0bd179832.html#exhale-function-temperature-8hpp-1a20bc1815c13dc3aa37baa0f0bd179832"><span class="std std-ref">Function LouLib::Units::KELVIN</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a56fe27e123af476cd4327f30ee1796c0.html#exhale-function-namespace-lou-lib-1-1-units-1a56fe27e123af476cd4327f30ee1796c0"><span class="std std-ref">Function LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc.html#exhale-function-namespace-lou-lib-1-1-units-1aa71e328c38055e3f59793cf8f8c30acc"><span class="std std-ref">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832.html#exhale-function-namespace-lou-lib-1-1-units-1a20bc1815c13dc3aa37baa0f0bd179832"><span class="std std-ref">Function LouLib::Units::KELVIN</span></a></p></li>
 </ul>
 </section>
 <section id="defines">

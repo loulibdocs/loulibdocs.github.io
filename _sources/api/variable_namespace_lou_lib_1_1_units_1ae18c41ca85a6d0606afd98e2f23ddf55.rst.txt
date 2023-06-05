@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ae18c41ca85a6d0606afd98e2f23ddf55:
+
+Variable LouLib::Units::HECTOAMPERE
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::HECTOAMPERE
+   :project: My Project

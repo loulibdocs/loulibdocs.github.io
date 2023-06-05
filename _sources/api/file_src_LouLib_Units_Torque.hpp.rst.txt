@@ -1,0 +1,102 @@
+
+.. _file_src_LouLib_Units_Torque.hpp:
+
+File Torque.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/Torque.hpp``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_Torque.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Definition of Torque units
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+
+
+Includes
+--------
+
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``Force.hpp`` (:ref:`file_src_LouLib_Units_Force.hpp`)
+
+- ``Length.hpp`` (:ref:`file_src_LouLib_Units_Length.hpp`)
+
+- ``Mass.hpp`` (:ref:`file_src_LouLib_Units_Mass.hpp`)
+
+- ``Time.hpp`` (:ref:`file_src_LouLib_Units_Time.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_Units.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__torque_8hpp_1a4f9ae829a24014a50b17f63961db25dc`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e`
+

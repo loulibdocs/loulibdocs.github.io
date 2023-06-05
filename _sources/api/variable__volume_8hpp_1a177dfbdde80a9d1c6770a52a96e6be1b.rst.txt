@@ -1,0 +1,14 @@
+.. _exhale_variable__volume_8hpp_1a177dfbdde80a9d1c6770a52a96e6be1b:
+
+Variable LouLib::Units::CUBIC_INCH
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CUBIC_INCH
+   :project: My Project

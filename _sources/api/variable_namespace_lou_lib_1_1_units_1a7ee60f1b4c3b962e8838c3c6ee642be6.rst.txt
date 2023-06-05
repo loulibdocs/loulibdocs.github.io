@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6:
+
+Variable LouLib::Units::GRAM
+============================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::GRAM
+   :project: My Project

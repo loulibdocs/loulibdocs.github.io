@@ -1,0 +1,28 @@
+
+.. _program_listing_file_src_LouLib_Odometry_AbstractOdometry.cpp:
+
+Program Listing for File AbstractOdometry.cpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Odometry_AbstractOdometry.cpp>` (``src/LouLib/Odometry/AbstractOdometry.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "AbstractOdometry.hpp"
+   
+   namespace LouLib{
+       namespace Odometry{
+   
+           Math::Pose2D AbstractOdometry::getPose() {
+               return robotPose;
+           }
+   
+           AbstractOdometry::AbstractOdometry() : robotPose(0_in, 0_in, 0_deg){
+   
+           }
+   
+       }
+   }

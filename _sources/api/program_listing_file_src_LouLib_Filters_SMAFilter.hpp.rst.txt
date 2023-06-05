@@ -1,0 +1,42 @@
+
+.. _program_listing_file_src_LouLib_Filters_SMAFilter.hpp:
+
+Program Listing for File SMAFilter.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_SMAFilter.hpp>` (``src/LouLib/Filters/SMAFilter.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_SMAFILTER_HPP
+   #define LOULIB_SMAFILTER_HPP
+   
+   #include <queue>
+   #include "AbstractFilter.hpp"
+   
+   namespace LouLib {
+       namespace Filters {
+   
+           class SMAFilter : public AbstractFilter{
+           private:
+               int readingCount;
+               std::queue<double> data;
+               double sum;
+   
+           public:
+   
+               explicit SMAFilter(int readingCount);
+   
+               void addReading(double reading) override;
+   
+               double getOutput() override;
+   
+           };
+   
+       } // LouLib
+   } // Filters
+   
+   #endif //LOULIB_SMAFILTER_HPP

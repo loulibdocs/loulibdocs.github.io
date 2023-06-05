@@ -1,0 +1,31 @@
+
+.. _program_listing_file_src_LouLib_Filters_EWMAFilter.cpp:
+
+Program Listing for File EWMAFilter.cpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_EWMAFilter.cpp>` (``src/LouLib/Filters/EWMAFilter.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "EWMAFilter.hpp"
+   
+   namespace LouLib {
+       namespace Filters {
+   
+           EWMAFilter::EWMAFilter(double k, double startVal) : k(k), val(startVal) {}
+   
+           void EWMAFilter::addReading(double reading) {
+               val = (1.0 - k) * val + k * reading;
+           }
+   
+           double EWMAFilter::getOutput() {
+               return val;
+           }
+   
+   
+       } // LouLib
+   } // Filters

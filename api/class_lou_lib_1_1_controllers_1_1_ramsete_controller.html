@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class RamseteController &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class TBHController" href="class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html" />
+    <link rel="prev" title="Class PIDController" href="class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Class RamseteController</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-ramsetecontroller">
+<span id="exhale-class-class-lou-lib-1-1-controllers-1-1-ramsete-controller"></span><h1>Class RamseteController<a class="headerlink" href="#class-ramsetecontroller" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_LouLib_Controllers_RamseteController.hpp.html#file-src-loulib-controllers-ramsetecontroller-hpp"><span class="std std-ref">File RamseteController.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib11Controllers17RamseteControllerE">
+<span id="_CPPv3N6LouLib11Controllers17RamseteControllerE"></span><span id="_CPPv2N6LouLib11Controllers17RamseteControllerE"></span><span id="LouLib::Controllers::RamseteController"></span><span class="target" id="class_lou_lib_1_1_controllers_1_1_ramsete_controller"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RamseteController</span></span></span><a class="headerlink" href="#_CPPv4N6LouLib11Controllers17RamseteControllerE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Class used as a RAMSETE non-linear, time-varying uncycle controller. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib11Controllers17RamseteController17RamseteControllerEdd">
+<span id="_CPPv3N6LouLib11Controllers17RamseteController17RamseteControllerEdd"></span><span id="_CPPv2N6LouLib11Controllers17RamseteController17RamseteControllerEdd"></span><span id="LouLib::Controllers::RamseteController::RamseteController__double.double"></span><span class="target" id="class_lou_lib_1_1_controllers_1_1_ramsete_controller_1a78e9e3b12dedd8c9c85f4bbe4eacde59"></span><span class="sig-name descname"><span class="n"><span class="pre">RamseteController</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">zeta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib11Controllers17RamseteController17RamseteControllerEdd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a new RAMSETE controller with the given gains </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib11Controllers17RamseteController14computeControlERN5Paths10TrajectoryEiN4Math6Pose2DE">
+<span id="_CPPv3N6LouLib11Controllers17RamseteController14computeControlERN5Paths10TrajectoryEiN4Math6Pose2DE"></span><span id="_CPPv2N6LouLib11Controllers17RamseteController14computeControlERN5Paths10TrajectoryEiN4Math6Pose2DE"></span><span id="LouLib::Controllers::RamseteController::computeControl__Paths::TrajectoryR.i.Math::Pose2D"></span><span class="target" id="class_lou_lib_1_1_controllers_1_1_ramsete_controller_1ae29a9fb22c4400a8254007835013ddbf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeControl</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">Paths</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10TrajectoryE" title="LouLib::Paths::Trajectory"><span class="n"><span class="pre">Trajectory</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">t</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">idx</span></span>, <span class="n"><span class="pre">Math</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2DE" title="LouLib::Math::Pose2D"><span class="n"><span class="pre">Pose2D</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">robotPose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib11Controllers17RamseteController14computeControlERN5Paths10TrajectoryEiN4Math6Pose2DE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Computes the optimal trajectory following control </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> – The trajectory the robot is following </p></li>
+<li><p><strong>idx</strong> – The current index along the trajectory </p></li>
+<li><p><strong>robotPose</strong> – The current pose of the robot </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib11Controllers17RamseteController4getVEv">
+<span id="_CPPv3NK6LouLib11Controllers17RamseteController4getVEv"></span><span id="_CPPv2NK6LouLib11Controllers17RamseteController4getVEv"></span><span id="LouLib::Controllers::RamseteController::getVC"></span><span class="target" id="class_lou_lib_1_1_controllers_1_1_ramsete_controller_1a39c573ae0680dbc41750658ba47ff3dd"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Units</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Velocity</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getV</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib11Controllers17RamseteController4getVEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the computed velocity value </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib11Controllers17RamseteController8getOmegaEv">
+<span id="_CPPv3NK6LouLib11Controllers17RamseteController8getOmegaEv"></span><span id="_CPPv2NK6LouLib11Controllers17RamseteController8getOmegaEv"></span><span id="LouLib::Controllers::RamseteController::getOmegaC"></span><span class="target" id="class_lou_lib_1_1_controllers_1_1_ramsete_controller_1a90072f04999ee977e752561fff60babf"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Units</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AngularVelocity</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getOmega</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib11Controllers17RamseteController8getOmegaEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the computed angular velocity value </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html" class="btn btn-neutral float-left" title="Class PIDController" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html" class="btn btn-neutral float-right" title="Class TBHController" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

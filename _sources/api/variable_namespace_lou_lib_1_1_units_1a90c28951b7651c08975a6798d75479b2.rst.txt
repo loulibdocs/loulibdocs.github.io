@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a90c28951b7651c08975a6798d75479b2:
+
+Variable LouLib::Units::MILLIAMPERE
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::MILLIAMPERE
+   :project: My Project

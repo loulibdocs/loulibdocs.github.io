@@ -1,0 +1,14 @@
+.. _exhale_variable__force_8hpp_1a72c4f2f1067edcd223fe1b6dca41b932:
+
+Variable LouLib::Units::NEWTON
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Force.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::NEWTON
+   :project: My Project

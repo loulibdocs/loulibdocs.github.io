@@ -1,0 +1,18 @@
+
+.. _namespace_Odometry:
+
+Namespace Odometry
+==================
+
+
+Contains all of :ref:`namespace_LouLib`'s odometry functionality. 
+
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+

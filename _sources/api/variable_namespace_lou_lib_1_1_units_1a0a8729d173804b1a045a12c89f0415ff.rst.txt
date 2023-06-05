@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff:
+
+Variable LouLib::Units::POUND
+=============================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::POUND
+   :project: My Project

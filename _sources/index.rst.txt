@@ -22,7 +22,7 @@ You can download either the `.zip` or the `tar.gz`.
 
 **2. Add the library to the project**
 
-Rename the unzipped directory, to :code:`LouLib` (delete the version number from the
+Rename the unzipped directory to :code:`LouLib` (delete the version number from the
 directory name). This :code:`LouLib` directory
 should then be added to :code:`src` directory of your PROS project.
 
@@ -48,6 +48,7 @@ LouLib Documentation
    PID Controller
    TBH Controller
    LQR Controller
+   RAMSETE Controller
 
 .. toctree::
    :caption: Odometry
@@ -66,10 +67,9 @@ LouLib Documentation
    :caption: Math
    :maxdepth: 1
    
-   Point2D and Pose2D
-
    Vector
    Matrix
+   Point2D and Pose2D
    Constants and Functions
 
 .. toctree::

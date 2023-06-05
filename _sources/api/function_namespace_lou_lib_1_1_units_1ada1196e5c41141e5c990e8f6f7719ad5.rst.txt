@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_dag, DECAGRAM)
+==================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_dag, DECAGRAM)
+   :project: My Project

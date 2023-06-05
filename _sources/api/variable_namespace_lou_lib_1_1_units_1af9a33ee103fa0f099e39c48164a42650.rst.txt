@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650:
+
+Variable LouLib::Units::SQUARE_INCH
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::SQUARE_INCH
+   :project: My Project

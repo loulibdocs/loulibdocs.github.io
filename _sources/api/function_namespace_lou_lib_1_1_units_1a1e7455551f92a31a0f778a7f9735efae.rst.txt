@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a1e7455551f92a31a0f778a7f9735efae:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_A, AMPERE)
+=================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_A, AMPERE)
+   :project: My Project

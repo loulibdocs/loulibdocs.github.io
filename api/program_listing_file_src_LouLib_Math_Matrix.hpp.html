@@ -47,6 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +60,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -113,105 +114,92 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef LOULIB_MATRIX_HPP</span>
 <span class="cp">#define LOULIB_MATRIX_HPP</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;algorithm&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Vector.hpp&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdexcept&gt;</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">LouLib</span><span class="p">{</span>
-<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Math</span><span class="p">{</span>
-<span class="w">        </span><span class="k">class</span><span class="w"> </span><span class="nc">Matrix</span><span class="p">{</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">LouLib</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Math</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="k">class</span><span class="w"> </span><span class="nc">Matrix</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">private</span><span class="o">:</span>
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span>
+<span class="w">            </span><span class="k">class</span><span class="w"> </span><span class="nc">MatrixRow</span><span class="p">{</span>
+<span class="w">            </span><span class="k">private</span><span class="o">:</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
 
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span>
+<span class="w">            </span><span class="k">public</span><span class="o">:</span>
+<span class="w">                </span><span class="k">explicit</span><span class="w"> </span><span class="n">MatrixRow</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
 
-<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">_matrix</span><span class="p">;</span>
+<span class="w">                </span><span class="n">MatrixRow</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">initializer_list</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rowData</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">explicit</span><span class="w"> </span><span class="n">MatrixRow</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rowData</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">MatrixRow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MatrixRow</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span>
+
+<span class="w">                </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">                </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">                 </span><span class="n">Vector</span><span class="w"> </span><span class="nf">getVector</span><span class="p">();</span>
+<span class="w">            </span><span class="p">};</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MatrixRow</span><span class="o">&gt;</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
 
 <span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cols</span><span class="p">);</span>
 
-<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cols</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">rows</span><span class="p">(</span><span class="n">rows</span><span class="p">),</span><span class="w"> </span><span class="n">cols</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="n">_matrix</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">rows</span><span class="p">);</span>
-<span class="w">                </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                    </span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">resize</span><span class="p">(</span><span class="n">cols</span><span class="p">);</span>
-<span class="w">                    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                        </span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">                    </span><span class="p">}</span>
-<span class="w">                </span><span class="p">}</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">initializer_list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">initializer_list</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">matrixData</span><span class="p">);</span>
 
-<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">rows</span><span class="p">(</span><span class="n">rows</span><span class="p">),</span><span class="w"> </span><span class="n">cols</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="n">_matrix</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">rows</span><span class="p">);</span>
-<span class="w">                </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                    </span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">resize</span><span class="p">(</span><span class="n">cols</span><span class="p">);</span>
-<span class="w">                    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                        </span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">                    </span><span class="p">}</span>
-<span class="w">                </span><span class="p">}</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">matrixData</span><span class="p">);</span>
 
-<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="w"> </span><span class="o">&amp;</span><span class="n">m</span><span class="p">){</span>
-<span class="w">                </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">getRows</span><span class="p">();</span>
-<span class="w">                </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">cols</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">getCols</span><span class="p">();</span>
-<span class="w">                </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">_matrix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">_matrix</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MatrixRow</span><span class="o">&gt;</span><span class="w"> </span><span class="n">matrixData</span><span class="p">);</span>
 
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">getRows</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Matrix</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span>
 
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">getCols</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">MatrixRow</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 
-<span class="w">            </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="p">){</span>
-<span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">cols</span><span class="p">){</span>
-<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">invalid_argument</span><span class="p">(</span><span class="s">&quot;Index out of bounds&quot;</span><span class="p">);</span>
-<span class="w">                </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
-<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">_matrix</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">];</span>
-<span class="w">                </span><span class="p">}</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">MatrixRow</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
-<span class="w">             </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="n">Matrix</span><span class="w"> </span><span class="o">&amp;</span><span class="n">m</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                 </span><span class="k">if</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">rows</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">cols</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                     </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">invalid_argument</span><span class="p">(</span><span class="s">&quot;Matrix dimensions do not match&quot;</span><span class="p">);</span>
-<span class="w">                 </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
-<span class="w">                     </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">sol</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-<span class="w">                     </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                         </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                             </span><span class="n">sol</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-<span class="w">                         </span><span class="p">}</span>
-<span class="w">                     </span><span class="p">}</span>
-<span class="w">                     </span><span class="k">return</span><span class="w"> </span><span class="n">sol</span><span class="p">;</span>
-<span class="w">                 </span><span class="p">}</span>
-<span class="w">             </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Vector</span><span class="w"> </span><span class="nf">getCol</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 
-<span class="w">              </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">-</span><span class="p">(</span><span class="n">Matrix</span><span class="w"> </span><span class="o">&amp;</span><span class="n">m</span><span class="p">){</span>
-<span class="w">                  </span><span class="k">if</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">rows</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">cols</span><span class="p">){</span>
-<span class="w">                      </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">invalid_argument</span><span class="p">(</span><span class="s">&quot;Matrix dimensions do not match&quot;</span><span class="p">);</span>
-<span class="w">                  </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
-<span class="w">                      </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">sol</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-<span class="w">                      </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                          </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                              </span><span class="n">sol</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-<span class="w">                          </span><span class="p">}</span>
-<span class="w">                      </span><span class="p">}</span>
-<span class="w">                      </span><span class="k">return</span><span class="w"> </span><span class="n">sol</span><span class="p">;</span>
-<span class="w">                  </span><span class="p">}</span>
-<span class="w">              </span><span class="p">}</span>
+<span class="w">             </span><span class="n">Vector</span><span class="w"> </span><span class="nf">getRow</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 
-<span class="w">               </span><span class="n">Matrix</span><span class="w"> </span><span class="n">transpose</span><span class="p">(){</span>
-<span class="w">                   </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">sol</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span><span class="w"> </span><span class="n">rows</span><span class="p">);</span>
-<span class="w">                   </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                       </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-<span class="w">                           </span><span class="n">sol</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-<span class="w">                       </span><span class="p">}</span>
-<span class="w">                   </span><span class="p">}</span>
-<span class="w">                   </span><span class="k">return</span><span class="w"> </span><span class="n">sol</span><span class="p">;</span>
-<span class="w">               </span><span class="p">}</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="nf">rows</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="nf">cols</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">transpose</span><span class="p">();</span>
+
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="nf">norm</span><span class="p">();</span>
+
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="nf">det</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">minor</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="nf">cofactor</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">Matrix</span><span class="w"> </span><span class="nf">inverse</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">toString</span><span class="p">();</span>
+
 <span class="w">        </span><span class="p">};</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
 
+<span class="w">        </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">-</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">Matrix</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">Vector</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Matrix</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Vector</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">// LouLib</span>
+<span class="p">}</span><span class="w"> </span><span class="c1">// Math</span>
 
 <span class="cp">#endif </span><span class="c1">//LOULIB_MATRIX_HPP</span>
 </pre></div>

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a69f2e5415febb805d53c2311f65cf458:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 1, 0, 0, 0, 0, Current)
+========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 1, 0, 0, 0, 0, Current)
+   :project: My Project

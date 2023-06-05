@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -61,9 +62,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -85,7 +86,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Library API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#page-hierarchy">Page Hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#file-hierarchy">File Hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-api">Full API</a></li>
 </ul>
 </li>
@@ -131,19 +131,10 @@
 <ul class="treeView" id="class-treeView">
   <li>
     <ul class="collapsibleList">
-      <li class="lastChild">Namespace <a href="namespace_LouLib.html#namespace-LouLib">LouLib</a><ul><li>Namespace <a href="namespace_LouLib__Units.html#namespace-LouLib-Units">LouLib::Units</a><ul><li class="lastChild">Template Class <a href="class_lou_lib_1_1_units_1_1_base_unit.html#exhale-class-class-lou-lib-1-1-units-1-1-base-unit">BaseUnit</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_LouLib__Utility.html#namespace-LouLib-Utility">LouLib::Utility</a><ul><li class="lastChild">Class <a href="class_lou_lib_1_1_utility_1_1_logger.html#exhale-class-class-lou-lib-1-1-utility-1-1-logger">Logger</a></li></ul></li></ul></li>
+      <li class="lastChild">Namespace <a href="namespace_LouLib.html#namespace-LouLib">LouLib</a><ul><li>Namespace <a href="namespace_LouLib__Controllers.html#namespace-LouLib-Controllers">LouLib::Controllers</a><ul><li>Class <a href="class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#exhale-class-class-lou-lib-1-1-controllers-1-1-l-q-r-controller">LQRController</a></li><li>Class <a href="class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#exhale-class-class-lou-lib-1-1-controllers-1-1-p-i-d-controller">PIDController</a></li><li>Class <a href="class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#exhale-class-class-lou-lib-1-1-controllers-1-1-ramsete-controller">RamseteController</a></li><li class="lastChild">Class <a href="class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#exhale-class-class-lou-lib-1-1-controllers-1-1-t-b-h-controller">TBHController</a></li></ul></li><li>Namespace <a href="namespace_LouLib__Filters.html#namespace-LouLib-Filters">LouLib::Filters</a><ul><li>Class <a href="class_lou_lib_1_1_filters_1_1_abstract_filter.html#exhale-class-class-lou-lib-1-1-filters-1-1-abstract-filter">AbstractFilter</a></li><li>Class <a href="class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#exhale-class-class-lou-lib-1-1-filters-1-1-e-w-m-a-filter">EWMAFilter</a></li><li>Class <a href="class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#exhale-class-class-lou-lib-1-1-filters-1-1-s-m-a-filter">SMAFilter</a></li><li class="lastChild">Class <a href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#exhale-class-class-lou-lib-1-1-filters-1-1-s-m-m-filter">SMMFilter</a></li></ul></li><li>Namespace <a href="namespace_LouLib__Math.html#namespace-LouLib-Math">LouLib::Math</a><ul><li>Class <a href="class_lou_lib_1_1_math_1_1_matrix.html#exhale-class-class-lou-lib-1-1-math-1-1-matrix">Matrix</a><ul><li class="lastChild">Class <a href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#exhale-class-class-lou-lib-1-1-math-1-1-matrix-1-1-matrix-row">Matrix::MatrixRow</a></li></ul></li><li>Class <a href="class_lou_lib_1_1_math_1_1_point2_d.html#exhale-class-class-lou-lib-1-1-math-1-1-point2-d">Point2D</a></li><li>Class <a href="class_lou_lib_1_1_math_1_1_pose2_d.html#exhale-class-class-lou-lib-1-1-math-1-1-pose2-d">Pose2D</a></li><li class="lastChild">Class <a href="class_lou_lib_1_1_math_1_1_vector.html#exhale-class-class-lou-lib-1-1-math-1-1-vector">Vector</a></li></ul></li><li>Namespace <a href="namespace_LouLib__Odometry.html#namespace-LouLib-Odometry">LouLib::Odometry</a><ul><li>Class <a href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#exhale-class-class-lou-lib-1-1-odometry-1-1-abstract-odometry">AbstractOdometry</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#exhale-class-class-lou-lib-1-1-odometry-1-1-abstract-odom-sensor">AbstractOdomSensor</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html#exhale-class-class-lou-lib-1-1-odometry-1-1-odom-i-m-u-sensor">OdomIMUSensor</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#exhale-class-class-lou-lib-1-1-odometry-1-1-odom-motor-sensor">OdomMotorSensor</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#exhale-class-class-lou-lib-1-1-odometry-1-1-odom-rotation-sensor">OdomRotationSensor</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#exhale-class-class-lou-lib-1-1-odometry-1-1-three-sensor-i-m-u-odom">ThreeSensorIMUOdom</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#exhale-class-class-lou-lib-1-1-odometry-1-1-three-sensor-odom">ThreeSensorOdom</a></li><li>Class <a href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#exhale-class-class-lou-lib-1-1-odometry-1-1-two-sensor-i-m-u-odom">TwoSensorIMUOdom</a></li><li class="lastChild">Class <a href="class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#exhale-class-class-lou-lib-1-1-odometry-1-1-two-sensor-odom">TwoSensorOdom</a></li></ul></li><li>Namespace <a href="namespace_LouLib__Paths.html#namespace-LouLib-Paths">LouLib::Paths</a><ul><li>Class <a href="class_lou_lib_1_1_paths_1_1_bezier_curve.html#exhale-class-class-lou-lib-1-1-paths-1-1-bezier-curve">BezierCurve</a></li><li class="lastChild">Class <a href="class_lou_lib_1_1_paths_1_1_trajectory.html#exhale-class-class-lou-lib-1-1-paths-1-1-trajectory">Trajectory</a></li></ul></li><li>Namespace <a href="namespace_LouLib__Units.html#namespace-LouLib-Units">LouLib::Units</a><ul><li class="lastChild">Template Class <a href="class_lou_lib_1_1_units_1_1_base_unit.html#exhale-class-class-lou-lib-1-1-units-1-1-base-unit">BaseUnit</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_LouLib__Utility.html#namespace-LouLib-Utility">LouLib::Utility</a><ul><li class="lastChild">Class <a href="class_lou_lib_1_1_utility_1_1_logger.html#exhale-class-class-lou-lib-1-1-utility-1-1-logger">Logger</a></li></ul></li></ul></li>
     </ul>
   </li><!-- only tree view element -->
 </ul><!-- /treeView class-treeView --></section>
-<section id="file-hierarchy">
-<h2>File Hierarchy<a class="headerlink" href="#file-hierarchy" title="Permalink to this headline"></a></h2>
-<ul class="treeView" id="file-treeView">
-  <li>
-    <ul class="collapsibleList">
-      <li class="lastChild">Directory <a href="dir_src.html#dir-src">src</a><ul><li class="lastChild">Directory <a href="dir_src_LouLib.html#dir-src-LouLib">LouLib</a><ul><li>Directory <a href="dir_src_LouLib_Math.html#dir-src-LouLib-Math">Math</a><ul><li>File <a href="file_src_LouLib_Math_MathConstants.hpp.html#file-src-LouLib-Math-MathConstants.hpp">MathConstants.hpp</a></li><li>File <a href="file_src_LouLib_Math_MathFunctions.cpp.html#file-src-LouLib-Math-MathFunctions.cpp">MathFunctions.cpp</a></li><li class="lastChild">File <a href="file_src_LouLib_Math_MathFunctions.hpp.html#file-src-LouLib-Math-MathFunctions.hpp">MathFunctions.hpp</a></li></ul></li><li>Directory <a href="dir_src_LouLib_Units.html#dir-src-LouLib-Units">Units</a><ul><li>File <a href="file_src_LouLib_Units_Angle.hpp.html#file-src-LouLib-Units-Angle.hpp">Angle.hpp</a></li><li>File <a href="file_src_LouLib_Units_BaseUnit.hpp.html#file-src-LouLib-Units-BaseUnit.hpp">BaseUnit.hpp</a></li><li>File <a href="file_src_LouLib_Units_Current.hpp.html#file-src-LouLib-Units-Current.hpp">Current.hpp</a></li><li>File <a href="file_src_LouLib_Units_Length.hpp.html#file-src-LouLib-Units-Length.hpp">Length.hpp</a></li><li>File <a href="file_src_LouLib_Units_Luminosity.hpp.html#file-src-LouLib-Units-Luminosity.hpp">Luminosity.hpp</a></li><li>File <a href="file_src_LouLib_Units_Mass.hpp.html#file-src-LouLib-Units-Mass.hpp">Mass.hpp</a></li><li>File <a href="file_src_LouLib_Units_Substance.hpp.html#file-src-LouLib-Units-Substance.hpp">Substance.hpp</a></li><li>File <a href="file_src_LouLib_Units_Temperature.hpp.html#file-src-LouLib-Units-Temperature.hpp">Temperature.hpp</a></li><li>File <a href="file_src_LouLib_Units_Time.hpp.html#file-src-LouLib-Units-Time.hpp">Time.hpp</a></li><li class="lastChild">File <a href="file_src_LouLib_Units_UnitMath.hpp.html#file-src-LouLib-Units-UnitMath.hpp">UnitMath.hpp</a></li></ul></li><li>Directory <a href="dir_src_LouLib_Utility.html#dir-src-LouLib-Utility">Utility</a><ul><li>File <a href="file_src_LouLib_Utility_Logger.cpp.html#file-src-LouLib-Utility-Logger.cpp">Logger.cpp</a></li><li class="lastChild">File <a href="file_src_LouLib_Utility_Logger.hpp.html#file-src-LouLib-Utility-Logger.hpp">Logger.hpp</a></li></ul></li><li class="lastChild">File <a href="file_src_LouLib_README.md.html#file-src-LouLib-README.md">README.md</a></li></ul></li></ul></li>
-    </ul>
-  </li><!-- only tree view element -->
-</ul><!-- /treeView file-treeView --></section>
 <section id="full-api">
 <h2>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline"></a></h2>
 <section id="namespaces">
@@ -151,7 +142,6 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="namespace_LouLib.html">Namespace LouLib</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib.html#detailed-description">Detailed Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_LouLib.html#namespaces">Namespaces</a></li>
 </ul>
 </li>
@@ -159,9 +149,42 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_LouLib__Controllers.html">Namespace LouLib::Controllers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Controllers.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_LouLib__Filters.html">Namespace LouLib::Filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Filters.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="namespace_LouLib__Math.html">Namespace LouLib::Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Math.html#classes">Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Math.html#functions">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Math.html#variables">Variables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_LouLib__Odometry.html">Namespace LouLib::Odometry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Odometry.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_LouLib__Paths.html">Namespace LouLib::Paths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_LouLib__Paths.html#classes">Classes</a></li>
 </ul>
 </li>
 </ul>
@@ -195,6 +218,251 @@
 <h3>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline"></a></h3>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html">Class LQRController</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html">Class PIDController</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_ramsete_controller.html">Class RamseteController</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html">Class TBHController</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_abstract_filter.html">Class AbstractFilter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_abstract_filter.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_abstract_filter.html#derived-types">Derived Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_abstract_filter.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html">Class EWMAFilter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_a_filter.html">Class SMAFilter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html">Class SMMFilter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix.html">Class Matrix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix.html#nested-relationships">Nested Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix.html#nested-types">Nested Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html">Class Matrix::MatrixRow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_point2_d.html">Class Point2D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_point2_d.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_pose2_d.html">Class Pose2D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_pose2_d.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_vector.html">Class Vector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_math_1_1_vector.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html">Class AbstractOdometry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#derived-types">Derived Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html">Class AbstractOdomSensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#derived-types">Derived Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html">Class OdomIMUSensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html">Class OdomMotorSensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html">Class OdomRotationSensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html">Class ThreeSensorIMUOdom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html">Class ThreeSensorOdom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html">Class TwoSensorIMUOdom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html">Class TwoSensorOdom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_paths_1_1_bezier_curve.html">Class BezierCurve</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_paths_1_1_bezier_curve.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_paths_1_1_trajectory.html">Class Trajectory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_paths_1_1_trajectory.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="class_lou_lib_1_1_units_1_1_base_unit.html">Template Class BaseUnit</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="class_lou_lib_1_1_units_1_1_base_unit.html#class-documentation">Class Documentation</a></li>
 </ul>
@@ -214,568 +482,984 @@
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h3>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823.html">Function LouLib::Math::signum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1abcdeefac346d1ee24fe854b57ec7e84a.html">Function LouLib::Math::angleDifference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1abcdeefac346d1ee24fe854b57ec7e84a.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a944f8b8c1367ad37bf50c1c44b151911.html">Template Function LouLib::Units::abs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a944f8b8c1367ad37bf50c1c44b151911.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ade115ba7f05b86783fe554e972d2067c.html">Function LouLib::Math::clamp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ade115ba7f05b86783fe554e972d2067c.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1a42074e57dfd9837d4100c40de7d586c0.html">Function LouLib::Units::AMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1a42074e57dfd9837d4100c40de7d586c0.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a9a85fdb9f3e3ce5a9d9dc4d474937e82.html">Function LouLib::Math::constrainAngle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a9a85fdb9f3e3ce5a9d9dc4d474937e82.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__luminosity_8hpp_1a90e02d4759be86076852abda347aee14.html">Function LouLib::Units::CANDELA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__luminosity_8hpp_1a90e02d4759be86076852abda347aee14.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab6b8bbedd3312ebc96088d33486a08d2.html">Function LouLib::Math::operator*(const Matrix&amp;, const Matrix&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab6b8bbedd3312ebc96088d33486a08d2.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1abaff73571beed2ab39369f6837151a28.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_rad, RADIAN)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1abaff73571beed2ab39369f6837151a28.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a62e4caeadc026df6647ed936d57553ad.html">Function LouLib::Math::operator*(const Matrix&amp;, const double&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a62e4caeadc026df6647ed936d57553ad.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_deg, DEGREE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a4a279fffabdb55afe4f379bdac949ff3.html">Function LouLib::Math::operator*(const double&amp;, const Matrix&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a4a279fffabdb55afe4f379bdac949ff3.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_ddeg, DECIDEGREE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7.html">Function LouLib::Math::operator*(const Matrix&amp;, const Vector&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_cdeg, CENTIDEGREE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0cbf0c7773fb0dd36b494eccef757fda.html">Function LouLib::Math::operator*(const Vector&amp;, const Vector&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0cbf0c7773fb0dd36b494eccef757fda.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_A, AMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ac1e22ca211525dd636a1403562043246.html">Function LouLib::Math::operator*(const double&amp;, const Vector&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ac1e22ca211525dd636a1403562043246.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_kA, KILOAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab22d26a04c10c48106242982f320c3b1.html">Function LouLib::Math::operator*(const Vector&amp;, const double&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab22d26a04c10c48106242982f320c3b1.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_hA, HECTOAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aa6cf2b966dbea5b0a4320319de0bcab8.html">Function LouLib::Math::operator+(const Matrix&amp;, const Matrix&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aa6cf2b966dbea5b0a4320319de0bcab8.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_daA, DECAAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a45edf15c8b2065d88a5cd1629d31e804.html">Function LouLib::Math::operator+(const Vector&amp;, const Vector&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a45edf15c8b2065d88a5cd1629d31e804.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_dA, DECIAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a7f7576193fa2d8862096a179cb2305cb.html">Function LouLib::Math::operator-(const Matrix&amp;, const Matrix&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a7f7576193fa2d8862096a179cb2305cb.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_cA, CENTIAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aec8a0610438b96245bced70db7c408ea.html">Function LouLib::Math::operator-(const Vector&amp;, const Vector&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aec8a0610438b96245bced70db7c408ea.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_mA, MILLIAMPERE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0f16e6273e25fc65adfd5b2e239c7823.html">Function LouLib::Math::signum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0f16e6273e25fc65adfd5b2e239c7823.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1a4d1a0325126e0bfb637f325f9a91cd84.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_m, METER)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1a4d1a0325126e0bfb637f325f9a91cd84.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a944f8b8c1367ad37bf50c1c44b151911.html">Template Function LouLib::Units::abs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a944f8b8c1367ad37bf50c1c44b151911.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1abbe9d9df6a5db7b18f346edba2e5478d.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_dm, DECIMETER)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1abbe9d9df6a5db7b18f346edba2e5478d.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a42074e57dfd9837d4100c40de7d586c0.html">Function LouLib::Units::AMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a42074e57dfd9837d4100c40de7d586c0.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_cm, CENTIMETER)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a90e02d4759be86076852abda347aee14.html">Function LouLib::Units::CANDELA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a90e02d4759be86076852abda347aee14.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1ac668931c825e05de1a644ac81f070e15.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_mm, MILLIMETER)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1ac668931c825e05de1a644ac81f070e15.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a632947f0e113464b4103966c5c7e9972.html">Function LouLib::Units::CREATE_ACCELERATION_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a632947f0e113464b4103966c5c7e9972.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1a5dc86295bb17217701f2a6db19ca6958.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_in, INCH)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1a5dc86295bb17217701f2a6db19ca6958.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_rad, RADIAN)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1a4b92b76fcf31622dfbf066644efee10d.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_ft, FOOT)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1a4b92b76fcf31622dfbf066644efee10d.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_deg, DEGREE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1af05f27830e95007b03ea306b275c5cda.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_yd, YARD)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1af05f27830e95007b03ea306b275c5cda.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_ddeg, DECIDEGREE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1a0f848a3e066cb0fed8b0beb17e29ef43.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_tl, TILE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1a0f848a3e066cb0fed8b0beb17e29ef43.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b.html">Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_cdeg, CENTIDEGREE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c.html">Function LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b5dc34c16ba201711ea54ae96e1695b.html">Function LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_radps2, RADIAN_PER_SECOND_SQUARED)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b5dc34c16ba201711ea54ae96e1695b.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_kg, KILOGRAM)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae9552a018915ad60bd6111469e2c22ce.html">Function LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_degps2, DEGREE_PER_SECOND_SQUARED)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae9552a018915ad60bd6111469e2c22ce.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_hg, HECTOGRAM)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836.html">Function LouLib::Units::CREATE_ANGULARJERK_STRING_LITERAL(_radps3, RADIAN_PER_SECOND_CUBED)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_dag, DECAGRAM)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9.html">Function LouLib::Units::CREATE_ANGULARJERK_STRING_LITERAL(_degps3, DEGREE_PER_SECOND_CUBED)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_g, GRAM)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7cbd11ad0720a4af46946db3b74e6c3a.html">Function LouLib::Units::CREATE_ANGULARVELOCITY_STRING_LITERAL(_radps, RADIAN_PER_SECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7cbd11ad0720a4af46946db3b74e6c3a.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_oz, OUNCE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a57670fc6a981e1f4a036bb556614012a.html">Function LouLib::Units::CREATE_ANGULARVELOCITY_STRING_LITERAL(_degps, DEGREE_PER_SECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a57670fc6a981e1f4a036bb556614012a.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_lb, POUND)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_m2, SQUARE_METER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__substance_8hpp_1aeb395243204aa77665787b631780cd19.html">Function LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__substance_8hpp_1aeb395243204aa77665787b631780cd19.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a3cd3f18ab89d21e0adc5bf45693f7dce.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_dm2, SQUARE_DECIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a3cd3f18ab89d21e0adc5bf45693f7dce.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0.html">Function LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_cm2, SQUARE_CENTIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_s, SECOND)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_mm2, SQUARE_MILLIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_in2, SQUARE_INCH)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_cs, CENTISECOND)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b1b7d85814adc8ba1028f8a7d8138c5.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_ft2, SQUARE_FOOT)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b1b7d85814adc8ba1028f8a7d8138c5.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af2fe6791ef41ecade23c82d932be7a8a.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_yd2, SQUARE_YARD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af2fe6791ef41ecade23c82d932be7a8a.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_min, MINUTE)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002.html">Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_tl2, SQUARE_TILE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a1e7455551f92a31a0f778a7f9735efae.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_A, AMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a1e7455551f92a31a0f778a7f9735efae.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 1, Angle)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a024abe10b8af2cd3dda84488780a030c.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_kA, KILOAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a024abe10b8af2cd3dda84488780a030c.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__current_8hpp_1a69f2e5415febb805d53c2311f65cf458.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 1, 0, 0, 0, 0, Current)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__current_8hpp_1a69f2e5415febb805d53c2311f65cf458.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae3567c6925811ef0f5a89fbe15ae375d.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_hA, HECTOAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae3567c6925811ef0f5a89fbe15ae375d.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1a86eb9199219d0bac1c4c3abc9ad9f5c6.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, 0, 0, 0, 0, 0, 0, Length)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1a86eb9199219d0bac1c4c3abc9ad9f5c6.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a617bb69602ff5486cfd245a7fc58237b.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_daA, DECAAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a617bb69602ff5486cfd245a7fc58237b.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__luminosity_8hpp_1a421021e90744cdc8ce7e73a87b7d436b.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 1, 0, Luminosity)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__luminosity_8hpp_1a421021e90744cdc8ce7e73a87b7d436b.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad509dfdc4c912f0941865c13a4a06215.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_dA, DECIAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad509dfdc4c912f0941865c13a4a06215.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1a22a4b684c5955e6795dbc11eb94573f7.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 1, 0, 0, 0, 0, 0, 0, Mass)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1a22a4b684c5955e6795dbc11eb94573f7.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aca42319394dbddce92fb3ae00fefdd34.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_cA, CENTIAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aca42319394dbddce92fb3ae00fefdd34.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__substance_8hpp_1a9b0a0579777eaad03b5c6d56dd960666.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 1, 0, 0, Substance)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__substance_8hpp_1a9b0a0579777eaad03b5c6d56dd960666.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ab8e171248a510192063ae0dcb54c69bd.html">Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_mA, MILLIAMPERE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ab8e171248a510192063ae0dcb54c69bd.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__temperature_8hpp_1aa71e328c38055e3f59793cf8f8c30acc.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__temperature_8hpp_1aa71e328c38055e3f59793cf8f8c30acc.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4c22895b4daf4c64fc18e66eea24fea9.html">Function LouLib::Units::CREATE_FORCE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4c22895b4daf4c64fc18e66eea24fea9.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1adb9e56b4dc93c2470458ddaa2aa70fe3.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1adb9e56b4dc93c2470458ddaa2aa70fe3.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af7abd950a16984f6cf4d281bfc63113b.html">Function LouLib::Units::CREATE_JERK_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af7abd950a16984f6cf4d281bfc63113b.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__temperature_8hpp_1a20bc1815c13dc3aa37baa0f0bd179832.html">Function LouLib::Units::KELVIN</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__temperature_8hpp_1a20bc1815c13dc3aa37baa0f0bd179832.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4d1a0325126e0bfb637f325f9a91cd84.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_m, METER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4d1a0325126e0bfb637f325f9a91cd84.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__mass_8hpp_1afab732ee98274b6267dd28d1afe15c8b.html">Function LouLib::Units::KILOGRAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__mass_8hpp_1afab732ee98274b6267dd28d1afe15c8b.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abbe9d9df6a5db7b18f346edba2e5478d.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_dm, DECIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abbe9d9df6a5db7b18f346edba2e5478d.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__length_8hpp_1ad16187afeb98eb948a50b8da6fe5e4a6.html">Function LouLib::Units::METER</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__length_8hpp_1ad16187afeb98eb948a50b8da6fe5e4a6.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_cm, CENTIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__substance_8hpp_1a76ae0f1ed48f1cf25867c7496e5561b5.html">Function LouLib::Units::MOLE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__substance_8hpp_1a76ae0f1ed48f1cf25867c7496e5561b5.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac668931c825e05de1a644ac81f070e15.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_mm, MILLIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac668931c825e05de1a644ac81f070e15.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__base_unit_8hpp_1aaf21571bab124bad758cccbb36a81d60.html">Function LouLib::Units::number</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__base_unit_8hpp_1aaf21571bab124bad758cccbb36a81d60.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_in, INCH)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9.html">Template Function LouLib::Units::operator!=</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_ft, FOOT)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a7776283be38ac0a002d1e12909d7646c.html">Template Function LouLib::Units::operator%</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a7776283be38ac0a002d1e12909d7646c.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af05f27830e95007b03ea306b275c5cda.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_yd, YARD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af05f27830e95007b03ea306b275c5cda.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1aedb125fddf80a2f430cd41fd79bebf7c.html">Template Function LouLib::Units::operator*(const BaseUnit&lt;L1, M1, t1, Q1, T1, N1, J1, A1&gt;&amp;, const BaseUnit&lt;L2, M2, t2, Q2, T2, N2, J2, A2&gt;&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1aedb125fddf80a2f430cd41fd79bebf7c.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a0f848a3e066cb0fed8b0beb17e29ef43.html">Function LouLib::Units::CREATE_LENGTH_STRING_LITERAL(_tl, TILE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a0f848a3e066cb0fed8b0beb17e29ef43.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a86888d172ca4f2ce1478d6bf7809126e.html">Template Function LouLib::Units::operator*(const double&amp;, const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a86888d172ca4f2ce1478d6bf7809126e.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a52260e7c2210dd85f322c7abdb0a940c.html">Function LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a52260e7c2210dd85f322c7abdb0a940c.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a23cebc0912a54448c631118a13965708.html">Template Function LouLib::Units::operator*(const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;, const double&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a23cebc0912a54448c631118a13965708.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_kg, KILOGRAM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html">Template Function LouLib::Units::operator+</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac16fdc5005e542d1ffdbff349cd9e9da.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_hg, HECTOGRAM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac16fdc5005e542d1ffdbff349cd9e9da.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1abca4d67a8fb01609cc0a2c2e893ec0ac.html">Template Function LouLib::Units::operator-</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1abca4d67a8fb01609cc0a2c2e893ec0ac.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_dag, DECAGRAM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a7683512548bef2c4dea7ce60b4ad6184.html">Template Function LouLib::Units::operator/(const BaseUnit&lt;L1, M1, t1, Q1, T1, N1, J1, A1&gt;&amp;, const BaseUnit&lt;L2, M2, t2, Q2, T2, N2, J2, A2&gt;&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a7683512548bef2c4dea7ce60b4ad6184.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_g, GRAM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a7bee95086448596b08186a85993dfee3.html">Template Function LouLib::Units::operator/(const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;, const double&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a7bee95086448596b08186a85993dfee3.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_oz, OUNCE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a223ce4795d132787715a13f83ac51980.html">Template Function LouLib::Units::operator/(const double&amp;, const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a223ce4795d132787715a13f83ac51980.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa.html">Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_lb, POUND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a357b6e62ae648d2403e44beb4fc2b95f.html">Template Function LouLib::Units::operator&lt;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a357b6e62ae648d2403e44beb4fc2b95f.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aeb395243204aa77665787b631780cd19.html">Function LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aeb395243204aa77665787b631780cd19.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html">Template Function LouLib::Units::operator&lt;=</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a56fe27e123af476cd4327f30ee1796c0.html">Function LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a56fe27e123af476cd4327f30ee1796c0.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a9381601a026bff1bdc01414db7838d09.html">Template Function LouLib::Units::operator==</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a9381601a026bff1bdc01414db7838d09.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_s, SECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a2167f4ccb536a3f34fb7e319591a1769.html">Template Function LouLib::Units::operator&gt;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a2167f4ccb536a3f34fb7e319591a1769.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1ad86b3a7d2bb3751187b7120a7d05cbcf.html">Template Function LouLib::Units::operator&gt;=</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1ad86b3a7d2bb3751187b7120a7d05cbcf.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5073e19bfb80dae9091240d5c18e5116.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_cs, CENTISECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5073e19bfb80dae9091240d5c18e5116.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__angle_8hpp_1ad3149df2f6e7ca040c555b5b2db7ac70.html">Function LouLib::Units::RADIAN</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__angle_8hpp_1ad3149df2f6e7ca040c555b5b2db7ac70.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__time_8hpp_1ae5156bb6beda09ec056ec927b4ab7138.html">Function LouLib::Units::SECOND</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__time_8hpp_1ae5156bb6beda09ec056ec927b4ab7138.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a532594d4a52ed2219adac4fbdf7f6a66.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_min, MINUTE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a532594d4a52ed2219adac4fbdf7f6a66.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a65d3498516642234dae5cb41e3cb0e1b.html">Template Function LouLib::Units::signum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a65d3498516642234dae5cb41e3cb0e1b.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff.html">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128.html">Template Function LouLib::Units::sqrt</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6.html">Function LouLib::Units::CREATE_TORQUE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb.html">Template Function LouLib::Units::square</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7.html">Function LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_mps, METER_PER_SECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a97664cc4ccd67ca251c48fe05dc596dd.html">Function LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_fps, FOOT_PER_SECOND)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a97664cc4ccd67ca251c48fe05dc596dd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae73ace12cba7a81948e9b435b5b84205.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_m3, CUBIC_METER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae73ace12cba7a81948e9b435b5b84205.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa265df0fde658b5fcea8bd5bbdc167a1.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_dm3, CUBIC_DECIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa265df0fde658b5fcea8bd5bbdc167a1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4be4f5037a3488f6667412f6d2750359.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_cm3, CUBIC_CENTIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4be4f5037a3488f6667412f6d2750359.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae7cf838108cd01d30b46b3079c4b04b7.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_mm3, CUBIC_MILLIMETER)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae7cf838108cd01d30b46b3079c4b04b7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a64ed24bc1ef246b1df161ceac2dc3433.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_in3, CUBIC_INCH)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a64ed24bc1ef246b1df161ceac2dc3433.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a088e6a35b653f941d4f6cdd0b4267e8a.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_ft3, CUBIC_FOOT)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a088e6a35b653f941d4f6cdd0b4267e8a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad5b202d0452071b78eedd8c2c46beca4.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_yd3, CUBIC_YARD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad5b202d0452071b78eedd8c2c46beca4.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a8201d3b8ea05e0e33f8e1794e66708d2.html">Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_tl3, CUBIC_TILE)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a8201d3b8ea05e0e33f8e1794e66708d2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2e68d6acb0d342f6fde88c15590db92d.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Acceleration)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2e68d6acb0d342f6fde88c15590db92d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 0, 1, Angle)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a94c286069933df07ec12022e5d20bdf7.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularAcceleration)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a94c286069933df07ec12022e5d20bdf7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularJerk)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a98e8a94026d7750f7cc8509052649785.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularVelocity)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a98e8a94026d7750f7cc8509052649785.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af51d1ef910d0ae1b7a8999a4f64cd7e0.html">Function LouLib::Units::DEFINE_NEW_UNIT(2, 0, 0, 0, 0, 0, 0, 0, Area)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1af51d1ef910d0ae1b7a8999a4f64cd7e0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a69f2e5415febb805d53c2311f65cf458.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 1, 0, 0, 0, 0, Current)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a69f2e5415febb805d53c2311f65cf458.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a49d3782b2cc4152c43a0d5fae1285e18.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 1, -, 0, 0, 0, 0, 0, Force)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a49d3782b2cc4152c43a0d5fae1285e18.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a84f659ae47f5c49367e049dbc877d521.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Jerk)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a84f659ae47f5c49367e049dbc877d521.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a86eb9199219d0bac1c4c3abc9ad9f5c6.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, 0, 0, 0, 0, 0, 0, Length)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a86eb9199219d0bac1c4c3abc9ad9f5c6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a421021e90744cdc8ce7e73a87b7d436b.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 1, 0, Luminosity)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a421021e90744cdc8ce7e73a87b7d436b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 1, 0, 0, 0, 0, 0, 0, Mass)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b0a0579777eaad03b5c6d56dd960666.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 1, 0, 0, Substance)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9b0a0579777eaad03b5c6d56dd960666.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3.html">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599.html">Function LouLib::Units::DEFINE_NEW_UNIT(2, 1, -, 0, 0, 0, 0, 0, Torque)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645.html">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Velocity)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b.html">Function LouLib::Units::DEFINE_NEW_UNIT(3, 0, 0, 0, 0, 0, 0, 0, Volume)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832.html">Function LouLib::Units::KELVIN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1afab732ee98274b6267dd28d1afe15c8b.html">Function LouLib::Units::KILOGRAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1afab732ee98274b6267dd28d1afe15c8b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad16187afeb98eb948a50b8da6fe5e4a6.html">Function LouLib::Units::METER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad16187afeb98eb948a50b8da6fe5e4a6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a76ae0f1ed48f1cf25867c7496e5561b5.html">Function LouLib::Units::MOLE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a76ae0f1ed48f1cf25867c7496e5561b5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aaf21571bab124bad758cccbb36a81d60.html">Function LouLib::Units::number</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aaf21571bab124bad758cccbb36a81d60.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a54cd804d18127c779b6e0c3ee5619bb9.html">Template Function LouLib::Units::operator!=</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a54cd804d18127c779b6e0c3ee5619bb9.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7776283be38ac0a002d1e12909d7646c.html">Template Function LouLib::Units::operator%</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7776283be38ac0a002d1e12909d7646c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aedb125fddf80a2f430cd41fd79bebf7c.html">Template Function LouLib::Units::operator*(const BaseUnit&lt;L1, M1, t1, Q1, T1, N1, J1, A1&gt;&amp;, const BaseUnit&lt;L2, M2, t2, Q2, T2, N2, J2, A2&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1aedb125fddf80a2f430cd41fd79bebf7c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a86888d172ca4f2ce1478d6bf7809126e.html">Template Function LouLib::Units::operator*(const double&amp;, const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a86888d172ca4f2ce1478d6bf7809126e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a23cebc0912a54448c631118a13965708.html">Template Function LouLib::Units::operator*(const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;, const double&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a23cebc0912a54448c631118a13965708.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html">Template Function LouLib::Units::operator+</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abca4d67a8fb01609cc0a2c2e893ec0ac.html">Template Function LouLib::Units::operator-</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1abca4d67a8fb01609cc0a2c2e893ec0ac.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7683512548bef2c4dea7ce60b4ad6184.html">Template Function LouLib::Units::operator/(const BaseUnit&lt;L1, M1, t1, Q1, T1, N1, J1, A1&gt;&amp;, const BaseUnit&lt;L2, M2, t2, Q2, T2, N2, J2, A2&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7683512548bef2c4dea7ce60b4ad6184.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7bee95086448596b08186a85993dfee3.html">Template Function LouLib::Units::operator/(const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;, const double&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7bee95086448596b08186a85993dfee3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a223ce4795d132787715a13f83ac51980.html">Template Function LouLib::Units::operator/(const double&amp;, const BaseUnit&lt;L, M, t, Q, T, N, J, A&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a223ce4795d132787715a13f83ac51980.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a357b6e62ae648d2403e44beb4fc2b95f.html">Template Function LouLib::Units::operator&lt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a357b6e62ae648d2403e44beb4fc2b95f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html">Template Function LouLib::Units::operator&lt;=</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9381601a026bff1bdc01414db7838d09.html">Template Function LouLib::Units::operator==</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9381601a026bff1bdc01414db7838d09.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2167f4ccb536a3f34fb7e319591a1769.html">Template Function LouLib::Units::operator&gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2167f4ccb536a3f34fb7e319591a1769.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad86b3a7d2bb3751187b7120a7d05cbcf.html">Template Function LouLib::Units::operator&gt;=</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad86b3a7d2bb3751187b7120a7d05cbcf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad3149df2f6e7ca040c555b5b2db7ac70.html">Function LouLib::Units::RADIAN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ad3149df2f6e7ca040c555b5b2db7ac70.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae5156bb6beda09ec056ec927b4ab7138.html">Function LouLib::Units::SECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae5156bb6beda09ec056ec927b4ab7138.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a65d3498516642234dae5cb41e3cb0e1b.html">Template Function LouLib::Units::signum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a65d3498516642234dae5cb41e3cb0e1b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae05c8c49ac57f34022dc4b96b4b88128.html">Template Function LouLib::Units::sqrt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae05c8c49ac57f34022dc4b96b4b88128.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a505b648f46999f1dbc8a9f389e8451bb.html">Template Function LouLib::Units::square</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a505b648f46999f1dbc8a9f389e8451bb.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -785,240 +1469,464 @@
 <h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h3>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9.html">Variable LouLib::Math::E</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ab92a37729dd2b0089666ad0ebf44d1b9.html">Variable LouLib::Math::E</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ab92a37729dd2b0089666ad0ebf44d1b9.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4.html">Variable LouLib::Math::EPS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ae9488626031f2e8593ea590922465db4.html">Variable LouLib::Math::EPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ae9488626031f2e8593ea590922465db4.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253.html">Variable LouLib::Math::PI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aed013aba56196b4256b7980fa0a9c253.html">Variable LouLib::Math::PI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aed013aba56196b4256b7980fa0a9c253.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01.html">Variable LouLib::Math::SQRT2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aedb7a911d2f768764aee9be4837e6c01.html">Variable LouLib::Math::SQRT2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aedb7a911d2f768764aee9be4837e6c01.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c.html">Variable LouLib::Units::CENTIAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a9d5ef467f6905020d5c91101ed2a250c.html">Variable LouLib::Units::CENTIAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a9d5ef467f6905020d5c91101ed2a250c.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2.html">Variable LouLib::Units::CENTIDEGREE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae2e9c011a7805a6e00db579984ca21f2.html">Variable LouLib::Units::CENTIDEGREE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae2e9c011a7805a6e00db579984ca21f2.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a621ae04e4353e876f6e4c19fecdb43be.html">Variable LouLib::Units::CENTIMETER</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a621ae04e4353e876f6e4c19fecdb43be.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a621ae04e4353e876f6e4c19fecdb43be.html">Variable LouLib::Units::CENTIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a621ae04e4353e876f6e4c19fecdb43be.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815.html">Variable LouLib::Units::CENTISECOND</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815.html">Variable LouLib::Units::CENTISECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585.html">Variable LouLib::Units::DECAAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a34c603ea0a6b73a78a70dc2021f800ef.html">Variable LouLib::Units::CUBIC_CENTIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a34c603ea0a6b73a78a70dc2021f800ef.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2.html">Variable LouLib::Units::DECAGRAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aa01021a76cc13abdd2ccf46e9cd14746.html">Variable LouLib::Units::CUBIC_DECIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aa01021a76cc13abdd2ccf46e9cd14746.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f.html">Variable LouLib::Units::DECIAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aea30d93b40ba13c6c93a480190f0d4b3.html">Variable LouLib::Units::CUBIC_FOOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aea30d93b40ba13c6c93a480190f0d4b3.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html">Variable LouLib::Units::DECIDEGREE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a177dfbdde80a9d1c6770a52a96e6be1b.html">Variable LouLib::Units::CUBIC_INCH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a177dfbdde80a9d1c6770a52a96e6be1b.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d.html">Variable LouLib::Units::DECIMETER</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae7ccfe5a3140c6f8dff006cc9b76e9fb.html">Variable LouLib::Units::CUBIC_METER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae7ccfe5a3140c6f8dff006cc9b76e9fb.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__time_8hpp_1aca3289e0405099b9d0980531ae117600.html">Variable LouLib::Units::DECISECOND</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__time_8hpp_1aca3289e0405099b9d0980531ae117600.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ab4153ef12f5b03c961d9c5ae25ce33d7.html">Variable LouLib::Units::CUBIC_MILLIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ab4153ef12f5b03c961d9c5ae25ce33d7.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858.html">Variable LouLib::Units::DEGREE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1abc04839fdac76d885248f6c42ebcff1f.html">Variable LouLib::Units::CUBIC_TILE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1abc04839fdac76d885248f6c42ebcff1f.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7.html">Variable LouLib::Units::FOOT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a413202333bd1c4494dc752c763771be0.html">Variable LouLib::Units::CUBIC_YARD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a413202333bd1c4494dc752c763771be0.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6.html">Variable LouLib::Units::GRAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a79919ccd32eecaaaa3c86a47e94e9585.html">Variable LouLib::Units::DECAAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a79919ccd32eecaaaa3c86a47e94e9585.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55.html">Variable LouLib::Units::HECTOAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2.html">Variable LouLib::Units::DECAGRAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f.html">Variable LouLib::Units::HECTOGRAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a2a3aacc6c234de9b0fce99e64d9b894f.html">Variable LouLib::Units::DECIAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a2a3aacc6c234de9b0fce99e64d9b894f.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e.html">Variable LouLib::Units::HOUR</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html">Variable LouLib::Units::DECIDEGREE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6.html">Variable LouLib::Units::INCH</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a96b78ff5564916347c3a174cdb5b120d.html">Variable LouLib::Units::DECIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a96b78ff5564916347c3a174cdb5b120d.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd.html">Variable LouLib::Units::KILOAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aca3289e0405099b9d0980531ae117600.html">Variable LouLib::Units::DECISECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aca3289e0405099b9d0980531ae117600.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2.html">Variable LouLib::Units::MILLIAMPERE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858.html">Variable LouLib::Units::DEGREE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a4f18ff631d65d9d235fe59d2657d2f11.html">Variable LouLib::Units::MILLIMETER</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a4f18ff631d65d9d235fe59d2657d2f11.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a09be33c6abf05ebbfa6f4e11f956d903.html">Variable LouLib::Units::DEGREE_PER_SECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a09be33c6abf05ebbfa6f4e11f956d903.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b.html">Variable LouLib::Units::MILLISECOND</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981.html">Variable LouLib::Units::DEGREE_PER_SECOND_CUBED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a.html">Variable LouLib::Units::MINUTE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae3a96a812651d10d7911ecbfdbca2989.html">Variable LouLib::Units::DEGREE_PER_SECOND_SQUARED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae3a96a812651d10d7911ecbfdbca2989.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__mass_8hpp_1a4094511273e312bec78796916f75b0af.html">Variable LouLib::Units::OUNCE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__mass_8hpp_1a4094511273e312bec78796916f75b0af.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a32e3f92e1cf85dd1cb790b19f4add7c7.html">Variable LouLib::Units::FOOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a32e3f92e1cf85dd1cb790b19f4add7c7.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff.html">Variable LouLib::Units::POUND</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56.html">Variable LouLib::Units::FOOT_PER_SECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1a67540d4febaeef2a05ef4f8a28c8a66b.html">Variable LouLib::Units::TILE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1a67540d4febaeef2a05ef4f8a28c8a66b.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6.html">Variable LouLib::Units::GRAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="variable__length_8hpp_1aaafa56435ad9290bacaf84751aa04f76.html">Variable LouLib::Units::YARD</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="variable__length_8hpp_1aaafa56435ad9290bacaf84751aa04f76.html#variable-documentation">Variable Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae18c41ca85a6d0606afd98e2f23ddf55.html">Variable LouLib::Units::HECTOAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae18c41ca85a6d0606afd98e2f23ddf55.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f.html">Variable LouLib::Units::HECTOGRAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aadd07453c0253bfc28d19afea895da6e.html">Variable LouLib::Units::HOUR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aadd07453c0253bfc28d19afea895da6e.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a21a389863d46b4ea9d73c6c871e77bb6.html">Variable LouLib::Units::INCH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a21a389863d46b4ea9d73c6c871e77bb6.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a8cb0d66a683bc069077c7e96724803fd.html">Variable LouLib::Units::KILOAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a8cb0d66a683bc069077c7e96724803fd.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1abc0b2cb41f687de6b557ebee961f1188.html">Variable LouLib::Units::METER_PER_SECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1abc0b2cb41f687de6b557ebee961f1188.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6f233941a5158969971c73f88d9700e0.html">Variable LouLib::Units::METER_PER_SECOND_CUBED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6f233941a5158969971c73f88d9700e0.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a60075e815046e3e0d6e79e8d8ecadf71.html">Variable LouLib::Units::METER_PER_SECOND_SQUARED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a60075e815046e3e0d6e79e8d8ecadf71.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a90c28951b7651c08975a6798d75479b2.html">Variable LouLib::Units::MILLIAMPERE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a90c28951b7651c08975a6798d75479b2.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4f18ff631d65d9d235fe59d2657d2f11.html">Variable LouLib::Units::MILLIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4f18ff631d65d9d235fe59d2657d2f11.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a5b10ae9fb79cf79c82987337427b999b.html">Variable LouLib::Units::MILLISECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a5b10ae9fb79cf79c82987337427b999b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6250fdfcf9a3b5289da8066f274fe83a.html">Variable LouLib::Units::MINUTE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6250fdfcf9a3b5289da8066f274fe83a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a72c4f2f1067edcd223fe1b6dca41b932.html">Variable LouLib::Units::NEWTON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a72c4f2f1067edcd223fe1b6dca41b932.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e.html">Variable LouLib::Units::NEWTON_METER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4094511273e312bec78796916f75b0af.html">Variable LouLib::Units::OUNCE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4094511273e312bec78796916f75b0af.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff.html">Variable LouLib::Units::POUND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6cc0eeb557d3ff07d0e9209b01d4c164.html">Variable LouLib::Units::RADIAN_PER_SECOND</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6cc0eeb557d3ff07d0e9209b01d4c164.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a97106ac874fb9943d1db213b1f54f7d9.html">Variable LouLib::Units::RADIAN_PER_SECOND_CUBED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a97106ac874fb9943d1db213b1f54f7d9.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae04137a3a0051bca1d9a97e0776990fc.html">Variable LouLib::Units::RADIAN_PER_SECOND_SQUARED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ae04137a3a0051bca1d9a97e0776990fc.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a9960b211f4e7e53fdd8ba11b77be8fc4.html">Variable LouLib::Units::SQUARE_CENTIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a9960b211f4e7e53fdd8ba11b77be8fc4.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a.html">Variable LouLib::Units::SQUARE_DECIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aea32e37c4d7ae311ecd1616436434e85.html">Variable LouLib::Units::SQUARE_FOOT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aea32e37c4d7ae311ecd1616436434e85.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650.html">Variable LouLib::Units::SQUARE_INCH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad9f9b29886488426fcb81b875a54bfd3.html">Variable LouLib::Units::SQUARE_METER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1ad9f9b29886488426fcb81b875a54bfd3.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81.html">Variable LouLib::Units::SQUARE_MILLIMETER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4adcb8ec2fb64a468bb331a39c8b0fcc.html">Variable LouLib::Units::SQUARE_TILE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a4adcb8ec2fb64a468bb331a39c8b0fcc.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a43e3b5aa680a21d82e978d8a1286fe27.html">Variable LouLib::Units::SQUARE_YARD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a43e3b5aa680a21d82e978d8a1286fe27.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a67540d4febaeef2a05ef4f8a28c8a66b.html">Variable LouLib::Units::TILE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a67540d4febaeef2a05ef4f8a28c8a66b.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aaafa56435ad9290bacaf84751aa04f76.html">Variable LouLib::Units::YARD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aaafa56435ad9290bacaf84751aa04f76.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1026,6 +1934,14 @@
 </section>
 <section id="defines">
 <h3>Defines<a class="headerlink" href="#defines" title="Permalink to this headline"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__acceleration_8hpp_1ad422df0049fc8615a1e04005728ae9f1.html">Define CREATE_ACCELERATION_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__acceleration_8hpp_1ad422df0049fc8615a1e04005728ae9f1.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="define__angle_8hpp_1adb0d307827847e6ac8684ff071ce42f0.html">Define CREATE_ANGLE_STRING_LITERAL</a><ul>
@@ -1036,8 +1952,56 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="define__angular_acceleration_8hpp_1a992c794a1cc56f08fc8dc166b8a516ca.html">Define CREATE_ANGULARACCELERATION_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__angular_acceleration_8hpp_1a992c794a1cc56f08fc8dc166b8a516ca.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__angular_jerk_8hpp_1ae51b81a85dfb9e5d644cda339b9f23d5.html">Define CREATE_ANGULARJERK_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__angular_jerk_8hpp_1ae51b81a85dfb9e5d644cda339b9f23d5.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__angular_velocity_8hpp_1abb403eef4277c172a81edaedc0d512c4.html">Define CREATE_ANGULARVELOCITY_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__angular_velocity_8hpp_1abb403eef4277c172a81edaedc0d512c4.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__area_8hpp_1a6b2bfc03239210006892724357473a67.html">Define CREATE_AREA_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__area_8hpp_1a6b2bfc03239210006892724357473a67.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="define__current_8hpp_1a2009e15641a6b4e82c395d91e59dae66.html">Define CREATE_CURRENT_STRING_LITERAL</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="define__current_8hpp_1a2009e15641a6b4e82c395d91e59dae66.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__force_8hpp_1a2f18be561f9ccc8b2128207b45be3168.html">Define CREATE_FORCE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__force_8hpp_1a2f18be561f9ccc8b2128207b45be3168.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__jerk_8hpp_1a6c852a67aaa04e773a505ad2b50c4c67.html">Define CREATE_JERK_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__jerk_8hpp_1a6c852a67aaa04e773a505ad2b50c4c67.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1086,6 +2050,30 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="define__time_8hpp_1a242babdb3be67dbf41f8d62355f049fd.html">Define CREATE_TIME_STRING_LITERAL</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="define__time_8hpp_1a242babdb3be67dbf41f8d62355f049fd.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__torque_8hpp_1a4f9ae829a24014a50b17f63961db25dc.html">Define CREATE_TORQUE_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__torque_8hpp_1a4f9ae829a24014a50b17f63961db25dc.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__velocity_8hpp_1a86d7656fd92c143cd093ca5b1deb1833.html">Define CREATE_VELOCITY_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__velocity_8hpp_1a86d7656fd92c143cd093ca5b1deb1833.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__volume_8hpp_1a8904ea263e74365f2c83f6bc11efb5bc.html">Define CREATE_VOLUME_STRING_LITERAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__volume_8hpp_1a8904ea263e74365f2c83f6bc11efb5bc.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>

@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Namespace LouLib::Units" href="namespace_LouLib__Units.html" />
-    <link rel="prev" title="Namespace LouLib" href="namespace_LouLib.html" /> 
+    <link rel="next" title="Namespace LouLib::Odometry" href="namespace_LouLib__Odometry.html" />
+    <link rel="prev" title="Namespace LouLib::Filters" href="namespace_LouLib__Filters.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -61,9 +62,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -85,7 +86,6 @@
 <li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
 </ul>
 </li>
@@ -118,26 +118,52 @@
              
   <section id="namespace-loulib-math">
 <span id="id1"></span><h1>Namespace LouLib::Math<a class="headerlink" href="#namespace-loulib-math" title="Permalink to this headline"></a></h1>
+<p>Contains all of <a class="reference internal" href="namespace_LouLib.html#namespace-loulib"><span class="std std-ref">Namespace LouLib</span></a>’s math functionality.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#functions" id="id2">Functions</a></p></li>
-<li><p><a class="reference internal" href="#variables" id="id3">Variables</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id2">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id3">Functions</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id4">Variables</a></p></li>
 </ul>
 </div>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix.html#exhale-class-class-lou-lib-1-1-math-1-1-matrix"><span class="std std-ref">Class Matrix</span></a></p></li>
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#exhale-class-class-lou-lib-1-1-math-1-1-matrix-1-1-matrix-row"><span class="std std-ref">Class Matrix::MatrixRow</span></a></p></li>
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_point2_d.html#exhale-class-class-lou-lib-1-1-math-1-1-point2-d"><span class="std std-ref">Class Point2D</span></a></p></li>
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_pose2_d.html#exhale-class-class-lou-lib-1-1-math-1-1-pose2-d"><span class="std std-ref">Class Pose2D</span></a></p></li>
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_vector.html#exhale-class-class-lou-lib-1-1-math-1-1-vector"><span class="std std-ref">Class Vector</span></a></p></li>
+</ul>
+</section>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#exhale-function-math-functions-8cpp-1a0f16e6273e25fc65adfd5b2e239c7823"><span class="std std-ref">Function LouLib::Math::signum</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1abcdeefac346d1ee24fe854b57ec7e84a.html#exhale-function-namespace-lou-lib-1-1-math-1abcdeefac346d1ee24fe854b57ec7e84a"><span class="std std-ref">Function LouLib::Math::angleDifference</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ade115ba7f05b86783fe554e972d2067c.html#exhale-function-namespace-lou-lib-1-1-math-1ade115ba7f05b86783fe554e972d2067c"><span class="std std-ref">Function LouLib::Math::clamp</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a9a85fdb9f3e3ce5a9d9dc4d474937e82.html#exhale-function-namespace-lou-lib-1-1-math-1a9a85fdb9f3e3ce5a9d9dc4d474937e82"><span class="std std-ref">Function LouLib::Math::constrainAngle</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab6b8bbedd3312ebc96088d33486a08d2.html#exhale-function-namespace-lou-lib-1-1-math-1ab6b8bbedd3312ebc96088d33486a08d2"><span class="std std-ref">Function LouLib::Math::operator*(const Matrix&amp;, const Matrix&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a62e4caeadc026df6647ed936d57553ad.html#exhale-function-namespace-lou-lib-1-1-math-1a62e4caeadc026df6647ed936d57553ad"><span class="std std-ref">Function LouLib::Math::operator*(const Matrix&amp;, const double&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a4a279fffabdb55afe4f379bdac949ff3.html#exhale-function-namespace-lou-lib-1-1-math-1a4a279fffabdb55afe4f379bdac949ff3"><span class="std std-ref">Function LouLib::Math::operator*(const double&amp;, const Matrix&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7.html#exhale-function-namespace-lou-lib-1-1-math-1a0d6ef3bb79361956fbe3458b88fa59d7"><span class="std std-ref">Function LouLib::Math::operator*(const Matrix&amp;, const Vector&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0cbf0c7773fb0dd36b494eccef757fda.html#exhale-function-namespace-lou-lib-1-1-math-1a0cbf0c7773fb0dd36b494eccef757fda"><span class="std std-ref">Function LouLib::Math::operator*(const Vector&amp;, const Vector&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ac1e22ca211525dd636a1403562043246.html#exhale-function-namespace-lou-lib-1-1-math-1ac1e22ca211525dd636a1403562043246"><span class="std std-ref">Function LouLib::Math::operator*(const double&amp;, const Vector&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1ab22d26a04c10c48106242982f320c3b1.html#exhale-function-namespace-lou-lib-1-1-math-1ab22d26a04c10c48106242982f320c3b1"><span class="std std-ref">Function LouLib::Math::operator*(const Vector&amp;, const double&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aa6cf2b966dbea5b0a4320319de0bcab8.html#exhale-function-namespace-lou-lib-1-1-math-1aa6cf2b966dbea5b0a4320319de0bcab8"><span class="std std-ref">Function LouLib::Math::operator+(const Matrix&amp;, const Matrix&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a45edf15c8b2065d88a5cd1629d31e804.html#exhale-function-namespace-lou-lib-1-1-math-1a45edf15c8b2065d88a5cd1629d31e804"><span class="std std-ref">Function LouLib::Math::operator+(const Vector&amp;, const Vector&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a7f7576193fa2d8862096a179cb2305cb.html#exhale-function-namespace-lou-lib-1-1-math-1a7f7576193fa2d8862096a179cb2305cb"><span class="std std-ref">Function LouLib::Math::operator-(const Matrix&amp;, const Matrix&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1aec8a0610438b96245bced70db7c408ea.html#exhale-function-namespace-lou-lib-1-1-math-1aec8a0610438b96245bced70db7c408ea"><span class="std std-ref">Function LouLib::Math::operator-(const Vector&amp;, const Vector&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_math_1a0f16e6273e25fc65adfd5b2e239c7823.html#exhale-function-namespace-lou-lib-1-1-math-1a0f16e6273e25fc65adfd5b2e239c7823"><span class="std std-ref">Function LouLib::Math::signum</span></a></p></li>
 </ul>
 </section>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9.html#exhale-variable-math-constants-8hpp-1ab92a37729dd2b0089666ad0ebf44d1b9"><span class="std std-ref">Variable LouLib::Math::E</span></a></p></li>
-<li><p><a class="reference internal" href="variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4.html#exhale-variable-math-constants-8hpp-1ae9488626031f2e8593ea590922465db4"><span class="std std-ref">Variable LouLib::Math::EPS</span></a></p></li>
-<li><p><a class="reference internal" href="variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253.html#exhale-variable-math-constants-8hpp-1aed013aba56196b4256b7980fa0a9c253"><span class="std std-ref">Variable LouLib::Math::PI</span></a></p></li>
-<li><p><a class="reference internal" href="variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01.html#exhale-variable-math-constants-8hpp-1aedb7a911d2f768764aee9be4837e6c01"><span class="std std-ref">Variable LouLib::Math::SQRT2</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ab92a37729dd2b0089666ad0ebf44d1b9.html#exhale-variable-namespace-lou-lib-1-1-math-1ab92a37729dd2b0089666ad0ebf44d1b9"><span class="std std-ref">Variable LouLib::Math::E</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1ae9488626031f2e8593ea590922465db4.html#exhale-variable-namespace-lou-lib-1-1-math-1ae9488626031f2e8593ea590922465db4"><span class="std std-ref">Variable LouLib::Math::EPS</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aed013aba56196b4256b7980fa0a9c253.html#exhale-variable-namespace-lou-lib-1-1-math-1aed013aba56196b4256b7980fa0a9c253"><span class="std std-ref">Variable LouLib::Math::PI</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_math_1aedb7a911d2f768764aee9be4837e6c01.html#exhale-variable-namespace-lou-lib-1-1-math-1aedb7a911d2f768764aee9be4837e6c01"><span class="std std-ref">Variable LouLib::Math::SQRT2</span></a></p></li>
 </ul>
 </section>
 </section>
@@ -146,8 +172,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="namespace_LouLib.html" class="btn btn-neutral float-left" title="Namespace LouLib" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="namespace_LouLib__Units.html" class="btn btn-neutral float-right" title="Namespace LouLib::Units" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="namespace_LouLib__Filters.html" class="btn btn-neutral float-left" title="Namespace LouLib::Filters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="namespace_LouLib__Odometry.html" class="btn btn-neutral float-right" title="Namespace LouLib::Odometry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

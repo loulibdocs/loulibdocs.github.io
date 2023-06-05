@@ -1,0 +1,44 @@
+
+.. _program_listing_file_src_LouLib_Units_AngularAcceleration.hpp:
+
+Program Listing for File AngularAcceleration.hpp
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_AngularAcceleration.hpp>` (``src/LouLib/Units/AngularAcceleration.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ANGULARACCELERATION_HPP
+   #define LOULIB_ANGULARACCELERATION_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Angle.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 0, -2, 0, 0, 0, 0, 1, AngularAcceleration);
+   
+           constexpr AngularAcceleration RADIAN_PER_SECOND_SQUARED = RADIAN / (SECOND * SECOND);
+           constexpr AngularAcceleration DEGREE_PER_SECOND_SQUARED = DEGREE / (SECOND * SECOND);
+   
+           inline namespace literals{
+               #define CREATE_ANGULARACCELERATION_STRING_LITERAL(literal, unit)             \
+               constexpr AngularAcceleration operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr AngularAcceleration operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_ANGULARACCELERATION_STRING_LITERAL(_radps2, RADIAN_PER_SECOND_SQUARED);
+               CREATE_ANGULARACCELERATION_STRING_LITERAL(_degps2, DEGREE_PER_SECOND_SQUARED);
+           }
+       }
+   }
+   
+   #endif //LOULIB_ANGULARACCELERATION_HPP

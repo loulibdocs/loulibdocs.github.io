@@ -1,0 +1,21 @@
+
+.. _namespace_Math:
+
+Namespace Math
+==============
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+Detailed Description
+--------------------
+
+Contains all of LouLib's math functionality 
+
+
+

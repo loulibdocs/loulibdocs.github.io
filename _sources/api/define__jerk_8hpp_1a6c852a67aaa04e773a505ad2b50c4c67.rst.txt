@@ -1,0 +1,14 @@
+.. _exhale_define__jerk_8hpp_1a6c852a67aaa04e773a505ad2b50c4c67:
+
+Define CREATE_JERK_STRING_LITERAL
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Jerk.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_JERK_STRING_LITERAL
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a98e8a94026d7750f7cc8509052649785:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularVelocity)
+================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularVelocity)
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a76ae0f1ed48f1cf25867c7496e5561b5:
+
+Function LouLib::Units::MOLE
+============================
+
+- Defined in :ref:`file_src_LouLib_Units_Substance.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::MOLE(1.)
+   :project: My Project

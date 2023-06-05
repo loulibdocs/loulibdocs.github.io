@@ -47,6 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +60,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -179,7 +180,7 @@
 <span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">BaseUnit</span><span class="o">&lt;</span><span class="n">L1</span><span class="p">,</span><span class="w"> </span><span class="n">M1</span><span class="p">,</span><span class="w"> </span><span class="n">t1</span><span class="p">,</span><span class="w"> </span><span class="n">Q1</span><span class="p">,</span><span class="w"> </span><span class="n">T1</span><span class="p">,</span><span class="w"> </span><span class="n">N1</span><span class="p">,</span><span class="w"> </span><span class="n">J1</span><span class="p">,</span><span class="w"> </span><span class="n">A1</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span>
 <span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">BaseUnit</span><span class="o">&lt;</span><span class="n">L2</span><span class="p">,</span><span class="w"> </span><span class="n">M2</span><span class="p">,</span><span class="w"> </span><span class="n">t2</span><span class="p">,</span><span class="w"> </span><span class="n">Q2</span><span class="p">,</span><span class="w"> </span><span class="n">T2</span><span class="p">,</span><span class="w"> </span><span class="n">N2</span><span class="p">,</span><span class="w"> </span><span class="n">J2</span><span class="p">,</span><span class="w"> </span><span class="n">A2</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">b</span>
 <span class="w">        </span><span class="p">){</span>
-<span class="w">            </span><span class="n">BaseUnit</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ratio_subtract</span><span class="o">&lt;</span><span class="n">L1</span><span class="p">,</span><span class="w"> </span><span class="n">L2</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">BaseUnit</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ratio_subtract</span><span class="o">&lt;</span><span class="n">L1</span><span class="p">,</span><span class="w"> </span><span class="n">L2</span><span class="o">&gt;</span><span class="p">,</span>
 <span class="w">                    </span><span class="n">std</span><span class="o">::</span><span class="n">ratio_subtract</span><span class="o">&lt;</span><span class="n">M1</span><span class="p">,</span><span class="w"> </span><span class="n">M2</span><span class="o">&gt;</span><span class="p">,</span>
 <span class="w">                    </span><span class="n">std</span><span class="o">::</span><span class="n">ratio_subtract</span><span class="o">&lt;</span><span class="n">t1</span><span class="p">,</span><span class="w"> </span><span class="n">t2</span><span class="o">&gt;</span><span class="p">,</span>
 <span class="w">                    </span><span class="n">std</span><span class="o">::</span><span class="n">ratio_subtract</span><span class="o">&lt;</span><span class="n">Q1</span><span class="p">,</span><span class="w"> </span><span class="n">Q2</span><span class="o">&gt;</span><span class="p">,</span>

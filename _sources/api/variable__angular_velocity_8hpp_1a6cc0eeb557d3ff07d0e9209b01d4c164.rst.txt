@@ -1,0 +1,14 @@
+.. _exhale_variable__angular_velocity_8hpp_1a6cc0eeb557d3ff07d0e9209b01d4c164:
+
+Variable LouLib::Units::RADIAN_PER_SECOND
+=========================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::RADIAN_PER_SECOND
+   :project: My Project

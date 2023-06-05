@@ -1,0 +1,14 @@
+.. _exhale_define__angular_velocity_8hpp_1abb403eef4277c172a81edaedc0d512c4:
+
+Define CREATE_ANGULARVELOCITY_STRING_LITERAL
+============================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_ANGULARVELOCITY_STRING_LITERAL
+   :project: My Project

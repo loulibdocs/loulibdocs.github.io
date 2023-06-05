@@ -1,0 +1,24 @@
+
+.. _program_listing_file_src_LouLib_Filters_Filters.hpp:
+
+Program Listing for File Filters.hpp
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_Filters.hpp>` (``src/LouLib/Filters/Filters.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_FILTERS_HPP
+   #define LOULIB_FILTERS_HPP
+   
+   namespace LouLib::Filters{}
+   
+   #include "SMAFilter.hpp"
+   #include "SMMFilter.hpp"
+   #include "EWMAFilter.hpp"
+   #include "AbstractFilter.hpp"
+   
+   #endif //LOULIB_FILTERS_HPP

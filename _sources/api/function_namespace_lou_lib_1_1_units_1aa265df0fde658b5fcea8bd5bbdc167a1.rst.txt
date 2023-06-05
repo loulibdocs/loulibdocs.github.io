@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aa265df0fde658b5fcea8bd5bbdc167a1:
+
+Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_dm3, CUBIC_DECIMETER)
+===========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_dm3, CUBIC_DECIMETER)
+   :project: My Project

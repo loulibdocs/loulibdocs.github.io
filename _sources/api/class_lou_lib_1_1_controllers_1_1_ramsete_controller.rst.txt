@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_controllers_1_1_ramsete_controller:
+
+Class RamseteController
+=======================
+
+- Defined in :ref:`file_src_LouLib_Controllers_RamseteController.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Controllers::RamseteController
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,124 @@
+
+.. _file_src_LouLib_Units_Area.hpp:
+
+File Area.hpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/Area.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_Area.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Definition of Area units
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+
+
+Includes
+--------
+
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``Length.hpp`` (:ref:`file_src_LouLib_Units_Length.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_Units.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b1b7d85814adc8ba1028f8a7d8138c5`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af2fe6791ef41ecade23c82d932be7a8a`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a3cd3f18ab89d21e0adc5bf45693f7dce`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af51d1ef910d0ae1b7a8999a4f64cd7e0`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__area_8hpp_1a6b2bfc03239210006892724357473a67`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a9960b211f4e7e53fdd8ba11b77be8fc4`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aea32e37c4d7ae311ecd1616436434e85`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad9f9b29886488426fcb81b875a54bfd3`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a4adcb8ec2fb64a468bb331a39c8b0fcc`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a43e3b5aa680a21d82e978d8a1286fe27`
+

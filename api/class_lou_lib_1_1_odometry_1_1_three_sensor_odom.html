@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class ThreeSensorOdom &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class TwoSensorIMUOdom" href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html" />
+    <link rel="prev" title="Class ThreeSensorIMUOdom" href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Class ThreeSensorOdom</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/class_lou_lib_1_1_odometry_1_1_three_sensor_odom.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-threesensorodom">
+<span id="exhale-class-class-lou-lib-1-1-odometry-1-1-three-sensor-odom"></span><h1>Class ThreeSensorOdom<a class="headerlink" href="#class-threesensorodom" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_LouLib_Odometry_ThreeSensorOdom.hpp.html#file-src-loulib-odometry-threesensorodom-hpp"><span class="std std-ref">File ThreeSensorOdom.hpp</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">LouLib::Odometry::AbstractOdometry</span></code> (<a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#exhale-class-class-lou-lib-1-1-odometry-1-1-abstract-odometry"><span class="std std-ref">Class AbstractOdometry</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib8Odometry15ThreeSensorOdomE">
+<span id="_CPPv3N6LouLib8Odometry15ThreeSensorOdomE"></span><span id="_CPPv2N6LouLib8Odometry15ThreeSensorOdomE"></span><span id="LouLib::Odometry::ThreeSensorOdom"></span><span class="target" id="class_lou_lib_1_1_odometry_1_1_three_sensor_odom"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ThreeSensorOdom</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">LouLib</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Odometry</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometryE" title="LouLib::Odometry::AbstractOdometry"><span class="n"><span class="pre">AbstractOdometry</span></span></a><a class="headerlink" href="#_CPPv4N6LouLib8Odometry15ThreeSensorOdomE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Class used as an odometry tracker with three sensors. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib8Odometry15ThreeSensorOdom15ThreeSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthE">
+<span id="_CPPv3N6LouLib8Odometry15ThreeSensorOdom15ThreeSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthE"></span><span id="_CPPv2N6LouLib8Odometry15ThreeSensorOdom15ThreeSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthE"></span><span id="LouLib::Odometry::ThreeSensorOdom::ThreeSensorOdom__AbstractOdomSensorR.AbstractOdomSensorR.Units::LengthCR.AbstractOdomSensorR.Units::LengthCR"></span><span class="target" id="class_lou_lib_1_1_odometry_1_1_three_sensor_odom_1a3f4aedc12c385c99147122d25ddddec5"></span><span class="sig-name descname"><span class="n"><span class="pre">ThreeSensorOdom</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensorE" title="LouLib::Odometry::AbstractOdomSensor"><span class="n"><span class="pre">AbstractOdomSensor</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">leftSensor</span></span>, <a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensorE" title="LouLib::Odometry::AbstractOdomSensor"><span class="n"><span class="pre">AbstractOdomSensor</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rightSensor</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Units</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Length</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">trackWidth</span></span>, <a class="reference internal" href="class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensorE" title="LouLib::Odometry::AbstractOdomSensor"><span class="n"><span class="pre">AbstractOdomSensor</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">backSensor</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Units</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Length</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">backDist</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib8Odometry15ThreeSensorOdom15ThreeSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>leftSensor</strong> – </p></li>
+<li><p><strong>rightSensor</strong> – </p></li>
+<li><p><strong>trackWidth</strong> – </p></li>
+<li><p><strong>backSensor</strong> – </p></li>
+<li><p><strong>backDist</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib8Odometry15ThreeSensorOdom7setPoseEN4Math6Pose2DE">
+<span id="_CPPv3N6LouLib8Odometry15ThreeSensorOdom7setPoseEN4Math6Pose2DE"></span><span id="_CPPv2N6LouLib8Odometry15ThreeSensorOdom7setPoseEN4Math6Pose2DE"></span><span id="LouLib::Odometry::ThreeSensorOdom::setPose__Math::Pose2D"></span><span class="target" id="class_lou_lib_1_1_odometry_1_1_three_sensor_odom_1abb0082962d31d27ed63e0aef6a1d58aa"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPose</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">Math</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2DE" title="LouLib::Math::Pose2D"><span class="n"><span class="pre">Pose2D</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">newPose</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6LouLib8Odometry15ThreeSensorOdom7setPoseEN4Math6Pose2DE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the current pose of the robot </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib8Odometry15ThreeSensorOdom6updateEv">
+<span id="_CPPv3N6LouLib8Odometry15ThreeSensorOdom6updateEv"></span><span id="_CPPv2N6LouLib8Odometry15ThreeSensorOdom6updateEv"></span><span id="LouLib::Odometry::ThreeSensorOdom::update"></span><span class="target" id="class_lou_lib_1_1_odometry_1_1_three_sensor_odom_1ad120041a12c2ddfbed7e49b397724421"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6LouLib8Odometry15ThreeSensorOdom6updateEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Computes the new position of the robot </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html" class="btn btn-neutral float-left" title="Class ThreeSensorIMUOdom" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html" class="btn btn-neutral float-right" title="Class TwoSensorIMUOdom" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

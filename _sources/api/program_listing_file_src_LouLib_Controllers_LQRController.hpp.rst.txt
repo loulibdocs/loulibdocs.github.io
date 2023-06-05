@@ -1,0 +1,51 @@
+
+.. _program_listing_file_src_LouLib_Controllers_LQRController.hpp:
+
+Program Listing for File LQRController.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_LQRController.hpp>` (``src/LouLib/Controllers/LQRController.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_LQRCONTROLLER_HPP
+   #define LOULIB_LQRCONTROLLER_HPP
+   
+   #include "../Math/Math.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+   
+           class LQRController {
+           private:
+               Math::Matrix A;
+               Math::Matrix B;
+               Math::Matrix Q;
+               Math::Matrix R;
+   
+               Math::Matrix P{0,0};
+               Math::Matrix K{0,0};
+   
+               Math::Vector reference{0};
+               Math::Vector actual{0};
+   
+               void solveDARE();
+   
+           public:
+               LQRController(const Math::Matrix &a, const Math::Matrix &b,
+                             const Math::Matrix &q, const Math::Matrix &r);
+   
+               Math::Matrix getK();
+   
+               Math::Vector computeControl(Math::Vector x);
+   
+               void setReference(const Math::Vector &_reference);
+           };
+   
+       } // LouLib
+   } // Controllers
+   
+   #endif //LOULIB_LQRCONTROLLER_HPP

@@ -20,7 +20,9 @@
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Matrix::MatrixRow" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html" />
+    <link rel="prev" title="Class SMMFilter" href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +62,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -79,8 +82,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -97,6 +105,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
       <li class="breadcrumb-item active">Class Matrix</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/api/class_lou_lib_1_1_math_1_1_matrix.rst.txt" rel="nofollow"> View page source</a>
@@ -112,19 +121,220 @@
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_src_LouLib_Math_Matrix.hpp.html#file-src-loulib-math-matrix-hpp"><span class="std std-ref">File Matrix.hpp</span></a></p></li>
 </ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline"></a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#exhale-class-class-lou-lib-1-1-math-1-1-matrix-1-1-matrix-row"><span class="std std-ref">Class Matrix::MatrixRow</span></a></p></li>
+</ul>
+</section>
+</section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “LouLib::Math::Matrix” in doxygen xml output for project “My Project” from directory: ./doc_out/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6MatrixE">
+<span id="_CPPv3N6LouLib4Math6MatrixE"></span><span id="_CPPv2N6LouLib4Math6MatrixE"></span><span id="LouLib::Math::Matrix"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><a class="headerlink" href="#_CPPv4N6LouLib4Math6MatrixE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Class representing a mathematical matrix. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6MatrixEii">
+<span id="_CPPv3N6LouLib4Math6Matrix6MatrixEii"></span><span id="_CPPv2N6LouLib4Math6Matrix6MatrixEii"></span><span id="LouLib::Math::Matrix::Matrix__i.i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ab4022003c53053544db7566894f64cb5"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rows</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cols</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6MatrixEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new matrix of the given dimensions </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rows</strong> – Number of rows </p></li>
+<li><p><strong>cols</strong> – Number of columns </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6MatrixENSt16initializer_listINSt16initializer_listIdEEEE">
+<span id="_CPPv3N6LouLib4Math6Matrix6MatrixENSt16initializer_listINSt16initializer_listIdEEEE"></span><span id="_CPPv2N6LouLib4Math6Matrix6MatrixENSt16initializer_listINSt16initializer_listIdEEEE"></span><span id="LouLib::Math::Matrix::Matrix__std::initializer_list:std::initializer_list:double::"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1afb6fe5f2c6ea84852effbea36cd2f131"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">matrixData</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6MatrixENSt16initializer_listINSt16initializer_listIdEEEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new matrix with the given data </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>matrixData</strong> – matrix data </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorINSt6vectorIdEEEE">
+<span id="_CPPv3N6LouLib4Math6Matrix6MatrixENSt6vectorINSt6vectorIdEEEE"></span><span id="_CPPv2N6LouLib4Math6Matrix6MatrixENSt6vectorINSt6vectorIdEEEE"></span><span id="LouLib::Math::Matrix::Matrix__std::vector:std::vector:double::"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1abd0b8c66bd9c05a60e5fa8fa29a40823"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">matrixData</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorINSt6vectorIdEEEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new matrix with the given data </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>matrixData</strong> – matrix data </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorI9MatrixRowEE">
+<span id="_CPPv3N6LouLib4Math6Matrix6MatrixENSt6vectorI9MatrixRowEE"></span><span id="_CPPv2N6LouLib4Math6Matrix6MatrixENSt6vectorI9MatrixRowEE"></span><span id="LouLib::Math::Matrix::Matrix__std::vector:MatrixRow:"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a3b0b068d4bfd31eaca5c787c5c4a55f5"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRowE" title="LouLib::Math::Matrix::MatrixRow"><span class="n"><span class="pre">MatrixRow</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">matrixData</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorI9MatrixRowEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new matrix with the given data </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>matrixData</strong> – matrix data </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6MatrixERK6Matrix">
+<span id="_CPPv3N6LouLib4Math6Matrix6MatrixERK6Matrix"></span><span id="_CPPv2N6LouLib4Math6Matrix6MatrixERK6Matrix"></span><span id="LouLib::Math::Matrix::Matrix__MatrixCR"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ad4789cb798feb4059b3ad46f606d7831"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N6LouLib4Math6Matrix6MatrixERK6Matrix" title="LouLib::Math::Matrix::Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6MatrixERK6Matrix" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new matrix that is a copy of the given matrix </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – The <a class="reference internal" href="#class_lou_lib_1_1_math_1_1_matrix"><span class="std std-ref">Matrix</span></a> to be copied </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6MatrixixEi">
+<span id="_CPPv3N6LouLib4Math6MatrixixEi"></span><span id="_CPPv2N6LouLib4Math6MatrixixEi"></span><span id="LouLib::Math::Matrix::subscript-operator__i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a781a789516a7518e3635a215f0c47c39"></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRowE" title="LouLib::Math::Matrix::MatrixRow"><span class="n"><span class="pre">MatrixRow</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6MatrixixEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Operator to get a reference to the row at the specified index </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>i</strong> – The index of the row to return </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the index does not exist </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A reference to the row at the specified index </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib4Math6MatrixixEi">
+<span id="_CPPv3NK6LouLib4Math6MatrixixEi"></span><span id="_CPPv2NK6LouLib4Math6MatrixixEi"></span><span id="LouLib::Math::Matrix::subscript-operator__iC"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a1be75e011475743304d79614085c85a3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRowE" title="LouLib::Math::Matrix::MatrixRow"><span class="n"><span class="pre">MatrixRow</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib4Math6MatrixixEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Operator to get a const reference to the row at the specified index </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>i</strong> – The index of the row to return </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the index does not exist </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A const reference to the element at the specified index </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6getColEi">
+<span id="_CPPv3N6LouLib4Math6Matrix6getColEi"></span><span id="_CPPv2N6LouLib4Math6Matrix6getColEi"></span><span id="LouLib::Math::Matrix::getCol__i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ac353031ac35d8c6c6868b40a44a7a7d8"></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6VectorE" title="LouLib::Math::Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCol</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6getColEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets a specified column vector of the matrix </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>i</strong> – The index of the column vector to return </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the index does not exist </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The column vector at the specified index </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix6getRowEi">
+<span id="_CPPv3N6LouLib4Math6Matrix6getRowEi"></span><span id="_CPPv2N6LouLib4Math6Matrix6getRowEi"></span><span id="LouLib::Math::Matrix::getRow__i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ab281740751a8a52b2e805d545be510bd"></span><a class="reference internal" href="class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6VectorE" title="LouLib::Math::Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix6getRowEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets a specified row vector of the matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib4Math6Matrix4rowsEv">
+<span id="_CPPv3NK6LouLib4Math6Matrix4rowsEv"></span><span id="_CPPv2NK6LouLib4Math6Matrix4rowsEv"></span><span id="LouLib::Math::Matrix::rowsC"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1afc7232b4fcc57a9ad06397eaa8c07f87"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib4Math6Matrix4rowsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets the number of rows of the matrix </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of rows of the matrix </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib4Math6Matrix4colsEv">
+<span id="_CPPv3NK6LouLib4Math6Matrix4colsEv"></span><span id="_CPPv2NK6LouLib4Math6Matrix4colsEv"></span><span id="LouLib::Math::Matrix::colsC"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ac0e1761b20013c3ec1ebc6caf2c2779c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cols</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib4Math6Matrix4colsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets the number of columns of the matrix </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of columns of the matrix </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix9transposeEv">
+<span id="_CPPv3N6LouLib4Math6Matrix9transposeEv"></span><span id="_CPPv2N6LouLib4Math6Matrix9transposeEv"></span><span id="LouLib::Math::Matrix::transpose"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1afdca53de611dd70bfbcd770f835dfe43"></span><a class="reference internal" href="#_CPPv4N6LouLib4Math6MatrixE" title="LouLib::Math::Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transpose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix9transposeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the transpose of the matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix4normEv">
+<span id="_CPPv3N6LouLib4Math6Matrix4normEv"></span><span id="_CPPv2N6LouLib4Math6Matrix4normEv"></span><span id="LouLib::Math::Matrix::norm"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a842d45d4daeb0c242eb891cf024b36d7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">norm</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix4normEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the frobenius norm of the matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix3detEv">
+<span id="_CPPv3N6LouLib4Math6Matrix3detEv"></span><span id="_CPPv2N6LouLib4Math6Matrix3detEv"></span><span id="LouLib::Math::Matrix::det"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a4a9774df5cfa97861fc930b4499541a4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">det</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix3detEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the determinant of the matrix using the Laplace expansion </p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the matrix is not square </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix5minorEii">
+<span id="_CPPv3N6LouLib4Math6Matrix5minorEii"></span><span id="_CPPv2N6LouLib4Math6Matrix5minorEii"></span><span id="LouLib::Math::Matrix::minor__i.i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1addf3ff62a67227e508d81c7aec7d2e7a"></span><a class="reference internal" href="#_CPPv4N6LouLib4Math6MatrixE" title="LouLib::Math::Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">minor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix5minorEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Computes the i,j minor of the matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix8cofactorEii">
+<span id="_CPPv3N6LouLib4Math6Matrix8cofactorEii"></span><span id="_CPPv2N6LouLib4Math6Matrix8cofactorEii"></span><span id="LouLib::Math::Matrix::cofactor__i.i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a803d2de277c256f8cc3ea0f06c76c1e6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cofactor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix8cofactorEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Computes the i,j cofactor of the matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix7inverseEv">
+<span id="_CPPv3N6LouLib4Math6Matrix7inverseEv"></span><span id="_CPPv2N6LouLib4Math6Matrix7inverseEv"></span><span id="LouLib::Math::Matrix::inverse"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1ac9e92fd570ae4dec9440431ade86b0c4"></span><a class="reference internal" href="#_CPPv4N6LouLib4Math6MatrixE" title="LouLib::Math::Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inverse</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix7inverseEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Computes the matrix inverse using the adjoint matrix </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Matrix8toStringEv">
+<span id="_CPPv3N6LouLib4Math6Matrix8toStringEv"></span><span id="_CPPv2N6LouLib4Math6Matrix8toStringEv"></span><span id="LouLib::Math::Matrix::toString"></span><span class="target" id="class_lou_lib_1_1_math_1_1_matrix_1a3582c3c8df32a53461a5ca7ddfeba883"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toString</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Matrix8toStringEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns a string representation of the matrix </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_lou_lib_1_1_filters_1_1_s_m_m_filter.html" class="btn btn-neutral float-left" title="Class SMMFilter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html" class="btn btn-neutral float-right" title="Class Matrix::MatrixRow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

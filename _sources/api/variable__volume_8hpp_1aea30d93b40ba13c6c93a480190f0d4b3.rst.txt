@@ -1,0 +1,14 @@
+.. _exhale_variable__volume_8hpp_1aea30d93b40ba13c6c93a480190f0d4b3:
+
+Variable LouLib::Units::CUBIC_FOOT
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CUBIC_FOOT
+   :project: My Project

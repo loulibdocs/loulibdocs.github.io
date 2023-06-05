@@ -1,0 +1,14 @@
+.. _exhale_function__volume_8hpp_1a088e6a35b653f941d4f6cdd0b4267e8a:
+
+Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_ft3, CUBIC_FOOT)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_ft3, CUBIC_FOOT)
+   :project: My Project

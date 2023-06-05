@@ -1,0 +1,18 @@
+
+.. _namespace_Paths:
+
+Namespace Paths
+===============
+
+
+Contains all of :ref:`namespace_LouLib`'s path planning functionality. 
+
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+

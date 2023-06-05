@@ -1,0 +1,32 @@
+
+.. _program_listing_file_src_LouLib_Odometry_AbstractOdomSensor.hpp:
+
+Program Listing for File AbstractOdomSensor.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Odometry_AbstractOdomSensor.hpp>` (``src/LouLib/Odometry/AbstractOdomSensor.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ABSTRACTODOMSENSOR_HPP
+   #define LOULIB_ABSTRACTODOMSENSOR_HPP
+   
+   #include "../Units/Units.hpp"
+   
+   namespace LouLib{
+       namespace Odometry{
+   
+           class AbstractOdomSensor {
+           public:
+               virtual void setGearRatio(int wheelSide, int sensorSide) = 0;
+   
+               virtual Units::Length getPosition() = 0;
+           };
+       }
+   }
+   
+   
+   #endif //LOULIB_ABSTRACTODOMSENSOR_HPP

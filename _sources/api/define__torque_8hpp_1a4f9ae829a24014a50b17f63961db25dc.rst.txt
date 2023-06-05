@@ -1,0 +1,14 @@
+.. _exhale_define__torque_8hpp_1a4f9ae829a24014a50b17f63961db25dc:
+
+Define CREATE_TORQUE_STRING_LITERAL
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Torque.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_TORQUE_STRING_LITERAL
+   :project: My Project

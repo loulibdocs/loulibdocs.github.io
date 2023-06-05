@@ -1,0 +1,14 @@
+.. _exhale_define__angular_jerk_8hpp_1ae51b81a85dfb9e5d644cda339b9f23d5:
+
+Define CREATE_ANGULARJERK_STRING_LITERAL
+========================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_ANGULARJERK_STRING_LITERAL
+   :project: My Project

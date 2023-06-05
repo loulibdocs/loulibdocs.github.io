@@ -14,104 +14,91 @@ Program Listing for File Matrix.hpp
    #ifndef LOULIB_MATRIX_HPP
    #define LOULIB_MATRIX_HPP
    
-   #include <algorithm>
    #include <vector>
+   #include "Vector.hpp"
    #include <stdexcept>
    
-   namespace LouLib{
-       namespace Math{
-           class Matrix{
+   namespace LouLib {
+       namespace Math {
+   
+           class Matrix {
            private:
-               int rows;
+               class MatrixRow{
+               private:
+                   std::vector<double> data;
    
-               int cols;
+               public:
+                   explicit MatrixRow(int n);
    
-               std::vector<std::vector<double>> _matrix;
+                   MatrixRow(std::initializer_list<double> rowData);
+   
+                   explicit MatrixRow(std::vector<double> rowData);
+   
+                   MatrixRow(const MatrixRow& other);
+   
+                   double& operator[](int i);
+   
+                   const double& operator[](int i) const;
+   
+                   int size() const;
+   
+                    Vector getVector();
+               };
+   
+               std::vector<MatrixRow> data;
    
            public:
+               Matrix(int rows, int cols);
    
-               Matrix(int rows, int cols) : rows(rows), cols(cols) {
-                   _matrix.resize(rows);
-                   for(int i = 0; i < rows; i++){
-                       _matrix[i].resize(cols);
-                       for(int j = 0; j < cols; j++){
-                           _matrix[i][j] = 0;
-                       }
-                   }
-               }
+               Matrix(std::initializer_list<std::initializer_list<double>> matrixData);
    
-               Matrix(int rows, int cols, double value) : rows(rows), cols(cols) {
-                   _matrix.resize(rows);
-                   for(int i = 0; i < rows; i++){
-                       _matrix[i].resize(cols);
-                       for(int j = 0; j < cols; j++){
-                           _matrix[i][j] = value;
-                       }
-                   }
-               }
+               Matrix(std::vector<std::vector<double>> matrixData);
    
-               Matrix(const Matrix &m){
-                   this->rows = m.getRows();
-                   this->cols = m.getCols();
-                   this->_matrix = m._matrix;
-               }
+               Matrix(std::vector<MatrixRow> matrixData);
    
-               int getRows() const {
-                   return rows;
-               }
+               Matrix(const Matrix& other);
    
-               int getCols() const {
-                   return cols;
-               }
+               MatrixRow& operator[](int i);
    
-               double& operator()(int row, int col){
-                   if(row < 0 || row >= rows || col < 0 || col >= cols){
-                       throw std::invalid_argument("Index out of bounds");
-                   }else{
-                       return _matrix[row][col];
-                   }
-               }
+               const MatrixRow& operator[](int i) const;
    
-                Matrix operator+(Matrix &m) {
-                    if(m.rows != this->rows || m.cols != this->cols) {
-                        throw std::invalid_argument("Matrix dimensions do not match");
-                    }else{
-                        Matrix sol(m.rows, m.cols, 0);
-                        for(int i = 0; i < m.rows; i++){
-                            for(int j = 0; j < m.cols; j++){
-                                sol(i,j) = this->_matrix[i][j] + m._matrix[i][j];
-                            }
-                        }
-                        return sol;
-                    }
-                }
+               Vector getCol(int i);
    
-                 Matrix operator-(Matrix &m){
-                     if(m.rows != this->rows || m.cols != this->cols){
-                         throw std::invalid_argument("Matrix dimensions do not match");
-                     }else{
-                         Matrix sol(m.rows, m.cols, 0);
-                         for(int i = 0; i < m.rows; i++){
-                             for(int j = 0; j < m.cols; j++){
-                                 sol(i,j) = this->_matrix[i][j] - m._matrix[i][j];
-                             }
-                         }
-                         return sol;
-                     }
-                 }
+                Vector getRow(int i);
    
-                  Matrix transpose(){
-                      Matrix sol(cols, rows);
-                      for(int i = 0; i < rows; i++){
-                          for(int j = 0; j < cols; j++){
-                              sol(j,i) = _matrix[i][j];
-                          }
-                      }
-                      return sol;
-                  }
+               int rows() const;
+   
+               int cols() const;
+   
+               Matrix transpose();
+   
+               double norm();
+   
+               double det();
+   
+               Matrix minor(int i, int j);
+   
+               double cofactor(int i, int j);
+   
+               Matrix inverse();
+   
+               std::string toString();
+   
            };
-       }
-   }
    
+           Matrix operator+(const Matrix& a, const Matrix& b);
+   
+           Matrix operator-(const Matrix& a, const Matrix& b);
+   
+           Matrix operator*(const Matrix& a, const Matrix& b);
+   
+           Matrix operator*(const Matrix& a, const double& b);
+   
+           Matrix operator*(const double& a, const Matrix& b);
+   
+           Vector operator*(const Matrix& a, const Vector& b);
+   
+       } // LouLib
+   } // Math
    
    #endif //LOULIB_MATRIX_HPP

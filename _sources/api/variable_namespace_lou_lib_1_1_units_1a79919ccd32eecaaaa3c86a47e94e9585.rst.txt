@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a79919ccd32eecaaaa3c86a47e94e9585:
+
+Variable LouLib::Units::DECAAMPERE
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECAAMPERE
+   :project: My Project

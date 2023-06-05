@@ -1,0 +1,43 @@
+
+.. _program_listing_file_src_LouLib_Units_Force.hpp:
+
+Program Listing for File Force.hpp
+==================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Force.hpp>` (``src/LouLib/Units/Force.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_FORCE_HPP
+   #define LOULIB_FORCE_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Mass.hpp"
+   #include "Length.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(1, 1, -2, 0, 0, 0, 0, 0, Force);
+   
+           constexpr Force NEWTON = (KILOGRAM * METER) / (SECOND * SECOND);
+   
+           inline namespace literals{
+               #define CREATE_FORCE_STRING_LITERAL(literal, unit)             \
+               constexpr Force operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Force operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_FORCE_STRING_LITERAL(_newton, NEWTON);
+           }
+       }
+   }
+   
+   #endif //LOULIB_FORCE_HPP

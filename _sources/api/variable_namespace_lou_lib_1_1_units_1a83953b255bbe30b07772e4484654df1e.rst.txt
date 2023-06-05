@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e:
+
+Variable LouLib::Units::NEWTON_METER
+====================================
+
+- Defined in :ref:`file_src_LouLib_Units_Torque.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::NEWTON_METER
+   :project: My Project

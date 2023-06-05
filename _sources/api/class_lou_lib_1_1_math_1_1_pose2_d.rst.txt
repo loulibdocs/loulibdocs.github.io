@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_math_1_1_pose2_d:
+
+Class Pose2D
+============
+
+- Defined in :ref:`file_src_LouLib_Math_Pose2D.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Math::Pose2D
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

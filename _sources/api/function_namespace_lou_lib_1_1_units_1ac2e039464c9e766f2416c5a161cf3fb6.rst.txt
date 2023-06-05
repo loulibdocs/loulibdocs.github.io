@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6:
+
+Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)
+===================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)
+   :project: My Project

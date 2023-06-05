@@ -1,0 +1,14 @@
+.. _exhale_variable__angular_jerk_8hpp_1a97106ac874fb9943d1db213b1f54f7d9:
+
+Variable LouLib::Units::RADIAN_PER_SECOND_CUBED
+===============================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::RADIAN_PER_SECOND_CUBED
+   :project: My Project

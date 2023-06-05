@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1afab732ee98274b6267dd28d1afe15c8b:
+
+Function LouLib::Units::KILOGRAM
+================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::KILOGRAM(1.)
+   :project: My Project

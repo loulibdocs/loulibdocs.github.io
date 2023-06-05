@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aedb125fddf80a2f430cd41fd79bebf7c:
+
+Template Function LouLib::Units::operator\*(const BaseUnit<L1, M1, t1, Q1, T1, N1, J1, A1>&, const BaseUnit<L2, M2, t2, Q2, T2, N2, J2, A2>&)
+=============================================================================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::operator*(const BaseUnit<L1, M1, t1, Q1, T1, N1, J1, A1>&, const BaseUnit<L2, M2, t2, Q2, T2, N2, J2, A2>&)
+   :project: My Project

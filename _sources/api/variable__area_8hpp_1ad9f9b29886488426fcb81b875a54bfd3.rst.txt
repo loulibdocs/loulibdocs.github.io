@@ -1,0 +1,14 @@
+.. _exhale_variable__area_8hpp_1ad9f9b29886488426fcb81b875a54bfd3:
+
+Variable LouLib::Units::SQUARE_METER
+====================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::SQUARE_METER
+   :project: My Project

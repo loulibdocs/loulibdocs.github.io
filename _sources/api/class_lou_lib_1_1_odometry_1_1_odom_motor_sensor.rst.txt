@@ -1,0 +1,26 @@
+.. _exhale_class_class_lou_lib_1_1_odometry_1_1_odom_motor_sensor:
+
+Class OdomMotorSensor
+=====================
+
+- Defined in :ref:`file_src_LouLib_Odometry_OdomMotorSensor.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public LouLib::Odometry::AbstractOdomSensor`` (:ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Odometry::OdomMotorSensor
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ae5156bb6beda09ec056ec927b4ab7138:
+
+Function LouLib::Units::SECOND
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::SECOND(1.)
+   :project: My Project

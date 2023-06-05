@@ -1,0 +1,14 @@
+.. _exhale_function__area_8hpp_1af2fe6791ef41ecade23c82d932be7a8a:
+
+Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_yd2, SQUARE_YARD)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_AREA_STRING_LITERAL(_yd2, SQUARE_YARD)
+   :project: My Project

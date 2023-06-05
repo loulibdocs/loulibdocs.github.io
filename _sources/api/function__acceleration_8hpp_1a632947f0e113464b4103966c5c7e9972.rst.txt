@@ -1,0 +1,14 @@
+.. _exhale_function__acceleration_8hpp_1a632947f0e113464b4103966c5c7e9972:
+
+Function LouLib::Units::CREATE_ACCELERATION_STRING_LITERAL
+==========================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Acceleration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ACCELERATION_STRING_LITERAL(_mps2, METER_PER_SECOND_SQUARED)
+   :project: My Project

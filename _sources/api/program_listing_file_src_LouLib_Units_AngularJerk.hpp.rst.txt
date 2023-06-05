@@ -1,0 +1,44 @@
+
+.. _program_listing_file_src_LouLib_Units_AngularJerk.hpp:
+
+Program Listing for File AngularJerk.hpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_AngularJerk.hpp>` (``src/LouLib/Units/AngularJerk.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ANGULARJERK_HPP
+   #define LOULIB_ANGULARJERK_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Angle.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 0, -3, 0, 0, 0, 0, 1, AngularJerk);
+   
+           constexpr AngularJerk RADIAN_PER_SECOND_CUBED = RADIAN / (SECOND * SECOND * SECOND);
+           constexpr AngularJerk DEGREE_PER_SECOND_CUBED = DEGREE / (SECOND * SECOND * SECOND);
+   
+           inline namespace literals{
+               #define CREATE_ANGULARJERK_STRING_LITERAL(literal, unit)             \
+               constexpr AngularJerk operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr AngularJerk operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_ANGULARJERK_STRING_LITERAL(_radps3, RADIAN_PER_SECOND_CUBED);
+               CREATE_ANGULARJERK_STRING_LITERAL(_degps3, DEGREE_PER_SECOND_CUBED);
+           }
+       }
+   }
+   
+   #endif //LOULIB_ANGULARJERK_HPP

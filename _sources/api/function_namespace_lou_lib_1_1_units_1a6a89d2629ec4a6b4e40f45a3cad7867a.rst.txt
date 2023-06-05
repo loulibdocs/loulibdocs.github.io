@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a:
+
+Function LouLib::Units::CREATE_MASS_STRING_LITERAL(_kg, KILOGRAM)
+=================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_MASS_STRING_LITERAL(_kg, KILOGRAM)
+   :project: My Project

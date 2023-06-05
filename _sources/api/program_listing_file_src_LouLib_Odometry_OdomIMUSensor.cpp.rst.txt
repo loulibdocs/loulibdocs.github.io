@@ -1,0 +1,32 @@
+
+.. _program_listing_file_src_LouLib_Odometry_OdomIMUSensor.cpp:
+
+Program Listing for File OdomIMUSensor.cpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Odometry_OdomIMUSensor.cpp>` (``src/LouLib/Odometry/OdomIMUSensor.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "OdomIMUSensor.hpp"
+   
+   #include "../Math/Math.hpp"
+   
+   namespace LouLib {
+       namespace Odometry {
+   
+           OdomIMUSensor::OdomIMUSensor(int port, double scale) : imuSensor(port), scale(scale){
+               imuSensor.reset();
+           }
+   
+           Units::Angle OdomIMUSensor::getHeading() {
+               double raw = imuSensor.get_heading()*scale;
+               double bounded = Math::constrainAngle(raw);
+               return bounded * Units::DEGREE;
+           }
+   
+       } // LouLib
+   } // Odometry

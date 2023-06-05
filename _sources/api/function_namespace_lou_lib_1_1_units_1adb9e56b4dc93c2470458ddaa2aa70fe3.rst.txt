@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)
+   :project: My Project

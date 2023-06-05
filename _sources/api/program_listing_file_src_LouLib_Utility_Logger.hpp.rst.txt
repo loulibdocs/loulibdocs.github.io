@@ -19,6 +19,7 @@ Program Listing for File Logger.hpp
    
    namespace LouLib{
        namespace Utility{
+   
            class Logger {
            private:
                std::ofstream fout;

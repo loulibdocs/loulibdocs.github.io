@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(3, 0, 0, 0, 0, 0, 0, 0, Volume)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(3, 0, 0, 0, 0, 0, 0, 0, Volume)
+   :project: My Project

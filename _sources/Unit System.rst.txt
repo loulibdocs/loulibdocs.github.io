@@ -21,6 +21,7 @@ However, string literals can only be used when the desired amount is not a varia
 The following code does the same thing as the above code:
 
 .. code-block:: cpp
+
 	//create a length of 5 meters
 	LouLib::Units::Length length = 5.0_m;
 
@@ -31,7 +32,7 @@ Performing unit conversions
 
 Unit conversions can be performed using the :code:`to` method:
 
-.. code-block: cpp
+.. code-block:: cpp
 	
 	//create a length of one foot
 	LouLib::Units::Length length = 1_ft;

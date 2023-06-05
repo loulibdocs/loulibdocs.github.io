@@ -1,0 +1,14 @@
+.. _exhale_function__area_8hpp_1a3cd3f18ab89d21e0adc5bf45693f7dce:
+
+Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_dm2, SQUARE_DECIMETER)
+==========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_AREA_STRING_LITERAL(_dm2, SQUARE_DECIMETER)
+   :project: My Project

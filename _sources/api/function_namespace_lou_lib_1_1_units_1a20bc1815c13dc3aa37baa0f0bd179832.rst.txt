@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832:
+
+Function LouLib::Units::KELVIN
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Temperature.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::KELVIN(1.)
+   :project: My Project

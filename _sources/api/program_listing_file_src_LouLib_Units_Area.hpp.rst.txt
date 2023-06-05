@@ -1,0 +1,55 @@
+
+.. _program_listing_file_src_LouLib_Units_Area.hpp:
+
+Program Listing for File Area.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Area.hpp>` (``src/LouLib/Units/Area.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_AREA_HPP
+   #define LOULIB_AREA_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Length.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(2, 0, 0, 0, 0, 0, 0, 0, Area);
+   
+           constexpr Area SQUARE_METER = METER * METER;
+           constexpr Area SQUARE_DECIMETER = DECIMETER * DECIMETER;
+           constexpr Area SQUARE_CENTIMETER = CENTIMETER * CENTIMETER;
+           constexpr Area SQUARE_MILLIMETER = MILLIMETER * MILLIMETER;
+           constexpr Area SQUARE_INCH = INCH * INCH;
+           constexpr Area SQUARE_FOOT = FOOT * FOOT;
+           constexpr Area SQUARE_YARD = YARD * YARD;
+           constexpr Area SQUARE_TILE = TILE * TILE;
+   
+           inline namespace literals{
+               #define CREATE_AREA_STRING_LITERAL(literal, unit)             \
+               constexpr Area operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Area operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_AREA_STRING_LITERAL(_m2, SQUARE_METER);
+               CREATE_AREA_STRING_LITERAL(_dm2, SQUARE_DECIMETER);
+               CREATE_AREA_STRING_LITERAL(_cm2, SQUARE_CENTIMETER);
+               CREATE_AREA_STRING_LITERAL(_mm2, SQUARE_MILLIMETER);
+               CREATE_AREA_STRING_LITERAL(_in2, SQUARE_INCH);
+               CREATE_AREA_STRING_LITERAL(_ft2, SQUARE_FOOT);
+               CREATE_AREA_STRING_LITERAL(_yd2, SQUARE_YARD);
+               CREATE_AREA_STRING_LITERAL(_tl2, SQUARE_TILE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_AREA_HPP

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 1, 0, 0, 0, 0, 0, 0, Mass)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 1, 0, 0, 0, 0, 0, 0, Mass)
+   :project: My Project

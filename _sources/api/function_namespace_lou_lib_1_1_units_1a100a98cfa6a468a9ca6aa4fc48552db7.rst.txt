@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7:
+
+Function LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_mps, METER_PER_SECOND)
+==============================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Velocity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_mps, METER_PER_SECOND)
+   :project: My Project

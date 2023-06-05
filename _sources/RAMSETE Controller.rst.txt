@@ -1,0 +1,63 @@
+==================
+RAMSETE Controller
+==================
+
+The :code:`RamseteController` class is used to create a RAMSETE
+non-linear, time-varying unicycle controller, that is used for
+trajectory following.
+
+Creating a RAMSETE Controller
+=============================
+
+The constructor for :code:`RamseteController` requires the following
+two constants:
+
+* :code:`b`
+	This constant should be greater than zero. :code:`b` acts similar
+	to the proportional term of a PID controller, so a larger value
+	of :code:`b` will make convergence more aggressive.
+
+* :code:`zeta`
+	This constant should be between zero and one. :code:`zeta` acts
+	as a dampening constant, so larger values of :code:`zeta` will
+	provide more dampening.
+
+A value for :code:`b` and :code:`zeta` that tends to work pretty well
+for most drives is :math:`b=2.0` and :math:`\zeta=0.7`.
+
+Using the RAMSETE controller
+============================
+
+The RAMSETE controller can be used by calling the :code:`computeControl`,
+:code:`getV`, and :code:`getOmega` methods:
+
+.. code-block:: cpp
+
+	//create a new RAMSETE controller
+	LouLib::Controllers::PIDController controller(2.0, 0.7);
+	
+	//create a new odometry tracker (can be any type of odom tracker)
+	LouLib::Odometry::TwoSensorOdom odom(...);
+	
+	//create a new trajectory
+	LouLib::Paths::Trajectory trajectory(...);
+	
+	//create RAMSETE loop
+	for(int i = 0; i < trajectory.size(); i++){
+		
+		//compute new control
+		controller.computeControl(trajectory, i, odom.getPose());
+		
+		//get computed control
+		LouLib::Units::Velocity targV = controller.getV();
+		LouLib::Units::AngularVelocity targOmega = controller.getOmega();
+		
+		//feed computed control into velocity controllers, the following two methods work:
+		//Create a state-space model and use an LQR to compute optimal motor voltages
+		//Convert targV and targOmega into target wheel velocities, and feed into motors
+		...
+		
+		//wait 10 milliseconds
+		pros::delay(10);
+		
+	}

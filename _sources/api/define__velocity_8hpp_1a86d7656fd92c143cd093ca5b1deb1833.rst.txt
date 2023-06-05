@@ -1,0 +1,14 @@
+.. _exhale_define__velocity_8hpp_1a86d7656fd92c143cd093ca5b1deb1833:
+
+Define CREATE_VELOCITY_STRING_LITERAL
+=====================================
+
+- Defined in :ref:`file_src_LouLib_Units_Velocity.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_VELOCITY_STRING_LITERAL
+   :project: My Project

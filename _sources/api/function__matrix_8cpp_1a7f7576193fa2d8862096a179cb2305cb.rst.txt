@@ -1,0 +1,14 @@
+.. _exhale_function__matrix_8cpp_1a7f7576193fa2d8862096a179cb2305cb:
+
+Function LouLib::Math::operator-(const Matrix&, const Matrix&)
+==============================================================
+
+- Defined in :ref:`file_src_LouLib_Math_Matrix.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Math::operator-(const Matrix&, const Matrix&)
+   :project: My Project

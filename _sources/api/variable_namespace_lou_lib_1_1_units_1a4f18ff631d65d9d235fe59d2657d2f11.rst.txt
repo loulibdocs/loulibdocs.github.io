@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a4f18ff631d65d9d235fe59d2657d2f11:
+
+Variable LouLib::Units::MILLIMETER
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::MILLIMETER
+   :project: My Project

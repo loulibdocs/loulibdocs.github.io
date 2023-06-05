@@ -1,0 +1,31 @@
+
+.. _program_listing_file_src_LouLib_Filters_AbstractFilter.hpp:
+
+Program Listing for File AbstractFilter.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_AbstractFilter.hpp>` (``src/LouLib/Filters/AbstractFilter.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ABSTRACTFILTER_HPP
+   #define LOULIB_ABSTRACTFILTER_HPP
+   
+   namespace LouLib {
+       namespace Filters {
+   
+           class AbstractFilter {
+           public:
+   
+               virtual void addReading(double reading) = 0;
+   
+               virtual double getOutput() = 0;
+           };
+   
+       } // LouLib
+   } // Filters
+   
+   #endif //LOULIB_ABSTRACTFILTER_HPP

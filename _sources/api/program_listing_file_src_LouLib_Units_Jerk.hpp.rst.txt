@@ -1,0 +1,43 @@
+
+.. _program_listing_file_src_LouLib_Units_Jerk.hpp:
+
+Program Listing for File Jerk.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Jerk.hpp>` (``src/LouLib/Units/Jerk.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_JERK_HPP
+   #define LOULIB_JERK_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Length.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib {
+       namespace Units {
+           DEFINE_NEW_UNIT(1, 0, -3, 0, 0, 0, 0, 0, Jerk);
+   
+           constexpr Jerk METER_PER_SECOND_CUBED = METER / (SECOND*SECOND*SECOND);
+   
+           inline namespace literals{
+               #define CREATE_JERK_STRING_LITERAL(literal, unit)             \
+               constexpr Jerk operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Jerk operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_JERK_STRING_LITERAL(_mps3, METER_PER_SECOND_CUBED);
+           }
+       }
+   }
+   
+   
+   #endif //LOULIB_JERK_HPP

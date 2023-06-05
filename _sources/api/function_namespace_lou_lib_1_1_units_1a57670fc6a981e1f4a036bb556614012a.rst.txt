@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a57670fc6a981e1f4a036bb556614012a:
+
+Function LouLib::Units::CREATE_ANGULARVELOCITY_STRING_LITERAL(_degps, DEGREE_PER_SECOND)
+========================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGULARVELOCITY_STRING_LITERAL(_degps, DEGREE_PER_SECOND)
+   :project: My Project

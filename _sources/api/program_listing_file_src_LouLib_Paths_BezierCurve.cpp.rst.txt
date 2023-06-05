@@ -1,0 +1,48 @@
+
+.. _program_listing_file_src_LouLib_Paths_BezierCurve.cpp:
+
+Program Listing for File BezierCurve.cpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Paths_BezierCurve.cpp>` (``src/LouLib/Paths/BezierCurve.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "BezierCurve.hpp"
+   
+   namespace LouLib {
+       namespace Paths {
+           BezierCurve::BezierCurve(const Math::Point2D &p0, const Math::Point2D &p1, const Math::Point2D &p2,
+                                    const Math::Point2D &p3) : P0(p0), P1(p1), P2(p2), P3(p3) {}
+   
+           Math::Point2D BezierCurve::evaluate(double t) {
+               Units::Length x = 0_m;
+               Units::Length y = 0_m;
+   
+               x += std::pow(1-t, 3) * P0.getX();
+               x += 3 * std::pow(1-t,2) * t * P1.getX();
+               x += 3 * (1-t) * std::pow(t, 2) * P2.getX();
+               x += std::pow(t, 3) * P3.getX();
+   
+               y += std::pow(1-t, 3) * P0.getY();
+               y += 3 * std::pow(1-t,2) * t * P1.getY();
+               y += 3 * (1-t) * std::pow(t, 2) * P2.getY();
+               y += std::pow(t, 3) * P3.getY();
+   
+               return Math::Point2D{x, y};
+           }
+   
+           std::vector<Math::Point2D> BezierCurve::decompose(int n) {
+               std::vector<Math::Point2D> sol;
+               for(int i = 0; i < n; i++){
+                   double t = (double)(i)/(double)(n-1);
+                   sol.push_back(evaluate(t));
+               }
+               return sol;
+           }
+   
+       } // LouLib
+   } // Paths

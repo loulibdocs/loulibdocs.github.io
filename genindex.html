@@ -46,6 +46,7 @@
 <li class="toctree-l1"><a class="reference internal" href="PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -58,9 +59,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -117,16 +118,30 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/define__acceleration_8hpp_1ad422df0049fc8615a1e04005728ae9f1.html#c.CREATE_ACCELERATION_STRING_LITERAL">CREATE_ACCELERATION_STRING_LITERAL (C macro)</a>
+</li>
       <li><a href="api/define__angle_8hpp_1adb0d307827847e6ac8684ff071ce42f0.html#c.CREATE_ANGLE_STRING_LITERAL">CREATE_ANGLE_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__angular_acceleration_8hpp_1a992c794a1cc56f08fc8dc166b8a516ca.html#c.CREATE_ANGULARACCELERATION_STRING_LITERAL">CREATE_ANGULARACCELERATION_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__angular_jerk_8hpp_1ae51b81a85dfb9e5d644cda339b9f23d5.html#c.CREATE_ANGULARJERK_STRING_LITERAL">CREATE_ANGULARJERK_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__angular_velocity_8hpp_1abb403eef4277c172a81edaedc0d512c4.html#c.CREATE_ANGULARVELOCITY_STRING_LITERAL">CREATE_ANGULARVELOCITY_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__area_8hpp_1a6b2bfc03239210006892724357473a67.html#c.CREATE_AREA_STRING_LITERAL">CREATE_AREA_STRING_LITERAL (C macro)</a>
 </li>
       <li><a href="api/define__current_8hpp_1a2009e15641a6b4e82c395d91e59dae66.html#c.CREATE_CURRENT_STRING_LITERAL">CREATE_CURRENT_STRING_LITERAL (C macro)</a>
 </li>
+      <li><a href="api/define__force_8hpp_1a2f18be561f9ccc8b2128207b45be3168.html#c.CREATE_FORCE_STRING_LITERAL">CREATE_FORCE_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__jerk_8hpp_1a6c852a67aaa04e773a505ad2b50c4c67.html#c.CREATE_JERK_STRING_LITERAL">CREATE_JERK_STRING_LITERAL (C macro)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/define__length_8hpp_1adf08256b3fcbe7507e39b36a56037f48.html#c.CREATE_LENGTH_STRING_LITERAL">CREATE_LENGTH_STRING_LITERAL (C macro)</a>
 </li>
       <li><a href="api/define__luminosity_8hpp_1a2f3b5ca2fec0a90534b71d5ba1313e92.html#c.CREATE_LUMINOSITY_STRING_LITERAL">CREATE_LUMINOSITY_STRING_LITERAL (C macro)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/define__mass_8hpp_1a7a4b19e5636003938b9a08edff95fb6d.html#c.CREATE_MASS_STRING_LITERAL">CREATE_MASS_STRING_LITERAL (C macro)</a>
 </li>
       <li><a href="api/define__substance_8hpp_1a8299716eb2df95b49ace976aad77cb25.html#c.CREATE_SUBSTANCE_STRING_LITERAL">CREATE_SUBSTANCE_STRING_LITERAL (C macro)</a>
@@ -134,6 +149,12 @@
       <li><a href="api/define__temperature_8hpp_1a2367c1d45d473728949123450b482114.html#c.CREATE_TEMPERATURE_STRING_LITERAL">CREATE_TEMPERATURE_STRING_LITERAL (C macro)</a>
 </li>
       <li><a href="api/define__time_8hpp_1a242babdb3be67dbf41f8d62355f049fd.html#c.CREATE_TIME_STRING_LITERAL">CREATE_TIME_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__torque_8hpp_1a4f9ae829a24014a50b17f63961db25dc.html#c.CREATE_TORQUE_STRING_LITERAL">CREATE_TORQUE_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__velocity_8hpp_1a86d7656fd92c143cd093ca5b1deb1833.html#c.CREATE_VELOCITY_STRING_LITERAL">CREATE_VELOCITY_STRING_LITERAL (C macro)</a>
+</li>
+      <li><a href="api/define__volume_8hpp_1a8904ea263e74365f2c83f6bc11efb5bc.html#c.CREATE_VOLUME_STRING_LITERAL">CREATE_VOLUME_STRING_LITERAL (C macro)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -149,17 +170,297 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9.html#_CPPv4N6LouLib4Math1EE">LouLib::Math::E (C++ member)</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#_CPPv4N6LouLib11Controllers13LQRControllerE">LouLib::Controllers::LQRController (C++ class)</a>
 </li>
-      <li><a href="api/variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4.html#_CPPv4N6LouLib4Math3EPSE">LouLib::Math::EPS (C++ member)</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#_CPPv4N6LouLib11Controllers13LQRController14computeControlEN4Math6VectorE">LouLib::Controllers::LQRController::computeControl (C++ function)</a>
 </li>
-      <li><a href="api/variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253.html#_CPPv4N6LouLib4Math2PIE">LouLib::Math::PI (C++ member)</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#_CPPv4N6LouLib11Controllers13LQRController4getKEv">LouLib::Controllers::LQRController::getK (C++ function)</a>
 </li>
-      <li><a href="api/function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#_CPPv4N6LouLib4Math6signumEd">LouLib::Math::signum (C++ function)</a>, <a href="api/function__math_functions_8hpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#_CPPv4N6LouLib4Math6signumEd">[1]</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#_CPPv4N6LouLib11Controllers13LQRController13LQRControllerERKN4Math6MatrixERKN4Math6MatrixERKN4Math6MatrixERKN4Math6MatrixE">LouLib::Controllers::LQRController::LQRController (C++ function)</a>
 </li>
-      <li><a href="api/variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01.html#_CPPv4N6LouLib4Math5SQRT2E">LouLib::Math::SQRT2 (C++ member)</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_l_q_r_controller.html#_CPPv4N6LouLib11Controllers13LQRController12setReferenceERKN4Math6VectorE">LouLib::Controllers::LQRController::setReference (C++ function)</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a944f8b8c1367ad37bf50c1c44b151911.html#_CPPv4I00000000EN6LouLib5Units3absE8BaseUnitI1L1M1t1Q1T1N1J1AER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::abs (C++ function)</a>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDControllerE">LouLib::Controllers::PIDController (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController10atSetpointEv">LouLib::Controllers::PIDController::atSetpoint (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController9getOutputEv">LouLib::Controllers::PIDController::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController13PIDControllerEddd">LouLib::Controllers::PIDController::PIDController (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController12setDeltaTimeEN5Units4TimeE">LouLib::Controllers::PIDController::setDeltaTime (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController18setIntegratorRangeEdd">LouLib::Controllers::PIDController::setIntegratorRange (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController14setOutputRangeEdd">LouLib::Controllers::PIDController::setOutputRange (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController11setSetpointEd">LouLib::Controllers::PIDController::setSetpoint (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController12setToleranceEdd">LouLib::Controllers::PIDController::setTolerance (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_p_i_d_controller.html#_CPPv4N6LouLib11Controllers13PIDController6updateEd">LouLib::Controllers::PIDController::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#_CPPv4N6LouLib11Controllers17RamseteControllerE">LouLib::Controllers::RamseteController (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#_CPPv4N6LouLib11Controllers17RamseteController14computeControlERN5Paths10TrajectoryEiN4Math6Pose2DE">LouLib::Controllers::RamseteController::computeControl (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#_CPPv4NK6LouLib11Controllers17RamseteController8getOmegaEv">LouLib::Controllers::RamseteController::getOmega (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#_CPPv4NK6LouLib11Controllers17RamseteController4getVEv">LouLib::Controllers::RamseteController::getV (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_ramsete_controller.html#_CPPv4N6LouLib11Controllers17RamseteController17RamseteControllerEdd">LouLib::Controllers::RamseteController::RamseteController (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHControllerE">LouLib::Controllers::TBHController (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController9getOutputEv">LouLib::Controllers::TBHController::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController12setDeltaTimeEN5Units4TimeE">LouLib::Controllers::TBHController::setDeltaTime (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController14setOutputRangeEdd">LouLib::Controllers::TBHController::setOutputRange (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController11setSetpointEd">LouLib::Controllers::TBHController::setSetpoint (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController13TBHControllerEd">LouLib::Controllers::TBHController::TBHController (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_controllers_1_1_t_b_h_controller.html#_CPPv4N6LouLib11Controllers13TBHController6updateEd">LouLib::Controllers::TBHController::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_abstract_filter.html#_CPPv4N6LouLib7Filters14AbstractFilterE">LouLib::Filters::AbstractFilter (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_abstract_filter.html#_CPPv4N6LouLib7Filters14AbstractFilter10addReadingEd">LouLib::Filters::AbstractFilter::addReading (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_abstract_filter.html#_CPPv4N6LouLib7Filters14AbstractFilter9getOutputEv">LouLib::Filters::AbstractFilter::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#_CPPv4N6LouLib7Filters10EWMAFilterE">LouLib::Filters::EWMAFilter (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#_CPPv4N6LouLib7Filters10EWMAFilter10addReadingEd">LouLib::Filters::EWMAFilter::addReading (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#_CPPv4N6LouLib7Filters10EWMAFilter10EWMAFilterEdd">LouLib::Filters::EWMAFilter::EWMAFilter (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_e_w_m_a_filter.html#_CPPv4N6LouLib7Filters10EWMAFilter9getOutputEv">LouLib::Filters::EWMAFilter::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#_CPPv4N6LouLib7Filters9SMAFilterE">LouLib::Filters::SMAFilter (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#_CPPv4N6LouLib7Filters9SMAFilter10addReadingEd">LouLib::Filters::SMAFilter::addReading (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#_CPPv4N6LouLib7Filters9SMAFilter9getOutputEv">LouLib::Filters::SMAFilter::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_a_filter.html#_CPPv4N6LouLib7Filters9SMAFilter9SMAFilterEi">LouLib::Filters::SMAFilter::SMAFilter (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#_CPPv4N6LouLib7Filters9SMMFilterE">LouLib::Filters::SMMFilter (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#_CPPv4N6LouLib7Filters9SMMFilter10addReadingEd">LouLib::Filters::SMMFilter::addReading (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#_CPPv4N6LouLib7Filters9SMMFilter9getOutputEv">LouLib::Filters::SMMFilter::getOutput (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_filters_1_1_s_m_m_filter.html#_CPPv4N6LouLib7Filters9SMMFilter9SMMFilterEi">LouLib::Filters::SMMFilter::SMMFilter (C++ function)</a>
+</li>
+      <li><a href="api/function__math_functions_8cpp_1abcdeefac346d1ee24fe854b57ec7e84a.html#_CPPv4N6LouLib4Math15angleDifferenceEdd">LouLib::Math::angleDifference (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_math_1abcdeefac346d1ee24fe854b57ec7e84a.html#_CPPv4N6LouLib4Math15angleDifferenceEdd">[1]</a>
+</li>
+      <li><a href="api/function__math_functions_8cpp_1ade115ba7f05b86783fe554e972d2067c.html#_CPPv4N6LouLib4Math5clampEddd">LouLib::Math::clamp (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_math_1ade115ba7f05b86783fe554e972d2067c.html#_CPPv4N6LouLib4Math5clampEddd">[1]</a>
+</li>
+      <li><a href="api/function__math_functions_8cpp_1a9a85fdb9f3e3ce5a9d9dc4d474937e82.html#_CPPv4N6LouLib4Math14constrainAngleEd">LouLib::Math::constrainAngle (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a9a85fdb9f3e3ce5a9d9dc4d474937e82.html#_CPPv4N6LouLib4Math14constrainAngleEd">[1]</a>
+</li>
+      <li><a href="api/variable__math_constants_8hpp_1ab92a37729dd2b0089666ad0ebf44d1b9.html#_CPPv4N6LouLib4Math1EE">LouLib::Math::E (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_math_1ab92a37729dd2b0089666ad0ebf44d1b9.html#_CPPv4N6LouLib4Math1EE">[1]</a>
+</li>
+      <li><a href="api/variable__math_constants_8hpp_1ae9488626031f2e8593ea590922465db4.html#_CPPv4N6LouLib4Math3EPSE">LouLib::Math::EPS (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_math_1ae9488626031f2e8593ea590922465db4.html#_CPPv4N6LouLib4Math3EPSE">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6MatrixE">LouLib::Math::Matrix (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix8cofactorEii">LouLib::Math::Matrix::cofactor (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4NK6LouLib4Math6Matrix4colsEv">LouLib::Math::Matrix::cols (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix3detEv">LouLib::Math::Matrix::det (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6getColEi">LouLib::Math::Matrix::getCol (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6getRowEi">LouLib::Math::Matrix::getRow (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix7inverseEv">LouLib::Math::Matrix::inverse (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6MatrixENSt16initializer_listINSt16initializer_listIdEEEE">LouLib::Math::Matrix::Matrix (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorI9MatrixRowEE">[1]</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6MatrixENSt6vectorINSt6vectorIdEEEE">[2]</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6MatrixERK6Matrix">[3]</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix6MatrixEii">[4]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRowE">LouLib::Math::Matrix::MatrixRow (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRow9getVectorEv">LouLib::Math::Matrix::MatrixRow::getVector (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRow9MatrixRowENSt16initializer_listIdEE">LouLib::Math::Matrix::MatrixRow::MatrixRow (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRow9MatrixRowENSt6vectorIdEE">[1]</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRow9MatrixRowERK9MatrixRow">[2]</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRow9MatrixRowEi">[3]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4N6LouLib4Math6Matrix9MatrixRowixEi">LouLib::Math::Matrix::MatrixRow::operator[] (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4NK6LouLib4Math6Matrix9MatrixRowixEi">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row.html#_CPPv4NK6LouLib4Math6Matrix9MatrixRow4sizeEv">LouLib::Math::Matrix::MatrixRow::size (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix5minorEii">LouLib::Math::Matrix::minor (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix4normEv">LouLib::Math::Matrix::norm (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6MatrixixEi">LouLib::Math::Matrix::operator[] (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4NK6LouLib4Math6MatrixixEi">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4NK6LouLib4Math6Matrix4rowsEv">LouLib::Math::Matrix::rows (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix8toStringEv">LouLib::Math::Matrix::toString (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_matrix.html#_CPPv4N6LouLib4Math6Matrix9transposeEv">LouLib::Math::Matrix::transpose (C++ function)</a>
+</li>
+      <li><a href="api/function__matrix_8cpp_1a0d6ef3bb79361956fbe3458b88fa59d7.html#_CPPv4N6LouLib4MathmlERK6MatrixRK6Vector">LouLib::Math::operator* (C++ function)</a>, <a href="api/function__matrix_8cpp_1a4a279fffabdb55afe4f379bdac949ff3.html#_CPPv4N6LouLib4MathmlERKdRK6Matrix">[1]</a>, <a href="api/function__matrix_8cpp_1a62e4caeadc026df6647ed936d57553ad.html#_CPPv4N6LouLib4MathmlERK6MatrixRKd">[2]</a>, <a href="api/function__matrix_8cpp_1ab6b8bbedd3312ebc96088d33486a08d2.html#_CPPv4N6LouLib4MathmlERK6MatrixRK6Matrix">[3]</a>, <a href="api/function__vector_8cpp_1a0cbf0c7773fb0dd36b494eccef757fda.html#_CPPv4N6LouLib4MathmlERK6VectorRK6Vector">[4]</a>, <a href="api/function__vector_8cpp_1ab22d26a04c10c48106242982f320c3b1.html#_CPPv4N6LouLib4MathmlERK6VectorRKd">[5]</a>, <a href="api/function__vector_8cpp_1ac1e22ca211525dd636a1403562043246.html#_CPPv4N6LouLib4MathmlERKdRK6Vector">[6]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a0cbf0c7773fb0dd36b494eccef757fda.html#_CPPv4N6LouLib4MathmlERK6VectorRK6Vector">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7.html#_CPPv4N6LouLib4MathmlERK6MatrixRK6Vector">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a4a279fffabdb55afe4f379bdac949ff3.html#_CPPv4N6LouLib4MathmlERKdRK6Matrix">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a62e4caeadc026df6647ed936d57553ad.html#_CPPv4N6LouLib4MathmlERK6MatrixRKd">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1ab22d26a04c10c48106242982f320c3b1.html#_CPPv4N6LouLib4MathmlERK6VectorRKd">[11]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1ab6b8bbedd3312ebc96088d33486a08d2.html#_CPPv4N6LouLib4MathmlERK6MatrixRK6Matrix">[12]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1ac1e22ca211525dd636a1403562043246.html#_CPPv4N6LouLib4MathmlERKdRK6Vector">[13]</a>
+</li>
+      <li><a href="api/function__matrix_8cpp_1aa6cf2b966dbea5b0a4320319de0bcab8.html#_CPPv4N6LouLib4MathplERK6MatrixRK6Matrix">LouLib::Math::operator+ (C++ function)</a>, <a href="api/function__vector_8cpp_1a45edf15c8b2065d88a5cd1629d31e804.html#_CPPv4N6LouLib4MathplERK6VectorRK6Vector">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a45edf15c8b2065d88a5cd1629d31e804.html#_CPPv4N6LouLib4MathplERK6VectorRK6Vector">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1aa6cf2b966dbea5b0a4320319de0bcab8.html#_CPPv4N6LouLib4MathplERK6MatrixRK6Matrix">[3]</a>
+</li>
+      <li><a href="api/function__matrix_8cpp_1a7f7576193fa2d8862096a179cb2305cb.html#_CPPv4N6LouLib4MathmiERK6MatrixRK6Matrix">LouLib::Math::operator- (C++ function)</a>, <a href="api/function__vector_8cpp_1aec8a0610438b96245bced70db7c408ea.html#_CPPv4N6LouLib4MathmiERK6VectorRK6Vector">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a7f7576193fa2d8862096a179cb2305cb.html#_CPPv4N6LouLib4MathmiERK6MatrixRK6Matrix">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1aec8a0610438b96245bced70db7c408ea.html#_CPPv4N6LouLib4MathmiERK6VectorRK6Vector">[3]</a>
+</li>
+      <li><a href="api/variable__math_constants_8hpp_1aed013aba56196b4256b7980fa0a9c253.html#_CPPv4N6LouLib4Math2PIE">LouLib::Math::PI (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_math_1aed013aba56196b4256b7980fa0a9c253.html#_CPPv4N6LouLib4Math2PIE">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2DE">LouLib::Math::Point2D (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2D6distToE7Point2D">LouLib::Math::Point2D::distTo (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2D13findCurvatureE7Point2D7Point2D">LouLib::Math::Point2D::findCurvature (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4NK6LouLib4Math7Point2D4getXEv">LouLib::Math::Point2D::getX (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4NK6LouLib4Math7Point2D4getYEv">LouLib::Math::Point2D::getY (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2D7Point2DERKN5Units6LengthERKN5Units6LengthE">LouLib::Math::Point2D::Point2D (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2D4setXERKN5Units6LengthE">LouLib::Math::Point2D::setX (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_point2_d.html#_CPPv4N6LouLib4Math7Point2D4setYERKN5Units6LengthE">LouLib::Math::Point2D::setY (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2DE">LouLib::Math::Pose2D (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4NK6LouLib4Math6Pose2D8getThetaEv">LouLib::Math::Pose2D::getTheta (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4NK6LouLib4Math6Pose2D4getXEv">LouLib::Math::Pose2D::getX (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4NK6LouLib4Math6Pose2D4getYEv">LouLib::Math::Pose2D::getY (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2D6Pose2DERKN5Units6LengthERKN5Units6LengthERKN5Units5AngleE">LouLib::Math::Pose2D::Pose2D (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2D8setThetaERKN5Units5AngleE">LouLib::Math::Pose2D::setTheta (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2D4setXERKN5Units6LengthE">LouLib::Math::Pose2D::setX (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_pose2_d.html#_CPPv4N6LouLib4Math6Pose2D4setYERKN5Units6LengthE">LouLib::Math::Pose2D::setY (C++ function)</a>
+</li>
+      <li><a href="api/function__math_functions_8cpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#_CPPv4N6LouLib4Math6signumEd">LouLib::Math::signum (C++ function)</a>, <a href="api/function__math_functions_8hpp_1a0f16e6273e25fc65adfd5b2e239c7823.html#_CPPv4N6LouLib4Math6signumEd">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_math_1a0f16e6273e25fc65adfd5b2e239c7823.html#_CPPv4N6LouLib4Math6signumEd">[2]</a>
+</li>
+      <li><a href="api/variable__math_constants_8hpp_1aedb7a911d2f768764aee9be4837e6c01.html#_CPPv4N6LouLib4Math5SQRT2E">LouLib::Math::SQRT2 (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_math_1aedb7a911d2f768764aee9be4837e6c01.html#_CPPv4N6LouLib4Math5SQRT2E">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6VectorE">LouLib::Math::Vector (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector4normEv">LouLib::Math::Vector::norm (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector9normalizeEv">LouLib::Math::Vector::normalize (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6VectorixEi">LouLib::Math::Vector::operator[] (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4NK6LouLib4Math6VectorixEi">[1]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4NK6LouLib4Math6Vector4sizeEv">LouLib::Math::Vector::size (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector8toStringEv">LouLib::Math::Vector::toString (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector6VectorENSt16initializer_listIdEE">LouLib::Math::Vector::Vector (C++ function)</a>, <a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector6VectorENSt6vectorIdEE">[1]</a>, <a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector6VectorERK6Vector">[2]</a>, <a href="api/class_lou_lib_1_1_math_1_1_vector.html#_CPPv4N6LouLib4Math6Vector6VectorEi">[3]</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometryE">LouLib::Odometry::AbstractOdometry (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometry16AbstractOdometryEv">LouLib::Odometry::AbstractOdometry::AbstractOdometry (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometry7getPoseEv">LouLib::Odometry::AbstractOdometry::getPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometry9robotPoseE">LouLib::Odometry::AbstractOdometry::robotPose (C++ member)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometry7setPoseEN4Math6Pose2DE">LouLib::Odometry::AbstractOdometry::setPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odometry.html#_CPPv4N6LouLib8Odometry16AbstractOdometry6updateEv">LouLib::Odometry::AbstractOdometry::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensorE">LouLib::Odometry::AbstractOdomSensor (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensor11getPositionEv">LouLib::Odometry::AbstractOdomSensor::getPosition (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor.html#_CPPv4N6LouLib8Odometry18AbstractOdomSensor12setGearRatioEii">LouLib::Odometry::AbstractOdomSensor::setGearRatio (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html#_CPPv4N6LouLib8Odometry13OdomIMUSensorE">LouLib::Odometry::OdomIMUSensor (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html#_CPPv4N6LouLib8Odometry13OdomIMUSensor10getHeadingEv">LouLib::Odometry::OdomIMUSensor::getHeading (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor.html#_CPPv4N6LouLib8Odometry13OdomIMUSensor13OdomIMUSensorEid">LouLib::Odometry::OdomIMUSensor::OdomIMUSensor (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#_CPPv4N6LouLib8Odometry15OdomMotorSensorE">LouLib::Odometry::OdomMotorSensor (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#_CPPv4N6LouLib8Odometry15OdomMotorSensor11getPositionEv">LouLib::Odometry::OdomMotorSensor::getPosition (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#_CPPv4N6LouLib8Odometry15OdomMotorSensor15OdomMotorSensorEiN4pros17motor_gearset_e_tEbRKN5Units6LengthE">LouLib::Odometry::OdomMotorSensor::OdomMotorSensor (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_motor_sensor.html#_CPPv4N6LouLib8Odometry15OdomMotorSensor12setGearRatioEii">LouLib::Odometry::OdomMotorSensor::setGearRatio (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#_CPPv4N6LouLib8Odometry18OdomRotationSensorE">LouLib::Odometry::OdomRotationSensor (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#_CPPv4N6LouLib8Odometry18OdomRotationSensor11getPositionEv">LouLib::Odometry::OdomRotationSensor::getPosition (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#_CPPv4N6LouLib8Odometry18OdomRotationSensor18OdomRotationSensorEibRKN5Units6LengthE">LouLib::Odometry::OdomRotationSensor::OdomRotationSensor (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor.html#_CPPv4N6LouLib8Odometry18OdomRotationSensor12setGearRatioEii">LouLib::Odometry::OdomRotationSensor::setGearRatio (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry18ThreeSensorIMUOdomE">LouLib::Odometry::ThreeSensorIMUOdom (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry18ThreeSensorIMUOdom7setPoseEN4Math6Pose2DE">LouLib::Odometry::ThreeSensorIMUOdom::setPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry18ThreeSensorIMUOdom18ThreeSensorIMUOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthER13OdomIMUSensor">LouLib::Odometry::ThreeSensorIMUOdom::ThreeSensorIMUOdom (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry18ThreeSensorIMUOdom6updateEv">LouLib::Odometry::ThreeSensorIMUOdom::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#_CPPv4N6LouLib8Odometry15ThreeSensorOdomE">LouLib::Odometry::ThreeSensorOdom (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#_CPPv4N6LouLib8Odometry15ThreeSensorOdom7setPoseEN4Math6Pose2DE">LouLib::Odometry::ThreeSensorOdom::setPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#_CPPv4N6LouLib8Odometry15ThreeSensorOdom15ThreeSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorRKN5Units6LengthER18AbstractOdomSensorRKN5Units6LengthE">LouLib::Odometry::ThreeSensorOdom::ThreeSensorOdom (C++ function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_three_sensor_odom.html#_CPPv4N6LouLib8Odometry15ThreeSensorOdom6updateEv">LouLib::Odometry::ThreeSensorOdom::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry16TwoSensorIMUOdomE">LouLib::Odometry::TwoSensorIMUOdom (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry16TwoSensorIMUOdom7setPoseEN4Math6Pose2DE">LouLib::Odometry::TwoSensorIMUOdom::setPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry16TwoSensorIMUOdom16TwoSensorIMUOdomER18AbstractOdomSensorR18AbstractOdomSensorN5Units6LengthER13OdomIMUSensor">LouLib::Odometry::TwoSensorIMUOdom::TwoSensorIMUOdom (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom.html#_CPPv4N6LouLib8Odometry16TwoSensorIMUOdom6updateEv">LouLib::Odometry::TwoSensorIMUOdom::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#_CPPv4N6LouLib8Odometry13TwoSensorOdomE">LouLib::Odometry::TwoSensorOdom (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#_CPPv4N6LouLib8Odometry13TwoSensorOdom7setPoseEN4Math6Pose2DE">LouLib::Odometry::TwoSensorOdom::setPose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#_CPPv4N6LouLib8Odometry13TwoSensorOdom13TwoSensorOdomER18AbstractOdomSensorR18AbstractOdomSensorN5Units6LengthE">LouLib::Odometry::TwoSensorOdom::TwoSensorOdom (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_odometry_1_1_two_sensor_odom.html#_CPPv4N6LouLib8Odometry13TwoSensorOdom6updateEv">LouLib::Odometry::TwoSensorOdom::update (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_bezier_curve.html#_CPPv4N6LouLib5Paths11BezierCurveE">LouLib::Paths::BezierCurve (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_bezier_curve.html#_CPPv4N6LouLib5Paths11BezierCurve11BezierCurveERKN4Math7Point2DERKN4Math7Point2DERKN4Math7Point2DERKN4Math7Point2DE">LouLib::Paths::BezierCurve::BezierCurve (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_bezier_curve.html#_CPPv4N6LouLib5Paths11BezierCurve9decomposeEi">LouLib::Paths::BezierCurve::decompose (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_bezier_curve.html#_CPPv4N6LouLib5Paths11BezierCurve8evaluateEd">LouLib::Paths::BezierCurve::evaluate (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10TrajectoryE">LouLib::Paths::Trajectory (C++ class)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory18getAngularVelocityEi">LouLib::Paths::Trajectory::getAngularVelocity (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory16getDistFromStartEi">LouLib::Paths::Trajectory::getDistFromStart (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory8getThetaEi">LouLib::Paths::Trajectory::getTheta (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory11getVelocityEi">LouLib::Paths::Trajectory::getVelocity (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory4getXEi">LouLib::Paths::Trajectory::getX (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory4getYEi">LouLib::Paths::Trajectory::getY (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory4sizeEv">LouLib::Paths::Trajectory::size (C++ function)</a>
+</li>
+      <li><a href="api/class_lou_lib_1_1_paths_1_1_trajectory.html#_CPPv4N6LouLib5Paths10Trajectory10TrajectoryENSt6vectorIN4Math6Pose2DEEEN5Units8VelocityEN5Units12AccelerationEN5Units6LengthEN5Units8VelocityE">LouLib::Paths::Trajectory::Trajectory (C++ function)</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a944f8b8c1367ad37bf50c1c44b151911.html#_CPPv4I00000000EN6LouLib5Units3absE8BaseUnitI1L1M1t1Q1T1N1J1AER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::abs (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a944f8b8c1367ad37bf50c1c44b151911.html#_CPPv4I00000000EN6LouLib5Units3absE8BaseUnitI1L1M1t1Q1T1N1J1AER8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
 </li>
       <li><a href="api/class_lou_lib_1_1_units_1_1_base_unit.html#_CPPv4I00000000EN6LouLib5Units8BaseUnitE">LouLib::Units::BaseUnit (C++ class)</a>
 </li>
@@ -179,103 +480,177 @@
 </li>
       <li><a href="api/class_lou_lib_1_1_units_1_1_base_unit.html#_CPPv4NK6LouLib5Units8BaseUnit3valEv">LouLib::Units::BaseUnit::val (C++ function)</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c.html#_CPPv4N6LouLib5Units11CENTIAMPEREE">LouLib::Units::CENTIAMPERE (C++ member)</a>
+      <li><a href="api/variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c.html#_CPPv4N6LouLib5Units11CENTIAMPEREE">LouLib::Units::CENTIAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a9d5ef467f6905020d5c91101ed2a250c.html#_CPPv4N6LouLib5Units11CENTIAMPEREE">[1]</a>
 </li>
-      <li><a href="api/variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2.html#_CPPv4N6LouLib5Units11CENTIDEGREEE">LouLib::Units::CENTIDEGREE (C++ member)</a>
+      <li><a href="api/variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2.html#_CPPv4N6LouLib5Units11CENTIDEGREEE">LouLib::Units::CENTIDEGREE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ae2e9c011a7805a6e00db579984ca21f2.html#_CPPv4N6LouLib5Units11CENTIDEGREEE">[1]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a621ae04e4353e876f6e4c19fecdb43be.html#_CPPv4N6LouLib5Units10CENTIMETERE">LouLib::Units::CENTIMETER (C++ member)</a>
+      <li><a href="api/variable__length_8hpp_1a621ae04e4353e876f6e4c19fecdb43be.html#_CPPv4N6LouLib5Units10CENTIMETERE">LouLib::Units::CENTIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a621ae04e4353e876f6e4c19fecdb43be.html#_CPPv4N6LouLib5Units10CENTIMETERE">[1]</a>
 </li>
-      <li><a href="api/variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815.html#_CPPv4N6LouLib5Units11CENTISECONDE">LouLib::Units::CENTISECOND (C++ member)</a>
+      <li><a href="api/variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815.html#_CPPv4N6LouLib5Units11CENTISECONDE">LouLib::Units::CENTISECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815.html#_CPPv4N6LouLib5Units11CENTISECONDE">[1]</a>
 </li>
-      <li><a href="api/function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_deg6DEGREE">LouLib::Units::CREATE_ANGLE_STRING_LITERAL (C++ function)</a>, <a href="api/function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_cdeg11CENTIDEGREE">[1]</a>, <a href="api/function__angle_8hpp_1abaff73571beed2ab39369f6837151a28.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_rad6RADIAN">[2]</a>, <a href="api/function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_ddeg10DECIDEGREE">[3]</a>
+      <li><a href="api/function__acceleration_8hpp_1a632947f0e113464b4103966c5c7e9972.html#_CPPv4N6LouLib5Units34CREATE_ACCELERATION_STRING_LITERALE5_mps224METER_PER_SECOND_SQUARED">LouLib::Units::CREATE_ACCELERATION_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a632947f0e113464b4103966c5c7e9972.html#_CPPv4N6LouLib5Units34CREATE_ACCELERATION_STRING_LITERALE5_mps224METER_PER_SECOND_SQUARED">[1]</a>
 </li>
-      <li><a href="api/function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_kA10KILOAMPERE">LouLib::Units::CREATE_CURRENT_STRING_LITERAL (C++ function)</a>, <a href="api/function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE2_A6AMPERE">[1]</a>, <a href="api/function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE4_daA10DECAAMPERE">[2]</a>, <a href="api/function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_mA11MILLIAMPERE">[3]</a>, <a href="api/function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_cA11CENTIAMPERE">[4]</a>, <a href="api/function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_dA10DECIAMPERE">[5]</a>, <a href="api/function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_hA11HECTOAMPERE">[6]</a>
+      <li><a href="api/function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_deg6DEGREE">LouLib::Units::CREATE_ANGLE_STRING_LITERAL (C++ function)</a>, <a href="api/function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_cdeg11CENTIDEGREE">[1]</a>, <a href="api/function__angle_8hpp_1abaff73571beed2ab39369f6837151a28.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_rad6RADIAN">[2]</a>, <a href="api/function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_ddeg10DECIDEGREE">[3]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_deg6DEGREE">[4]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_cdeg11CENTIDEGREE">[5]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE4_rad6RADIAN">[6]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1.html#_CPPv4N6LouLib5Units27CREATE_ANGLE_STRING_LITERALE5_ddeg10DECIDEGREE">[7]</a>
 </li>
-      <li><a href="api/function__length_8hpp_1a0f848a3e066cb0fed8b0beb17e29ef43.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_tl4TILE">LouLib::Units::CREATE_LENGTH_STRING_LITERAL (C++ function)</a>, <a href="api/function__length_8hpp_1a1dae178430732291aa7d94dda87e57d6.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_in4INCH">[1]</a>, <a href="api/function__length_8hpp_1a21846e0c9ed95f6e492ec45ad9e5ddf0.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_dm9DECIMETER">[2]</a>, <a href="api/function__length_8hpp_1a29d6aafd2cd84bcfef3b2ecbfc332fb1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_ft4FOOT">[3]</a>, <a href="api/function__length_8hpp_1a4b92b76fcf31622dfbf066644efee10d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_ft4FOOT">[4]</a>, <a href="api/function__length_8hpp_1a4d1a0325126e0bfb637f325f9a91cd84.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE2_m5METER">[5]</a>, <a href="api/function__length_8hpp_1a5dc86295bb17217701f2a6db19ca6958.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_in4INCH">[6]</a>, <a href="api/function__length_8hpp_1a6ae05cd62a8edf89310e827fead7bb16.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_tl4TILE">[7]</a>, <a href="api/function__length_8hpp_1a6b836a6f39b41b6876cebeb42816343f.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_yd4YARD">[8]</a>, <a href="api/function__length_8hpp_1a7b73fbe3f71a6b973263f89aa98aeb3e.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_cm10CENTIMETER">[9]</a>, <a href="api/function__length_8hpp_1a91a787e49f7f80c70fefe5cbf41ba3d1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE2_m5METER">[10]</a>, <a href="api/function__length_8hpp_1abbe9d9df6a5db7b18f346edba2e5478d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_dm9DECIMETER">[11]</a>, <a href="api/function__length_8hpp_1ac668931c825e05de1a644ac81f070e15.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_mm10MILLIMETER">[12]</a>, <a href="api/function__length_8hpp_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_cm10CENTIMETER">[13]</a>, <a href="api/function__length_8hpp_1af05f27830e95007b03ea306b275c5cda.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_yd4YARD">[14]</a>
+      <li><a href="api/function__angular_acceleration_8hpp_1a9b5dc34c16ba201711ea54ae96e1695b.html#_CPPv4N6LouLib5Units41CREATE_ANGULARACCELERATION_STRING_LITERALE7_radps225RADIAN_PER_SECOND_SQUARED">LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL (C++ function)</a>, <a href="api/function__angular_acceleration_8hpp_1ae9552a018915ad60bd6111469e2c22ce.html#_CPPv4N6LouLib5Units41CREATE_ANGULARACCELERATION_STRING_LITERALE7_degps225DEGREE_PER_SECOND_SQUARED">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a9b5dc34c16ba201711ea54ae96e1695b.html#_CPPv4N6LouLib5Units41CREATE_ANGULARACCELERATION_STRING_LITERALE7_radps225RADIAN_PER_SECOND_SQUARED">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae9552a018915ad60bd6111469e2c22ce.html#_CPPv4N6LouLib5Units41CREATE_ANGULARACCELERATION_STRING_LITERALE7_degps225DEGREE_PER_SECOND_SQUARED">[3]</a>
 </li>
-      <li><a href="api/function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c.html#_CPPv4N6LouLib5Units32CREATE_LUMINOSITY_STRING_LITERALE3_cd7CANDELA">LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL (C++ function)</a>
+      <li><a href="api/function__angular_jerk_8hpp_1a0882b82fdb774872e50beecb0ae34cc9.html#_CPPv4N6LouLib5Units33CREATE_ANGULARJERK_STRING_LITERALE7_degps323DEGREE_PER_SECOND_CUBED">LouLib::Units::CREATE_ANGULARJERK_STRING_LITERAL (C++ function)</a>, <a href="api/function__angular_jerk_8hpp_1a60a857c5cc25a973651fe26e2be7c836.html#_CPPv4N6LouLib5Units33CREATE_ANGULARJERK_STRING_LITERALE7_radps323RADIAN_PER_SECOND_CUBED">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9.html#_CPPv4N6LouLib5Units33CREATE_ANGULARJERK_STRING_LITERALE7_degps323DEGREE_PER_SECOND_CUBED">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836.html#_CPPv4N6LouLib5Units33CREATE_ANGULARJERK_STRING_LITERALE7_radps323RADIAN_PER_SECOND_CUBED">[3]</a>
 </li>
-      <li><a href="api/function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_kg8KILOGRAM">LouLib::Units::CREATE_MASS_STRING_LITERAL (C++ function)</a>, <a href="api/function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_lb5POUND">[1]</a>, <a href="api/function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_oz5OUNCE">[2]</a>, <a href="api/function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_hg9HECTOGRAM">[3]</a>, <a href="api/function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE4_dag8DECAGRAM">[4]</a>, <a href="api/function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE2_g4GRAM">[5]</a>
+      <li><a href="api/function__angular_velocity_8hpp_1a57670fc6a981e1f4a036bb556614012a.html#_CPPv4N6LouLib5Units37CREATE_ANGULARVELOCITY_STRING_LITERALE6_degps17DEGREE_PER_SECOND">LouLib::Units::CREATE_ANGULARVELOCITY_STRING_LITERAL (C++ function)</a>, <a href="api/function__angular_velocity_8hpp_1a7cbd11ad0720a4af46946db3b74e6c3a.html#_CPPv4N6LouLib5Units37CREATE_ANGULARVELOCITY_STRING_LITERALE6_radps17RADIAN_PER_SECOND">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a57670fc6a981e1f4a036bb556614012a.html#_CPPv4N6LouLib5Units37CREATE_ANGULARVELOCITY_STRING_LITERALE6_degps17DEGREE_PER_SECOND">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7cbd11ad0720a4af46946db3b74e6c3a.html#_CPPv4N6LouLib5Units37CREATE_ANGULARVELOCITY_STRING_LITERALE6_radps17RADIAN_PER_SECOND">[3]</a>
 </li>
-      <li><a href="api/function__substance_8hpp_1aeb395243204aa77665787b631780cd19.html#_CPPv4N6LouLib5Units31CREATE_SUBSTANCE_STRING_LITERALE4_mol4MOLE">LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL (C++ function)</a>
+      <li><a href="api/function__area_8hpp_1a3cd3f18ab89d21e0adc5bf45693f7dce.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_dm216SQUARE_DECIMETER">LouLib::Units::CREATE_AREA_STRING_LITERAL (C++ function)</a>, <a href="api/function__area_8hpp_1a40b721b5035691e8964ef660f2e13002.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_tl211SQUARE_TILE">[1]</a>, <a href="api/function__area_8hpp_1a7318555d41ef4baa237cfcbab146ca8d.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_mm217SQUARE_MILLIMETER">[2]</a>, <a href="api/function__area_8hpp_1a9b1b7d85814adc8ba1028f8a7d8138c5.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_ft211SQUARE_FOOT">[3]</a>, <a href="api/function__area_8hpp_1ace3ee5f1f43aa7e6dabe7da1b2caa139.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_in211SQUARE_INCH">[4]</a>, <a href="api/function__area_8hpp_1ae74a14de30d6a1118fe31b3147aab162.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE3_m212SQUARE_METER">[5]</a>, <a href="api/function__area_8hpp_1af2fe6791ef41ecade23c82d932be7a8a.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_yd211SQUARE_YARD">[6]</a>, <a href="api/function__area_8hpp_1af45d881dad3c5bf906154845df0b7cc5.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_cm217SQUARE_CENTIMETER">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a3cd3f18ab89d21e0adc5bf45693f7dce.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_dm216SQUARE_DECIMETER">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_tl211SQUARE_TILE">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_mm217SQUARE_MILLIMETER">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a9b1b7d85814adc8ba1028f8a7d8138c5.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_ft211SQUARE_FOOT">[11]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_in211SQUARE_INCH">[12]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE3_m212SQUARE_METER">[13]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1af2fe6791ef41ecade23c82d932be7a8a.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_yd211SQUARE_YARD">[14]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5.html#_CPPv4N6LouLib5Units26CREATE_AREA_STRING_LITERALE4_cm217SQUARE_CENTIMETER">[15]</a>
 </li>
-      <li><a href="api/function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0.html#_CPPv4N6LouLib5Units33CREATE_TEMPERATURE_STRING_LITERALE2_K6KELVIN">LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL (C++ function)</a>
+      <li><a href="api/function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_kA10KILOAMPERE">LouLib::Units::CREATE_CURRENT_STRING_LITERAL (C++ function)</a>, <a href="api/function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE2_A6AMPERE">[1]</a>, <a href="api/function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE4_daA10DECAAMPERE">[2]</a>, <a href="api/function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_mA11MILLIAMPERE">[3]</a>, <a href="api/function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_cA11CENTIAMPERE">[4]</a>, <a href="api/function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_dA10DECIAMPERE">[5]</a>, <a href="api/function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_hA11HECTOAMPERE">[6]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a024abe10b8af2cd3dda84488780a030c.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_kA10KILOAMPERE">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a1e7455551f92a31a0f778a7f9735efae.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE2_A6AMPERE">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a617bb69602ff5486cfd245a7fc58237b.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE4_daA10DECAAMPERE">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ab8e171248a510192063ae0dcb54c69bd.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_mA11MILLIAMPERE">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1aca42319394dbddce92fb3ae00fefdd34.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_cA11CENTIAMPERE">[11]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ad509dfdc4c912f0941865c13a4a06215.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_dA10DECIAMPERE">[12]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae3567c6925811ef0f5a89fbe15ae375d.html#_CPPv4N6LouLib5Units29CREATE_CURRENT_STRING_LITERALE3_hA11HECTOAMPERE">[13]</a>
 </li>
-      <li><a href="api/function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_cs11CENTISECOND">LouLib::Units::CREATE_TIME_STRING_LITERAL (C++ function)</a>, <a href="api/function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE4_min6MINUTE">[1]</a>, <a href="api/function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ms11MILLISECOND">[2]</a>, <a href="api/function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_hr4HOUR">[3]</a>, <a href="api/function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ds10DECISECOND">[4]</a>, <a href="api/function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE2_s6SECOND">[5]</a>
+      <li><a href="api/function__force_8hpp_1a4c22895b4daf4c64fc18e66eea24fea9.html#_CPPv4N6LouLib5Units27CREATE_FORCE_STRING_LITERALE7_newton6NEWTON">LouLib::Units::CREATE_FORCE_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a4c22895b4daf4c64fc18e66eea24fea9.html#_CPPv4N6LouLib5Units27CREATE_FORCE_STRING_LITERALE7_newton6NEWTON">[1]</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585.html#_CPPv4N6LouLib5Units10DECAAMPEREE">LouLib::Units::DECAAMPERE (C++ member)</a>
+      <li><a href="api/function__jerk_8hpp_1af7abd950a16984f6cf4d281bfc63113b.html#_CPPv4N6LouLib5Units26CREATE_JERK_STRING_LITERALE5_mps322METER_PER_SECOND_CUBED">LouLib::Units::CREATE_JERK_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1af7abd950a16984f6cf4d281bfc63113b.html#_CPPv4N6LouLib5Units26CREATE_JERK_STRING_LITERALE5_mps322METER_PER_SECOND_CUBED">[1]</a>
 </li>
-      <li><a href="api/variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2.html#_CPPv4N6LouLib5Units8DECAGRAME">LouLib::Units::DECAGRAM (C++ member)</a>
+      <li><a href="api/function__length_8hpp_1a0f848a3e066cb0fed8b0beb17e29ef43.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_tl4TILE">LouLib::Units::CREATE_LENGTH_STRING_LITERAL (C++ function)</a>, <a href="api/function__length_8hpp_1a1dae178430732291aa7d94dda87e57d6.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_in4INCH">[1]</a>, <a href="api/function__length_8hpp_1a21846e0c9ed95f6e492ec45ad9e5ddf0.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_dm9DECIMETER">[2]</a>, <a href="api/function__length_8hpp_1a29d6aafd2cd84bcfef3b2ecbfc332fb1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_ft4FOOT">[3]</a>, <a href="api/function__length_8hpp_1a4b92b76fcf31622dfbf066644efee10d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_ft4FOOT">[4]</a>, <a href="api/function__length_8hpp_1a4d1a0325126e0bfb637f325f9a91cd84.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE2_m5METER">[5]</a>, <a href="api/function__length_8hpp_1a5dc86295bb17217701f2a6db19ca6958.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_in4INCH">[6]</a>, <a href="api/function__length_8hpp_1a6ae05cd62a8edf89310e827fead7bb16.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_tl4TILE">[7]</a>, <a href="api/function__length_8hpp_1a6b836a6f39b41b6876cebeb42816343f.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_yd4YARD">[8]</a>, <a href="api/function__length_8hpp_1a7b73fbe3f71a6b973263f89aa98aeb3e.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_cm10CENTIMETER">[9]</a>, <a href="api/function__length_8hpp_1a91a787e49f7f80c70fefe5cbf41ba3d1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE2_m5METER">[10]</a>, <a href="api/function__length_8hpp_1abbe9d9df6a5db7b18f346edba2e5478d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_dm9DECIMETER">[11]</a>, <a href="api/function__length_8hpp_1ac668931c825e05de1a644ac81f070e15.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_mm10MILLIMETER">[12]</a>, <a href="api/function__length_8hpp_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_cm10CENTIMETER">[13]</a>, <a href="api/function__length_8hpp_1af05f27830e95007b03ea306b275c5cda.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_yd4YARD">[14]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a0f848a3e066cb0fed8b0beb17e29ef43.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_tl4TILE">[15]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_ft4FOOT">[16]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a4d1a0325126e0bfb637f325f9a91cd84.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE2_m5METER">[17]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_in4INCH">[18]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1abbe9d9df6a5db7b18f346edba2e5478d.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_dm9DECIMETER">[19]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ac668931c825e05de1a644ac81f070e15.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_mm10MILLIMETER">[20]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1adbb0a9aeaff23965f9fcfc98b69aa5d1.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_cm10CENTIMETER">[21]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1af05f27830e95007b03ea306b275c5cda.html#_CPPv4N6LouLib5Units28CREATE_LENGTH_STRING_LITERALE3_yd4YARD">[22]</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f.html#_CPPv4N6LouLib5Units10DECIAMPEREE">LouLib::Units::DECIAMPERE (C++ member)</a>
+      <li><a href="api/function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c.html#_CPPv4N6LouLib5Units32CREATE_LUMINOSITY_STRING_LITERALE3_cd7CANDELA">LouLib::Units::CREATE_LUMINOSITY_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a52260e7c2210dd85f322c7abdb0a940c.html#_CPPv4N6LouLib5Units32CREATE_LUMINOSITY_STRING_LITERALE3_cd7CANDELA">[1]</a>
 </li>
-      <li><a href="api/variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html#_CPPv4N6LouLib5Units10DECIDEGREEE">LouLib::Units::DECIDEGREE (C++ member)</a>
+      <li><a href="api/function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_kg8KILOGRAM">LouLib::Units::CREATE_MASS_STRING_LITERAL (C++ function)</a>, <a href="api/function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_lb5POUND">[1]</a>, <a href="api/function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_oz5OUNCE">[2]</a>, <a href="api/function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_hg9HECTOGRAM">[3]</a>, <a href="api/function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE4_dag8DECAGRAM">[4]</a>, <a href="api/function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE2_g4GRAM">[5]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_kg8KILOGRAM">[6]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_lb5POUND">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_oz5OUNCE">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ac16fdc5005e542d1ffdbff349cd9e9da.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE3_hg9HECTOGRAM">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE4_dag8DECAGRAM">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7.html#_CPPv4N6LouLib5Units26CREATE_MASS_STRING_LITERALE2_g4GRAM">[11]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d.html#_CPPv4N6LouLib5Units9DECIMETERE">LouLib::Units::DECIMETER (C++ member)</a>
+      <li><a href="api/function__substance_8hpp_1aeb395243204aa77665787b631780cd19.html#_CPPv4N6LouLib5Units31CREATE_SUBSTANCE_STRING_LITERALE4_mol4MOLE">LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1aeb395243204aa77665787b631780cd19.html#_CPPv4N6LouLib5Units31CREATE_SUBSTANCE_STRING_LITERALE4_mol4MOLE">[1]</a>
 </li>
-      <li><a href="api/variable__time_8hpp_1aca3289e0405099b9d0980531ae117600.html#_CPPv4N6LouLib5Units10DECISECONDE">LouLib::Units::DECISECOND (C++ member)</a>
+      <li><a href="api/function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0.html#_CPPv4N6LouLib5Units33CREATE_TEMPERATURE_STRING_LITERALE2_K6KELVIN">LouLib::Units::CREATE_TEMPERATURE_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a56fe27e123af476cd4327f30ee1796c0.html#_CPPv4N6LouLib5Units33CREATE_TEMPERATURE_STRING_LITERALE2_K6KELVIN">[1]</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858.html#_CPPv4N6LouLib5Units6DEGREEE">LouLib::Units::DEGREE (C++ member)</a>
+      <li><a href="api/function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_cs11CENTISECOND">LouLib::Units::CREATE_TIME_STRING_LITERAL (C++ function)</a>, <a href="api/function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE4_min6MINUTE">[1]</a>, <a href="api/function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ms11MILLISECOND">[2]</a>, <a href="api/function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_hr4HOUR">[3]</a>, <a href="api/function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ds10DECISECOND">[4]</a>, <a href="api/function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE2_s6SECOND">[5]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a5073e19bfb80dae9091240d5c18e5116.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_cs11CENTISECOND">[6]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a532594d4a52ed2219adac4fbdf7f6a66.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE4_min6MINUTE">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ms11MILLISECOND">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_hr4HOUR">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE3_ds10DECISECOND">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0.html#_CPPv4N6LouLib5Units26CREATE_TIME_STRING_LITERALE2_s6SECOND">[11]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7.html#_CPPv4N6LouLib5Units4FOOTE">LouLib::Units::FOOT (C++ member)</a>
+      <li><a href="api/function__torque_8hpp_1a5a1326abacc0b7d4cb725be0cf1055a6.html#_CPPv4N6LouLib5Units28CREATE_TORQUE_STRING_LITERALE3_Nm12NEWTON_METER">LouLib::Units::CREATE_TORQUE_STRING_LITERAL (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6.html#_CPPv4N6LouLib5Units28CREATE_TORQUE_STRING_LITERALE3_Nm12NEWTON_METER">[1]</a>
 </li>
-      <li><a href="api/variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6.html#_CPPv4N6LouLib5Units4GRAME">LouLib::Units::GRAM (C++ member)</a>
+      <li><a href="api/function__velocity_8hpp_1a100a98cfa6a468a9ca6aa4fc48552db7.html#_CPPv4N6LouLib5Units30CREATE_VELOCITY_STRING_LITERALE4_mps16METER_PER_SECOND">LouLib::Units::CREATE_VELOCITY_STRING_LITERAL (C++ function)</a>, <a href="api/function__velocity_8hpp_1a97664cc4ccd67ca251c48fe05dc596dd.html#_CPPv4N6LouLib5Units30CREATE_VELOCITY_STRING_LITERALE4_fps15FOOT_PER_SECOND">[1]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7.html#_CPPv4N6LouLib5Units30CREATE_VELOCITY_STRING_LITERALE4_mps16METER_PER_SECOND">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a97664cc4ccd67ca251c48fe05dc596dd.html#_CPPv4N6LouLib5Units30CREATE_VELOCITY_STRING_LITERALE4_fps15FOOT_PER_SECOND">[3]</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55.html#_CPPv4N6LouLib5Units11HECTOAMPEREE">LouLib::Units::HECTOAMPERE (C++ member)</a>
+      <li><a href="api/function__volume_8hpp_1a088e6a35b653f941d4f6cdd0b4267e8a.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_ft310CUBIC_FOOT">LouLib::Units::CREATE_VOLUME_STRING_LITERAL (C++ function)</a>, <a href="api/function__volume_8hpp_1a4be4f5037a3488f6667412f6d2750359.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_cm316CUBIC_CENTIMETER">[1]</a>, <a href="api/function__volume_8hpp_1a64ed24bc1ef246b1df161ceac2dc3433.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_in310CUBIC_INCH">[2]</a>, <a href="api/function__volume_8hpp_1a8201d3b8ea05e0e33f8e1794e66708d2.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_tl310CUBIC_TILE">[3]</a>, <a href="api/function__volume_8hpp_1aa265df0fde658b5fcea8bd5bbdc167a1.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_dm315CUBIC_DECIMETER">[4]</a>, <a href="api/function__volume_8hpp_1ad5b202d0452071b78eedd8c2c46beca4.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_yd310CUBIC_YARD">[5]</a>, <a href="api/function__volume_8hpp_1ae73ace12cba7a81948e9b435b5b84205.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE3_m311CUBIC_METER">[6]</a>, <a href="api/function__volume_8hpp_1ae7cf838108cd01d30b46b3079c4b04b7.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_mm316CUBIC_MILLIMETER">[7]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a088e6a35b653f941d4f6cdd0b4267e8a.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_ft310CUBIC_FOOT">[8]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a4be4f5037a3488f6667412f6d2750359.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_cm316CUBIC_CENTIMETER">[9]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a64ed24bc1ef246b1df161ceac2dc3433.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_in310CUBIC_INCH">[10]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a8201d3b8ea05e0e33f8e1794e66708d2.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_tl310CUBIC_TILE">[11]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1aa265df0fde658b5fcea8bd5bbdc167a1.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_dm315CUBIC_DECIMETER">[12]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ad5b202d0452071b78eedd8c2c46beca4.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_yd310CUBIC_YARD">[13]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae73ace12cba7a81948e9b435b5b84205.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE3_m311CUBIC_METER">[14]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae7cf838108cd01d30b46b3079c4b04b7.html#_CPPv4N6LouLib5Units28CREATE_VOLUME_STRING_LITERALE4_mm316CUBIC_MILLIMETER">[15]</a>
 </li>
-      <li><a href="api/variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f.html#_CPPv4N6LouLib5Units9HECTOGRAME">LouLib::Units::HECTOGRAM (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1a34c603ea0a6b73a78a70dc2021f800ef.html#_CPPv4N6LouLib5Units16CUBIC_CENTIMETERE">LouLib::Units::CUBIC_CENTIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a34c603ea0a6b73a78a70dc2021f800ef.html#_CPPv4N6LouLib5Units16CUBIC_CENTIMETERE">[1]</a>
 </li>
-      <li><a href="api/variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e.html#_CPPv4N6LouLib5Units4HOURE">LouLib::Units::HOUR (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1aa01021a76cc13abdd2ccf46e9cd14746.html#_CPPv4N6LouLib5Units15CUBIC_DECIMETERE">LouLib::Units::CUBIC_DECIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aa01021a76cc13abdd2ccf46e9cd14746.html#_CPPv4N6LouLib5Units15CUBIC_DECIMETERE">[1]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6.html#_CPPv4N6LouLib5Units4INCHE">LouLib::Units::INCH (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1aea30d93b40ba13c6c93a480190f0d4b3.html#_CPPv4N6LouLib5Units10CUBIC_FOOTE">LouLib::Units::CUBIC_FOOT (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aea30d93b40ba13c6c93a480190f0d4b3.html#_CPPv4N6LouLib5Units10CUBIC_FOOTE">[1]</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd.html#_CPPv4N6LouLib5Units10KILOAMPEREE">LouLib::Units::KILOAMPERE (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1a177dfbdde80a9d1c6770a52a96e6be1b.html#_CPPv4N6LouLib5Units10CUBIC_INCHE">LouLib::Units::CUBIC_INCH (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a177dfbdde80a9d1c6770a52a96e6be1b.html#_CPPv4N6LouLib5Units10CUBIC_INCHE">[1]</a>
 </li>
-      <li><a href="api/variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2.html#_CPPv4N6LouLib5Units11MILLIAMPEREE">LouLib::Units::MILLIAMPERE (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1ae7ccfe5a3140c6f8dff006cc9b76e9fb.html#_CPPv4N6LouLib5Units11CUBIC_METERE">LouLib::Units::CUBIC_METER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ae7ccfe5a3140c6f8dff006cc9b76e9fb.html#_CPPv4N6LouLib5Units11CUBIC_METERE">[1]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a4f18ff631d65d9d235fe59d2657d2f11.html#_CPPv4N6LouLib5Units10MILLIMETERE">LouLib::Units::MILLIMETER (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1ab4153ef12f5b03c961d9c5ae25ce33d7.html#_CPPv4N6LouLib5Units16CUBIC_MILLIMETERE">LouLib::Units::CUBIC_MILLIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ab4153ef12f5b03c961d9c5ae25ce33d7.html#_CPPv4N6LouLib5Units16CUBIC_MILLIMETERE">[1]</a>
 </li>
-      <li><a href="api/variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b.html#_CPPv4N6LouLib5Units11MILLISECONDE">LouLib::Units::MILLISECOND (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1abc04839fdac76d885248f6c42ebcff1f.html#_CPPv4N6LouLib5Units10CUBIC_TILEE">LouLib::Units::CUBIC_TILE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1abc04839fdac76d885248f6c42ebcff1f.html#_CPPv4N6LouLib5Units10CUBIC_TILEE">[1]</a>
 </li>
-      <li><a href="api/variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a.html#_CPPv4N6LouLib5Units6MINUTEE">LouLib::Units::MINUTE (C++ member)</a>
+      <li><a href="api/variable__volume_8hpp_1a413202333bd1c4494dc752c763771be0.html#_CPPv4N6LouLib5Units10CUBIC_YARDE">LouLib::Units::CUBIC_YARD (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a413202333bd1c4494dc752c763771be0.html#_CPPv4N6LouLib5Units10CUBIC_YARDE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9.html#_CPPv4I00000000EN6LouLib5UnitsneEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator!= (C++ function)</a>
+      <li><a href="api/variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585.html#_CPPv4N6LouLib5Units10DECAAMPEREE">LouLib::Units::DECAAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a79919ccd32eecaaaa3c86a47e94e9585.html#_CPPv4N6LouLib5Units10DECAAMPEREE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a7776283be38ac0a002d1e12909d7646c.html#_CPPv4I00000000EN6LouLib5UnitsrmE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator% (C++ function)</a>
+      <li><a href="api/variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2.html#_CPPv4N6LouLib5Units8DECAGRAME">LouLib::Units::DECAGRAM (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2.html#_CPPv4N6LouLib5Units8DECAGRAME">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a23cebc0912a54448c631118a13965708.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">LouLib::Units::operator* (C++ function)</a>, <a href="api/function__unit_math_8hpp_1a86888d172ca4f2ce1478d6bf7809126e.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>, <a href="api/function__unit_math_8hpp_1aedb125fddf80a2f430cd41fd79bebf7c.html#_CPPv4I0000000000000000EN6LouLib5UnitsmlE8BaseUnitINSt9ratio_addI2L12L2EENSt9ratio_addI2M12M2EENSt9ratio_addI2t12t2EENSt9ratio_addI2Q12Q2EENSt9ratio_addI2T12T2EENSt9ratio_addI2N12N2EENSt9ratio_addI2J12J2EENSt9ratio_addI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[2]</a>
+      <li><a href="api/variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f.html#_CPPv4N6LouLib5Units10DECIAMPEREE">LouLib::Units::DECIAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a2a3aacc6c234de9b0fce99e64d9b894f.html#_CPPv4N6LouLib5Units10DECIAMPEREE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html#_CPPv4I00000000EN6LouLib5UnitsplE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator+ (C++ function)</a>
+      <li><a href="api/variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html#_CPPv4N6LouLib5Units10DECIDEGREEE">LouLib::Units::DECIDEGREE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ab84634ec7c1b9a4ef656ae7a85c2d3ee.html#_CPPv4N6LouLib5Units10DECIDEGREEE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1abca4d67a8fb01609cc0a2c2e893ec0ac.html#_CPPv4I00000000EN6LouLib5UnitsmiE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator- (C++ function)</a>
+      <li><a href="api/variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d.html#_CPPv4N6LouLib5Units9DECIMETERE">LouLib::Units::DECIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a96b78ff5564916347c3a174cdb5b120d.html#_CPPv4N6LouLib5Units9DECIMETERE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a223ce4795d132787715a13f83ac51980.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractINSt5ratioIXL0EEEE1LEENSt14ratio_subtractINSt5ratioIXL0EEEE1MEENSt14ratio_subtractINSt5ratioIXL0EEEE1tEENSt14ratio_subtractINSt5ratioIXL0EEEE1QEENSt14ratio_subtractINSt5ratioIXL0EEEE1TEENSt14ratio_subtractINSt5ratioIXL0EEEE1NEENSt14ratio_subtractINSt5ratioIXL0EEEE1JEENSt14ratio_subtractINSt5ratioIXL0EEEE1AEEERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator/ (C++ function)</a>, <a href="api/function__unit_math_8hpp_1a7683512548bef2c4dea7ce60b4ad6184.html#_CPPv4I0000000000000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractI2L12L2EENSt14ratio_subtractI2M12M2EENSt14ratio_subtractI2t12t2EENSt14ratio_subtractI2Q12Q2EENSt14ratio_subtractI2T12T2EENSt14ratio_subtractI2N12N2EENSt14ratio_subtractI2J12J2EENSt14ratio_subtractI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[1]</a>, <a href="api/function__unit_math_8hpp_1a7bee95086448596b08186a85993dfee3.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">[2]</a>
+      <li><a href="api/variable__time_8hpp_1aca3289e0405099b9d0980531ae117600.html#_CPPv4N6LouLib5Units10DECISECONDE">LouLib::Units::DECISECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aca3289e0405099b9d0980531ae117600.html#_CPPv4N6LouLib5Units10DECISECONDE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a357b6e62ae648d2403e44beb4fc2b95f.html#_CPPv4I00000000EN6LouLib5UnitsltEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&lt; (C++ function)</a>
+      <li><a href="api/variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858.html#_CPPv4N6LouLib5Units6DEGREEE">LouLib::Units::DEGREE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858.html#_CPPv4N6LouLib5Units6DEGREEE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html#_CPPv4I00000000EN6LouLib5UnitsleEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&lt;= (C++ function)</a>
+      <li><a href="api/variable__angular_velocity_8hpp_1a09be33c6abf05ebbfa6f4e11f956d903.html#_CPPv4N6LouLib5Units17DEGREE_PER_SECONDE">LouLib::Units::DEGREE_PER_SECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a09be33c6abf05ebbfa6f4e11f956d903.html#_CPPv4N6LouLib5Units17DEGREE_PER_SECONDE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a9381601a026bff1bdc01414db7838d09.html#_CPPv4I00000000EN6LouLib5UnitseqEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator== (C++ function)</a>
+      <li><a href="api/variable__angular_jerk_8hpp_1ad80881f5183a0f173b0221e057f53981.html#_CPPv4N6LouLib5Units23DEGREE_PER_SECOND_CUBEDE">LouLib::Units::DEGREE_PER_SECOND_CUBED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981.html#_CPPv4N6LouLib5Units23DEGREE_PER_SECOND_CUBEDE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a2167f4ccb536a3f34fb7e319591a1769.html#_CPPv4I00000000EN6LouLib5UnitsgtEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&gt; (C++ function)</a>
+      <li><a href="api/variable__angular_acceleration_8hpp_1ae3a96a812651d10d7911ecbfdbca2989.html#_CPPv4N6LouLib5Units25DEGREE_PER_SECOND_SQUAREDE">LouLib::Units::DEGREE_PER_SECOND_SQUARED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ae3a96a812651d10d7911ecbfdbca2989.html#_CPPv4N6LouLib5Units25DEGREE_PER_SECOND_SQUAREDE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1ad86b3a7d2bb3751187b7120a7d05cbcf.html#_CPPv4I00000000EN6LouLib5UnitsgeEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&gt;= (C++ function)</a>
+      <li><a href="api/variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7.html#_CPPv4N6LouLib5Units4FOOTE">LouLib::Units::FOOT (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a32e3f92e1cf85dd1cb790b19f4add7c7.html#_CPPv4N6LouLib5Units4FOOTE">[1]</a>
 </li>
-      <li><a href="api/variable__mass_8hpp_1a4094511273e312bec78796916f75b0af.html#_CPPv4N6LouLib5Units5OUNCEE">LouLib::Units::OUNCE (C++ member)</a>
+      <li><a href="api/variable__velocity_8hpp_1afa96bea902955400170960e0ac33cb56.html#_CPPv4N6LouLib5Units15FOOT_PER_SECONDE">LouLib::Units::FOOT_PER_SECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56.html#_CPPv4N6LouLib5Units15FOOT_PER_SECONDE">[1]</a>
 </li>
-      <li><a href="api/variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff.html#_CPPv4N6LouLib5Units5POUNDE">LouLib::Units::POUND (C++ member)</a>
+      <li><a href="api/variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6.html#_CPPv4N6LouLib5Units4GRAME">LouLib::Units::GRAM (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6.html#_CPPv4N6LouLib5Units4GRAME">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a65d3498516642234dae5cb41e3cb0e1b.html#_CPPv4I00000000EN6LouLib5Units6signumEiRK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::signum (C++ function)</a>
+      <li><a href="api/variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55.html#_CPPv4N6LouLib5Units11HECTOAMPEREE">LouLib::Units::HECTOAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ae18c41ca85a6d0606afd98e2f23ddf55.html#_CPPv4N6LouLib5Units11HECTOAMPEREE">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128.html#_CPPv4I00000000EN6LouLib5Units4sqrtE8BaseUnitINSt12ratio_divideI1LNSt5ratioIXL2EEEEEENSt12ratio_divideI1MNSt5ratioIXL2EEEEEENSt12ratio_divideI1tNSt5ratioIXL2EEEEEENSt12ratio_divideI1QNSt5ratioIXL2EEEEEENSt12ratio_divideI1TNSt5ratioIXL2EEEEEENSt12ratio_divideI1NNSt5ratioIXL2EEEEEENSt12ratio_divideI1JNSt5ratioIXL2EEEEEENSt12ratio_divideI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::sqrt (C++ function)</a>
+      <li><a href="api/variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f.html#_CPPv4N6LouLib5Units9HECTOGRAME">LouLib::Units::HECTOGRAM (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f.html#_CPPv4N6LouLib5Units9HECTOGRAME">[1]</a>
 </li>
-      <li><a href="api/function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb.html#_CPPv4I00000000EN6LouLib5Units6squareE8BaseUnitINSt14ratio_multiplyI1LNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1MNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1tNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1QNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1TNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1NNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1JNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::square (C++ function)</a>
+      <li><a href="api/variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e.html#_CPPv4N6LouLib5Units4HOURE">LouLib::Units::HOUR (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aadd07453c0253bfc28d19afea895da6e.html#_CPPv4N6LouLib5Units4HOURE">[1]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1a67540d4febaeef2a05ef4f8a28c8a66b.html#_CPPv4N6LouLib5Units4TILEE">LouLib::Units::TILE (C++ member)</a>
+      <li><a href="api/variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6.html#_CPPv4N6LouLib5Units4INCHE">LouLib::Units::INCH (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a21a389863d46b4ea9d73c6c871e77bb6.html#_CPPv4N6LouLib5Units4INCHE">[1]</a>
 </li>
-      <li><a href="api/variable__length_8hpp_1aaafa56435ad9290bacaf84751aa04f76.html#_CPPv4N6LouLib5Units4YARDE">LouLib::Units::YARD (C++ member)</a>
+      <li><a href="api/variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd.html#_CPPv4N6LouLib5Units10KILOAMPEREE">LouLib::Units::KILOAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a8cb0d66a683bc069077c7e96724803fd.html#_CPPv4N6LouLib5Units10KILOAMPEREE">[1]</a>
+</li>
+      <li><a href="api/variable__velocity_8hpp_1abc0b2cb41f687de6b557ebee961f1188.html#_CPPv4N6LouLib5Units16METER_PER_SECONDE">LouLib::Units::METER_PER_SECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1abc0b2cb41f687de6b557ebee961f1188.html#_CPPv4N6LouLib5Units16METER_PER_SECONDE">[1]</a>
+</li>
+      <li><a href="api/variable__jerk_8hpp_1a6f233941a5158969971c73f88d9700e0.html#_CPPv4N6LouLib5Units22METER_PER_SECOND_CUBEDE">LouLib::Units::METER_PER_SECOND_CUBED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a6f233941a5158969971c73f88d9700e0.html#_CPPv4N6LouLib5Units22METER_PER_SECOND_CUBEDE">[1]</a>
+</li>
+      <li><a href="api/variable__acceleration_8hpp_1a60075e815046e3e0d6e79e8d8ecadf71.html#_CPPv4N6LouLib5Units24METER_PER_SECOND_SQUAREDE">LouLib::Units::METER_PER_SECOND_SQUARED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a60075e815046e3e0d6e79e8d8ecadf71.html#_CPPv4N6LouLib5Units24METER_PER_SECOND_SQUAREDE">[1]</a>
+</li>
+      <li><a href="api/variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2.html#_CPPv4N6LouLib5Units11MILLIAMPEREE">LouLib::Units::MILLIAMPERE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a90c28951b7651c08975a6798d75479b2.html#_CPPv4N6LouLib5Units11MILLIAMPEREE">[1]</a>
+</li>
+      <li><a href="api/variable__length_8hpp_1a4f18ff631d65d9d235fe59d2657d2f11.html#_CPPv4N6LouLib5Units10MILLIMETERE">LouLib::Units::MILLIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a4f18ff631d65d9d235fe59d2657d2f11.html#_CPPv4N6LouLib5Units10MILLIMETERE">[1]</a>
+</li>
+      <li><a href="api/variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b.html#_CPPv4N6LouLib5Units11MILLISECONDE">LouLib::Units::MILLISECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a5b10ae9fb79cf79c82987337427b999b.html#_CPPv4N6LouLib5Units11MILLISECONDE">[1]</a>
+</li>
+      <li><a href="api/variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a.html#_CPPv4N6LouLib5Units6MINUTEE">LouLib::Units::MINUTE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a6250fdfcf9a3b5289da8066f274fe83a.html#_CPPv4N6LouLib5Units6MINUTEE">[1]</a>
+</li>
+      <li><a href="api/variable__force_8hpp_1a72c4f2f1067edcd223fe1b6dca41b932.html#_CPPv4N6LouLib5Units6NEWTONE">LouLib::Units::NEWTON (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a72c4f2f1067edcd223fe1b6dca41b932.html#_CPPv4N6LouLib5Units6NEWTONE">[1]</a>
+</li>
+      <li><a href="api/variable__torque_8hpp_1a83953b255bbe30b07772e4484654df1e.html#_CPPv4N6LouLib5Units12NEWTON_METERE">LouLib::Units::NEWTON_METER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e.html#_CPPv4N6LouLib5Units12NEWTON_METERE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9.html#_CPPv4I00000000EN6LouLib5UnitsneEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator!= (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a54cd804d18127c779b6e0c3ee5619bb9.html#_CPPv4I00000000EN6LouLib5UnitsneEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a7776283be38ac0a002d1e12909d7646c.html#_CPPv4I00000000EN6LouLib5UnitsrmE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator% (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7776283be38ac0a002d1e12909d7646c.html#_CPPv4I00000000EN6LouLib5UnitsrmE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a23cebc0912a54448c631118a13965708.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">LouLib::Units::operator* (C++ function)</a>, <a href="api/function__unit_math_8hpp_1a86888d172ca4f2ce1478d6bf7809126e.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>, <a href="api/function__unit_math_8hpp_1aedb125fddf80a2f430cd41fd79bebf7c.html#_CPPv4I0000000000000000EN6LouLib5UnitsmlE8BaseUnitINSt9ratio_addI2L12L2EENSt9ratio_addI2M12M2EENSt9ratio_addI2t12t2EENSt9ratio_addI2Q12Q2EENSt9ratio_addI2T12T2EENSt9ratio_addI2N12N2EENSt9ratio_addI2J12J2EENSt9ratio_addI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a23cebc0912a54448c631118a13965708.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">[3]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a86888d172ca4f2ce1478d6bf7809126e.html#_CPPv4I00000000EN6LouLib5UnitsmlE8BaseUnitI1L1M1t1Q1T1N1J1AERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">[4]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1aedb125fddf80a2f430cd41fd79bebf7c.html#_CPPv4I0000000000000000EN6LouLib5UnitsmlE8BaseUnitINSt9ratio_addI2L12L2EENSt9ratio_addI2M12M2EENSt9ratio_addI2t12t2EENSt9ratio_addI2Q12Q2EENSt9ratio_addI2T12T2EENSt9ratio_addI2N12N2EENSt9ratio_addI2J12J2EENSt9ratio_addI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[5]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html#_CPPv4I00000000EN6LouLib5UnitsplE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator+ (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a14ea253ff8ad93ae4fe20ac2d02b20ed.html#_CPPv4I00000000EN6LouLib5UnitsplE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1abca4d67a8fb01609cc0a2c2e893ec0ac.html#_CPPv4I00000000EN6LouLib5UnitsmiE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator- (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1abca4d67a8fb01609cc0a2c2e893ec0ac.html#_CPPv4I00000000EN6LouLib5UnitsmiE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a223ce4795d132787715a13f83ac51980.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractINSt5ratioIXL0EEEE1LEENSt14ratio_subtractINSt5ratioIXL0EEEE1MEENSt14ratio_subtractINSt5ratioIXL0EEEE1tEENSt14ratio_subtractINSt5ratioIXL0EEEE1QEENSt14ratio_subtractINSt5ratioIXL0EEEE1TEENSt14ratio_subtractINSt5ratioIXL0EEEE1NEENSt14ratio_subtractINSt5ratioIXL0EEEE1JEENSt14ratio_subtractINSt5ratioIXL0EEEE1AEEERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator/ (C++ function)</a>, <a href="api/function__unit_math_8hpp_1a7683512548bef2c4dea7ce60b4ad6184.html#_CPPv4I0000000000000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractI2L12L2EENSt14ratio_subtractI2M12M2EENSt14ratio_subtractI2t12t2EENSt14ratio_subtractI2Q12Q2EENSt14ratio_subtractI2T12T2EENSt14ratio_subtractI2N12N2EENSt14ratio_subtractI2J12J2EENSt14ratio_subtractI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[1]</a>, <a href="api/function__unit_math_8hpp_1a7bee95086448596b08186a85993dfee3.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">[2]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a223ce4795d132787715a13f83ac51980.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractINSt5ratioIXL0EEEE1LEENSt14ratio_subtractINSt5ratioIXL0EEEE1MEENSt14ratio_subtractINSt5ratioIXL0EEEE1tEENSt14ratio_subtractINSt5ratioIXL0EEEE1QEENSt14ratio_subtractINSt5ratioIXL0EEEE1TEENSt14ratio_subtractINSt5ratioIXL0EEEE1NEENSt14ratio_subtractINSt5ratioIXL0EEEE1JEENSt14ratio_subtractINSt5ratioIXL0EEEE1AEEERKdRK8BaseUnitI1L1M1t1Q1T1N1J1AE">[3]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7683512548bef2c4dea7ce60b4ad6184.html#_CPPv4I0000000000000000EN6LouLib5UnitsdvE8BaseUnitINSt14ratio_subtractI2L12L2EENSt14ratio_subtractI2M12M2EENSt14ratio_subtractI2t12t2EENSt14ratio_subtractI2Q12Q2EENSt14ratio_subtractI2T12T2EENSt14ratio_subtractI2N12N2EENSt14ratio_subtractI2J12J2EENSt14ratio_subtractI2A12A2EEERK8BaseUnitI2L12M12t12Q12T12N12J12A1ERK8BaseUnitI2L22M22t22Q22T22N22J22A2E">[4]</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a7bee95086448596b08186a85993dfee3.html#_CPPv4I00000000EN6LouLib5UnitsdvE8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AERKd">[5]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a357b6e62ae648d2403e44beb4fc2b95f.html#_CPPv4I00000000EN6LouLib5UnitsltEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&lt; (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a357b6e62ae648d2403e44beb4fc2b95f.html#_CPPv4I00000000EN6LouLib5UnitsltEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html#_CPPv4I00000000EN6LouLib5UnitsleEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&lt;= (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a2d8eafe2e7c5e408ab1944c86bcfcd27.html#_CPPv4I00000000EN6LouLib5UnitsleEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a9381601a026bff1bdc01414db7838d09.html#_CPPv4I00000000EN6LouLib5UnitseqEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator== (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a9381601a026bff1bdc01414db7838d09.html#_CPPv4I00000000EN6LouLib5UnitseqEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a2167f4ccb536a3f34fb7e319591a1769.html#_CPPv4I00000000EN6LouLib5UnitsgtEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&gt; (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a2167f4ccb536a3f34fb7e319591a1769.html#_CPPv4I00000000EN6LouLib5UnitsgtEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1ad86b3a7d2bb3751187b7120a7d05cbcf.html#_CPPv4I00000000EN6LouLib5UnitsgeEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::operator&gt;= (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ad86b3a7d2bb3751187b7120a7d05cbcf.html#_CPPv4I00000000EN6LouLib5UnitsgeEbRK8BaseUnitI1L1M1t1Q1T1N1J1AERK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/variable__mass_8hpp_1a4094511273e312bec78796916f75b0af.html#_CPPv4N6LouLib5Units5OUNCEE">LouLib::Units::OUNCE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a4094511273e312bec78796916f75b0af.html#_CPPv4N6LouLib5Units5OUNCEE">[1]</a>
+</li>
+      <li><a href="api/variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff.html#_CPPv4N6LouLib5Units5POUNDE">LouLib::Units::POUND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff.html#_CPPv4N6LouLib5Units5POUNDE">[1]</a>
+</li>
+      <li><a href="api/variable__angular_velocity_8hpp_1a6cc0eeb557d3ff07d0e9209b01d4c164.html#_CPPv4N6LouLib5Units17RADIAN_PER_SECONDE">LouLib::Units::RADIAN_PER_SECOND (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a6cc0eeb557d3ff07d0e9209b01d4c164.html#_CPPv4N6LouLib5Units17RADIAN_PER_SECONDE">[1]</a>
+</li>
+      <li><a href="api/variable__angular_jerk_8hpp_1a97106ac874fb9943d1db213b1f54f7d9.html#_CPPv4N6LouLib5Units23RADIAN_PER_SECOND_CUBEDE">LouLib::Units::RADIAN_PER_SECOND_CUBED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a97106ac874fb9943d1db213b1f54f7d9.html#_CPPv4N6LouLib5Units23RADIAN_PER_SECOND_CUBEDE">[1]</a>
+</li>
+      <li><a href="api/variable__angular_acceleration_8hpp_1ae04137a3a0051bca1d9a97e0776990fc.html#_CPPv4N6LouLib5Units25RADIAN_PER_SECOND_SQUAREDE">LouLib::Units::RADIAN_PER_SECOND_SQUARED (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ae04137a3a0051bca1d9a97e0776990fc.html#_CPPv4N6LouLib5Units25RADIAN_PER_SECOND_SQUAREDE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a65d3498516642234dae5cb41e3cb0e1b.html#_CPPv4I00000000EN6LouLib5Units6signumEiRK8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::signum (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a65d3498516642234dae5cb41e3cb0e1b.html#_CPPv4I00000000EN6LouLib5Units6signumEiRK8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128.html#_CPPv4I00000000EN6LouLib5Units4sqrtE8BaseUnitINSt12ratio_divideI1LNSt5ratioIXL2EEEEEENSt12ratio_divideI1MNSt5ratioIXL2EEEEEENSt12ratio_divideI1tNSt5ratioIXL2EEEEEENSt12ratio_divideI1QNSt5ratioIXL2EEEEEENSt12ratio_divideI1TNSt5ratioIXL2EEEEEENSt12ratio_divideI1NNSt5ratioIXL2EEEEEENSt12ratio_divideI1JNSt5ratioIXL2EEEEEENSt12ratio_divideI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::sqrt (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1ae05c8c49ac57f34022dc4b96b4b88128.html#_CPPv4I00000000EN6LouLib5Units4sqrtE8BaseUnitINSt12ratio_divideI1LNSt5ratioIXL2EEEEEENSt12ratio_divideI1MNSt5ratioIXL2EEEEEENSt12ratio_divideI1tNSt5ratioIXL2EEEEEENSt12ratio_divideI1QNSt5ratioIXL2EEEEEENSt12ratio_divideI1TNSt5ratioIXL2EEEEEENSt12ratio_divideI1NNSt5ratioIXL2EEEEEENSt12ratio_divideI1JNSt5ratioIXL2EEEEEENSt12ratio_divideI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb.html#_CPPv4I00000000EN6LouLib5Units6squareE8BaseUnitINSt14ratio_multiplyI1LNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1MNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1tNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1QNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1TNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1NNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1JNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">LouLib::Units::square (C++ function)</a>, <a href="api/function_namespace_lou_lib_1_1_units_1a505b648f46999f1dbc8a9f389e8451bb.html#_CPPv4I00000000EN6LouLib5Units6squareE8BaseUnitINSt14ratio_multiplyI1LNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1MNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1tNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1QNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1TNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1NNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1JNSt5ratioIXL2EEEEEENSt14ratio_multiplyI1ANSt5ratioIXL2EEEEEEER8BaseUnitI1L1M1t1Q1T1N1J1AE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1a9960b211f4e7e53fdd8ba11b77be8fc4.html#_CPPv4N6LouLib5Units17SQUARE_CENTIMETERE">LouLib::Units::SQUARE_CENTIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a9960b211f4e7e53fdd8ba11b77be8fc4.html#_CPPv4N6LouLib5Units17SQUARE_CENTIMETERE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1aa5d51f19840410f70c3e15928d26da6a.html#_CPPv4N6LouLib5Units16SQUARE_DECIMETERE">LouLib::Units::SQUARE_DECIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a.html#_CPPv4N6LouLib5Units16SQUARE_DECIMETERE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1aea32e37c4d7ae311ecd1616436434e85.html#_CPPv4N6LouLib5Units11SQUARE_FOOTE">LouLib::Units::SQUARE_FOOT (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aea32e37c4d7ae311ecd1616436434e85.html#_CPPv4N6LouLib5Units11SQUARE_FOOTE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1af9a33ee103fa0f099e39c48164a42650.html#_CPPv4N6LouLib5Units11SQUARE_INCHE">LouLib::Units::SQUARE_INCH (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650.html#_CPPv4N6LouLib5Units11SQUARE_INCHE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1ad9f9b29886488426fcb81b875a54bfd3.html#_CPPv4N6LouLib5Units12SQUARE_METERE">LouLib::Units::SQUARE_METER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1ad9f9b29886488426fcb81b875a54bfd3.html#_CPPv4N6LouLib5Units12SQUARE_METERE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1a266ec7f754deb5e87cefde5052d0bc81.html#_CPPv4N6LouLib5Units17SQUARE_MILLIMETERE">LouLib::Units::SQUARE_MILLIMETER (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81.html#_CPPv4N6LouLib5Units17SQUARE_MILLIMETERE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1a4adcb8ec2fb64a468bb331a39c8b0fcc.html#_CPPv4N6LouLib5Units11SQUARE_TILEE">LouLib::Units::SQUARE_TILE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a4adcb8ec2fb64a468bb331a39c8b0fcc.html#_CPPv4N6LouLib5Units11SQUARE_TILEE">[1]</a>
+</li>
+      <li><a href="api/variable__area_8hpp_1a43e3b5aa680a21d82e978d8a1286fe27.html#_CPPv4N6LouLib5Units11SQUARE_YARDE">LouLib::Units::SQUARE_YARD (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a43e3b5aa680a21d82e978d8a1286fe27.html#_CPPv4N6LouLib5Units11SQUARE_YARDE">[1]</a>
+</li>
+      <li><a href="api/variable__length_8hpp_1a67540d4febaeef2a05ef4f8a28c8a66b.html#_CPPv4N6LouLib5Units4TILEE">LouLib::Units::TILE (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1a67540d4febaeef2a05ef4f8a28c8a66b.html#_CPPv4N6LouLib5Units4TILEE">[1]</a>
+</li>
+      <li><a href="api/variable__length_8hpp_1aaafa56435ad9290bacaf84751aa04f76.html#_CPPv4N6LouLib5Units4YARDE">LouLib::Units::YARD (C++ member)</a>, <a href="api/variable_namespace_lou_lib_1_1_units_1aaafa56435ad9290bacaf84751aa04f76.html#_CPPv4N6LouLib5Units4YARDE">[1]</a>
 </li>
       <li><a href="api/class_lou_lib_1_1_utility_1_1_logger.html#_CPPv4N6LouLib7Utility6LoggerE">LouLib::Utility::Logger (C++ class)</a>
 </li>

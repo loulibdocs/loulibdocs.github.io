@@ -1,0 +1,48 @@
+
+.. _program_listing_file_src_LouLib_Math_Point2D.hpp:
+
+Program Listing for File Point2D.hpp
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Math_Point2D.hpp>` (``src/LouLib/Math/Point2D.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_POINT2D_HPP
+   #define LOULIB_POINT2D_HPP
+   
+   #include "../Units/Units.hpp"
+   
+   namespace LouLib {
+       namespace Math {
+   
+           class Point2D {
+           private:
+               Units::Length x;
+               Units::Length y;
+   
+           public:
+   
+               Point2D(const Units::Length &x, const Units::Length &y);
+   
+               const Units::Length &getX() const;
+   
+               void setX(const Units::Length &x);
+   
+               const Units::Length &getY() const;
+   
+               void setY(const Units::Length &y);
+   
+               double findCurvature(Point2D a, Point2D b);
+   
+               Units::Length distTo(Point2D a);
+   
+           };
+   
+       } // LouLib
+   } // Math
+   
+   #endif //LOULIB_POINT2D_HPP

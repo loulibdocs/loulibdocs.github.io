@@ -1,0 +1,14 @@
+.. _exhale_define__volume_8hpp_1a8904ea263e74365f2c83f6bc11efb5bc:
+
+Define CREATE_VOLUME_STRING_LITERAL
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_VOLUME_STRING_LITERAL
+   :project: My Project

@@ -1,0 +1,40 @@
+
+.. _program_listing_file_src_LouLib_Filters_EWMAFilter.hpp:
+
+Program Listing for File EWMAFilter.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_EWMAFilter.hpp>` (``src/LouLib/Filters/EWMAFilter.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_EWMAFILTER_HPP
+   #define LOULIB_EWMAFILTER_HPP
+   
+   #include "AbstractFilter.hpp"
+   
+   namespace LouLib {
+       namespace Filters {
+   
+           class EWMAFilter : public AbstractFilter{
+           private:
+               double k;
+               double val;
+   
+           public:
+   
+               explicit EWMAFilter(double k, double startVal = 0);
+   
+               void addReading(double reading) override;
+   
+               double getOutput() override;
+   
+           };
+   
+       } // LouLib
+   } // Filters
+   
+   #endif //LOULIB_EWMAFILTER_HPP

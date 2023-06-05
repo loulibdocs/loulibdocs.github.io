@@ -1,0 +1,14 @@
+.. _exhale_define__angular_acceleration_8hpp_1a992c794a1cc56f08fc8dc166b8a516ca:
+
+Define CREATE_ANGULARACCELERATION_STRING_LITERAL
+================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_ANGULARACCELERATION_STRING_LITERAL
+   :project: My Project

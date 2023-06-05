@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b:
+
+Function LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_cdeg, CENTIDEGREE)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGLE_STRING_LITERAL(_cdeg, CENTIDEGREE)
+   :project: My Project

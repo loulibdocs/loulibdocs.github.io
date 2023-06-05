@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)
+============================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Temperature.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 1, 0, 0, 0, Temperature)
+   :project: My Project

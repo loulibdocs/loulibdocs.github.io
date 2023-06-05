@@ -1,0 +1,14 @@
+.. _exhale_variable__jerk_8hpp_1a6f233941a5158969971c73f88d9700e0:
+
+Variable LouLib::Units::METER_PER_SECOND_CUBED
+==============================================
+
+- Defined in :ref:`file_src_LouLib_Units_Jerk.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::METER_PER_SECOND_CUBED
+   :project: My Project

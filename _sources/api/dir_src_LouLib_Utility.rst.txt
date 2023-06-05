@@ -18,5 +18,6 @@ Files
 
 - :ref:`file_src_LouLib_Utility_Logger.cpp`
 - :ref:`file_src_LouLib_Utility_Logger.hpp`
+- :ref:`file_src_LouLib_Utility_Utility.hpp`
 
 

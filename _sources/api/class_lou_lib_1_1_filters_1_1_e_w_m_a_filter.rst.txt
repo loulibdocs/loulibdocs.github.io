@@ -1,0 +1,26 @@
+.. _exhale_class_class_lou_lib_1_1_filters_1_1_e_w_m_a_filter:
+
+Class EWMAFilter
+================
+
+- Defined in :ref:`file_src_LouLib_Filters_EWMAFilter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public LouLib::Filters::AbstractFilter`` (:ref:`exhale_class_class_lou_lib_1_1_filters_1_1_abstract_filter`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Filters::EWMAFilter
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff:
+
+Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)
+=============================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)
+   :project: My Project

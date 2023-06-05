@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a9b5dc34c16ba201711ea54ae96e1695b:
+
+Function LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_radps2, RADIAN_PER_SECOND_SQUARED)
+=====================================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_ANGULARACCELERATION_STRING_LITERAL(_radps2, RADIAN_PER_SECOND_SQUARED)
+   :project: My Project

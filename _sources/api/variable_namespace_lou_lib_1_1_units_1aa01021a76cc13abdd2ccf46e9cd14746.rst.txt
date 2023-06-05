@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1aa01021a76cc13abdd2ccf46e9cd14746:
+
+Variable LouLib::Units::CUBIC_DECIMETER
+=======================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CUBIC_DECIMETER
+   :project: My Project

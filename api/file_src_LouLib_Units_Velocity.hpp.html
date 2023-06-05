@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Velocity.hpp &mdash; LouLib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            LouLib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Controllers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Odometry%20Sensors.html">Odometry Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using%20Odometry.html">Using Odometry</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Paths</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Trajectory.html">Trajectory</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Math</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Units</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Unit%20System.html">Unit System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Filters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SMA%20Filter.html">Simple Moving Average (SMA) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SMM%20Filter.html">Simple Moving Median (SMM) Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EWMA%20Filter.html">Exponentially-Weighted Moving Average (EWMA) Filter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utility</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LouLib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File Velocity.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file_src_LouLib_Units_Velocity.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-velocity-hpp">
+<span id="file-src-loulib-units-velocity-hpp"></span><h1>File Velocity.hpp<a class="headerlink" href="#file-velocity-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="dir_src_LouLib_Units.html#dir-src-loulib-units"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Units</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-src-loulib-units-velocity-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Units/Velocity.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#detailed-description" id="id2">Detailed Description</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id3">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id4">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id5">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id7">Defines</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id8">Variables</a></p></li>
+</ul>
+</div>
+<section id="definition-src-loulib-units-velocity-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Units/Velocity.hpp</span></code>)<a class="headerlink" href="#definition-src-loulib-units-velocity-hpp" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_src_LouLib_Units_Velocity.hpp.html">Program Listing for File Velocity.hpp</a></li>
+</ul>
+</div>
+</section>
+<section id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<p>Definition of Velocity units</p>
+<p>Copyright (c) 2023 Kevin Lou</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">BaseUnit.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_BaseUnit.hpp.html#file-src-loulib-units-baseunit-hpp"><span class="std std-ref">File BaseUnit.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Length.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_Length.hpp.html#file-src-loulib-units-length-hpp"><span class="std std-ref">File Length.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Time.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_Time.hpp.html#file-src-loulib-units-time-hpp"><span class="std std-ref">File Time.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UnitMath.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_UnitMath.hpp.html#file-src-loulib-units-unitmath-hpp"><span class="std std-ref">File UnitMath.hpp</span></a>)</p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Units.hpp.html#file-src-loulib-units-units-hpp"><span class="std std-ref">File Units.hpp</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_LouLib.html#namespace-loulib"><span class="std std-ref">Namespace LouLib</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_LouLib__Units.html#namespace-loulib-units"><span class="std std-ref">Namespace LouLib::Units</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_LouLib__Units__literals.html#namespace-loulib-units-literals"><span class="std std-ref">Namespace LouLib::Units::literals</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a97664cc4ccd67ca251c48fe05dc596dd.html#exhale-function-namespace-lou-lib-1-1-units-1a97664cc4ccd67ca251c48fe05dc596dd"><span class="std std-ref">Function LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_fps, FOOT_PER_SECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7.html#exhale-function-namespace-lou-lib-1-1-units-1a100a98cfa6a468a9ca6aa4fc48552db7"><span class="std std-ref">Function LouLib::Units::CREATE_VELOCITY_STRING_LITERAL(_mps, METER_PER_SECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645.html#exhale-function-namespace-lou-lib-1-1-units-1a2c46ae1ad4684ac78855624c2afba645"><span class="std std-ref">Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Velocity)</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define__velocity_8hpp_1a86d7656fd92c143cd093ca5b1deb1833.html#exhale-define-velocity-8hpp-1a86d7656fd92c143cd093ca5b1deb1833"><span class="std std-ref">Define CREATE_VELOCITY_STRING_LITERAL</span></a></p></li>
+</ul>
+</section>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56.html#exhale-variable-namespace-lou-lib-1-1-units-1afa96bea902955400170960e0ac33cb56"><span class="std std-ref">Variable LouLib::Units::FOOT_PER_SECOND</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1abc0b2cb41f687de6b557ebee961f1188.html#exhale-variable-namespace-lou-lib-1-1-units-1abc0b2cb41f687de6b557ebee961f1188"><span class="std std-ref">Variable LouLib::Units::METER_PER_SECOND</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kevin Lou.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

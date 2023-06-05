@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_math_1aedb7a911d2f768764aee9be4837e6c01:
+
+Variable LouLib::Math::SQRT2
+============================
+
+- Defined in :ref:`file_src_LouLib_Math_MathConstants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Math::SQRT2
+   :project: My Project

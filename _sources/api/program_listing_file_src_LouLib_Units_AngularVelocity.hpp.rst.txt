@@ -1,0 +1,44 @@
+
+.. _program_listing_file_src_LouLib_Units_AngularVelocity.hpp:
+
+Program Listing for File AngularVelocity.hpp
+============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_AngularVelocity.hpp>` (``src/LouLib/Units/AngularVelocity.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ANGULARVELOCITY_HPP
+   #define LOULIB_ANGULARVELOCITY_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Angle.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(0, 0, -1, 0, 0, 0, 0, 1, AngularVelocity);
+   
+           constexpr AngularVelocity RADIAN_PER_SECOND = RADIAN / SECOND;
+           constexpr AngularVelocity DEGREE_PER_SECOND = DEGREE / SECOND;
+   
+           inline namespace literals{
+               #define CREATE_ANGULARVELOCITY_STRING_LITERAL(literal, unit)             \
+               constexpr AngularVelocity operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr AngularVelocity operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_ANGULARVELOCITY_STRING_LITERAL(_radps, RADIAN_PER_SECOND);
+               CREATE_ANGULARVELOCITY_STRING_LITERAL(_degps, DEGREE_PER_SECOND);
+           }
+       }
+   }
+   
+   #endif //LOULIB_ANGULARVELOCITY_HPP

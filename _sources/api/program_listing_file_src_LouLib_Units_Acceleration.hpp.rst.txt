@@ -1,0 +1,42 @@
+
+.. _program_listing_file_src_LouLib_Units_Acceleration.hpp:
+
+Program Listing for File Acceleration.hpp
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Acceleration.hpp>` (``src/LouLib/Units/Acceleration.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_ACCELERATION_HPP
+   #define LOULIB_ACCELERATION_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Length.hpp"
+   #include "Time.hpp"
+   
+   namespace LouLib {
+       namespace Units {
+           DEFINE_NEW_UNIT(1, 0, -2, 0, 0, 0, 0, 0, Acceleration);
+   
+           constexpr Acceleration METER_PER_SECOND_SQUARED = METER / (SECOND*SECOND);
+   
+           inline namespace literals{
+               #define CREATE_ACCELERATION_STRING_LITERAL(literal, unit)             \
+               constexpr Acceleration operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Acceleration operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_ACCELERATION_STRING_LITERAL(_mps2, METER_PER_SECOND_SQUARED);
+           }
+       }
+   }
+   
+   #endif //LOULIB_ACCELERATION_HPP

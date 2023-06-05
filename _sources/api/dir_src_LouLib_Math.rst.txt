@@ -16,8 +16,17 @@ Directory Math
 Files
 -----
 
+- :ref:`file_src_LouLib_Math_Math.hpp`
 - :ref:`file_src_LouLib_Math_MathConstants.hpp`
 - :ref:`file_src_LouLib_Math_MathFunctions.cpp`
 - :ref:`file_src_LouLib_Math_MathFunctions.hpp`
+- :ref:`file_src_LouLib_Math_Matrix.cpp`
+- :ref:`file_src_LouLib_Math_Matrix.hpp`
+- :ref:`file_src_LouLib_Math_Point2D.cpp`
+- :ref:`file_src_LouLib_Math_Point2D.hpp`
+- :ref:`file_src_LouLib_Math_Pose2D.cpp`
+- :ref:`file_src_LouLib_Math_Pose2D.hpp`
+- :ref:`file_src_LouLib_Math_Vector.cpp`
+- :ref:`file_src_LouLib_Math_Vector.hpp`
 
 

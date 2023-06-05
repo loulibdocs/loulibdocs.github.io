@@ -17,6 +17,12 @@ Program Listing for File MathFunctions.hpp
    namespace LouLib{
        namespace Math{
             int signum(double a);
+   
+             double clamp(double val, double min, double max);
+   
+             double constrainAngle(double x);
+   
+              double angleDifference(double final, double initial);
        }
    }
    

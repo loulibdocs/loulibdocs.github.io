@@ -1,0 +1,78 @@
+
+.. _file_src_LouLib_Math_Matrix.cpp:
+
+File Matrix.cpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Math>` (``src/LouLib/Math``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Math/Matrix.cpp``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Math_Matrix.cpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Implementation file for the Matrix class
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+
+
+Includes
+--------
+
+
+- ``Matrix.hpp`` (:ref:`file_src_LouLib_Math_Matrix.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Math`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1a62e4caeadc026df6647ed936d57553ad`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1a4a279fffabdb55afe4f379bdac949ff3`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1ab6b8bbedd3312ebc96088d33486a08d2`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1aa6cf2b966dbea5b0a4320319de0bcab8`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_math_1a7f7576193fa2d8862096a179cb2305cb`
+

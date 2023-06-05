@@ -47,6 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +60,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -114,11 +115,13 @@
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#definition-src-loulib-units-time-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/LouLib/Units/Time.hpp</span></code>)</a></p></li>
-<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
-<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
-<li><p><a class="reference internal" href="#functions" id="id4">Functions</a></p></li>
-<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
-<li><p><a class="reference internal" href="#variables" id="id6">Variables</a></p></li>
+<li><p><a class="reference internal" href="#detailed-description" id="id2">Detailed Description</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id3">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id4">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id5">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id7">Defines</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id8">Variables</a></p></li>
 </ul>
 </div>
 <section id="definition-src-loulib-units-time-hpp">
@@ -129,11 +132,35 @@
 </ul>
 </div>
 </section>
+<section id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<p>Definition of Time units</p>
+<p>Copyright (c) 2023 Kevin Lou</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</section>
 <section id="includes">
 <h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">BaseUnit.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_BaseUnit.hpp.html#file-src-loulib-units-baseunit-hpp"><span class="std std-ref">File BaseUnit.hpp</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">UnitMath.hpp</span></code> (<a class="reference internal" href="file_src_LouLib_Units_UnitMath.hpp.html#file-src-loulib-units-unitmath-hpp"><span class="std std-ref">File UnitMath.hpp</span></a>)</p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_LouLib_Controllers_PIDController.hpp.html#file-src-loulib-controllers-pidcontroller-hpp"><span class="std std-ref">File PIDController.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Controllers_TBHController.hpp.html#file-src-loulib-controllers-tbhcontroller-hpp"><span class="std std-ref">File TBHController.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Acceleration.hpp.html#file-src-loulib-units-acceleration-hpp"><span class="std std-ref">File Acceleration.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_AngularAcceleration.hpp.html#file-src-loulib-units-angularacceleration-hpp"><span class="std std-ref">File AngularAcceleration.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_AngularJerk.hpp.html#file-src-loulib-units-angularjerk-hpp"><span class="std std-ref">File AngularJerk.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_AngularVelocity.hpp.html#file-src-loulib-units-angularvelocity-hpp"><span class="std std-ref">File AngularVelocity.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Force.hpp.html#file-src-loulib-units-force-hpp"><span class="std std-ref">File Force.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Jerk.hpp.html#file-src-loulib-units-jerk-hpp"><span class="std std-ref">File Jerk.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Torque.hpp.html#file-src-loulib-units-torque-hpp"><span class="std std-ref">File Torque.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Units.hpp.html#file-src-loulib-units-units-hpp"><span class="std std-ref">File Units.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_LouLib_Units_Velocity.hpp.html#file-src-loulib-units-velocity-hpp"><span class="std std-ref">File Velocity.hpp</span></a></p></li>
 </ul>
 </section>
 <section id="namespaces">
@@ -147,14 +174,14 @@
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff.html#exhale-function-time-8hpp-1a9f1650f406d3a9896379cd36901434ff"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0.html#exhale-function-time-8hpp-1acfbb64946f9e8bd03cbe973631c8f2e0"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_s, SECOND)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6.html#exhale-function-time-8hpp-1ac2e039464c9e766f2416c5a161cf3fb6"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66.html#exhale-function-time-8hpp-1a532594d4a52ed2219adac4fbdf7f6a66"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_min, MINUTE)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116.html#exhale-function-time-8hpp-1a5073e19bfb80dae9091240d5c18e5116"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_cs, CENTISECOND)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#exhale-function-time-8hpp-1a7ecae4ac2f8fbf907c28d5c944d4c001"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1adb9e56b4dc93c2470458ddaa2aa70fe3.html#exhale-function-time-8hpp-1adb9e56b4dc93c2470458ddaa2aa70fe3"><span class="std std-ref">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)</span></a></p></li>
-<li><p><a class="reference internal" href="function__time_8hpp_1ae5156bb6beda09ec056ec927b4ab7138.html#exhale-function-time-8hpp-1ae5156bb6beda09ec056ec927b4ab7138"><span class="std std-ref">Function LouLib::Units::SECOND</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff.html#exhale-function-namespace-lou-lib-1-1-units-1a9f1650f406d3a9896379cd36901434ff"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_hr, HOUR)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001.html#exhale-function-namespace-lou-lib-1-1-units-1a7ecae4ac2f8fbf907c28d5c944d4c001"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ms, MILLISECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0.html#exhale-function-namespace-lou-lib-1-1-units-1acfbb64946f9e8bd03cbe973631c8f2e0"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_s, SECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6.html#exhale-function-namespace-lou-lib-1-1-units-1ac2e039464c9e766f2416c5a161cf3fb6"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_ds, DECISECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a5073e19bfb80dae9091240d5c18e5116.html#exhale-function-namespace-lou-lib-1-1-units-1a5073e19bfb80dae9091240d5c18e5116"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_cs, CENTISECOND)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1a532594d4a52ed2219adac4fbdf7f6a66.html#exhale-function-namespace-lou-lib-1-1-units-1a532594d4a52ed2219adac4fbdf7f6a66"><span class="std std-ref">Function LouLib::Units::CREATE_TIME_STRING_LITERAL(_min, MINUTE)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3.html#exhale-function-namespace-lou-lib-1-1-units-1adb9e56b4dc93c2470458ddaa2aa70fe3"><span class="std std-ref">Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 1, 0, 0, 0, 0, 0, Time)</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespace_lou_lib_1_1_units_1ae5156bb6beda09ec056ec927b4ab7138.html#exhale-function-namespace-lou-lib-1-1-units-1ae5156bb6beda09ec056ec927b4ab7138"><span class="std std-ref">Function LouLib::Units::SECOND</span></a></p></li>
 </ul>
 </section>
 <section id="defines">
@@ -166,11 +193,11 @@
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815.html#exhale-variable-time-8hpp-1aec6a81ae817b311ebf443f230813e815"><span class="std std-ref">Variable LouLib::Units::CENTISECOND</span></a></p></li>
-<li><p><a class="reference internal" href="variable__time_8hpp_1aca3289e0405099b9d0980531ae117600.html#exhale-variable-time-8hpp-1aca3289e0405099b9d0980531ae117600"><span class="std std-ref">Variable LouLib::Units::DECISECOND</span></a></p></li>
-<li><p><a class="reference internal" href="variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e.html#exhale-variable-time-8hpp-1aadd07453c0253bfc28d19afea895da6e"><span class="std std-ref">Variable LouLib::Units::HOUR</span></a></p></li>
-<li><p><a class="reference internal" href="variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b.html#exhale-variable-time-8hpp-1a5b10ae9fb79cf79c82987337427b999b"><span class="std std-ref">Variable LouLib::Units::MILLISECOND</span></a></p></li>
-<li><p><a class="reference internal" href="variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a.html#exhale-variable-time-8hpp-1a6250fdfcf9a3b5289da8066f274fe83a"><span class="std std-ref">Variable LouLib::Units::MINUTE</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815.html#exhale-variable-namespace-lou-lib-1-1-units-1aec6a81ae817b311ebf443f230813e815"><span class="std std-ref">Variable LouLib::Units::CENTISECOND</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aca3289e0405099b9d0980531ae117600.html#exhale-variable-namespace-lou-lib-1-1-units-1aca3289e0405099b9d0980531ae117600"><span class="std std-ref">Variable LouLib::Units::DECISECOND</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1aadd07453c0253bfc28d19afea895da6e.html#exhale-variable-namespace-lou-lib-1-1-units-1aadd07453c0253bfc28d19afea895da6e"><span class="std std-ref">Variable LouLib::Units::HOUR</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a5b10ae9fb79cf79c82987337427b999b.html#exhale-variable-namespace-lou-lib-1-1-units-1a5b10ae9fb79cf79c82987337427b999b"><span class="std std-ref">Variable LouLib::Units::MILLISECOND</span></a></p></li>
+<li><p><a class="reference internal" href="variable_namespace_lou_lib_1_1_units_1a6250fdfcf9a3b5289da8066f274fe83a.html#exhale-variable-namespace-lou-lib-1-1-units-1a6250fdfcf9a3b5289da8066f274fe83a"><span class="std std-ref">Variable LouLib::Units::MINUTE</span></a></p></li>
 </ul>
 </section>
 </section>

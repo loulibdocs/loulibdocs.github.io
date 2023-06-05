@@ -21,7 +21,27 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_src_LouLib_Controllers.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_src_LouLib_Filters.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_src_LouLib_Math.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_src_LouLib_Odometry.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_src_LouLib_Paths.rst
 
 .. toctree::
    :maxdepth: 5
@@ -40,7 +60,52 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_Filters_AbstractFilter.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_AbstractOdometry.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_AbstractOdometry.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_AbstractOdomSensor.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Acceleration.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_Units_Angle.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_AngularAcceleration.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_AngularJerk.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_AngularVelocity.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Area.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -50,7 +115,47 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_Paths_BezierCurve.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Paths_BezierCurve.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_Controllers.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_Units_Current.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_EWMAFilter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_EWMAFilter.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_Filters.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Force.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Jerk.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -70,12 +175,32 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_LouLib.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_LQRController.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_LQRController.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_Units_Luminosity.hpp.rst
 
 .. toctree::
    :maxdepth: 5
 
    file_src_LouLib_Units_Mass.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Math.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -95,7 +220,117 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_Math_Matrix.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Matrix.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_Odometry.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomIMUSensor.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomIMUSensor.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomMotorSensor.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomMotorSensor.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomRotationSensor.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_OdomRotationSensor.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Paths_Paths.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_PIDController.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_PIDController.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Point2D.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Point2D.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Pose2D.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Pose2D.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_RamseteController.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_RamseteController.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_README.md.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_SMAFilter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_SMAFilter.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_SMMFilter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Filters_SMMFilter.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -105,7 +340,37 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_Controllers_TBHController.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Controllers_TBHController.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_Units_Temperature.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_ThreeSensorIMUOdom.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_ThreeSensorIMUOdom.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_ThreeSensorOdom.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_ThreeSensorOdom.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -115,7 +380,72 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_LouLib_Units_Torque.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Paths_Trajectory.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Paths_Trajectory.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_TwoSensorIMUOdom.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_TwoSensorIMUOdom.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_TwoSensorOdom.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Odometry_TwoSensorOdom.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_LouLib_Units_UnitMath.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Units.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Utility_Utility.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Vector.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Math_Vector.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Velocity.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_LouLib_Units_Volume.hpp.rst
 
 Pages
 *****

@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2:
+
+Variable LouLib::Units::DECAGRAM
+================================
+
+- Defined in :ref:`file_src_LouLib_Units_Mass.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DECAGRAM
+   :project: My Project

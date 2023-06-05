@@ -1,0 +1,26 @@
+.. _exhale_class_class_lou_lib_1_1_odometry_1_1_three_sensor_odom:
+
+Class ThreeSensorOdom
+=====================
+
+- Defined in :ref:`file_src_LouLib_Odometry_ThreeSensorOdom.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public LouLib::Odometry::AbstractOdometry`` (:ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_abstract_odometry`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Odometry::ThreeSensorOdom
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

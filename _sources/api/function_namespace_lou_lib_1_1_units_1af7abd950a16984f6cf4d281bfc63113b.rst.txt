@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1af7abd950a16984f6cf4d281bfc63113b:
+
+Function LouLib::Units::CREATE_JERK_STRING_LITERAL
+==================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Jerk.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_JERK_STRING_LITERAL(_mps3, METER_PER_SECOND_CUBED)
+   :project: My Project

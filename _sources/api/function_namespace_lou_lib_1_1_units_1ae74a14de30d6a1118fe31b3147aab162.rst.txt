@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162:
+
+Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_m2, SQUARE_METER)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_AREA_STRING_LITERAL(_m2, SQUARE_METER)
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a09be33c6abf05ebbfa6f4e11f956d903:
+
+Variable LouLib::Units::DEGREE_PER_SECOND
+=========================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DEGREE_PER_SECOND
+   :project: My Project

@@ -1,0 +1,44 @@
+
+.. _program_listing_file_src_LouLib_Units_Torque.hpp:
+
+Program Listing for File Torque.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Torque.hpp>` (``src/LouLib/Units/Torque.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_TORQUE_HPP
+   #define LOULIB_TORQUE_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Mass.hpp"
+   #include "Length.hpp"
+   #include "Time.hpp"
+   #include "Force.hpp"
+   
+   namespace LouLib{
+       namespace Units{
+           DEFINE_NEW_UNIT(2, 1, -2, 0, 0, 0, 0, 0, Torque);
+   
+           constexpr Torque NEWTON_METER = NEWTON * METER;
+   
+           inline namespace literals{
+               #define CREATE_TORQUE_STRING_LITERAL(literal, unit)             \
+               constexpr Torque operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Torque operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_TORQUE_STRING_LITERAL(_Nm, NEWTON_METER);
+           }
+       }
+   }
+   
+   #endif //LOULIB_TORQUE_HPP

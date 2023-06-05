@@ -1,0 +1,14 @@
+.. _exhale_variable__volume_8hpp_1a413202333bd1c4494dc752c763771be0:
+
+Variable LouLib::Units::CUBIC_YARD
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CUBIC_YARD
+   :project: My Project

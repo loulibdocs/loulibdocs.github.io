@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a421021e90744cdc8ce7e73a87b7d436b:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 1, 0, Luminosity)
+===========================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Luminosity.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, 0, 0, 0, 0, 1, 0, Luminosity)
+   :project: My Project

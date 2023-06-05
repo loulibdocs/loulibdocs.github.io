@@ -1,0 +1,55 @@
+
+.. _program_listing_file_src_LouLib_Units_Volume.hpp:
+
+Program Listing for File Volume.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Units_Volume.hpp>` (``src/LouLib/Units/Volume.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_VOLUME_HPP
+   #define LOULIB_VOLUME_HPP
+   
+   #include "BaseUnit.hpp"
+   #include "UnitMath.hpp"
+   #include "Length.hpp"
+   
+   namespace LouLib {
+       namespace Units {
+           DEFINE_NEW_UNIT(3, 0, 0, 0, 0, 0, 0, 0, Volume);
+   
+           constexpr Volume CUBIC_METER = METER * METER * METER;
+           constexpr Volume CUBIC_DECIMETER = DECIMETER * DECIMETER * DECIMETER;
+           constexpr Volume CUBIC_CENTIMETER = CENTIMETER * CENTIMETER * CENTIMETER;
+           constexpr Volume CUBIC_MILLIMETER = MILLIMETER * MILLIMETER * MILLIMETER;
+           constexpr Volume CUBIC_INCH = INCH * INCH * INCH;
+           constexpr Volume CUBIC_FOOT = FOOT * FOOT * FOOT;
+           constexpr Volume CUBIC_YARD = YARD * YARD * YARD;
+           constexpr Volume CUBIC_TILE = TILE * TILE * TILE;
+   
+           inline namespace literals{
+               #define CREATE_VOLUME_STRING_LITERAL(literal, unit)             \
+               constexpr Volume operator"" literal(long double x){             \
+                   return static_cast<double>(x)*unit;                         \
+               }                                                               \
+               constexpr Volume operator"" literal(unsigned long long int x){  \
+                   return static_cast<double>(x)*unit;                         \
+               }
+   
+               CREATE_VOLUME_STRING_LITERAL(_m3, CUBIC_METER);
+               CREATE_VOLUME_STRING_LITERAL(_dm3, CUBIC_DECIMETER);
+               CREATE_VOLUME_STRING_LITERAL(_cm3, CUBIC_CENTIMETER);
+               CREATE_VOLUME_STRING_LITERAL(_mm3, CUBIC_MILLIMETER);
+               CREATE_VOLUME_STRING_LITERAL(_in3, CUBIC_INCH);
+               CREATE_VOLUME_STRING_LITERAL(_ft3, CUBIC_FOOT);
+               CREATE_VOLUME_STRING_LITERAL(_yd3, CUBIC_YARD);
+               CREATE_VOLUME_STRING_LITERAL(_tl3, CUBIC_TILE);
+           }
+       }
+   }
+   
+   #endif //LOULIB_VOLUME_HPP

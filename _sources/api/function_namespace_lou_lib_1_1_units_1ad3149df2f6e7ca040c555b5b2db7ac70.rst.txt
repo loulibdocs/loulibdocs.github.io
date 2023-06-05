@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ad3149df2f6e7ca040c555b5b2db7ac70:
+
+Function LouLib::Units::RADIAN
+==============================
+
+- Defined in :ref:`file_src_LouLib_Units_Angle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::RADIAN(1.)
+   :project: My Project

@@ -1,0 +1,61 @@
+
+.. _program_listing_file_src_LouLib_Controllers_TBHController.cpp:
+
+Program Listing for File TBHController.cpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_TBHController.cpp>` (``src/LouLib/Controllers/TBHController.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "TBHController.hpp"
+   #include "../Math/MathFunctions.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+           TBHController::TBHController(double _k) {
+               k = _k;
+               setpoint = 0;
+               maxOutput = 0;
+               minOutput = 0;
+               deltaTime = 0;
+               output = 0;
+               tbh = 0;
+               prevError = 0;
+           }
+   
+           void TBHController::setSetpoint(double _setpoint) {
+               setpoint = _setpoint;
+           }
+   
+           void TBHController::setOutputRange(double _minOutput, double _maxOutput) {
+               minOutput = _minOutput;
+               maxOutput = _maxOutput;
+           }
+   
+           void TBHController::setDeltaTime(Units::Time _deltaTime) {
+               deltaTime = _deltaTime.to(Units::SECOND);
+           }
+   
+           double TBHController::getOutput() {
+               return output;
+           }
+   
+           void TBHController::update(double measurement) {
+               double error = setpoint - measurement;
+   
+               output += error * deltaTime * k;
+   
+               output = Math::clamp(output, minOutput, maxOutput);
+   
+               if(Math::signum(error) != Math::signum(prevError)){
+                   output = 0.5 * (output + tbh);
+                   tbh = output;
+                   prevError = error;
+               }
+           }
+       } // LouLib
+   } // Controllers

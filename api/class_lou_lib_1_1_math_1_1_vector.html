@@ -20,7 +20,9 @@
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class AbstractOdometry" href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html" />
+    <link rel="prev" title="Class Pose2D" href="class_lou_lib_1_1_math_1_1_pose2_d.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../PID%20Controller.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TBH%20Controller.html">TBH Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LQR%20Controller.html">LQR Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RAMSETE%20Controller.html">RAMSETE Controller</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Odometry</span></p>
 <ul>
@@ -59,9 +62,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Math</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Vector.html">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Matrix.html">Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Point2D%20and%20Pose2D.html">Point2D and Pose2D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Constants%20and%20Functions.html">Constants and Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Units</span></p>
@@ -79,8 +82,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../Logger.html">Logger</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -97,6 +105,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
       <li class="breadcrumb-item active">Class Vector</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/api/class_lou_lib_1_1_math_1_1_vector.rst.txt" rel="nofollow"> View page source</a>
@@ -114,17 +123,95 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find class “LouLib::Math::Vector” in doxygen xml output for project “My Project” from directory: ./doc_out/xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6VectorE">
+<span id="_CPPv3N6LouLib4Math6VectorE"></span><span id="_CPPv2N6LouLib4Math6VectorE"></span><span id="LouLib::Math::Vector"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vector</span></span></span><a class="headerlink" href="#_CPPv4N6LouLib4Math6VectorE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Class representing a mathematical vector. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector6VectorEi">
+<span id="_CPPv3N6LouLib4Math6Vector6VectorEi"></span><span id="_CPPv2N6LouLib4Math6Vector6VectorEi"></span><span id="LouLib::Math::Vector::Vector__i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1a805a8bebc1f186907bf6155ce3fcdb2b"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vector</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector6VectorEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new vector of the given size. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector6VectorENSt16initializer_listIdEE">
+<span id="_CPPv3N6LouLib4Math6Vector6VectorENSt16initializer_listIdEE"></span><span id="_CPPv2N6LouLib4Math6Vector6VectorENSt16initializer_listIdEE"></span><span id="LouLib::Math::Vector::Vector__std::initializer_list:double:"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1ac97656097b9ce80e3e0ba2600ffa514b"></span><span class="sig-name descname"><span class="n"><span class="pre">Vector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vectorData</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector6VectorENSt16initializer_listIdEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new vector with the given data. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector6VectorENSt6vectorIdEE">
+<span id="_CPPv3N6LouLib4Math6Vector6VectorENSt6vectorIdEE"></span><span id="_CPPv2N6LouLib4Math6Vector6VectorENSt6vectorIdEE"></span><span id="LouLib::Math::Vector::Vector__std::vector:double:"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1a2a9b727d295288a302deaa58cd74d7e7"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vectorData</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector6VectorENSt6vectorIdEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new vector with the given data </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector6VectorERK6Vector">
+<span id="_CPPv3N6LouLib4Math6Vector6VectorERK6Vector"></span><span id="_CPPv2N6LouLib4Math6Vector6VectorERK6Vector"></span><span id="LouLib::Math::Vector::Vector__VectorCR"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1a2134c19ce87fe443a3d03591fae01daf"></span><span class="sig-name descname"><span class="n"><span class="pre">Vector</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N6LouLib4Math6Vector6VectorERK6Vector" title="LouLib::Math::Vector::Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector6VectorERK6Vector" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new vector that is a copy of the given vector </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6VectorixEi">
+<span id="_CPPv3N6LouLib4Math6VectorixEi"></span><span id="_CPPv2N6LouLib4Math6VectorixEi"></span><span id="LouLib::Math::Vector::subscript-operator__i"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1a83cd85caa9135c14527ae257a2e6b072"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6VectorixEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Operator to get a reference to the element at the specified index </p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the index does not exist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib4Math6VectorixEi">
+<span id="_CPPv3NK6LouLib4Math6VectorixEi"></span><span id="_CPPv2NK6LouLib4Math6VectorixEi"></span><span id="LouLib::Math::Vector::subscript-operator__iC"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1a604197dc4966297887ad596007e52ff1"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib4Math6VectorixEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Operator to get a const reference to the element at the specified index </p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the index does not exist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6LouLib4Math6Vector4sizeEv">
+<span id="_CPPv3NK6LouLib4Math6Vector4sizeEv"></span><span id="_CPPv2NK6LouLib4Math6Vector4sizeEv"></span><span id="LouLib::Math::Vector::sizeC"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1acb722c4dc8958bf1dd34442819ef6efa"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6LouLib4Math6Vector4sizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size of the vector </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector4normEv">
+<span id="_CPPv3N6LouLib4Math6Vector4normEv"></span><span id="_CPPv2N6LouLib4Math6Vector4normEv"></span><span id="LouLib::Math::Vector::norm"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1ad364d13b5d1bf145a98c09c745cdcbd5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">norm</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector4normEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the norm/magnitude of the vector </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector9normalizeEv">
+<span id="_CPPv3N6LouLib4Math6Vector9normalizeEv"></span><span id="_CPPv2N6LouLib4Math6Vector9normalizeEv"></span><span id="LouLib::Math::Vector::normalize"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1af340f8e5f6efdaf9485044de4cdbf910"></span><a class="reference internal" href="#_CPPv4N6LouLib4Math6VectorE" title="LouLib::Math::Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">normalize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector9normalizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates a new vector with the same direction as this vector, but a magnitude of 1 </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6LouLib4Math6Vector8toStringEv">
+<span id="_CPPv3N6LouLib4Math6Vector8toStringEv"></span><span id="_CPPv2N6LouLib4Math6Vector8toStringEv"></span><span id="LouLib::Math::Vector::toString"></span><span class="target" id="class_lou_lib_1_1_math_1_1_vector_1ab4ec975e5db1e47d2f2b7a76c29d2359"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toString</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6LouLib4Math6Vector8toStringEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns a string representation of the vector </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_lou_lib_1_1_math_1_1_pose2_d.html" class="btn btn-neutral float-left" title="Class Pose2D" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_lou_lib_1_1_odometry_1_1_abstract_odometry.html" class="btn btn-neutral float-right" title="Class AbstractOdometry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

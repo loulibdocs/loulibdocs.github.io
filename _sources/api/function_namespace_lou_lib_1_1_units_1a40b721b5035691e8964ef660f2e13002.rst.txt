@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002:
+
+Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_tl2, SQUARE_TILE)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_AREA_STRING_LITERAL(_tl2, SQUARE_TILE)
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ab4153ef12f5b03c961d9c5ae25ce33d7:
+
+Variable LouLib::Units::CUBIC_MILLIMETER
+========================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CUBIC_MILLIMETER
+   :project: My Project

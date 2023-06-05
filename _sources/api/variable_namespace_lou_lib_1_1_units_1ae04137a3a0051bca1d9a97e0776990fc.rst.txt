@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ae04137a3a0051bca1d9a97e0776990fc:
+
+Variable LouLib::Units::RADIAN_PER_SECOND_SQUARED
+=================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::RADIAN_PER_SECOND_SQUARED
+   :project: My Project

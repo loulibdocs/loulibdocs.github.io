@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a94c286069933df07ec12022e5d20bdf7:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularAcceleration)
+====================================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularAcceleration)
+   :project: My Project

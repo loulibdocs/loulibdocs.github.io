@@ -1,0 +1,14 @@
+.. _exhale_define__area_8hpp_1a6b2bfc03239210006892724357473a67:
+
+Define CREATE_AREA_STRING_LITERAL
+=================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_AREA_STRING_LITERAL
+   :project: My Project

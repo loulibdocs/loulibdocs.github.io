@@ -1,0 +1,14 @@
+.. _exhale_function__area_8hpp_1a9b1b7d85814adc8ba1028f8a7d8138c5:
+
+Function LouLib::Units::CREATE_AREA_STRING_LITERAL(_ft2, SQUARE_FOOT)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_AREA_STRING_LITERAL(_ft2, SQUARE_FOOT)
+   :project: My Project

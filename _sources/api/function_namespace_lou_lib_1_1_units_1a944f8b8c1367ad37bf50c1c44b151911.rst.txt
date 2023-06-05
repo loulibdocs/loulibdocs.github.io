@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a944f8b8c1367ad37bf50c1c44b151911:
+
+Template Function LouLib::Units::abs
+====================================
+
+- Defined in :ref:`file_src_LouLib_Units_UnitMath.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::abs(BaseUnit<L, M, t, Q, T, N, J, A>&)
+   :project: My Project

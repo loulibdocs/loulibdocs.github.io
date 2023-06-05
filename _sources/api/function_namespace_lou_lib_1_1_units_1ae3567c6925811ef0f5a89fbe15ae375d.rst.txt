@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ae3567c6925811ef0f5a89fbe15ae375d:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_hA, HECTOAMPERE)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_hA, HECTOAMPERE)
+   :project: My Project

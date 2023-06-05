@@ -1,0 +1,14 @@
+.. _exhale_function__volume_8hpp_1ae7cf838108cd01d30b46b3079c4b04b7:
+
+Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_mm3, CUBIC_MILLIMETER)
+============================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_mm3, CUBIC_MILLIMETER)
+   :project: My Project

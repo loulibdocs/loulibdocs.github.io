@@ -16,15 +16,26 @@ Directory Units
 Files
 -----
 
+- :ref:`file_src_LouLib_Units_Acceleration.hpp`
 - :ref:`file_src_LouLib_Units_Angle.hpp`
+- :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+- :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+- :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+- :ref:`file_src_LouLib_Units_Area.hpp`
 - :ref:`file_src_LouLib_Units_BaseUnit.hpp`
 - :ref:`file_src_LouLib_Units_Current.hpp`
+- :ref:`file_src_LouLib_Units_Force.hpp`
+- :ref:`file_src_LouLib_Units_Jerk.hpp`
 - :ref:`file_src_LouLib_Units_Length.hpp`
 - :ref:`file_src_LouLib_Units_Luminosity.hpp`
 - :ref:`file_src_LouLib_Units_Mass.hpp`
 - :ref:`file_src_LouLib_Units_Substance.hpp`
 - :ref:`file_src_LouLib_Units_Temperature.hpp`
 - :ref:`file_src_LouLib_Units_Time.hpp`
+- :ref:`file_src_LouLib_Units_Torque.hpp`
 - :ref:`file_src_LouLib_Units_UnitMath.hpp`
+- :ref:`file_src_LouLib_Units_Units.hpp`
+- :ref:`file_src_LouLib_Units_Velocity.hpp`
+- :ref:`file_src_LouLib_Units_Volume.hpp`
 
 

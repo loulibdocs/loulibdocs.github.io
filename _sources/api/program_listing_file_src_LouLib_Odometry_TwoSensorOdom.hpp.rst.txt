@@ -1,0 +1,49 @@
+
+.. _program_listing_file_src_LouLib_Odometry_TwoSensorOdom.hpp:
+
+Program Listing for File TwoSensorOdom.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Odometry_TwoSensorOdom.hpp>` (``src/LouLib/Odometry/TwoSensorOdom.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_TWOSENSORODOM_HPP
+   #define LOULIB_TWOSENSORODOM_HPP
+   
+   #include "AbstractOdometry.hpp"
+   #include "OdomMotorSensor.hpp"
+   #include "OdomRotationSensor.hpp"
+   
+   namespace LouLib {
+       namespace Odometry {
+   
+           class TwoSensorOdom : public AbstractOdometry{
+           private:
+   
+               AbstractOdomSensor &leftSensor;
+               AbstractOdomSensor &rightSensor;
+   
+               Units::Length trackWidth;
+   
+               Units::Length lastLeft = 0_in;
+               Units::Length lastRight = 0_in;
+   
+           public:
+   
+               TwoSensorOdom(AbstractOdomSensor &leftSensor, AbstractOdomSensor &rightSensor,
+                             Units::Length trackWidth);
+   
+               void setPose(Math::Pose2D newPose) override;
+   
+               void update() override;
+   
+           };
+   
+       } // LouLib
+   } // Odometry
+   
+   #endif //LOULIB_TWOSENSORODOM_HPP

@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_controllers_1_1_l_q_r_controller:
+
+Class LQRController
+===================
+
+- Defined in :ref:`file_src_LouLib_Controllers_LQRController.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Controllers::LQRController
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

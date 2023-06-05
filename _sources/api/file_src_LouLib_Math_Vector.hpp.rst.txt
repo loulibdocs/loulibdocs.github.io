@@ -9,11 +9,6 @@ File Vector.hpp
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-
-Mathematical vector. 
-
-
-
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -32,9 +27,7 @@ Definition (``src/LouLib/Math/Vector.hpp``)
 Detailed Description
 --------------------
 
-Header file for Vector class Kevin Lou 
-
-March 25, 2023
+Header file for the Vector class
 
 Copyright (c) 2023 Kevin Lou
 
@@ -62,6 +55,10 @@ Includes
 Included By
 -----------
 
+
+- :ref:`file_src_LouLib_Math_Math.hpp`
+
+- :ref:`file_src_LouLib_Math_Matrix.hpp`
 
 - :ref:`file_src_LouLib_Math_Vector.cpp`
 

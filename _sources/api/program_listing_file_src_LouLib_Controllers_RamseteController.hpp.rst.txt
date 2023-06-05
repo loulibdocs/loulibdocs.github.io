@@ -1,0 +1,44 @@
+
+.. _program_listing_file_src_LouLib_Controllers_RamseteController.hpp:
+
+Program Listing for File RamseteController.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Controllers_RamseteController.hpp>` (``src/LouLib/Controllers/RamseteController.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_RAMSETECONTROLLER_HPP
+   #define LOULIB_RAMSETECONTROLLER_HPP
+   
+   #include "../Paths/Trajectory.hpp"
+   
+   namespace LouLib {
+       namespace Controllers {
+   
+           class RamseteController {
+           private:
+               double b;
+               double zeta;
+   
+               Units::Velocity v = 0_mps;
+               Units::AngularVelocity omega = 0_radps;
+   
+           public:
+               RamseteController(double b, double zeta);
+   
+               void computeControl(Paths::Trajectory& t, int idx, Math::Pose2D robotPose);
+   
+               const Units::Velocity &getV() const;
+   
+               const Units::AngularVelocity &getOmega() const;
+   
+           };
+   
+       } // LouLib
+   } // Controllers
+   
+   #endif //LOULIB_RAMSETECONTROLLER_HPP

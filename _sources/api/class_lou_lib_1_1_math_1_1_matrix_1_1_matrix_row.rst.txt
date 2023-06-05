@@ -1,0 +1,23 @@
+.. _exhale_class_class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row:
+
+Class Matrix::MatrixRow
+=======================
+
+- Defined in :ref:`file_src_LouLib_Math_Matrix.hpp`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_lou_lib_1_1_math_1_1_matrix`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Math::Matrix::MatrixRow
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

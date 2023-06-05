@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a:
+
+Variable LouLib::Units::SQUARE_DECIMETER
+========================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::SQUARE_DECIMETER
+   :project: My Project

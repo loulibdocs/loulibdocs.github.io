@@ -64,7 +64,7 @@ error and control effort over time:
 The value of :math:`K` that minimizes this cost function is:
 
 .. math::
-	K = R^{-1}(B^TP(t)+N^T)
+	K = (R+B^TPB)^{-1}(B^TPA)
 	
 where :math:`P` is found by solving the discrete time algebraic Ricatti
 equation:

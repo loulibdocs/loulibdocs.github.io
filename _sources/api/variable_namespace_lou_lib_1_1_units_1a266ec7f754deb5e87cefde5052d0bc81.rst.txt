@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81:
+
+Variable LouLib::Units::SQUARE_MILLIMETER
+=========================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::SQUARE_MILLIMETER
+   :project: My Project

@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aeb395243204aa77665787b631780cd19:
+
+Function LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL
+=======================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Substance.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_SUBSTANCE_STRING_LITERAL(_mol, MOLE)
+   :project: My Project

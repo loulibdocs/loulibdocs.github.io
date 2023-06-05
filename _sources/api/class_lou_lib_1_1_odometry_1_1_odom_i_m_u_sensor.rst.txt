@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor:
+
+Class OdomIMUSensor
+===================
+
+- Defined in :ref:`file_src_LouLib_Odometry_OdomIMUSensor.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Odometry::OdomIMUSensor
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

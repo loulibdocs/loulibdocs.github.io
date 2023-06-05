@@ -1,0 +1,28 @@
+.. _exhale_class_class_lou_lib_1_1_filters_1_1_abstract_filter:
+
+Class AbstractFilter
+====================
+
+- Defined in :ref:`file_src_LouLib_Filters_AbstractFilter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public LouLib::Filters::EWMAFilter`` (:ref:`exhale_class_class_lou_lib_1_1_filters_1_1_e_w_m_a_filter`)
+- ``public LouLib::Filters::SMAFilter`` (:ref:`exhale_class_class_lou_lib_1_1_filters_1_1_s_m_a_filter`)
+- ``public LouLib::Filters::SMMFilter`` (:ref:`exhale_class_class_lou_lib_1_1_filters_1_1_s_m_m_filter`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Filters::AbstractFilter
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

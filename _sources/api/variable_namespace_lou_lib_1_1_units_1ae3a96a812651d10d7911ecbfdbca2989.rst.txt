@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1ae3a96a812651d10d7911ecbfdbca2989:
+
+Variable LouLib::Units::DEGREE_PER_SECOND_SQUARED
+=================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::DEGREE_PER_SECOND_SQUARED
+   :project: My Project

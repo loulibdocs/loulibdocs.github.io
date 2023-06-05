@@ -1,0 +1,14 @@
+.. _exhale_function__jerk_8hpp_1a84f659ae47f5c49367e049dbc877d521:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Jerk)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Jerk.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(1, 0, -, 0, 0, 0, 0, 0, Jerk)
+   :project: My Project

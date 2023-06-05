@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a64ed24bc1ef246b1df161ceac2dc3433:
+
+Function LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_in3, CUBIC_INCH)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Volume.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_VOLUME_STRING_LITERAL(_in3, CUBIC_INCH)
+   :project: My Project

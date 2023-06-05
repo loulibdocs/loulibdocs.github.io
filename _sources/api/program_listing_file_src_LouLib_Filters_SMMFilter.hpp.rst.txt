@@ -1,0 +1,43 @@
+
+.. _program_listing_file_src_LouLib_Filters_SMMFilter.hpp:
+
+Program Listing for File SMMFilter.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Filters_SMMFilter.hpp>` (``src/LouLib/Filters/SMMFilter.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_SMMFILTER_HPP
+   #define LOULIB_SMMFILTER_HPP
+   
+   #include <queue>
+   #include <set>
+   #include "AbstractFilter.hpp"
+   
+   namespace LouLib {
+       namespace Filters {
+   
+           class SMMFilter : public AbstractFilter{
+           private:
+               int readingCount;
+               std::queue<double> data;
+               std::multiset<double> sortedData;
+   
+           public:
+   
+               explicit SMMFilter(int readingCount);
+   
+               void addReading(double reading) override;
+   
+               double getOutput();
+   
+           };
+   
+       } // LouLib
+   } // Filters
+   
+   #endif //LOULIB_SMMFILTER_HPP

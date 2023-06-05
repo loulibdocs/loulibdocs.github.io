@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6:
+
+Function LouLib::Units::CREATE_TORQUE_STRING_LITERAL
+====================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Torque.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_TORQUE_STRING_LITERAL(_Nm, NEWTON_METER)
+   :project: My Project

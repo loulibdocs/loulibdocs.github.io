@@ -1,0 +1,14 @@
+.. _exhale_function__angular_jerk_8hpp_1a4f8886e505fa8a0ce4ee81dd6d1354bc:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularJerk)
+============================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(0, 0, -, 0, 0, 0, 0, 1, AngularJerk)
+   :project: My Project

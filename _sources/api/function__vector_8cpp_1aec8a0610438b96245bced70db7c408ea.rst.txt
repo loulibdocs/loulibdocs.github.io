@@ -1,7 +1,7 @@
 .. _exhale_function__vector_8cpp_1aec8a0610438b96245bced70db7c408ea:
 
-Function LouLib::Math::operator-
-================================
+Function LouLib::Math::operator-(const Vector&, const Vector&)
+==============================================================
 
 - Defined in :ref:`file_src_LouLib_Math_Vector.cpp`
 

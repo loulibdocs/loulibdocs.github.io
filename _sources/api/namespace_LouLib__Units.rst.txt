@@ -5,6 +5,11 @@ Namespace LouLib::Units
 =======================
 
 
+Contains all of :ref:`namespace_LouLib`'s units functionality. 
+
+
+
+
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -31,199 +36,331 @@ Functions
 ---------
 
 
-- :ref:`exhale_function__unit_math_8hpp_1a944f8b8c1367ad37bf50c1c44b151911`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a944f8b8c1367ad37bf50c1c44b151911`
 
-- :ref:`exhale_function__current_8hpp_1a42074e57dfd9837d4100c40de7d586c0`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a42074e57dfd9837d4100c40de7d586c0`
 
-- :ref:`exhale_function__luminosity_8hpp_1a90e02d4759be86076852abda347aee14`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a90e02d4759be86076852abda347aee14`
 
-- :ref:`exhale_function__angle_8hpp_1abaff73571beed2ab39369f6837151a28`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a632947f0e113464b4103966c5c7e9972`
 
-- :ref:`exhale_function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28`
 
-- :ref:`exhale_function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5`
 
-- :ref:`exhale_function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1`
 
-- :ref:`exhale_function__current_8hpp_1a1e7455551f92a31a0f778a7f9735efae`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b`
 
-- :ref:`exhale_function__current_8hpp_1a024abe10b8af2cd3dda84488780a030c`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b5dc34c16ba201711ea54ae96e1695b`
 
-- :ref:`exhale_function__current_8hpp_1ae3567c6925811ef0f5a89fbe15ae375d`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae9552a018915ad60bd6111469e2c22ce`
 
-- :ref:`exhale_function__current_8hpp_1a617bb69602ff5486cfd245a7fc58237b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836`
 
-- :ref:`exhale_function__current_8hpp_1ad509dfdc4c912f0941865c13a4a06215`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9`
 
-- :ref:`exhale_function__current_8hpp_1aca42319394dbddce92fb3ae00fefdd34`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7cbd11ad0720a4af46946db3b74e6c3a`
 
-- :ref:`exhale_function__current_8hpp_1ab8e171248a510192063ae0dcb54c69bd`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a57670fc6a981e1f4a036bb556614012a`
 
-- :ref:`exhale_function__length_8hpp_1a4d1a0325126e0bfb637f325f9a91cd84`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162`
 
-- :ref:`exhale_function__length_8hpp_1abbe9d9df6a5db7b18f346edba2e5478d`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a3cd3f18ab89d21e0adc5bf45693f7dce`
 
-- :ref:`exhale_function__length_8hpp_1adbb0a9aeaff23965f9fcfc98b69aa5d1`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5`
 
-- :ref:`exhale_function__length_8hpp_1ac668931c825e05de1a644ac81f070e15`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d`
 
-- :ref:`exhale_function__length_8hpp_1a5dc86295bb17217701f2a6db19ca6958`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139`
 
-- :ref:`exhale_function__length_8hpp_1a4b92b76fcf31622dfbf066644efee10d`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b1b7d85814adc8ba1028f8a7d8138c5`
 
-- :ref:`exhale_function__length_8hpp_1af05f27830e95007b03ea306b275c5cda`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af2fe6791ef41ecade23c82d932be7a8a`
 
-- :ref:`exhale_function__length_8hpp_1a0f848a3e066cb0fed8b0beb17e29ef43`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a40b721b5035691e8964ef660f2e13002`
 
-- :ref:`exhale_function__luminosity_8hpp_1a52260e7c2210dd85f322c7abdb0a940c`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a1e7455551f92a31a0f778a7f9735efae`
 
-- :ref:`exhale_function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a024abe10b8af2cd3dda84488780a030c`
 
-- :ref:`exhale_function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae3567c6925811ef0f5a89fbe15ae375d`
 
-- :ref:`exhale_function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a617bb69602ff5486cfd245a7fc58237b`
 
-- :ref:`exhale_function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad509dfdc4c912f0941865c13a4a06215`
 
-- :ref:`exhale_function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aca42319394dbddce92fb3ae00fefdd34`
 
-- :ref:`exhale_function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ab8e171248a510192063ae0dcb54c69bd`
 
-- :ref:`exhale_function__substance_8hpp_1aeb395243204aa77665787b631780cd19`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4c22895b4daf4c64fc18e66eea24fea9`
 
-- :ref:`exhale_function__temperature_8hpp_1a56fe27e123af476cd4327f30ee1796c0`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af7abd950a16984f6cf4d281bfc63113b`
 
-- :ref:`exhale_function__time_8hpp_1a9f1650f406d3a9896379cd36901434ff`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4d1a0325126e0bfb637f325f9a91cd84`
 
-- :ref:`exhale_function__time_8hpp_1acfbb64946f9e8bd03cbe973631c8f2e0`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abbe9d9df6a5db7b18f346edba2e5478d`
 
-- :ref:`exhale_function__time_8hpp_1ac2e039464c9e766f2416c5a161cf3fb6`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1adbb0a9aeaff23965f9fcfc98b69aa5d1`
 
-- :ref:`exhale_function__time_8hpp_1a5073e19bfb80dae9091240d5c18e5116`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac668931c825e05de1a644ac81f070e15`
 
-- :ref:`exhale_function__time_8hpp_1a7ecae4ac2f8fbf907c28d5c944d4c001`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958`
 
-- :ref:`exhale_function__time_8hpp_1a532594d4a52ed2219adac4fbdf7f6a66`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d`
 
-- :ref:`exhale_function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af05f27830e95007b03ea306b275c5cda`
 
-- :ref:`exhale_function__current_8hpp_1a69f2e5415febb805d53c2311f65cf458`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a0f848a3e066cb0fed8b0beb17e29ef43`
 
-- :ref:`exhale_function__length_8hpp_1a86eb9199219d0bac1c4c3abc9ad9f5c6`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a52260e7c2210dd85f322c7abdb0a940c`
 
-- :ref:`exhale_function__luminosity_8hpp_1a421021e90744cdc8ce7e73a87b7d436b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a`
 
-- :ref:`exhale_function__mass_8hpp_1a22a4b684c5955e6795dbc11eb94573f7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac16fdc5005e542d1ffdbff349cd9e9da`
 
-- :ref:`exhale_function__substance_8hpp_1a9b0a0579777eaad03b5c6d56dd960666`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5`
 
-- :ref:`exhale_function__temperature_8hpp_1aa71e328c38055e3f59793cf8f8c30acc`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7`
 
-- :ref:`exhale_function__time_8hpp_1adb9e56b4dc93c2470458ddaa2aa70fe3`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10`
 
-- :ref:`exhale_function__temperature_8hpp_1a20bc1815c13dc3aa37baa0f0bd179832`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa`
 
-- :ref:`exhale_function__mass_8hpp_1afab732ee98274b6267dd28d1afe15c8b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aeb395243204aa77665787b631780cd19`
 
-- :ref:`exhale_function__length_8hpp_1ad16187afeb98eb948a50b8da6fe5e4a6`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a56fe27e123af476cd4327f30ee1796c0`
 
-- :ref:`exhale_function__substance_8hpp_1a76ae0f1ed48f1cf25867c7496e5561b5`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0`
 
-- :ref:`exhale_function__base_unit_8hpp_1aaf21571bab124bad758cccbb36a81d60`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac2e039464c9e766f2416c5a161cf3fb6`
 
-- :ref:`exhale_function__unit_math_8hpp_1a54cd804d18127c779b6e0c3ee5619bb9`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5073e19bfb80dae9091240d5c18e5116`
 
-- :ref:`exhale_function__unit_math_8hpp_1a7776283be38ac0a002d1e12909d7646c`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001`
 
-- :ref:`exhale_function__unit_math_8hpp_1aedb125fddf80a2f430cd41fd79bebf7c`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a532594d4a52ed2219adac4fbdf7f6a66`
 
-- :ref:`exhale_function__unit_math_8hpp_1a86888d172ca4f2ce1478d6bf7809126e`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff`
 
-- :ref:`exhale_function__unit_math_8hpp_1a23cebc0912a54448c631118a13965708`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5a1326abacc0b7d4cb725be0cf1055a6`
 
-- :ref:`exhale_function__unit_math_8hpp_1a14ea253ff8ad93ae4fe20ac2d02b20ed`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a100a98cfa6a468a9ca6aa4fc48552db7`
 
-- :ref:`exhale_function__unit_math_8hpp_1abca4d67a8fb01609cc0a2c2e893ec0ac`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a97664cc4ccd67ca251c48fe05dc596dd`
 
-- :ref:`exhale_function__unit_math_8hpp_1a7683512548bef2c4dea7ce60b4ad6184`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae73ace12cba7a81948e9b435b5b84205`
 
-- :ref:`exhale_function__unit_math_8hpp_1a7bee95086448596b08186a85993dfee3`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa265df0fde658b5fcea8bd5bbdc167a1`
 
-- :ref:`exhale_function__unit_math_8hpp_1a223ce4795d132787715a13f83ac51980`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4be4f5037a3488f6667412f6d2750359`
 
-- :ref:`exhale_function__unit_math_8hpp_1a357b6e62ae648d2403e44beb4fc2b95f`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae7cf838108cd01d30b46b3079c4b04b7`
 
-- :ref:`exhale_function__unit_math_8hpp_1a2d8eafe2e7c5e408ab1944c86bcfcd27`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a64ed24bc1ef246b1df161ceac2dc3433`
 
-- :ref:`exhale_function__unit_math_8hpp_1a9381601a026bff1bdc01414db7838d09`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a088e6a35b653f941d4f6cdd0b4267e8a`
 
-- :ref:`exhale_function__unit_math_8hpp_1a2167f4ccb536a3f34fb7e319591a1769`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad5b202d0452071b78eedd8c2c46beca4`
 
-- :ref:`exhale_function__unit_math_8hpp_1ad86b3a7d2bb3751187b7120a7d05cbcf`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a8201d3b8ea05e0e33f8e1794e66708d2`
 
-- :ref:`exhale_function__angle_8hpp_1ad3149df2f6e7ca040c555b5b2db7ac70`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645`
 
-- :ref:`exhale_function__time_8hpp_1ae5156bb6beda09ec056ec927b4ab7138`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b`
 
-- :ref:`exhale_function__unit_math_8hpp_1a65d3498516642234dae5cb41e3cb0e1b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2e68d6acb0d342f6fde88c15590db92d`
 
-- :ref:`exhale_function__unit_math_8hpp_1ae05c8c49ac57f34022dc4b96b4b88128`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7`
 
-- :ref:`exhale_function__unit_math_8hpp_1a505b648f46999f1dbc8a9f389e8451bb`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a94c286069933df07ec12022e5d20bdf7`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b0a0579777eaad03b5c6d56dd960666`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a98e8a94026d7750f7cc8509052649785`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af51d1ef910d0ae1b7a8999a4f64cd7e0`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a69f2e5415febb805d53c2311f65cf458`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a49d3782b2cc4152c43a0d5fae1285e18`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a84f659ae47f5c49367e049dbc877d521`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a86eb9199219d0bac1c4c3abc9ad9f5c6`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a421021e90744cdc8ce7e73a87b7d436b`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1afab732ee98274b6267dd28d1afe15c8b`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad16187afeb98eb948a50b8da6fe5e4a6`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a76ae0f1ed48f1cf25867c7496e5561b5`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aaf21571bab124bad758cccbb36a81d60`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a54cd804d18127c779b6e0c3ee5619bb9`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7776283be38ac0a002d1e12909d7646c`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aedb125fddf80a2f430cd41fd79bebf7c`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a86888d172ca4f2ce1478d6bf7809126e`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a23cebc0912a54448c631118a13965708`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a14ea253ff8ad93ae4fe20ac2d02b20ed`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abca4d67a8fb01609cc0a2c2e893ec0ac`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7683512548bef2c4dea7ce60b4ad6184`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7bee95086448596b08186a85993dfee3`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a223ce4795d132787715a13f83ac51980`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a357b6e62ae648d2403e44beb4fc2b95f`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2d8eafe2e7c5e408ab1944c86bcfcd27`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9381601a026bff1bdc01414db7838d09`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2167f4ccb536a3f34fb7e319591a1769`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad86b3a7d2bb3751187b7120a7d05cbcf`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad3149df2f6e7ca040c555b5b2db7ac70`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae5156bb6beda09ec056ec927b4ab7138`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a65d3498516642234dae5cb41e3cb0e1b`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae05c8c49ac57f34022dc4b96b4b88128`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a505b648f46999f1dbc8a9f389e8451bb`
 
 
 Variables
 ---------
 
 
-- :ref:`exhale_variable__current_8hpp_1a9d5ef467f6905020d5c91101ed2a250c`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a9d5ef467f6905020d5c91101ed2a250c`
 
-- :ref:`exhale_variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae2e9c011a7805a6e00db579984ca21f2`
 
-- :ref:`exhale_variable__length_8hpp_1a621ae04e4353e876f6e4c19fecdb43be`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a621ae04e4353e876f6e4c19fecdb43be`
 
-- :ref:`exhale_variable__time_8hpp_1aec6a81ae817b311ebf443f230813e815`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815`
 
-- :ref:`exhale_variable__current_8hpp_1a79919ccd32eecaaaa3c86a47e94e9585`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a34c603ea0a6b73a78a70dc2021f800ef`
 
-- :ref:`exhale_variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aa01021a76cc13abdd2ccf46e9cd14746`
 
-- :ref:`exhale_variable__current_8hpp_1a2a3aacc6c234de9b0fce99e64d9b894f`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aea30d93b40ba13c6c93a480190f0d4b3`
 
-- :ref:`exhale_variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a177dfbdde80a9d1c6770a52a96e6be1b`
 
-- :ref:`exhale_variable__length_8hpp_1a96b78ff5564916347c3a174cdb5b120d`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae7ccfe5a3140c6f8dff006cc9b76e9fb`
 
-- :ref:`exhale_variable__time_8hpp_1aca3289e0405099b9d0980531ae117600`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ab4153ef12f5b03c961d9c5ae25ce33d7`
 
-- :ref:`exhale_variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1abc04839fdac76d885248f6c42ebcff1f`
 
-- :ref:`exhale_variable__length_8hpp_1a32e3f92e1cf85dd1cb790b19f4add7c7`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a413202333bd1c4494dc752c763771be0`
 
-- :ref:`exhale_variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a79919ccd32eecaaaa3c86a47e94e9585`
 
-- :ref:`exhale_variable__current_8hpp_1ae18c41ca85a6d0606afd98e2f23ddf55`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2`
 
-- :ref:`exhale_variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a2a3aacc6c234de9b0fce99e64d9b894f`
 
-- :ref:`exhale_variable__time_8hpp_1aadd07453c0253bfc28d19afea895da6e`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ab84634ec7c1b9a4ef656ae7a85c2d3ee`
 
-- :ref:`exhale_variable__length_8hpp_1a21a389863d46b4ea9d73c6c871e77bb6`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a96b78ff5564916347c3a174cdb5b120d`
 
-- :ref:`exhale_variable__current_8hpp_1a8cb0d66a683bc069077c7e96724803fd`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aca3289e0405099b9d0980531ae117600`
 
-- :ref:`exhale_variable__current_8hpp_1a90c28951b7651c08975a6798d75479b2`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858`
 
-- :ref:`exhale_variable__length_8hpp_1a4f18ff631d65d9d235fe59d2657d2f11`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a09be33c6abf05ebbfa6f4e11f956d903`
 
-- :ref:`exhale_variable__time_8hpp_1a5b10ae9fb79cf79c82987337427b999b`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981`
 
-- :ref:`exhale_variable__time_8hpp_1a6250fdfcf9a3b5289da8066f274fe83a`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae3a96a812651d10d7911ecbfdbca2989`
 
-- :ref:`exhale_variable__mass_8hpp_1a4094511273e312bec78796916f75b0af`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a32e3f92e1cf85dd1cb790b19f4add7c7`
 
-- :ref:`exhale_variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56`
 
-- :ref:`exhale_variable__length_8hpp_1a67540d4febaeef2a05ef4f8a28c8a66b`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6`
 
-- :ref:`exhale_variable__length_8hpp_1aaafa56435ad9290bacaf84751aa04f76`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae18c41ca85a6d0606afd98e2f23ddf55`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aadd07453c0253bfc28d19afea895da6e`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a21a389863d46b4ea9d73c6c871e77bb6`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a8cb0d66a683bc069077c7e96724803fd`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1abc0b2cb41f687de6b557ebee961f1188`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a6f233941a5158969971c73f88d9700e0`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a60075e815046e3e0d6e79e8d8ecadf71`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a90c28951b7651c08975a6798d75479b2`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a4f18ff631d65d9d235fe59d2657d2f11`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a5b10ae9fb79cf79c82987337427b999b`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a6250fdfcf9a3b5289da8066f274fe83a`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a72c4f2f1067edcd223fe1b6dca41b932`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a83953b255bbe30b07772e4484654df1e`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a4094511273e312bec78796916f75b0af`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a6cc0eeb557d3ff07d0e9209b01d4c164`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a97106ac874fb9943d1db213b1f54f7d9`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae04137a3a0051bca1d9a97e0776990fc`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a9960b211f4e7e53fdd8ba11b77be8fc4`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aa5d51f19840410f70c3e15928d26da6a`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aea32e37c4d7ae311ecd1616436434e85`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1af9a33ee103fa0f099e39c48164a42650`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad9f9b29886488426fcb81b875a54bfd3`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a266ec7f754deb5e87cefde5052d0bc81`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a4adcb8ec2fb64a468bb331a39c8b0fcc`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a43e3b5aa680a21d82e978d8a1286fe27`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a67540d4febaeef2a05ef4f8a28c8a66b`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1aaafa56435ad9290bacaf84751aa04f76`

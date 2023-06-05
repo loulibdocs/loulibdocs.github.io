@@ -24,6 +24,20 @@ Definition (``src/LouLib/Units/Mass.hpp``)
 
 
 
+Detailed Description
+--------------------
+
+Definition of Mass units
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
 
 
 Includes
@@ -35,6 +49,16 @@ Includes
 - ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
 
 
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_Force.hpp`
+
+- :ref:`file_src_LouLib_Units_Torque.hpp`
+
+- :ref:`file_src_LouLib_Units_Units.hpp`
 
 
 
@@ -54,21 +78,21 @@ Functions
 ---------
 
 
-- :ref:`exhale_function__mass_8hpp_1ac16fdc5005e542d1ffdbff349cd9e9da`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac16fdc5005e542d1ffdbff349cd9e9da`
 
-- :ref:`exhale_function__mass_8hpp_1ada1196e5c41141e5c990e8f6f7719ad5`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5`
 
-- :ref:`exhale_function__mass_8hpp_1af183452c1d5cb8b4d85297afe20fe8a7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7`
 
-- :ref:`exhale_function__mass_8hpp_1a6a89d2629ec4a6b4e40f45a3cad7867a`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10`
 
-- :ref:`exhale_function__mass_8hpp_1aac8f945b6cb1805560916d3123b06e10`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa`
 
-- :ref:`exhale_function__mass_8hpp_1a87e3a9681a93d27faa300dc74b7cf7fa`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a`
 
-- :ref:`exhale_function__mass_8hpp_1a22a4b684c5955e6795dbc11eb94573f7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7`
 
-- :ref:`exhale_function__mass_8hpp_1afab732ee98274b6267dd28d1afe15c8b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1afab732ee98274b6267dd28d1afe15c8b`
 
 
 Defines
@@ -82,13 +106,13 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable__mass_8hpp_1ad903bbec05b676d597233f35bee286a2`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad903bbec05b676d597233f35bee286a2`
 
-- :ref:`exhale_variable__mass_8hpp_1a7ee60f1b4c3b962e8838c3c6ee642be6`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a7ee60f1b4c3b962e8838c3c6ee642be6`
 
-- :ref:`exhale_variable__mass_8hpp_1a6646591d88b84adc508403ce6137670f`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a6646591d88b84adc508403ce6137670f`
 
-- :ref:`exhale_variable__mass_8hpp_1a4094511273e312bec78796916f75b0af`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a4094511273e312bec78796916f75b0af`
 
-- :ref:`exhale_variable__mass_8hpp_1a0a8729d173804b1a045a12c89f0415ff`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a0a8729d173804b1a045a12c89f0415ff`
 

@@ -1,0 +1,14 @@
+.. _exhale_function__math_functions_8cpp_1a9a85fdb9f3e3ce5a9d9dc4d474937e82:
+
+Function LouLib::Math::constrainAngle
+=====================================
+
+- Defined in :ref:`file_src_LouLib_Math_MathFunctions.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Math::constrainAngle(double)
+   :project: My Project

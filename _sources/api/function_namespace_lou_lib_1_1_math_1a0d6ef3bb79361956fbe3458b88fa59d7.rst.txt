@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_math_1a0d6ef3bb79361956fbe3458b88fa59d7:
+
+Function LouLib::Math::operator\*(const Matrix&, const Vector&)
+===============================================================
+
+- Defined in :ref:`file_src_LouLib_Math_Matrix.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Math::operator*(const Matrix&, const Vector&)
+   :project: My Project

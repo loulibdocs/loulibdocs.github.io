@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(2, 1, -, 0, 0, 0, 0, 0, Torque)
+=======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Torque.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(2, 1, -, 0, 0, 0, 0, 0, Torque)
+   :project: My Project

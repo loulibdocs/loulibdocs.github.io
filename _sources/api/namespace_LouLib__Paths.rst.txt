@@ -1,0 +1,27 @@
+
+.. _namespace_LouLib__Paths:
+
+Namespace LouLib::Paths
+=======================
+
+
+Contains all of :ref:`namespace_LouLib`'s path planning functionality. 
+
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_lou_lib_1_1_paths_1_1_bezier_curve`
+
+- :ref:`exhale_class_class_lou_lib_1_1_paths_1_1_trajectory`

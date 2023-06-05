@@ -6,6 +6,16 @@ Class Matrix
 - Defined in :ref:`file_src_LouLib_Math_Matrix.hpp`
 
 
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_class_lou_lib_1_1_math_1_1_matrix_1_1_matrix_row`
+
+
 Class Documentation
 -------------------
 

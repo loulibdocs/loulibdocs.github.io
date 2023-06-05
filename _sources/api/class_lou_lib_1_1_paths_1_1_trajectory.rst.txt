@@ -1,0 +1,17 @@
+.. _exhale_class_class_lou_lib_1_1_paths_1_1_trajectory:
+
+Class Trajectory
+================
+
+- Defined in :ref:`file_src_LouLib_Paths_Trajectory.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: LouLib::Paths::Trajectory
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

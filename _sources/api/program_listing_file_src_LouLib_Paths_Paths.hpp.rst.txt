@@ -1,0 +1,22 @@
+
+.. _program_listing_file_src_LouLib_Paths_Paths.hpp:
+
+Program Listing for File Paths.hpp
+==================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_LouLib_Paths_Paths.hpp>` (``src/LouLib/Paths/Paths.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef LOULIB_PATHS_HPP
+   #define LOULIB_PATHS_HPP
+   
+   namespace LouLib::Paths{}
+   
+   #include "BezierCurve.hpp"
+   #include "Trajectory.hpp"
+   
+   #endif //LOULIB_PATHS_HPP

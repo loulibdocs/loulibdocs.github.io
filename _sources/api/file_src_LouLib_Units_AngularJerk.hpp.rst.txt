@@ -1,0 +1,102 @@
+
+.. _file_src_LouLib_Units_AngularJerk.hpp:
+
+File AngularJerk.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_LouLib_Units>` (``src/LouLib/Units``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/LouLib/Units/AngularJerk.hpp``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_LouLib_Units_AngularJerk.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Definition of AngularJerk units
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+
+
+Includes
+--------
+
+
+- ``Angle.hpp`` (:ref:`file_src_LouLib_Units_Angle.hpp`)
+
+- ``BaseUnit.hpp`` (:ref:`file_src_LouLib_Units_BaseUnit.hpp`)
+
+- ``Time.hpp`` (:ref:`file_src_LouLib_Units_Time.hpp`)
+
+- ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_Units.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_LouLib`
+
+- :ref:`namespace_LouLib__Units`
+
+- :ref:`namespace_LouLib__Units__literals`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__angular_jerk_8hpp_1ae51b81a85dfb9e5d644cda339b9f23d5`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ad80881f5183a0f173b0221e057f53981`
+
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a97106ac874fb9943d1db213b1f54f7d9`
+

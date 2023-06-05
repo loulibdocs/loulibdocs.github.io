@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1a024abe10b8af2cd3dda84488780a030c:
+
+Function LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_kA, KILOAMPERE)
+======================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Current.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::CREATE_CURRENT_STRING_LITERAL(_kA, KILOAMPERE)
+   :project: My Project

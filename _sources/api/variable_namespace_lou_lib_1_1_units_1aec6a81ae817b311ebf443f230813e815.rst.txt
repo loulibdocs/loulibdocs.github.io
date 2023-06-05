@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1aec6a81ae817b311ebf443f230813e815:
+
+Variable LouLib::Units::CENTISECOND
+===================================
+
+- Defined in :ref:`file_src_LouLib_Units_Time.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::CENTISECOND
+   :project: My Project

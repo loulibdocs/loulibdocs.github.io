@@ -1,0 +1,14 @@
+.. _exhale_variable_namespace_lou_lib_1_1_units_1afa96bea902955400170960e0ac33cb56:
+
+Variable LouLib::Units::FOOT_PER_SECOND
+=======================================
+
+- Defined in :ref:`file_src_LouLib_Units_Velocity.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: LouLib::Units::FOOT_PER_SECOND
+   :project: My Project

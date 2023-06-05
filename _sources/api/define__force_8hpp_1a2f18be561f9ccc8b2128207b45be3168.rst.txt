@@ -1,0 +1,14 @@
+.. _exhale_define__force_8hpp_1a2f18be561f9ccc8b2128207b45be3168:
+
+Define CREATE_FORCE_STRING_LITERAL
+==================================
+
+- Defined in :ref:`file_src_LouLib_Units_Force.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CREATE_FORCE_STRING_LITERAL
+   :project: My Project

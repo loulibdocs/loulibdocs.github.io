@@ -1,0 +1,14 @@
+.. _exhale_function_namespace_lou_lib_1_1_units_1ad16187afeb98eb948a50b8da6fe5e4a6:
+
+Function LouLib::Units::METER
+=============================
+
+- Defined in :ref:`file_src_LouLib_Units_Length.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::METER(1.)
+   :project: My Project

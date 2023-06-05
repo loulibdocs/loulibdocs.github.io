@@ -1,0 +1,41 @@
+
+.. _namespace_LouLib__Odometry:
+
+Namespace LouLib::Odometry
+==========================
+
+
+Contains all of :ref:`namespace_LouLib`'s odometry functionality. 
+
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_abstract_odometry`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_abstract_odom_sensor`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_odom_i_m_u_sensor`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_odom_motor_sensor`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_odom_rotation_sensor`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_three_sensor_i_m_u_odom`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_three_sensor_odom`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_two_sensor_i_m_u_odom`
+
+- :ref:`exhale_class_class_lou_lib_1_1_odometry_1_1_two_sensor_odom`

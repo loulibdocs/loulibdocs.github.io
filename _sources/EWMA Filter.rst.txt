@@ -11,7 +11,7 @@ Creating an EWMA Filter
 
 The constructor for :code:`EWMAFilter` contains two parameters: :code:`k` and :code:`startVal`.
 
-The :code:`k` parameter is the weighting average and is used to determine how much weight is given to
+The :code:`k` parameter is the weighting constant and is used to determine how much weight is given to
 each new reading. The value of :code:`k` should be between 0 and 1. A higher value of :code:`k` will
 result in more responsive data, and a lower value of :code:`k` will result in smoother data.
 

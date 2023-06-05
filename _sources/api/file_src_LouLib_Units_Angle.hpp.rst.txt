@@ -24,6 +24,20 @@ Definition (``src/LouLib/Units/Angle.hpp``)
 
 
 
+Detailed Description
+--------------------
+
+Definition of Angle units
+
+Copyright (c) 2023 Kevin Lou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
 
 
 Includes
@@ -35,6 +49,18 @@ Includes
 - ``UnitMath.hpp`` (:ref:`file_src_LouLib_Units_UnitMath.hpp`)
 
 
+
+Included By
+-----------
+
+
+- :ref:`file_src_LouLib_Units_AngularAcceleration.hpp`
+
+- :ref:`file_src_LouLib_Units_AngularJerk.hpp`
+
+- :ref:`file_src_LouLib_Units_AngularVelocity.hpp`
+
+- :ref:`file_src_LouLib_Units_Units.hpp`
 
 
 
@@ -54,17 +80,17 @@ Functions
 ---------
 
 
-- :ref:`exhale_function__angle_8hpp_1abaff73571beed2ab39369f6837151a28`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1`
 
-- :ref:`exhale_function__angle_8hpp_1a95e894ac82a4c94608f6596a1c3d0bb5`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28`
 
-- :ref:`exhale_function__angle_8hpp_1abfc222b6f6f439fc07003b08d8a279a1`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5`
 
-- :ref:`exhale_function__angle_8hpp_1ab7e1fe73a1c61268761888e5cc28679b`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b`
 
-- :ref:`exhale_function__angle_8hpp_1ac6aca8eef180946bd48cf5ab28836ac7`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7`
 
-- :ref:`exhale_function__angle_8hpp_1ad3149df2f6e7ca040c555b5b2db7ac70`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ad3149df2f6e7ca040c555b5b2db7ac70`
 
 
 Defines
@@ -78,9 +104,9 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable__angle_8hpp_1ae2e9c011a7805a6e00db579984ca21f2`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ae2e9c011a7805a6e00db579984ca21f2`
 
-- :ref:`exhale_variable__angle_8hpp_1ab84634ec7c1b9a4ef656ae7a85c2d3ee`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1ab84634ec7c1b9a4ef656ae7a85c2d3ee`
 
-- :ref:`exhale_variable__angle_8hpp_1a370f4489b5498de6b7eedecd81f44858`
+- :ref:`exhale_variable_namespace_lou_lib_1_1_units_1a370f4489b5498de6b7eedecd81f44858`
 

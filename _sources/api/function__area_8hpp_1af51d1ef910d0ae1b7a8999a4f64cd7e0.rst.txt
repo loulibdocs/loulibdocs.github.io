@@ -1,0 +1,14 @@
+.. _exhale_function__area_8hpp_1af51d1ef910d0ae1b7a8999a4f64cd7e0:
+
+Function LouLib::Units::DEFINE_NEW_UNIT(2, 0, 0, 0, 0, 0, 0, 0, Area)
+=====================================================================
+
+- Defined in :ref:`file_src_LouLib_Units_Area.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: LouLib::Units::DEFINE_NEW_UNIT(2, 0, 0, 0, 0, 0, 0, 0, Area)
+   :project: My Project
