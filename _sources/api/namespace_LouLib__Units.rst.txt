@@ -166,33 +166,21 @@ Functions
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a8201d3b8ea05e0e33f8e1794e66708d2`
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2e68d6acb0d342f6fde88c15590db92d`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a94c286069933df07ec12022e5d20bdf7`
 
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2c46ae1ad4684ac78855624c2afba645`
+
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc`
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b0a0579777eaad03b5c6d56dd960666`
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4a855ae1d5ca3b67aedd2238a0554f0b`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a98e8a94026d7750f7cc8509052649785`
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1af51d1ef910d0ae1b7a8999a4f64cd7e0`
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a69f2e5415febb805d53c2311f65cf458`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a49d3782b2cc4152c43a0d5fae1285e18`
 
@@ -201,6 +189,18 @@ Functions
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a86eb9199219d0bac1c4c3abc9ad9f5c6`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a421021e90744cdc8ce7e73a87b7d436b`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9b0a0579777eaad03b5c6d56dd960666`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa71e328c38055e3f59793cf8f8c30acc`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1adb9e56b4dc93c2470458ddaa2aa70fe3`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1aa434861cf9c4875f06a5c500b63b3599`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a2e68d6acb0d342f6fde88c15590db92d`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a20bc1815c13dc3aa37baa0f0bd179832`
 

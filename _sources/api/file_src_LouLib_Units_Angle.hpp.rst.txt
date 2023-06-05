@@ -80,13 +80,13 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1abaff73571beed2ab39369f6837151a28`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a95e894ac82a4c94608f6596a1c3d0bb5`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ab7e1fe73a1c61268761888e5cc28679b`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1abfc222b6f6f439fc07003b08d8a279a1`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac6aca8eef180946bd48cf5ab28836ac7`
 

@@ -94,9 +94,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7ecae4ac2f8fbf907c28d5c944d4c001`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a9f1650f406d3a9896379cd36901434ff`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1acfbb64946f9e8bd03cbe973631c8f2e0`
 

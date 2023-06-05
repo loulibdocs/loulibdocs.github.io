@@ -82,13 +82,13 @@ Functions
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ada1196e5c41141e5c990e8f6f7719ad5`
 
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a`
+
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1af183452c1d5cb8b4d85297afe20fe8a7`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1aac8f945b6cb1805560916d3123b06e10`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a87e3a9681a93d27faa300dc74b7cf7fa`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a6a89d2629ec4a6b4e40f45a3cad7867a`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a22a4b684c5955e6795dbc11eb94573f7`
 

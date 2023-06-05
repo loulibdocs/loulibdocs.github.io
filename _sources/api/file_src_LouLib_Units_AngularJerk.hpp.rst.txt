@@ -78,9 +78,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a0882b82fdb774872e50beecb0ae34cc9`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a60a857c5cc25a973651fe26e2be7c836`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4f8886e505fa8a0ce4ee81dd6d1354bc`
 

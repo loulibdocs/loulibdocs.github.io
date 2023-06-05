@@ -76,11 +76,11 @@ Functions
 ---------
 
 
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162`
+
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1af45d881dad3c5bf906154845df0b7cc5`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a7318555d41ef4baa237cfcbab146ca8d`
-
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1ae74a14de30d6a1118fe31b3147aab162`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ace3ee5f1f43aa7e6dabe7da1b2caa139`
 

@@ -90,9 +90,9 @@ Functions
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1ac668931c825e05de1a644ac81f070e15`
 
-- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958`
-
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1abbe9d9df6a5db7b18f346edba2e5478d`
+
+- :ref:`exhale_function_namespace_lou_lib_1_1_units_1a5dc86295bb17217701f2a6db19ca6958`
 
 - :ref:`exhale_function_namespace_lou_lib_1_1_units_1a4b92b76fcf31622dfbf066644efee10d`
 

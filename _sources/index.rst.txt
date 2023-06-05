@@ -12,6 +12,8 @@ The library contains classes for different controllers and systems that make
 autonomous programming easier. The library also contains math, unit analysis, and
 utility classes to make programming your own controllers easier.
 
+The Github repo can be found `here <https://github.com/klou23/LouLib>`_.
+
 Getting Started
 ---------------
 
